@@ -1,64 +1,115 @@
-import React from 'react';
-import Link from 'next/link';
-import { HiMenuAlt3, HiOutlineX } from 'react-icons/hi';
-import { FaBehance, FaGithub, FaLinkedinIn } from 'react-icons/fa';
-
+import React, { useState } from "react";
+import Link from "next/link";
+import { HiMenuAlt3, HiOutlineX, HiMail } from "react-icons/hi";
+import { FaBehance, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 export default function Navbar() {
+
+    const [nav, setNav] = useState(false);
+
+    const handleNav = () => {
+        setNav(!nav);
+    };
+
     return (
-        <main className='fixed w-full h-20 shadow-lg z-[100]'>
-            {/* Here is the lg navbar */}
-            <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-                <h5>Hi, welcome!</h5>
-                <section className='flex'>
-                    <ul className='hidden md:flex'>
-                        <Link href='/'><li className='ml-8 text-sm uppercase hover:border-b'>Home</li></Link>
-                        <Link href='/'><li className='ml-8 text-sm uppercase hover:border-b'>Myself</li></Link>
-                        <Link href='/'><li className='ml-8 text-sm uppercase hover:border-b'>Skills</li></Link>
-                        <Link href='/'><li className='ml-8 text-sm uppercase hover:border-b'>Projects</li></Link>
-                        <Link href='/'><li className='ml-8 text-sm uppercase hover:border-b'>Contact me</li></Link>
+        <nav className="fixed w-full h-20 shadow-lg z-[100]">
+            <main className="flex justify-between items-center w-full h-full px-6 2xl:px-16"> {/* Here is the lg navbar */}
+                <h5 className="text-blue-600">Hi, welcome!</h5>
+                <section className="flex">
+                    <ul className="hidden md:flex">
+                        <Link href="/">
+                            <li className="ml-8 font-semibold text-sm uppercase hover:text-blue-400 duration-200 cursor-pointer">Home</li>
+                        </Link>
+                        <Link href="/">
+                            <li className="ml-8 font-semibold text-sm uppercase hover:text-blue-400 duration-200 cursor-pointer">Myself</li>
+                        </Link>
+                        <Link href="/">
+                            <li className="ml-8 font-semibold text-sm uppercase hover:text-blue-400 duration-200 cursor-pointer">Skills</li>
+                        </Link>
+                        <Link href="/">
+                            <li className="ml-8 font-semibold text-sm uppercase hover:text-blue-400 duration-200 cursor-pointer">Projects</li>
+                        </Link>
+                        <Link href="/">
+                            <li className="ml-8 font-semibold text-sm uppercase hover:text-blue-400 duration-200 cursor-pointer">Contact me</li>
+                        </Link>
                     </ul>
                     {/* Here is the sm burger menu for the navbar */}
-                    <div className='md:hidden'>
+                    <div onClick={handleNav} className="md:hidden cursor-pointer">
                         <HiMenuAlt3 size={24} />
                     </div>
                 </section>
-            </div>
+            </main>
             {/* Drawer menu for sm devices */}
-            <div className='fixed lef-0 top-0 w-full h-screen bg-gray-900/90'> {/* This is the blur of the bg */}
-                <div className='fixed left-0 top-0 w-[75%] sm:w-[60%] md:[40%] h-screen bg-[#FFFFFE] p-10 ease-in-out duration-300'>
+            <main className={nav ? "md:hidden fixed lef-0 top-0 w-full h-screen bg-gray-900/90" : null}>
+                {/* This is the blur of the bg */}
+                <div className={nav
+                    ? "md:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] md:[40%] h-screen bg-[#FFFFFE] p-10 ease-in duration-300"
+                    : "fixed left-[-100%] top-0 p-10 ease-out duration-500"}>
                     <section>
-                        <div className='flex w-full items-center justify-between'>
-                            <h5>Hi, welcome!</h5>
-                            <div className='rounded-md shadow-md shadow-900-200 p-2 cursor-pointer'>
+                        <div className="flex w-full items-center justify-between">
+                            <h5 className="text-blue-600">I{"'"}m Frano!</h5>
+                            <span onClick={handleNav} className="rounded-md shadow-md shadow-900-200 p-2 cursor-pointer">
                                 <HiOutlineX />
-                            </div>
+                            </span>
                         </div>
-                        <div className='my-4 border-b border-gray-400'>
-                            <p className='mb-2 w-[90%] md:w-[95%]'>Come see what I{"'"}ve been doing</p>
+                        <div className="my-4 border-b border-gray-400">
+                            <h6 className="mb-2 w-[90%] font-medium md:w-[95%]">
+                                Come see what I{"'"}ve been doing
+                            </h6>
                         </div>
                     </section>
                     <section>
-                        <div className='flex flex-col py-2'>
+                        <div className="flex flex-col py-2">
                             <ul>
-                                <Link href='/'><li className='py-4 text-sm font-semibold uppercase hover:text-blue-900 hover:text-base hover:border-b-2 cursor-pointer'>Home</li></Link>
-                                <Link href='/'><li className='py-4 text-sm font-semibold uppercase hover:text-blue-900 hover:text-base hover:border-b-2 cursor-pointer'>Myself</li></Link>
-                                <Link href='/'><li className='py-4 text-sm font-semibold uppercase hover:text-blue-900 hover:text-base hover:border-b-2 cursor-pointer'>Skills</li></Link>
-                                <Link href='/'><li className='py-4 text-sm font-semibold uppercase hover:text-blue-900 hover:text-base hover:border-b-2 cursor-pointer'>Projects</li></Link>
-                                <Link href='/'><li className='py-4 text-sm font-semibold uppercase hover:text-blue-900 hover:text-base hover:border-b-2 cursor-pointer'>Contact me</li></Link>
+                                <Link href="/">
+                                    <li className="py-4 font-semibold text-sm text-blue-900 uppercase">
+                                        Home
+                                    </li>
+                                </Link>
+                                <Link href="/">
+                                    <li className="py-4 font-semibold text-sm text-blue-900 uppercase">
+                                        Myself
+                                    </li>
+                                </Link>
+                                <Link href="/">
+                                    <li className="py-4 font-semibold text-sm text-blue-900 uppercase">
+                                        Skills
+                                    </li>
+                                </Link>
+                                <Link href="/">
+                                    <li className="py-4 font-semibold text-sm text-blue-900 uppercase">
+                                        Projects
+                                    </li>
+                                </Link>
+                                <Link href="/">
+                                    <li className="py-4 font-semibold text-sm text-blue-900 uppercase">
+                                        Contact me
+                                    </li>
+                                </Link>
                             </ul>
-                            <div className='pt-20'>
-                                <h6 className='tracking-widest text-blue-900 uppercase'>Let{"'"}s connect!</h6>
-                                <div className='flex gap-8'>
-                                    <FaGithub className='w-10 h-8 rounded-full shadow-md shadow-blue-200'/>
-                                    <FaLinkedinIn/>
-                                    <FaBehance/>
+                            <section className="pt-20">
+                                <h6 className="tracking-widest text-blue-600 uppercase">
+                                    Want to connect?
+                                </h6>
+                                <div className="flex w-full my-4 items-center justify-between sm:w-[80%]">
+                                    <div className="p-3 rounded-full shadow-sm shadow-blue-100 cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-200 ease-in-out duration-200">
+                                        <Link href="https://github.com/franodangelo"><FaGithub /></Link>
+                                    </div>
+                                    <div className="p-3 rounded-full shadow-sm shadow-blue-100 cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-200 ease-in-out duration-200">
+                                        <Link href="https://www.linkedin.com/in/franco-dangelo/"><FaLinkedinIn /></Link>
+                                    </div>
+                                    <div className="p-3 rounded-full shadow-sm shadow-blue-100 cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-200 ease-in-out duration-200">
+                                        <Link href=''><FaBehance /></Link>
+                                    </div>
+                                    <div className="p-3 rounded-full shadow-sm shadow-blue-100 cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-200 ease-in-out duration-200">
+                                        <Link href='mailto:ffrancodangelo@gmail.com'><HiMail /></Link>
+                                    </div>
                                 </div>
-                            </div>
+                            </section>
                         </div>
                     </section>
                 </div>
-            </div>
-        </main>
-    )
-};
+            </main>
+        </nav>
+    );
+}

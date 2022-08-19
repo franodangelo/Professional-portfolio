@@ -14,9 +14,9 @@ export default function Navbar() {
     return (
         <nav className="fixed w-full h-20 shadow-lg z-[100]">
             <main className="flex justify-between items-center w-full h-full px-6 2xl:px-16"> {/* Here is the lg navbar */}
-                <h5 className="text-blue-600">Hi, welcome!</h5>
+                <span className="text-blue-600 font-mono">franodan</span>
                 <section className="flex">
-                    <ul className="hidden md:flex">
+                    <ul className="hidden md:flex items-center">
                         <Link href="/">
                             <li className="ml-8 font-semibold text-sm uppercase hover:text-blue-400 duration-200 cursor-pointer">Home</li>
                         </Link>
@@ -29,8 +29,8 @@ export default function Navbar() {
                         <Link href="/">
                             <li className="ml-8 font-semibold text-sm uppercase hover:text-blue-400 duration-200 cursor-pointer">Projects</li>
                         </Link>
-                        <Link href="/">
-                            <li className="ml-8 font-semibold text-sm uppercase hover:text-blue-400 duration-200 cursor-pointer">Contact me</li>
+                        <Link href="mailto:ffrancodangelo@gmail.com">
+                            <button className="ml-12 py-2 px-4 font-semibold text-[#EFF0F3] uppercase bg-gradient-to-l from-blue-400 via-blue-500 to-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 ease-in-out duration-300">Contact me</button>
                         </Link>
                     </ul>
                     {/* Here is the sm burger menu for the navbar */}

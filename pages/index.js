@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
+import Myself from '../components/Myself';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <Header />
+      <Myself />
     </div>
   )
 }

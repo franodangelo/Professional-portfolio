@@ -12,7 +12,7 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="fixed w-full h-20 shadow-lg z-[100]">
+        <nav className="fixed w-full h-20 shadow-lg z-[100] bg-[#EFF0F3]">
             <main className="flex justify-between items-center w-full h-full px-6 2xl:px-16"> {/* Here is the lg navbar */}
                 <span className="text-blue-600 font-mono">franodan</span>
                 <section className="flex">

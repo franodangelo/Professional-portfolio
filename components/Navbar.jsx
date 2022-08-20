@@ -99,10 +99,10 @@ export default function Navbar() {
                                         <Link href="https://www.linkedin.com/in/franco-dangelo/"><FaLinkedinIn /></Link>
                                     </div>
                                     <div className="p-3 rounded-full shadow-sm shadow-blue-100 cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-200 ease-in-out duration-200">
-                                        <Link href=''><FaBehance /></Link>
+                                        <Link href="https://www.behance.net/francodangelo"><FaBehance /></Link>
                                     </div>
                                     <div className="p-3 rounded-full shadow-sm shadow-blue-100 cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-200 ease-in-out duration-200">
-                                        <Link href='mailto:ffrancodangelo@gmail.com'><HiMail /></Link>
+                                        <Link href="mailto:ffrancodangelo@gmail.com"><HiMail /></Link>
                                     </div>
                                 </div>
                             </section>

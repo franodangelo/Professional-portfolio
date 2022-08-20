@@ -5,7 +5,7 @@ import { HiMail } from "react-icons/hi";
 
 export default function Header() {
     return (
-        <header className="w-full h-screen text-center">
+        <header id="header" className="w-full h-screen text-center">
             <main className="flex max-w-[1280px] w-full h-full mx-auto p-2 justify-center items-center">
                 <section className="flex flex-col w-[80%]">
                     <p className="py-2 font-light text-base text-slate-800 uppercase tracking-widest">Welcome to my portfolio</p>

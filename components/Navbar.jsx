@@ -17,16 +17,16 @@ export default function Navbar() {
                 <span className="text-blue-600 font-mono">franodan</span>
                 <section className="flex">
                     <ul className="hidden md:flex items-center">
-                        <Link href="/">
+                        <Link offset={-200} href="/#header">
                             <li className="ml-8 font-semibold text-sm uppercase hover:text-blue-400 duration-200 cursor-pointer">Home</li>
                         </Link>
-                        <Link href="/">
+                        <Link href="/#myself">
                             <li className="ml-8 font-semibold text-sm uppercase hover:text-blue-400 duration-200 cursor-pointer">Myself</li>
                         </Link>
-                        <Link href="/">
+                        <Link href="/#skills">
                             <li className="ml-8 font-semibold text-sm uppercase hover:text-blue-400 duration-200 cursor-pointer">Skills</li>
                         </Link>
-                        <Link href="/">
+                        <Link href="/#projects">
                             <li className="ml-8 font-semibold text-sm uppercase hover:text-blue-400 duration-200 cursor-pointer">Projects</li>
                         </Link>
                         <Link href="mailto:ffrancodangelo@gmail.com">

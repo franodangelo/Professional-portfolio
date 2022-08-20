@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Skills() {
     return (
-        <main className="w-full lg:h-screen p-2">
+        <main id="skills" className="w-full lg:h-full p-2">
             <div className="max-w-[1280px] h-full mx-auto flex flex-col justify-center">
                 <h4 className="py-2 font-light text-base text-slate-800 uppercase tracking-widest">Skills</h4>
                 <h2 className="py-4 font-extrabold text-blue-600">This is my tech stack</h2>

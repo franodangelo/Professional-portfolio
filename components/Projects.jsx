@@ -45,7 +45,6 @@ export default function Projects() {
                                 <span className="px-2 py-1 font-light text-xs text-white bg-green-600/80 rounded-full">Node.js</span>
                                 <span className="px-2 py-1 font-light text-xs bg-gray-200/80 rounded-full">Express</span>
                                 <span className="px-2 py-1 font-light text-xs text-white bg-blue-600/80 rounded-full">PostgreSQL</span>
-
                             </div>
                         </div>
                         <div className="flex mt-4 justify-center items-center gap-4">

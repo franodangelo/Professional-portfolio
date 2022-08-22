@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import javascript from "../public/assets/skills/javascript.png"
 
 export default function Skills() {
     return (
@@ -11,7 +12,7 @@ export default function Skills() {
                     <div className="p-6 shadow-lg rounded-xl hover:scale-105 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
-                                <Image src="/../public/assets/skills/javascript.png" alt="/" width="64px" height="64px" />
+                                <Image src={javascript} alt="/" width="64px" height="64px" />
                             </span>
                             <span className="">
                                 <h6>JavaScript</h6>

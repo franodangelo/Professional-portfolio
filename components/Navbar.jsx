@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { HiMenuAlt3, HiOutlineX, HiMail } from "react-icons/hi";
 import { FaBehance, FaGithub, FaLinkedinIn } from "react-icons/fa";
-import Image from "next/image";
+import logo from ".//../public/fdlogo.png";
 
 export default function Navbar() {
 
@@ -15,7 +16,7 @@ export default function Navbar() {
     return (
         <nav className="fixed w-full h-20 shadow-lg z-[100] bg-[#EFF0F3]">
             <main className="flex justify-between items-center w-full h-full px-6 2xl:px-16"> {/* Here is the lg navbar */}
-                <Image src="/../public/logo.ico" alt="logo" width="40px" height="40px" />
+                <Image src={logo} alt="logo" width="40px" height="40px" />
                 <section className="flex">
                     <ul className="hidden md:flex items-center">
                         <Link offset={-200} href="/#header">

@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import me from "../public/assets/profilepic.jpg"
 
 export default function Myself() {
     return (
@@ -13,7 +14,7 @@ export default function Myself() {
                     <Link href="https://www.linkedin.com/in/franco-dangelo/"><span className="py-2 font-semibold text-blue-600 underline cursor-pointer">See my experience and formation in detail</span></Link>
                 </section>
                 <div className="w-full h-auto my-4 p-4 items-center justify-center rounded-xl shadow-lg shadow-blue-200 hover:scale-105 ease-in duration-300">
-                    <Image className="rounded-xl" src="/../public/assets/profilepic.jpg" alt="picture of Frano" layout="responsive" width={80} height={80} />
+                    <Image className="rounded-xl" src={me} alt="picture of Frano" layout="responsive" width={80} height={80} />
                 </div>
             </div>
         </main>

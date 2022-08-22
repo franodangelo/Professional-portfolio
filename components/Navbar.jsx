@@ -64,50 +64,45 @@ export default function Navbar() {
                         <div className="flex flex-col py-2">
                             <ul>
                                 <Link href="/#header">
-                                    <li className="py-4 font-semibold text-sm text-blue-900 uppercase">
+                                    <li onClick={handleNav} className="py-4 font-semibold text-sm text-blue-900 uppercase">
                                         Home
                                     </li>
                                 </Link>
                                 <Link href="/#myself">
-                                    <li className="py-4 font-semibold text-sm text-blue-900 uppercase">
+                                    <li onClick={handleNav} className="py-4 font-semibold text-sm text-blue-900 uppercase">
                                         Myself
                                     </li>
                                 </Link>
                                 <Link href="/#skills">
-                                    <li className="py-4 font-semibold text-sm text-blue-900 uppercase">
+                                    <li onClick={handleNav} className="py-4 font-semibold text-sm text-blue-900 uppercase">
                                         Skills
                                     </li>
                                 </Link>
                                 <Link href="/#projects">
-                                    <li className="py-4 font-semibold text-sm text-blue-900 uppercase">
+                                    <li onClick={handleNav} className="py-4 font-semibold text-sm text-blue-900 uppercase">
                                         Projects
                                     </li>
                                 </Link>
-                                <Link href="/">
-                                    <li className="py-4 font-semibold text-sm text-blue-900 uppercase">
-                                        Contact me
-                                    </li>
-                                </Link>
                             </ul>
-                            <section className="pt-20">
+                            <section className="pt-16">
                                 <h6 className="tracking-widest text-blue-600 uppercase">
                                     Want to connect?
                                 </h6>
                                 <div className="flex w-full my-4 items-center justify-between sm:w-[80%]">
                                     <div className="p-3 rounded-full shadow-sm shadow-blue-100 cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-200 ease-in-out duration-200">
-                                        <Link href="https://github.com/franodangelo"><FaGithub /></Link>
+                                        <Link href="https://www.linkedin.com/in/franco-dangelo/"><FaLinkedinIn /></Link>
                                     </div>
                                     <div className="p-3 rounded-full shadow-sm shadow-blue-100 cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-200 ease-in-out duration-200">
-                                        <Link href="https://www.linkedin.com/in/franco-dangelo/"><FaLinkedinIn /></Link>
+                                        <Link href="https://github.com/franodangelo"><FaGithub /></Link>
                                     </div>
                                     <div className="p-3 rounded-full shadow-sm shadow-blue-100 cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-200 ease-in-out duration-200">
                                         <Link href="https://www.behance.net/francodangelo"><FaBehance /></Link>
                                     </div>
-                                    <div className="p-3 rounded-full shadow-sm shadow-blue-100 cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-200 ease-in-out duration-200">
-                                        <Link href="mailto:ffrancodangelo@gmail.com"><HiMail /></Link>
-                                    </div>
                                 </div>
                             </section>
+                            <Link href="mailto:ffrancodangelo@gmail.com">
+                                <button className="w-full mt-16 py-2 px-4 font-semibold text-[#EFF0F3] uppercase bg-gradient-to-l from-blue-400 via-blue-500 to-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 ease-in-out duration-300">Contact me</button>
+                            </Link>
                         </div>
                     </section>
                 </div>

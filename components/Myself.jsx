@@ -5,7 +5,7 @@ import me from "../public/assets/profilepic.jpg"
 
 export default function Myself() {
     return (
-        <main id="myself" className="flex w-full px-8 text-center md:h-screen py-16 items-center md:text-left">
+        <main id="myself" className="flex w-full px-8 text-center md:h-screen py-16 pt-24 items-center md:text-left">
             <div className="max-w-[1280px] m-auto md:grid grid-cols-3 gap-8 items-center">
                 <section className="col-span-2">
                     <h4 className="py-2 font-light text-base text-slate-800 uppercase tracking-widest">This is me</h4>

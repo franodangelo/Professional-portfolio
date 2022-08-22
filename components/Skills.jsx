@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export default function Skills() {
     return (
-        <main id="skills" className="w-full lg:h-full p-2">
-            <div className="max-w-[1280px] h-full mx-auto flex flex-col justify-center">
+        <main id="skills" className="w-full lg:h-full p-2 py-24">
+            <div className="max-w-[1280px] h-full mx-auto flex flex-col justify-center items-center md:items-start">
                 <h4 className="py-2 font-light text-base text-slate-800 uppercase tracking-widest">Skills</h4>
                 <h2 className="py-4 font-extrabold text-blue-600">This is my tech stack</h2>
-                <section className="py-2 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <section className="w-full py-2 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div className="p-6 shadow-lg rounded-xl hover:scale-105 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
@@ -130,7 +130,7 @@ export default function Skills() {
                     </div>
                 </section>
                 <h6 className=" mt-4 py-4 font-extrabold text-blue-600">And currently learning</h6>
-                <section className="py-2 grid md:grid-cols-3 gap-8">
+                <section className="w-full py-2 grid md:grid-cols-3 gap-8">
                     <div className="p-2 shadow-md rounded-xl hover:scale-105 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <span className="m-auto">

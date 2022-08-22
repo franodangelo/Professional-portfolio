@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { HiMenuAlt3, HiOutlineX, HiMail } from "react-icons/hi";
 import { FaBehance, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Navbar() {
 
@@ -14,7 +15,7 @@ export default function Navbar() {
     return (
         <nav className="fixed w-full h-20 shadow-lg z-[100] bg-[#EFF0F3]">
             <main className="flex justify-between items-center w-full h-full px-6 2xl:px-16"> {/* Here is the lg navbar */}
-                <span className="text-blue-600 font-mono">franodan</span>
+                <Image src="/../public/logo.ico" alt="logo" width="40px" height="40px" />
                 <section className="flex">
                     <ul className="hidden md:flex items-center">
                         <Link offset={-200} href="/#header">
@@ -61,22 +62,22 @@ export default function Navbar() {
                     <section>
                         <div className="flex flex-col py-2">
                             <ul>
-                                <Link href="/">
+                                <Link href="/#header">
                                     <li className="py-4 font-semibold text-sm text-blue-900 uppercase">
                                         Home
                                     </li>
                                 </Link>
-                                <Link href="/">
+                                <Link href="/#myself">
                                     <li className="py-4 font-semibold text-sm text-blue-900 uppercase">
                                         Myself
                                     </li>
                                 </Link>
-                                <Link href="/">
+                                <Link href="/#skills">
                                     <li className="py-4 font-semibold text-sm text-blue-900 uppercase">
                                         Skills
                                     </li>
                                 </Link>
-                                <Link href="/">
+                                <Link href="/#projects">
                                     <li className="py-4 font-semibold text-sm text-blue-900 uppercase">
                                         Projects
                                     </li>

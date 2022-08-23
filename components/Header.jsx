@@ -12,18 +12,21 @@ export default function Header() {
                     <p className="py-2 font-light text-base text-slate-800 uppercase tracking-widest">Welcome to my portfolio</p>
                     <h1 className="py-4 font-extrabold text-blue-600">Hi everyone, I{`'`}m Frano!</h1>
                     <h4 className="py-2 font-light">a <span className="font-bold text-blue-600">Full-Stack Developer</span> based in Buenos Aires, Argentina</h4>
-                    <div className="flex max-w-[340px] m-auto mt-4 py-4 items-center justify-between gap-4">
+                    <div className="flex max-w-[340px] m-auto mt-4 py-4 items-center justify-between gap-12">
                         <div className="p-4 rounded-full shadow-md shadow-blue-300 cursor-pointer hover:scale-110 hover:shadow-blue-400 ease-in-out duration-200">
-                            <Link href="https://www.linkedin.com/in/franco-dangelo/"><FaLinkedinIn /></Link>
+                            <Link href="/">
+                                <a href="https://www.linkedin.com/in/franco-dangelo/" target='_blank' rel="noreferrer"><FaLinkedinIn /></a>
+                            </Link>
                         </div>
                         <div className="p-4 rounded-full shadow-md shadow-blue-300 cursor-pointer hover:scale-110 hover:shadow-blue-400 ease-in-out duration-200">
-                            <Link href="https://github.com/franodangelo"><FaGithub /></Link>
+                            <Link href="">
+                                <a href="https://github.com/franodangelo" target='_blank' rel="noreferrer"><FaGithub /></a>
+                            </Link>
                         </div>
                         <div className="p-4 rounded-full shadow-md shadow-blue-300 cursor-pointer hover:scale-110 hover:shadow-blue-400 ease-in-out duration-200">
-                            <Link href="https://www.behance.net/francodangelo"><FaBehance /></Link>
-                        </div>
-                        <div className="p-4 rounded-full shadow-md shadow-blue-300 cursor-pointer hover:scale-110 hover:shadow-blue-400 ease-in-out duration-200">
-                            <Link href="mailto:ffrancodangelo@gmail.com"><HiMail /></Link>
+                            <Link href="/">
+                                <a href="https://www.behance.net/francodangelo" target='_blank' rel="noreferrer"><FaBehance /></a>
+                            </Link>
                         </div>
                     </div>
                 </section>

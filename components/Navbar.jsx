@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { HiMenuAlt3, HiOutlineX, HiMail } from "react-icons/hi";
+import { HiMenuAlt3, HiOutlineX } from "react-icons/hi";
 import { FaBehance, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import logo from ".//../public/fdlogo.png";
 
@@ -31,8 +31,11 @@ export default function Navbar() {
                         <Link href="/#projects">
                             <li className="ml-8 font-semibold text-sm uppercase hover:text-blue-400 duration-200 cursor-pointer">Projects</li>
                         </Link>
+                        <Link href="https://drive.google.com/file/d/1bnItJ1HsNa4XnA-M67K5LFuSu4FZFuEa/view?usp=sharing" download>
+                            <a className="ml-12 py-2 px-4 font-semibold text-blue-600 uppercase border-2 border-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 ease-in-out duration-300" target='_blank'>Download CV</a>
+                        </Link>
                         <Link href="mailto:ffrancodangelo@gmail.com">
-                            <button className="ml-12 py-2 px-4 font-semibold text-[#EFF0F3] uppercase bg-gradient-to-l from-blue-400 via-blue-500 to-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 ease-in-out duration-300">Contact me</button>
+                            <button className="ml-4 py-2 px-4 font-semibold text-[#EFF0F3] uppercase bg-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 ease-in-out duration-300">Contact me</button>
                         </Link>
                     </ul>
                     {/* Here is the sm burger menu for the navbar */}
@@ -90,16 +93,27 @@ export default function Navbar() {
                                 </h6>
                                 <div className="flex w-full my-4 items-center justify-between sm:w-[80%]">
                                     <div className="p-3 rounded-full shadow-sm shadow-blue-100 cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-200 ease-in-out duration-200">
-                                        <Link href="https://www.linkedin.com/in/franco-dangelo/"><FaLinkedinIn /></Link>
+                                        <Link href="/">
+                                            <a href="https://www.linkedin.com/in/franco-dangelo/" target='_blank' rel="noreferrer"><FaLinkedinIn /></a>
+                                        </Link>
                                     </div>
                                     <div className="p-3 rounded-full shadow-sm shadow-blue-100 cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-200 ease-in-out duration-200">
-                                        <Link href="https://github.com/franodangelo"><FaGithub /></Link>
+                                        <Link href="">
+                                            <a href="https://github.com/franodangelo" target='_blank' rel="noreferrer"><FaGithub /></a>
+                                        </Link>
                                     </div>
                                     <div className="p-3 rounded-full shadow-sm shadow-blue-100 cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-200 ease-in-out duration-200">
-                                        <Link href="https://www.behance.net/francodangelo"><FaBehance /></Link>
+                                        <Link href="/">
+                                            <a href="https://www.behance.net/francodangelo" target='_blank' rel="noreferrer"><FaBehance /></a>
+                                        </Link>
                                     </div>
                                 </div>
                             </section>
+                            <button className="w-full mt-16 py-2 px-4 font-semibold text-[#EFF0F3] uppercase bg-gradient-to-l from-blue-400 via-blue-500 to-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 ease-in-out duration-300">
+                                <a href="https://drive.google.com/file/d/1bnItJ1HsNa4XnA-M67K5LFuSu4FZFuEa/view?usp=sharing" download target='_blank' rel="noreferrer">
+                                    Download CV
+                                </a>
+                            </button>
                             <Link href="mailto:ffrancodangelo@gmail.com">
                                 <button className="w-full mt-16 py-2 px-4 font-semibold text-[#EFF0F3] uppercase bg-gradient-to-l from-blue-400 via-blue-500 to-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 ease-in-out duration-300">Contact me</button>
                             </Link>

@@ -9,15 +9,15 @@ import { IoMdOpen } from "react-icons/io";
 
 export default function Projects() {
     return (
-        <main id="projects" className='w-full lg:h-full p-2 py-16'>
-            <div className='max-w-[1280px] mx-auto px-2 py-16'>
+        <main id="projects" className='w-full md:h-full py-24'>
+            <div className='max-w-[1280px] h-full mx-auto'>
                 <h4 className="py-2 font-light text-center text-base text-slate-800 uppercase tracking-widest">Projects</h4>
                 <h1 className="py-4 font-extrabold text-center text-blue-600">My works so far</h1>
-                <section className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8'>
-                    <div className='flex flex-col h-auto w-full px-4 py-8 items-center justify-center shadow-lg shadow-blue-300 rounded-xl relative cursor-pointer hover:shadow-xl hover:shadow-blue-400 ease-in-out duration-300'>
+                <section className='grid p-4 grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3'>
+                    <div className='flex flex-col h-auto w-full p-8 items-center justify-center shadow-lg shadow-blue-300 rounded-xl relative cursor-pointer hover:shadow-xl hover:shadow-blue-400 ease-in-out duration-300'>
                         <Image className="rounded-xl" src={propertyImg1} alt="/" />
                         <div>
-                            <h6 className="my-4 pt-4 text-center border-t-2 border-gray-200">Videogames Project</h6>
+                            <h6 className="my-4 text-center border-t-2 border-gray-200">Videogames Project</h6>
                             <div className="flex py-2 gap-2">
                                 <span className="px-2 py-1 font-light text-xs bg-yellow-500/80 rounded-full">JavaScript</span>
                                 <span className="px-2 py-1 font-light text-xs bg-cyan-400/80 rounded-full">React</span>
@@ -35,10 +35,10 @@ export default function Projects() {
                             </span>
                         </div>
                     </div>
-                    <div className='flex flex-col h-auto w-full px-4 py-8 items-center justify-center shadow-lg shadow-blue-300 rounded-xl relative cursor-pointer hover:shadow-xl hover:shadow-blue-400 ease-in-out duration-300'>
+                    <div className='flex flex-col h-auto w-full p-8 items-center justify-center shadow-lg shadow-blue-300 rounded-xl relative cursor-pointer hover:shadow-xl hover:shadow-blue-400 ease-in-out duration-300'>
                         <Image className="rounded-xl" src={propertyImg2} alt="/" />
                         <div>
-                            <h6 className="my-4 pt-4 text-center border-t-2 border-gray-200">yumPaw: Pet Care & Shop</h6>
+                            <h6 className="my-4 text-center border-t-2 border-gray-200">yumPaw: Pet Care & Shop</h6>
                             <div className="flex py-2 gap-2">
                                 <span className="px-2 py-1 font-light text-xs bg-yellow-500/80 rounded-full">JavaScript</span>
                                 <span className="px-2 py-1 font-light text-xs bg-cyan-400/80 rounded-full">React</span>
@@ -56,10 +56,10 @@ export default function Projects() {
                             </span>
                         </div>
                     </div>
-                    <div className='flex flex-col h-auto w-full px-4 py-8 items-center justify-center shadow-lg shadow-blue-300 rounded-xl relative cursor-pointer hover:shadow-xl hover:shadow-blue-400 ease-in-out duration-300'>
+                    <div className='flex flex-col h-auto w-full p-8 items-center justify-center shadow-lg shadow-blue-300 rounded-xl relative cursor-pointer hover:shadow-xl hover:shadow-blue-400 ease-in-out duration-300'>
                         <Image className="rounded-xl" src={propertyImg3} alt="/" />
                         <div>
-                            <h6 className="my-4 pt-4 text-center border-t-2 border-gray-200">Services SPA</h6>
+                            <h6 className="my-4 text-center border-t-2 border-gray-200">Services SPA</h6>
                             <div className="flex py-2 gap-2">
                                 <span className="px-2 py-1 font-light text-xs bg-yellow-500/80 rounded-full">JavaScript</span>
                                 <span className="px-2 py-1 font-light text-xs bg-cyan-400/80 rounded-full">React</span>

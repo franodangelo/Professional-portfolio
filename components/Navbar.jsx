@@ -18,24 +18,24 @@ export default function Navbar() {
             <main className="flex justify-between items-center w-full h-full px-6 2xl:px-16"> {/* Here is the lg navbar */}
                 <Image src={logo} alt="logo" width="40px" height="40px" />
                 <section className="flex">
-                    <ul className="hidden md:flex items-center">
+                    <ul className="hidden md:flex items-center gap-8">
                         <Link offset={-200} href="/#header">
-                            <li className="ml-8 font-semibold text-sm uppercase hover:text-blue-400 duration-200 cursor-pointer">Home</li>
+                            <li className="font-semibold text-sm uppercase hover:text-blue-400 duration-200 cursor-pointer">Home</li>
                         </Link>
                         <Link href="/#myself">
-                            <li className="ml-8 font-semibold text-sm uppercase hover:text-blue-400 duration-200 cursor-pointer">Myself</li>
+                            <li className="font-semibold text-sm uppercase hover:text-blue-400 duration-200 cursor-pointer">Myself</li>
                         </Link>
                         <Link href="/#skills">
-                            <li className="ml-8 font-semibold text-sm uppercase hover:text-blue-400 duration-200 cursor-pointer">Skills</li>
+                            <li className="font-semibold text-sm uppercase hover:text-blue-400 duration-200 cursor-pointer">Skills</li>
                         </Link>
                         <Link href="/#projects">
-                            <li className="ml-8 font-semibold text-sm uppercase hover:text-blue-400 duration-200 cursor-pointer">Projects</li>
+                            <li className="font-semibold text-sm uppercase hover:text-blue-400 duration-200 cursor-pointer">Projects</li>
                         </Link>
                         <Link href="https://drive.google.com/file/d/1bnItJ1HsNa4XnA-M67K5LFuSu4FZFuEa/view?usp=sharing" download>
-                            <a className="ml-12 py-2 px-4 font-semibold text-blue-600 uppercase border-2 border-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 ease-in-out duration-300" target='_blank'>Download CV</a>
+                            <a className="py-2 px-4 font-semibold text-blue-600 uppercase border border-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 ease-in-out duration-300" target='_blank'>Download CV</a>
                         </Link>
                         <Link href="mailto:ffrancodangelo@gmail.com">
-                            <button className="ml-4 py-2 px-4 font-semibold text-[#EFF0F3] uppercase bg-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 ease-in-out duration-300">Contact me</button>
+                            <button className="py-2 px-4 font-semibold text-[#EFF0F3] uppercase bg-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 ease-in-out duration-300">Contact me</button>
                         </Link>
                     </ul>
                     {/* Here is the sm burger menu for the navbar */}
@@ -52,7 +52,7 @@ export default function Navbar() {
                     : "fixed left-[-100%] top-0 p-10 ease-out duration-500"}>
                     <section>
                         <div className="flex w-full items-center justify-between">
-                            <h5 className="text-blue-600">I{"'"}m Frano!</h5>
+                            <Image src={logo} alt="logo" width="40px" height="40px" />
                             <span onClick={handleNav} className="rounded-md shadow-md shadow-900-200 p-2 cursor-pointer">
                                 <HiOutlineX />
                             </span>
@@ -87,11 +87,11 @@ export default function Navbar() {
                                     </li>
                                 </Link>
                             </ul>
-                            <section className="pt-16">
+                            <section className="pt-8">
                                 <h6 className="tracking-widest text-blue-600 uppercase">
                                     Want to connect?
                                 </h6>
-                                <div className="flex w-full my-4 items-center justify-between sm:w-[80%]">
+                                <div className="flex w-full my-4 items-center justify-between">
                                     <div className="p-3 rounded-full shadow-sm shadow-blue-100 cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-200 ease-in-out duration-200">
                                         <Link href="/">
                                             <a href="https://www.linkedin.com/in/franco-dangelo/" target='_blank' rel="noreferrer"><FaLinkedinIn /></a>
@@ -109,13 +109,13 @@ export default function Navbar() {
                                     </div>
                                 </div>
                             </section>
-                            <button className="w-full mt-16 py-2 px-4 font-semibold text-[#EFF0F3] uppercase bg-gradient-to-l from-blue-400 via-blue-500 to-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 ease-in-out duration-300">
+                            <button className="w-full mt-8 py-2 px-4 font-semibold text-[#EFF0F3] uppercase bg-gradient-to-l from-blue-400 via-blue-500 to-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 ease-in-out duration-300">
                                 <a href="https://drive.google.com/file/d/1bnItJ1HsNa4XnA-M67K5LFuSu4FZFuEa/view?usp=sharing" download target='_blank' rel="noreferrer">
                                     Download CV
                                 </a>
                             </button>
                             <Link href="mailto:ffrancodangelo@gmail.com">
-                                <button className="w-full mt-16 py-2 px-4 font-semibold text-[#EFF0F3] uppercase bg-gradient-to-l from-blue-400 via-blue-500 to-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 ease-in-out duration-300">Contact me</button>
+                                <button className="w-full mt-4 py-2 px-4 font-semibold text-[#EFF0F3] uppercase bg-gradient-to-l from-blue-400 via-blue-500 to-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 ease-in-out duration-300">Contact me</button>
                             </Link>
                         </div>
                     </section>

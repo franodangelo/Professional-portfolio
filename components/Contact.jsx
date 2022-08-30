@@ -7,7 +7,7 @@ export default function Contact() {
         <main id="contact" className="flex w-full px-8 text-center h-screen py-16 items-center md:text-left">
             <div className="max-w-[1280px] m-auto md:grid grid-cols-3 gap-8 items-center">
                 <section className="col-span-2">
-                    <h4 className="py-2 font-light text-base text-slate-800 uppercase tracking-widest">Contact me</h4>
+                    <h4 className="py-2 font-light text-base text-slate-800 uppercase tracking-widest">🤙 Contact me</h4>
                     <h1 className="py-4 font-extrabold text-blue-600">Get in touch!</h1>
                     <p className="py-2 font-normal text-sm md:text-base text-slate-600">Call me, write me an e-mail or a WhatsApp message, or just connect and chat with me in Linkedin.</p>
                 </section>

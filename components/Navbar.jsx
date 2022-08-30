@@ -47,7 +47,7 @@ export default function Navbar() {
                 </section>
             </main>
             {/* Drawer menu for sm devices */}
-            <main className={nav ? "md:hidden fixed lef-0 top-0 w-full h-screen bg-gray-900/90" : null}>
+            <main className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-gray-900/90" : null}>
                 {/* This is the blur of the bg */}
                 <div className={nav
                     ? "md:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] md:[40%] h-screen bg-[#EFF0F3] p-10 ease-in duration-300"
@@ -59,11 +59,6 @@ export default function Navbar() {
                                 className="rounded-full shadow-md shadow-900-200 p-2 cursor-pointer">
                                 <HiOutlineX />
                             </span>
-                        </div>
-                        <div className="my-4 border-b border-gray-400">
-                            <h6 className="mb-2 w-[90%] font-medium md:w-[95%]">
-                                Come see what I{"'"}ve been doing
-                            </h6>
                         </div>
                     </section>
                     <section>
@@ -93,6 +88,18 @@ export default function Navbar() {
                                         Projects
                                     </li>
                                 </Link>
+                                <Link href="/#contact">
+                                    <li onClick={handleNav}
+                                        className="py-4 font-semibold text-sm text-blue-600 uppercase">
+                                        Contact me
+                                    </li>
+                                </Link>
+                                {/* <Link href="#contact">
+                                <button onClick={handleNav}
+                                    className="w-full mt-4 py-2 px-4 font-semibold text-[#EFF0F3] uppercase bg-gradient-to-l from-blue-400 via-blue-500 to-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 ease-in-out duration-300">
+                                    Contact me
+                                </button>
+                            </Link> */}
                             </ul>
                             <section className="pt-8">
                                 <h6 className="tracking-widest text-blue-600 uppercase">
@@ -133,12 +140,6 @@ export default function Navbar() {
                                     Download CV
                                 </a>
                             </button>
-                            <Link href="#contact">
-                                <button onClick={handleNav}
-                                    className="w-full mt-4 py-2 px-4 font-semibold text-[#EFF0F3] uppercase bg-gradient-to-l from-blue-400 via-blue-500 to-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 ease-in-out duration-300">
-                                    Contact me
-                                </button>
-                            </Link>
                         </div>
                     </section>
                 </div>

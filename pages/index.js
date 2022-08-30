@@ -5,6 +5,7 @@ import Myself from "../components/Myself";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -19,7 +20,8 @@ export default function Home() {
       <Myself />
       <Skills />
       <Projects />
-      <Contact/>
+      <Contact />
+      <Footer />
     </div>
   )
 }

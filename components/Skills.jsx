@@ -19,7 +19,7 @@ export default function Skills() {
     return (
         <main id="skills" className="w-full md:h-full py-24">
             <div className="max-w-[1280px] h-full mx-auto flex flex-col justify-center items-center md:items-start">
-                <h4 className="py-2 font-light text-base text-slate-800 uppercase tracking-widest">Skills</h4>
+                <h4 className="py-2 font-light text-base text-slate-800 uppercase tracking-widest">📚 Skills</h4>
                 <h2 className="py-4 font-extrabold text-blue-600">This is my tech stack</h2>
                 <section className="grid w-full p-4 gap-4 md:grid-cols-2 lg:grid-cols-4">
                     <div className="p-4 shadow-lg rounded-xl hover:scale-105 ease-in-out duration-300">

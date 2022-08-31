@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 
 import { FaLinkedinIn, FaGithub, FaBehance } from "react-icons/fa";
-import { HiMail } from "react-icons/hi";
 
 export default function Header() {
     return (

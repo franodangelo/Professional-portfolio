@@ -76,10 +76,9 @@ export default function Projects() {
                         </div>
                     </div>
                 </section>
-                <h6 className=" mt-8 py-4 font-extrabold text-blue-600 text-center">And currently working on...</h6>
-                <section className='grid p-4 grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3'>
+                <h6 className=" mt-8 py-4 font-extrabold text-blue-600 text-center">And currently working on:</h6>
+                <section className='flex flex-wrap m-auto p-4 gap-8 md:flex-nowrap'>
                     <div className='flex flex-col h-auto w-full p-8 items-center justify-center shadow-lg shadow-gray-300 rounded-xl relative cursor-pointer hover:shadow-xl hover:shadow-gray-400 grayscale hover:grayscale-0 ease-in-out duration-300'>
-                        {/* <Image className="rounded-xl" src={propertyImg1} alt="/" /> */}
                         <div>
                             <h6 className="my-4 py-2 text-center">E-Commerce Project</h6>
                             <div className="flex py-2 gap-2">
@@ -92,13 +91,9 @@ export default function Projects() {
                             <span className="p-2 rounded-full shadow-sm shadow-gray-300 cursor-pointer hover:shadow-md hover:shadow-gray-400 ease-in-out duration-200">
                                 <a href="https://github.com/franodangelo/React-Ecommerce" target='_blank' rel="noreferrer"><FaGithub /></a>
                             </span>
-                            {/* <span className="p-2 rounded-full shadow-sm shadow-gray-300 cursor-pointer hover:shadow-md hover:shadow-gray-400 ease-in-out duration-200">
-                                <a href="https://videogamesspa.vercel.app/" target='_blank' rel="noreferrer"><IoMdOpen /></a>
-                            </span> */}
                         </div>
                     </div>
                     <div className='flex flex-col h-auto w-full p-8 items-center justify-center shadow-lg shadow-gray-300 rounded-xl relative cursor-pointer hover:shadow-xl hover:shadow-gray-400 grayscale hover:grayscale-0 ease-in-out duration-300'>
-                        {/* <Image className="rounded-xl" src={propertyImg2} alt="/" /> */}
                         <div>
                             <h6 className="my-4 py-2 text-center">Small Weather App</h6>
                             <div className="flex py-2 gap-2">
@@ -112,9 +107,6 @@ export default function Projects() {
                             <span className="p-2 rounded-full shadow-sm shadow-gray-300 cursor-pointer hover:shadow-md hover:shadow-gray-400 ease-in-out duration-200">
                                 <a href="https://github.com/franodangelo/Weather-app" target='_blank' rel="noreferrer"><FaGithub /></a>
                             </span>
-                            {/* <span className="p-2 rounded-full shadow-sm shadow-gray-300 cursor-pointer hover:shadow-md hover:shadow-gray-400 ease-in-out duration-200">
-                                <a href="https://client-pg.vercel.app/" target='_blank' rel="noreferrer"><IoMdOpen /></a>
-                            </span> */}
                         </div>
                     </div>
                 </section>

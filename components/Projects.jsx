@@ -18,12 +18,12 @@ export default function Projects() {
                         <Image className="rounded-xl" src={propertyImg1} alt="/" />
                         <div>
                             <h6 className="my-4 py-2 text-center border-t-2 border-gray-200">Video Games Project</h6>
-                            <div className="flex py-2 gap-2">
-                                <span className="px-2 py-1 font-light text-xs bg-yellow-500/80 rounded-full">JavaScript</span>
-                                <span className="px-2 py-1 font-light text-xs bg-cyan-400/80 rounded-full">React</span>
-                                <span className="px-2 py-1 font-light text-xs text-white bg-green-600/80 rounded-full">Node.js</span>
-                                <span className="px-2 py-1 font-light text-xs bg-gray-200/80 rounded-full">Express</span>
-                                <span className="px-2 py-1 font-light text-xs text-white bg-blue-600/80 rounded-full">PostgreSQL</span>
+                            <div className="grid grid-cols-3 place-content-center py-2 gap-2">
+                                <span className="px-2 py-1 font-light text-xs text-center bg-yellow-500/80 rounded-full">JavaScript</span>
+                                <span className="px-2 py-1 font-light text-xs text-center bg-cyan-400/80 rounded-full">React</span>
+                                <span className="px-2 py-1 font-light text-xs text-center text-white bg-green-600/80 rounded-full">Node.js</span>
+                                <span className="px-2 py-1 font-light text-xs text-center bg-gray-200/80 rounded-full">Express</span>
+                                <span className="px-2 py-1 font-light text-xs text-center text-white bg-blue-600/80 rounded-full">PostgreSQL</span>
                             </div>
                         </div>
                         <div className="flex mt-4 justify-center items-center gap-4">
@@ -39,12 +39,12 @@ export default function Projects() {
                         <Image className="rounded-xl" src={propertyImg2} alt="/" />
                         <div>
                             <h6 className="my-4 py-2 text-center border-t-2 border-gray-200">yumPaw: Pet Care & Shop</h6>
-                            <div className="flex py-2 gap-2">
-                                <span className="px-2 py-1 font-light text-xs bg-yellow-500/80 rounded-full">JavaScript</span>
-                                <span className="px-2 py-1 font-light text-xs bg-cyan-400/80 rounded-full">React</span>
-                                <span className="px-2 py-1 font-light text-xs text-white bg-green-600/80 rounded-full">Node.js</span>
-                                <span className="px-2 py-1 font-light text-xs bg-gray-200/80 rounded-full">Express</span>
-                                <span className="px-2 py-1 font-light text-xs text-white bg-blue-600/80 rounded-full">PostgreSQL</span>
+                            <div className="grid grid-cols-3 place-content-center py-2 gap-2">
+                                <span className="px-2 py-1 font-light text-xs text-center bg-yellow-500/80 rounded-full">JavaScript</span>
+                                <span className="px-2 py-1 font-light text-xs text-center bg-cyan-400/80 rounded-full">React</span>
+                                <span className="px-2 py-1 font-light text-xs text-center text-white bg-green-600/80 rounded-full">Node.js</span>
+                                <span className="px-2 py-1 font-light text-xs text-center bg-gray-200/80 rounded-full">Express</span>
+                                <span className="px-2 py-1 font-light text-xs text-center text-white bg-blue-600/80 rounded-full">PostgreSQL</span>
                             </div>
                         </div>
                         <div className="flex mt-4 justify-center items-center gap-4">
@@ -60,10 +60,10 @@ export default function Projects() {
                         <Image className="rounded-xl" src={propertyImg3} alt="/" />
                         <div>
                             <h6 className="my-4 py-2 text-center border-t-2 border-gray-200">Services SPA</h6>
-                            <div className="flex py-2 gap-2">
-                                <span className="px-2 py-1 font-light text-xs bg-yellow-500/80 rounded-full">JavaScript</span>
-                                <span className="px-2 py-1 font-light text-xs bg-cyan-400/80 rounded-full">React</span>
-                                <span className="px-2 py-1 font-light text-xs text-white bg-emerald-500/80 rounded-full">Tailwind</span>
+                            <div className="grid grid-cols-3 place-content-center py-2 gap-2">
+                                <span className="px-2 py-1 font-light text-xs text-center bg-yellow-500/80 rounded-full">JavaScript</span>
+                                <span className="px-2 py-1 font-light text-xs text-center bg-cyan-400/80 rounded-full">React</span>
+                                <span className="px-2 py-1 font-light text-xs text-center text-white bg-emerald-500/80 rounded-full">Tailwind</span>
                             </div>
                         </div>
                         <div className="flex mt-4 justify-center items-center gap-4">
@@ -81,10 +81,10 @@ export default function Projects() {
                     <div className='flex flex-col h-auto w-full p-8 items-center justify-center shadow-lg shadow-gray-300 rounded-xl relative cursor-pointer hover:shadow-xl hover:shadow-gray-400 grayscale hover:grayscale-0 ease-in-out duration-300'>
                         <div>
                             <h6 className="my-4 py-2 text-center">E-Commerce Project</h6>
-                            <div className="flex py-2 gap-2">
-                                <span className="px-2 py-1 font-light text-xs bg-yellow-500/80 rounded-full">JavaScript</span>
-                                <span className="px-2 py-1 font-light text-xs bg-cyan-400/80 rounded-full">React</span>
-                                <span className="px-2 py-1 font-light text-xs text-white bg-emerald-500/80 rounded-full">Tailwind</span>
+                            <div className="grid grid-cols-3 place-content-center py-2 gap-2">
+                                <span className="px-2 py-1 font-light text-xs text-center bg-yellow-500/80 rounded-full">JavaScript</span>
+                                <span className="px-2 py-1 font-light text-xs text-center bg-cyan-400/80 rounded-full">React</span>
+                                <span className="px-2 py-1 font-light text-xs text-center text-white bg-emerald-500/80 rounded-full">Tailwind</span>
                             </div>
                         </div>
                         <div className="flex mt-4 justify-center items-center gap-4">
@@ -96,11 +96,10 @@ export default function Projects() {
                     <div className='flex flex-col h-auto w-full p-8 items-center justify-center shadow-lg shadow-gray-300 rounded-xl relative cursor-pointer hover:shadow-xl hover:shadow-gray-400 grayscale hover:grayscale-0 ease-in-out duration-300'>
                         <div>
                             <h6 className="my-4 py-2 text-center">Small Weather App</h6>
-                            <div className="flex py-2 gap-2">
-                                <span className="px-2 py-1 font-light text-xs bg-yellow-500/80 rounded-full">JavaScript</span>
-                                <span className="px-2 py-1 font-light text-xs bg-cyan-400/80 rounded-full">React</span>
-                                <span className="px-2 py-1 font-light text-xs bg-gray-200/80 rounded-full">Next.js</span>
-                                <span className="px-2 py-1 font-light text-xs text-white bg-emerald-500/80 rounded-full">Tailwind</span>
+                            <div className="grid grid-cols-3 place-content-center py-2 gap-2">
+                                <span className="px-2 py-1 font-light text-xs text-center bg-yellow-500/80 rounded-full">JavaScript</span>
+                                <span className="px-2 py-1 font-light text-xs text-center bg-gray-200/80 rounded-full">Next.js</span>
+                                <span className="px-2 py-1 font-light text-xs text-center text-white bg-emerald-500/80 rounded-full">Tailwind</span>
                             </div>
                         </div>
                         <div className="flex mt-4 justify-center items-center gap-4">

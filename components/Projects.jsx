@@ -17,8 +17,11 @@ export default function Projects() {
                     <div className='flex flex-col h-auto w-full p-8 items-center justify-center shadow-lg shadow-blue-300 rounded-xl relative cursor-pointer hover:shadow-xl hover:shadow-blue-400 ease-in-out duration-300'>
                         <Image className="rounded-xl" src={propertyImg1} alt="/" />
                         <div>
-                            <h6 className="my-4 py-2 text-center border-t-2 border-gray-200">Video Games Project</h6>
-                            <div className="grid grid-cols-3 place-content-center py-2 gap-2">
+                            <div className="pb-4">
+                                <h6 className="mt-4 py-2 text-center border-t-2 border-gray-200">Video games Project</h6>
+                                <p className="font-thin text-sm text-center text-gray-500">Working on Responsive</p>
+                            </div>
+                            <div className="grid grid-cols-3 place-content-center py-4 gap-2">
                                 <span className="px-2 py-1 font-light text-xs text-center bg-yellow-500/80 rounded-full">JavaScript</span>
                                 <span className="px-2 py-1 font-light text-xs text-center bg-cyan-400/80 rounded-full">React</span>
                                 <span className="px-2 py-1 font-light text-xs text-center text-white bg-green-600/80 rounded-full">Node.js</span>
@@ -38,8 +41,11 @@ export default function Projects() {
                     <div className='flex flex-col h-auto w-full p-8 items-center justify-center shadow-lg shadow-blue-300 rounded-xl relative cursor-pointer hover:shadow-xl hover:shadow-blue-400 ease-in-out duration-300'>
                         <Image className="rounded-xl" src={propertyImg2} alt="/" />
                         <div>
-                            <h6 className="my-4 py-2 text-center border-t-2 border-gray-200">yumPaw: Pet Care & Shop</h6>
-                            <div className="grid grid-cols-3 place-content-center py-2 gap-2">
+                            <div className="pb-4">
+                                <h6 className="mt-4 py-2 text-center border-t-2 border-gray-200">yumPaw: Pet Care & Shop</h6>
+                                <p className="font-thin text-sm text-center text-gray-500">Working on Responsive</p>
+                            </div>
+                            <div className="grid grid-cols-3 place-content-center py-4 gap-2">
                                 <span className="px-2 py-1 font-light text-xs text-center bg-yellow-500/80 rounded-full">JavaScript</span>
                                 <span className="px-2 py-1 font-light text-xs text-center bg-cyan-400/80 rounded-full">React</span>
                                 <span className="px-2 py-1 font-light text-xs text-center text-white bg-green-600/80 rounded-full">Node.js</span>
@@ -59,8 +65,11 @@ export default function Projects() {
                     <div className='flex flex-col h-auto w-full p-8 items-center justify-center shadow-lg shadow-blue-300 rounded-xl relative cursor-pointer hover:shadow-xl hover:shadow-blue-400 ease-in-out duration-300'>
                         <Image className="rounded-xl" src={propertyImg3} alt="/" />
                         <div>
-                            <h6 className="my-4 py-2 text-center border-t-2 border-gray-200">Services SPA</h6>
-                            <div className="grid grid-cols-3 place-content-center py-2 gap-2">
+                            <div className="pb-4">
+                                <h6 className="mt-4 py-2 text-center border-t-2 border-gray-200">Services SPA</h6>
+                                <p className="text-sm text-center text-blue-500">Responsive</p>
+                            </div>
+                            <div className="grid grid-cols-3 place-content-center py-4 gap-2">
                                 <span className="px-2 py-1 font-light text-xs text-center bg-yellow-500/80 rounded-full">JavaScript</span>
                                 <span className="px-2 py-1 font-light text-xs text-center bg-cyan-400/80 rounded-full">React</span>
                                 <span className="px-2 py-1 font-light text-xs text-center text-white bg-emerald-500/80 rounded-full">Tailwind</span>

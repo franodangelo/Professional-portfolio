@@ -6,7 +6,6 @@ import { FaBehance, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import logo from ".//../public/fdlogo.png";
 
 export default function Navbar() {
-
     const [nav, setNav] = useState(false);
 
     const handleNav = () => {
@@ -16,7 +15,7 @@ export default function Navbar() {
     return (
         <nav className="fixed w-full h-20 shadow-lg z-[100] bg-[#EFF0F3]">
             <main className="flex justify-between items-center w-full h-full px-6 2xl:px-16"> {/* Here is the lg navbar */}
-                <Image src={logo} alt="logo" width="40px" height="40px" />
+                <Image src={logo} alt="logo" width="32px" height="32px" />
                 <section className="flex">
                     <ul className="hidden md:flex items-center gap-8">
                         <Link offset={-200} href="/#header">
@@ -31,18 +30,20 @@ export default function Navbar() {
                         <Link href="/#projects">
                             <li className="font-semibold text-sm uppercase hover:text-blue-600 duration-200 cursor-pointer">Projects</li>
                         </Link>
-                        <Link href="https://drive.google.com/file/d/1bnItJ1HsNa4XnA-M67K5LFuSu4FZFuEa/view?usp=sharing" download>
-                            <a className="py-2 px-4 font-semibold text-blue-600 uppercase border border-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 ease-in-out duration-300"
-                                target='_blank'>Download CV
-                            </a>
-                        </Link>
-                        <Link href="/#contact">
-                            <button className="py-2 px-4 font-semibold text-[#EFF0F3] uppercase bg-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 ease-in-out duration-300">Contact me</button>
-                        </Link>
+                        <div className="flex gap-4">
+                            <Link href="https://drive.google.com/file/d/1gdeUKkJOyLxEbb0iNGpLHvPPqMBsA5pr/view?usp=sharing" download>
+                                <a className="py-2 px-4 font-semibold text-blue-600 uppercase border border-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 ease-in-out duration-300"
+                                    target='_blank'>Download CV
+                                </a>
+                            </Link>
+                            <Link href="/#contact">
+                                <button className="py-2 px-4 font-semibold text-[#EFF0F3] uppercase bg-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 ease-in-out duration-300">Contact me</button>
+                            </Link>
+                        </div>
                     </ul>
                     {/* Here is the sm burger menu for the navbar */}
                     <div onClick={handleNav} className="md:hidden cursor-pointer">
-                        <HiMenuAlt3 size={24} />
+                        <HiMenuAlt3 size={20} />
                     </div>
                 </section>
             </main>

@@ -31,10 +31,10 @@ export default function Projects() {
                             </div>
                         </div>
                         <div className="flex mt-4 justify-center items-center gap-4">
-                            <span className="p-2 rounded-full shadow-sm shadow-blue-200 cursor-pointer hover:shadow-md hover:shadow-blue-300 ease-in-out duration-200">
+                            <span className="p-2 rounded-full shadow-sm shadow-pink-200 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200">
                                 <a href="https://github.com/franodangelo/Videogames-Proyect" target='_blank' rel="noreferrer"><FaGithub /></a>
                             </span>
-                            <span className="p-2 rounded-full shadow-sm shadow-blue-200 cursor-pointer hover:shadow-md hover:shadow-blue-300 ease-in-out duration-200">
+                            <span className="p-2 rounded-full shadow-sm shadow-pink-200 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200">
                                 <a href="https://videogamesspa.vercel.app/" target='_blank' rel="noreferrer"><IoMdOpen /></a>
                             </span>
                         </div>
@@ -55,10 +55,10 @@ export default function Projects() {
                             </div>
                         </div>
                         <div className="flex mt-4 justify-center items-center gap-4">
-                            <span className="p-2 rounded-full shadow-sm shadow-blue-200 cursor-pointer hover:shadow-md hover:shadow-blue-300 ease-in-out duration-200">
+                            <span className="p-2 rounded-full shadow-sm shadow-pink-200 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200">
                                 <a href="https://github.com/franodangelo/yumPaw-Project" target='_blank' rel="noreferrer"><FaGithub /></a>
                             </span>
-                            <span className="p-2 rounded-full shadow-sm shadow-blue-200 cursor-pointer hover:shadow-md hover:shadow-blue-300 ease-in-out duration-200">
+                            <span className="p-2 rounded-full shadow-sm shadow-pink-200 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200">
                                 <a href="https://client-pg.vercel.app/" target='_blank' rel="noreferrer"><IoMdOpen /></a>
                             </span>
                         </div>
@@ -77,10 +77,10 @@ export default function Projects() {
                             </div>
                         </div>
                         <div className="flex mt-4 justify-center items-center gap-4">
-                            <span className="p-2 rounded-full shadow-sm shadow-blue-200 cursor-pointer hover:shadow-md hover:shadow-blue-300 ease-in-out duration-200">
+                            <span className="p-2 rounded-full shadow-sm shadow-pink-200 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200">
                                 <a href="https://github.com/franodangelo/Services-SPA" target='_blank' rel="noreferrer"><FaGithub /></a>
                             </span>
-                            <span className="p-2 rounded-full shadow-sm shadow-blue-200 cursor-pointer hover:shadow-md hover:shadow-blue-300 ease-in-out duration-200">
+                            <span className="p-2 rounded-full shadow-sm shadow-pink-200 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200">
                                 <a href="https://mybrandservices.vercel.app/" target='_blank' rel="noreferrer"><IoMdOpen /></a>
                             </span>
                         </div>
@@ -99,10 +99,10 @@ export default function Projects() {
                             </div>
                         </div>
                         <div className="flex mt-4 justify-center items-center gap-4">
-                            <span className="p-2 rounded-full shadow-sm shadow-blue-200 cursor-pointer hover:shadow-md hover:shadow-blue-300 ease-in-out duration-200">
+                            <span className="p-2 rounded-full shadow-sm shadow-pink-200 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200">
                                 <a href="https://github.com/franodangelo/Weather-app" target='_blank' rel="noreferrer"><FaGithub /></a>
                             </span>
-                            <span className="p-2 rounded-full shadow-sm shadow-blue-200 cursor-pointer hover:shadow-md hover:shadow-blue-300 ease-in-out duration-200">
+                            <span className="p-2 rounded-full shadow-sm shadow-pink-200 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200">
                                 <a href="https://howistheweathernow.vercel.app/" target='_blank' rel="noreferrer"><IoMdOpen /></a>
                             </span>
                         </div>
@@ -120,7 +120,7 @@ export default function Projects() {
                             </div>
                         </div>
                         <div className="flex mt-4 justify-center items-center gap-4">
-                            <span className="p-2 rounded-full shadow-sm shadow-blue-200 cursor-pointer hover:shadow-md hover:shadow-blue-300 ease-in-out duration-200">
+                            <span className="p-2 rounded-full shadow-sm shadow-pink-200 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200">
                                 <a href="https://github.com/franodangelo/React-Ecommerce" target='_blank' rel="noreferrer"><FaGithub /></a>
                             </span>
                         </div>

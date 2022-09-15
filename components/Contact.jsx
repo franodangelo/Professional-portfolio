@@ -15,7 +15,7 @@ export default function Contact() {
                     <div className="flex flex-col m-auto justify-between gap-4 md:gap-8">
                         <div className='flex items-center justify-between gap-8'>
                             <h6 className="font-medium"><strong className='text-blue-600'>Phone number</strong>: +541122857609</h6>
-                            <div className="p-4 rounded-full shadow-md shadow-blue-200 cursor-pointer hover:scale-105 hover:shadow-blue-300 ease-in-out duration-200">
+                            <div className="p-4 rounded-full shadow-md shadow-pink-200 cursor-pointer hover:scale-105 hover:shadow-pink-300 ease-in-out duration-200">
                                 <a href="https://wa.me/541122857609"
                                     target="_blank"
                                     rel="noreferrer"><FaWhatsapp /></a>
@@ -23,7 +23,7 @@ export default function Contact() {
                         </div>
                         <div className='flex items-center justify-between gap-8'>
                             <h6 className="font-medium"><strong className='text-blue-600'>Mail</strong>: ffrancodangelo@gmail.com</h6>
-                            <div className="p-4 rounded-full shadow-md shadow-blue-200 cursor-pointer hover:scale-105 hover:shadow-blue-300 ease-in-out duration-200">
+                            <div className="p-4 rounded-full shadow-md shadow-pink-200 cursor-pointer hover:scale-105 hover:shadow-pink-300 ease-in-out duration-200">
                                 <a href="mailto:ffrancodangelo@gmail.com"
                                     target="_blank"
                                     rel="noreferrer"><HiMail /></a>
@@ -31,7 +31,7 @@ export default function Contact() {
                         </div>
                         <div className='flex items-center justify-between gap-8'>
                             <h6 className="font-medium"><strong className='text-blue-600'>Linkedin</strong>: in/franco-dangelo/</h6>
-                            <div className="p-4 rounded-full shadow-md shadow-blue-200 cursor-pointer hover:scale-105 hover:shadow-blue-300 ease-in-out duration-200">
+                            <div className="p-4 rounded-full shadow-md shadow-pink-200 cursor-pointer hover:scale-105 hover:shadow-pink-300 ease-in-out duration-200">
                                 <a href="https://wa.me/541122857609"
                                     target="_blank"
                                     rel="noreferrer"><FaLinkedinIn /></a>

@@ -32,13 +32,16 @@ export default function Navbar() {
                         </Link>
                         <div className="flex gap-4">
                             <Link href="https://drive.google.com/file/d/1gdeUKkJOyLxEbb0iNGpLHvPPqMBsA5pr/view?usp=sharing" download>
-                                <a className="py-2 px-4 font-semibold text-blue-600 uppercase border border-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 ease-in-out duration-300"
+                                <a className="py-2 px-4 font-semibold text-blue-600 uppercase border border-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 hover:shadow-blue-300 ease-in-out duration-200"
                                     target='_blank'>Download CV
                                 </a>
                             </Link>
                             <Link href="/#contact">
-                                <button className="py-2 px-4 font-semibold text-[#EFF0F3] uppercase bg-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 ease-in-out duration-300">Contact me</button>
+                                <button className="py-2 px-4 font-semibold text-[#EFF0F3] uppercase bg-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 hover:shadow-blue-300 ease-in-out duration-200">
+                                    Contact me
+                                </button>
                             </Link>
+                            
                         </div>
                     </ul>
                     {/* Here is the sm burger menu for the navbar */}
@@ -57,7 +60,7 @@ export default function Navbar() {
                         <div className="flex w-full items-center justify-between">
                             <Image src={logo} alt="logo" width="40px" height="40px" />
                             <span onClick={handleNav}
-                                className="rounded-full shadow-md shadow-900-200 p-2 cursor-pointer">
+                                className="rounded-full shadow-md shadow-blue-200 p-2 cursor-pointer">
                                 <HiOutlineX />
                             </span>
                         </div>
@@ -95,19 +98,13 @@ export default function Navbar() {
                                         Contact me
                                     </li>
                                 </Link>
-                                {/* <Link href="#contact">
-                                <button onClick={handleNav}
-                                    className="w-full mt-4 py-2 px-4 font-semibold text-[#EFF0F3] uppercase bg-gradient-to-l from-blue-400 via-blue-500 to-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 ease-in-out duration-300">
-                                    Contact me
-                                </button>
-                            </Link> */}
                             </ul>
                             <section className="pt-8">
                                 <h6 className="tracking-widest text-blue-600 uppercase">
                                     Want to connect?
                                 </h6>
                                 <div className="flex w-full my-4 items-center justify-between">
-                                    <div className="p-3 rounded-full shadow-sm shadow-blue-100 cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-200 ease-in-out duration-200">
+                                    <div className="p-3 rounded-full shadow-sm shadow-blue-200 cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-200 ease-in-out duration-200">
                                         <Link href="/">
                                             <a href="https://www.linkedin.com/in/franco-dangelo/"
                                                 target='_blank'
@@ -116,7 +113,7 @@ export default function Navbar() {
                                             </a>
                                         </Link>
                                     </div>
-                                    <div className="p-3 rounded-full shadow-sm shadow-blue-100 cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-200 ease-in-out duration-200">
+                                    <div className="p-3 rounded-full shadow-sm shadow-blue-200 cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-200 ease-in-out duration-200">
                                         <Link href="">
                                             <a href="https://github.com/franodangelo"
                                                 target='_blank'
@@ -125,7 +122,7 @@ export default function Navbar() {
                                             </a>
                                         </Link>
                                     </div>
-                                    <div className="p-3 rounded-full shadow-sm shadow-blue-100 cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-200 ease-in-out duration-200">
+                                    <div className="p-3 rounded-full shadow-sm shadow-blue-200 cursor-pointer hover:scale-105 hover:shadow-md hover:shadow-blue-200 ease-in-out duration-200">
                                         <Link href="/">
                                             <a href="https://www.behance.net/francodangelo"
                                                 target='_blank'

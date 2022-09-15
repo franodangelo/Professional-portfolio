@@ -22,7 +22,7 @@ export default function Skills() {
                 <h4 className="py-2 font-light text-base text-slate-800 uppercase tracking-widest">📚 Skills</h4>
                 <h2 className="py-4 font-extrabold text-blue-600">This is my tech stack</h2>
                 <section className="grid w-full p-4 gap-4 md:grid-cols-2 lg:grid-cols-4">
-                    <div className="p-4 shadow-lg rounded-xl hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-yellow-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
                                 <Image src={javascript} alt="/" width="64px" height="64px" />
@@ -30,7 +30,7 @@ export default function Skills() {
                             <h6>JavaScript</h6>
                         </div>
                     </div>
-                    <div className="p-4 shadow-lg rounded-xl hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-sky-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
                                 <Image src={react} alt="/" width="64px" height="64px" />
@@ -40,7 +40,7 @@ export default function Skills() {
                             </span>
                         </div>
                     </div>
-                    <div className="p-4 shadow-lg rounded-xl hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-violet-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
                                 <Image src={redux} alt="/" width="64px" height="64px" />
@@ -50,7 +50,7 @@ export default function Skills() {
                             </span>
                         </div>
                     </div>
-                    <div className="p-4 shadow-lg rounded-xl hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-green-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
                                 <Image src={node} alt="/" width="64px" height="64px" />
@@ -60,7 +60,7 @@ export default function Skills() {
                             </span>
                         </div>
                     </div>
-                    <div className="p-4 shadow-lg rounded-xl hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
                                 <Image src={express} alt="/" width="64px" height="64px" />
@@ -70,7 +70,7 @@ export default function Skills() {
                             </span>
                         </div>
                     </div>
-                    <div className="p-4 shadow-lg rounded-xl hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-blue-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
                                 <Image src={postgresql} alt="/" width="64px" height="64px" />
@@ -80,7 +80,7 @@ export default function Skills() {
                             </span>
                         </div>
                     </div>
-                    <div className="p-4 shadow-lg rounded-xl hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-orange-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
                                 <Image src={html} alt="/" width="64px" height="64px" />
@@ -90,7 +90,7 @@ export default function Skills() {
                             </span>
                         </div>
                     </div>
-                    <div className="p-4 shadow-lg rounded-xl hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-blue-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
                                 <Image src={css} alt="/" width="64px" height="64px" />
@@ -100,7 +100,7 @@ export default function Skills() {
                             </span>
                         </div>
                     </div>
-                    <div className="p-4 shadow-lg rounded-xl hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-blue-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
                                 <Image src={sequelize} alt="/" width="64px" height="70px" />
@@ -110,7 +110,7 @@ export default function Skills() {
                             </span>
                         </div>
                     </div>
-                    <div className="p-4 shadow-lg rounded-xl hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-teal-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
                                 <Image src={tailwind} alt="/" width="64px" height="64px" />
@@ -120,7 +120,7 @@ export default function Skills() {
                             </span>
                         </div>
                     </div>
-                    <div className="p-4 shadow-lg rounded-xl hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-purple-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
                                 <Image src={bootstrap} alt="/" width="72px" height="64px" />
@@ -130,7 +130,7 @@ export default function Skills() {
                             </span>
                         </div>
                     </div>
-                    <div className="p-4 shadow-lg rounded-xl hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
                                 <Image src={github} alt="/" width="64px" height="64px" />
@@ -143,7 +143,7 @@ export default function Skills() {
                 </section>
                 <h6 className=" mt-4 py-4 font-extrabold text-blue-600">And currently learning</h6>
                 <section className="w-full py-2 grid md:grid-cols-3 gap-8">
-                    <div className="p-2 shadow-md rounded-xl hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    <div className="p-2 shadow-md rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <span className="m-auto">
                                 <Image src={next} alt="/" width="72px" height="48px" />
@@ -153,7 +153,7 @@ export default function Skills() {
                             </span>
                         </div>
                     </div>
-                    <div className="p-2 shadow-md rounded-xl hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    <div className="p-2 shadow-md shadow-sky-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <span className="m-auto">
                                 <Image src={react} alt="/" width="48px" height="48px" />
@@ -163,7 +163,7 @@ export default function Skills() {
                             </span>
                         </div>
                     </div>
-                    <div className="p-2 shadow-md rounded-xl hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    <div className="p-2 shadow-md shadow-blue-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <span className="m-auto">
                                 <Image src={typescript} alt="/" width="48px" height="48px" />

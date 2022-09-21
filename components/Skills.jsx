@@ -18,7 +18,7 @@ import dart from "../public/assets/skills/dart.png";
 
 export default function Skills() {
     return (
-        <main id="skills" className="w-full md:h-full py-24">
+        <main id="skills" className="w-full md:h-full py-24 bg-white">
             <div className="max-w-[1280px] h-full mx-auto flex flex-col justify-center items-center md:items-start">
                 <h4 className="py-2 font-light text-base text-slate-800 uppercase tracking-widest">📚 Skills</h4>
                 <h2 className="py-4 font-extrabold text-blue-600">This is my tech stack</h2>

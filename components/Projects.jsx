@@ -10,7 +10,7 @@ import { IoMdOpen } from "react-icons/io";
 
 export default function Projects() {
     return (
-        <main id="projects" className='w-full md:h-full py-24 items-center justify-center'>
+        <main id="projects" className='w-full md:h-full py-24 items-center justify-center bg-white shadow-lg'>
             <div className='max-w-[1280px] h-full mx-auto'>
                 <h4 className="py-2 font-light text-center text-base text-slate-800 uppercase tracking-widest">✔️ Projects</h4>
                 <h1 className="py-4 font-extrabold text-center text-blue-600">My works so far</h1>

@@ -13,7 +13,7 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="fixed w-full h-20 shadow-lg z-[100] bg-[#EFF0F3]">
+        <nav className="fixed w-full h-20 shadow-lg z-[100] bg-white">
             <main className="flex justify-between items-center w-full h-full px-6 2xl:px-16"> {/* Here is the lg navbar */}
                 <Image src={logo} alt="logo" width="32px" height="32px" />
                 <section className="flex">
@@ -31,7 +31,7 @@ export default function Navbar() {
                             <li className="font-semibold text-sm text-blue-600 uppercase hover:text-pink-600 hover:scale-105 duration-200 cursor-pointer">Projects</li>
                         </Link>
                         <div className="flex gap-4">
-                            <Link href="https://drive.google.com/file/d/1gdeUKkJOyLxEbb0iNGpLHvPPqMBsA5pr/view?usp=sharing" download>
+                            <Link href="https://drive.google.com/file/d/14mwcYLoMeCfHkqBqd-u8TLnfAcE8QEaM/view?usp=sharing" download>
                                 <a className="py-2 px-4 font-semibold text-blue-600 uppercase border border-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 hover:shadow-blue-300 ease-in-out duration-200"
                                     target='_blank'>Download CV
                                 </a>

@@ -14,6 +14,7 @@ import bootstrap from "../public/assets/skills/bootstrap.png";
 import github from "../public/assets/skills/github.png";
 import typescript from "../public/assets/skills/typescript.png";
 import next from "../public/assets/skills/next.png";
+import dart from "../public/assets/skills/dart.png";
 
 export default function Skills() {
     return (
@@ -142,7 +143,7 @@ export default function Skills() {
                     </div>
                 </section>
                 <h6 className=" mt-4 py-4 font-extrabold text-blue-600">And currently learning</h6>
-                <section className="w-full py-2 grid md:grid-cols-3 gap-8">
+                <section className="w-full py-2 grid md:grid-cols-2 gap-8">
                     <div className="p-2 shadow-md rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <span className="m-auto">
@@ -153,7 +154,7 @@ export default function Skills() {
                             </span>
                         </div>
                     </div>
-                    <div className="p-2 shadow-md shadow-sky-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    {/* <div className="p-2 shadow-md shadow-sky-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <span className="m-auto">
                                 <Image src={react} alt="/" width="48px" height="48px" />
@@ -162,14 +163,24 @@ export default function Skills() {
                                 <h6>React Native</h6>
                             </span>
                         </div>
-                    </div>
-                    <div className="p-2 shadow-md shadow-blue-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    </div> */}
+                    {/* <div className="p-2 shadow-md shadow-blue-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <span className="m-auto">
                                 <Image src={typescript} alt="/" width="48px" height="48px" />
                             </span>
                             <span className="">
                                 <h6>TypeScript</h6>
+                            </span>
+                        </div>
+                    </div> */}
+                    <div className="p-2 shadow-md shadow-blue-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                        <div className="grid grid-cols-2 gap-4 justify-center items-center">
+                            <span className="m-auto">
+                                <Image src={dart} alt="/" width="48px" height="48px" />
+                            </span>
+                            <span className="">
+                                <h6>Dart</h6>
                             </span>
                         </div>
                     </div>

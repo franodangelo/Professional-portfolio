@@ -124,15 +124,6 @@ export default function Navbar() {
                                     </div>
                                     <div className="p-3 rounded-full shadow-sm shadow-pink-200 cursor-pointer">
                                         <Link href="/">
-                                            <a href="https://www.behance.net/francodangelo"
-                                                target='_blank'
-                                                rel="noreferrer">
-                                                <FaBehance />
-                                            </a>
-                                        </Link>
-                                    </div>
-                                    <div className="p-3 rounded-full shadow-sm shadow-pink-200 cursor-pointer">
-                                        <Link href="/">
                                             <a href="https://twitter.com/techfrano"
                                                 target='_blank'
                                                 rel="noreferrer">

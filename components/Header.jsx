@@ -23,17 +23,9 @@ export default function Header() {
                             </Link>
                         </div>
                         <div className="p-4 rounded-full shadow-md shadow-pink-200 cursor-pointer hover:scale-105 hover:shadow-pink-300 ease-in-out duration-200">
-                            <Link href="/">
-                                <a href="https://www.behance.net/francodangelo" target='_blank' rel="noreferrer"><FaBehance /></a>
+                            <Link href="">
+                                <a href="https://twitter.com/techfrano" target='_blank' rel="noreferrer"><FaTwitter /></a>
                             </Link>
-                        </div>
-                        <div className="flex flex-col gap-2">
-                            <p className="font-thin text-xs uppercase bg-pink-200 rounded-full px-2">Soon!</p>
-                            <div className="m-auto p-4 rounded-full shadow-md shadow-pink-200 cursor-pointer hover:scale-105 hover:shadow-pink-300 ease-in-out duration-200">
-                                <Link href="/">
-                                    <a href="https://twitter.com/techfrano" target='_blank' rel="noreferrer"><FaTwitter /></a>
-                                </Link>
-                            </div>
                         </div>
                     </div>
                 </section>

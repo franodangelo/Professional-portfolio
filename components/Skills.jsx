@@ -15,6 +15,13 @@ import github from "../public/assets/skills/github.png";
 import typescript from "../public/assets/skills/typescript.png";
 import next from "../public/assets/skills/next.png";
 import dart from "../public/assets/skills/dart.png";
+import swift from "../public/assets/skills/swift.png";
+import notion from "../public/assets/skills/notion.png";
+import firebase from "../public/assets/skills/firebase.png";
+import figma from "../public/assets/skills/figma.png";
+import jira from "../public/assets/skills/jira.png";
+import adobexd from "../public/assets/skills/adobexd.png";
+import trello from "../public/assets/skills/trello.png";
 
 export default function Skills() {
     return (
@@ -23,169 +30,141 @@ export default function Skills() {
                 <h4 className="py-2 font-light text-base text-slate-800 uppercase tracking-widest">📚 Skills</h4>
                 <h2 className="py-4 font-extrabold text-blue-600">This is my tech stack</h2>
                 <section className="grid w-full p-4 gap-4 md:grid-cols-2 lg:grid-cols-4">
-                    <div className="p-4 shadow-md shadow-yellow-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-yellow-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
-                                <Image src={javascript} alt="/" width="64px" height="64px" />
+                                <Image src={javascript} alt="JavaScript logo" width="64px" height="64px" />
                             </span>
                             <h6>JavaScript</h6>
                         </div>
                     </div>
-                    <div className="p-4 shadow-md shadow-sky-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-sky-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
-                                <Image src={react} alt="/" width="64px" height="64px" />
+                                <Image src={react} alt="React logo" width="64px" height="64px" />
                             </span>
-                            <span className="">
-                                <h6>React</h6>
-                            </span>
+                            <h6>React</h6>
                         </div>
                     </div>
-                    <div className="p-4 shadow-md shadow-violet-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-violet-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
-                                <Image src={redux} alt="/" width="64px" height="64px" />
+                                <Image src={redux} alt="Redux logo" width="64px" height="64px" />
                             </span>
-                            <span className="">
-                                <h6>Redux</h6>
-                            </span>
+                            <h6>Redux</h6>
                         </div>
                     </div>
-                    <div className="p-4 shadow-md shadow-green-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-green-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
-                                <Image src={node} alt="/" width="64px" height="64px" />
+                                <Image src={node} alt="node.js logo" width="64px" height="64px" />
                             </span>
-                            <span className="">
-                                <h6>Node.js</h6>
-                            </span>
+                            <h6>node.js</h6>
                         </div>
                     </div>
-                    <div className="p-4 shadow-md rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
-                                <Image src={express} alt="/" width="64px" height="64px" />
+                                <Image src={express} alt="Express logo" width="64px" height="64px" />
                             </span>
-                            <span className="">
-                                <h6>Express</h6>
-                            </span>
+                            <h6>Express</h6>
                         </div>
                     </div>
-                    <div className="p-4 shadow-md shadow-blue-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-blue-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
-                                <Image src={postgresql} alt="/" width="64px" height="64px" />
+                                <Image src={postgresql} alt="PostgreSQL logo" width="64px" height="64px" />
                             </span>
-                            <span className="">
-                                <h6>PostgreSQL</h6>
-                            </span>
+                            <h6>PostgreSQL</h6>
                         </div>
                     </div>
-                    <div className="p-4 shadow-md shadow-orange-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-blue-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
-                                <Image src={html} alt="/" width="64px" height="64px" />
+                                <Image src={sequelize} alt="Sequelize logo" width="64px" height="70px" />
                             </span>
-                            <span className="">
-                                <h6>HTML</h6>
-                            </span>
+                            <h6>Sequelize</h6>
                         </div>
                     </div>
-                    <div className="p-4 shadow-md shadow-blue-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    <div className="p-4 items-center shadow-md rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
-                                <Image src={css} alt="/" width="64px" height="64px" />
+                                <Image src={next} alt="Next.js logo" width="80px" height="56px" />
                             </span>
-                            <span className="">
-                                <h6>CSS</h6>
-                            </span>
+                            <h6>Next.js</h6>
                         </div>
                     </div>
-                    <div className="p-4 shadow-md shadow-blue-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-orange-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
-                                <Image src={sequelize} alt="/" width="64px" height="70px" />
+                                <Image src={html} alt="HTML logo" width="64px" height="64px" />
                             </span>
-                            <span className="">
-                                <h6>Sequelize</h6>
-                            </span>
+                            <h6>HTML</h6>
                         </div>
                     </div>
-                    <div className="p-4 shadow-md shadow-teal-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-blue-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
-                                <Image src={tailwind} alt="/" width="64px" height="64px" />
+                                <Image src={css} alt="CSS logo" width="64px" height="64px" />
                             </span>
-                            <span className="">
-                                <h6>TailwindCSS</h6>
-                            </span>
+                            <h6>CSS</h6>
                         </div>
                     </div>
-                    <div className="p-4 shadow-md shadow-purple-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-teal-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
-                                <Image src={bootstrap} alt="/" width="72px" height="64px" />
+                                <Image src={tailwind} alt="tailwindcss logo" width="64px" height="64px" />
                             </span>
-                            <span className="">
-                                <h6>Bootstrap</h6>
-                            </span>
+                            <h6>tailwindcss</h6>
                         </div>
                     </div>
-                    <div className="p-4 shadow-md rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-purple-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
-                                <Image src={github} alt="/" width="64px" height="64px" />
+                                <Image src={bootstrap} alt="Bootstrap logo" width="80px" height="64px" />
                             </span>
-                            <span className="">
-                                <h6>Github</h6>
-                            </span>
+                            <h6>Bootstrap</h6>
                         </div>
                     </div>
                 </section>
-                <h6 className=" mt-4 py-4 font-extrabold text-blue-600">And currently learning</h6>
-                <section className="w-full py-2 grid md:grid-cols-2 gap-8">
-                    <div className="p-2 shadow-md rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                <h6 className=" mt-8 py-4 font-extrabold text-blue-600">And currently learning</h6>
+                <section className="w-full py-2 grid md:grid-cols-3 gap-8">
+                    <div className="p-2 shadow-md shadow-blue-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <span className="m-auto">
-                                <Image src={next} alt="/" width="72px" height="48px" />
+                                <Image src={typescript} alt="TypeScript logo" width="48px" height="48px" />
                             </span>
-                            <span className="">
-                                <h6>Next.js</h6>
-                            </span>
+                            <h6>TypeScript</h6>
                         </div>
                     </div>
-                    {/* <div className="p-2 shadow-md shadow-sky-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
+                    <div className="p-2 shadow-md shadow-blue-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <span className="m-auto">
-                                <Image src={react} alt="/" width="48px" height="48px" />
+                                <Image src={dart} alt="Dart logo" width="48px" height="48px" />
                             </span>
-                            <span className="">
-                                <h6>React Native</h6>
-                            </span>
-                        </div>
-                    </div> */}
-                    {/* <div className="p-2 shadow-md shadow-blue-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
-                        <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                            <span className="m-auto">
-                                <Image src={typescript} alt="/" width="48px" height="48px" />
-                            </span>
-                            <span className="">
-                                <h6>TypeScript</h6>
-                            </span>
-                        </div>
-                    </div> */}
-                    <div className="p-2 shadow-md shadow-blue-200 rounded-lg hover:scale-105 grayscale hover:grayscale-0 ease-in-out duration-300">
-                        <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                            <span className="m-auto">
-                                <Image src={dart} alt="/" width="48px" height="48px" />
-                            </span>
-                            <span className="">
-                                <h6>Dart</h6>
-                            </span>
+                            <h6>Dart</h6>
                         </div>
                     </div>
+                    <div className="p-2 shadow-md shadow-blue-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
+                        <div className="grid grid-cols-2 gap-4 justify-center items-center">
+                            <span className="m-auto">
+                                <Image src={swift} alt="Swift logo" width="48px" height="48px" />
+                            </span>
+                            <h6>Swift</h6>
+                        </div>
+                    </div>
+                </section>
+                <h6 className=" mt-8 py-4 self-center text-blue-600">Other technologies & tools</h6>
+                <section className="flex flex-wrap w-full justify-center py-2 gap-8">
+                    <Image src={figma} alt="Figma logo" width="48px" height="48px" />
+                    <Image src={adobexd} alt="Adobe Xd logo" width="48px" height="48px" />
+                    <Image src={firebase} alt="Firebase logo" width="40px" height="48px" />
+                    <Image src={github} alt="Github logo" width="48px" height="48px" />
+                    <Image src={notion} alt="Notion logo" width="48px" height="48px" />
+                    <Image src={trello} alt="Trello logo" width="48px" height="48px" />
+                    <Image src={jira} alt="Jira logo" width="48px" height="48px" />
                 </section>
             </div>
         </main>
     )
-};
+}

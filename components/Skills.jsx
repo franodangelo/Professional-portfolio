@@ -11,22 +11,24 @@ import css from "../public/assets/skills/css.png";
 import sequelize from "../public/assets/skills/sequelize.png";
 import tailwind from "../public/assets/skills/tailwind.png";
 import bootstrap from "../public/assets/skills/bootstrap.png";
-import github from "../public/assets/skills/github.png";
 import typescript from "../public/assets/skills/typescript.png";
 import next from "../public/assets/skills/next.png";
 import dart from "../public/assets/skills/dart.png";
 import swift from "../public/assets/skills/swift.png";
+import vsc from "../public/assets/skills/vsc.png";
+import npm from "../public/assets/skills/npm.png";
+import github from "../public/assets/skills/github.png";
+import figma from "../public/assets/skills/figma.png";
+import adobexd from "../public/assets/skills/adobexd.png";
 import notion from "../public/assets/skills/notion.png";
 import firebase from "../public/assets/skills/firebase.png";
-import figma from "../public/assets/skills/figma.png";
 import jira from "../public/assets/skills/jira.png";
-import adobexd from "../public/assets/skills/adobexd.png";
 import trello from "../public/assets/skills/trello.png";
 
 export default function Skills() {
     return (
         <main id="skills" className="w-full md:h-full py-24 bg-white">
-            <div className="max-w-[1280px] h-full mx-auto flex flex-col justify-center items-center md:items-start">
+            <div className="flex flex-col max-w-[1280px] h-full mx-auto justify-center items-center md:items-start">
                 <h4 className="py-2 font-light text-base text-slate-800 uppercase tracking-widest">📚 Skills</h4>
                 <h2 className="py-4 font-extrabold text-blue-600">This is my tech stack</h2>
                 <section className="grid w-full p-4 gap-4 md:grid-cols-2 lg:grid-cols-4">
@@ -127,8 +129,8 @@ export default function Skills() {
                         </div>
                     </div>
                 </section>
-                <h6 className=" mt-8 py-4 font-extrabold text-blue-600">And currently learning</h6>
-                <section className="w-full py-2 grid md:grid-cols-3 gap-8">
+                <h6 className="mt-8 py-4 font-extrabold text-blue-600">And currently learning</h6>
+                <section className="grid w-full p-4 gap-4 md:grid-cols-3">
                     <div className="p-2 shadow-md shadow-blue-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <span className="m-auto">
@@ -154,12 +156,14 @@ export default function Skills() {
                         </div>
                     </div>
                 </section>
-                <h6 className=" mt-8 py-4 self-center text-blue-600">Other technologies & tools</h6>
-                <section className="flex flex-wrap w-full justify-center py-2 gap-8">
+                <h6 className="mt-8 py-4 self-center text-blue-600">Other technologies & tools</h6>
+                <section className="flex flex-wrap py-2 gap-8 justify-center self-center">
+                    <Image src={vsc} alt="Visual Studio Code logo" width="48px" height="48px" />
+                    <Image src={npm} alt="npm logo" width="56px" height="48px" />
+                    <Image src={github} alt="Github logo" width="48px" height="48px" />
+                    <Image src={firebase} alt="Firebase logo" width="40px" height="48px" />
                     <Image src={figma} alt="Figma logo" width="48px" height="48px" />
                     <Image src={adobexd} alt="Adobe Xd logo" width="48px" height="48px" />
-                    <Image src={firebase} alt="Firebase logo" width="40px" height="48px" />
-                    <Image src={github} alt="Github logo" width="48px" height="48px" />
                     <Image src={notion} alt="Notion logo" width="48px" height="48px" />
                     <Image src={trello} alt="Trello logo" width="48px" height="48px" />
                     <Image src={jira} alt="Jira logo" width="48px" height="48px" />

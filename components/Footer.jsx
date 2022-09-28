@@ -23,7 +23,7 @@ export default function Footer() {
             </div>
             <div className="flex lg:flex-col gap-2 items-center">
                 <h2 className="font-medium text-sm md:text-base text-blue-600">Thanks for watching! 😀</h2>
-                <p className="font-thin text-xs md:text-sm text-blue-600">Last update: 26-09-2022</p>
+                <p className="font-thin text-xs md:text-sm text-blue-600">Last update: 28-09-2022</p>
             </div>
         </footer>
     )

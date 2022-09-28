@@ -30,7 +30,7 @@ export default function Skills() {
         <main id="skills" className="w-full md:h-full py-24 bg-white">
             <div className="flex flex-col max-w-[1280px] h-full mx-auto justify-center items-center md:items-start">
                 <h4 className="py-2 font-light text-base text-slate-800 uppercase tracking-widest">📚 Skills</h4>
-                <h2 className="py-4 font-extrabold text-blue-600">This is my tech stack</h2>
+                <h2 className="my-4 py-4 font-extrabold text-blue-600">This is my tech stack</h2>
                 <section className="grid w-full p-4 gap-4 md:grid-cols-2 lg:grid-cols-4">
                     <div className="p-4 shadow-md shadow-yellow-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
@@ -129,7 +129,7 @@ export default function Skills() {
                         </div>
                     </div>
                 </section>
-                <h6 className="mt-8 py-4 font-extrabold text-blue-600">And currently learning</h6>
+                <h6 className="my-8 py-4 font-extrabold text-blue-600">And currently learning</h6>
                 <section className="grid w-full p-4 gap-4 md:grid-cols-3">
                     <div className="p-2 shadow-md shadow-blue-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
@@ -156,17 +156,31 @@ export default function Skills() {
                         </div>
                     </div>
                 </section>
-                <h6 className="mt-8 py-4 self-center text-blue-600">Other technologies & tools</h6>
-                <section className="flex flex-wrap py-2 gap-8 justify-center self-center">
-                    <Image src={vsc} alt="Visual Studio Code logo" width="48px" height="48px" />
-                    <Image src={npm} alt="npm logo" width="56px" height="48px" />
-                    <Image src={github} alt="Github logo" width="48px" height="48px" />
-                    <Image src={firebase} alt="Firebase logo" width="40px" height="48px" />
-                    <Image src={figma} alt="Figma logo" width="48px" height="48px" />
-                    <Image src={adobexd} alt="Adobe Xd logo" width="48px" height="48px" />
-                    <Image src={notion} alt="Notion logo" width="48px" height="48px" />
-                    <Image src={trello} alt="Trello logo" width="48px" height="48px" />
-                    <Image src={jira} alt="Jira logo" width="48px" height="48px" />
+                <h6 className="my-8 py-4 self-center font-extrabold text-blue-600">Other technologies & tools</h6>
+                <section className="flex flex-col w-[50%] justify-center self-center rounded-lg shadow-md divide-y-2">
+                    <div className="flex justify-between items-center p-8">
+                        <h6 className="text-lg">Coding setup</h6>
+                        <ul className="flex gap-8">
+                            <Image src={vsc} alt="Visual Studio Code logo" width="48px" height="48px" />
+                            <Image src={npm} alt="npm logo" width="56px" height="48px" />
+                            <Image src={github} alt="Github logo" width="48px" height="48px" />
+                        </ul>
+                    </div>
+                    <div className="flex justify-between items-center p-8">
+                        <h6 className="text-lg">Design phase</h6>
+                        <ul className="flex gap-8">
+                            <Image src={figma} alt="Figma logo" width="48px" height="48px" />
+                            <Image src={adobexd} alt="Adobe Xd logo" width="48px" height="48px" />
+                        </ul>
+                    </div>
+                    <div className="flex justify-between items-center p-8">
+                        <h6 className="text-lg">Organization & follow-up</h6>
+                        <ul className="flex gap-8">
+                            <Image src={notion} alt="Notion logo" width="48px" height="48px" />
+                            <Image src={jira} alt="Jira logo" width="48px" height="48px" />
+                            <Image src={trello} alt="Trello logo" width="48px" height="48px" />
+                        </ul>
+                    </div>
                 </section>
             </div>
         </main>

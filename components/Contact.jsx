@@ -32,7 +32,7 @@ export default function Contact() {
                         <div className='flex items-center justify-between gap-8'>
                             <h6 className="font-medium"><strong className='text-blue-600'>Linkedin</strong>: in/franco-dangelo/</h6>
                             <div className="p-4 rounded-full shadow-md shadow-blue-200 cursor-pointer hover:scale-105 hover:shadow-pink-300 ease-in-out duration-200">
-                                <a href="https://wa.me/541122857609"
+                                <a href="https://www.linkedin.com/in/franco-dangelo/"
                                     target="_blank"
                                     rel="noreferrer"><FaLinkedinIn /></a>
                             </div>

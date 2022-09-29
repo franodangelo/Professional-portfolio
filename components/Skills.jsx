@@ -157,29 +157,45 @@ export default function Skills() {
                     </div>
                 </section>
                 <h6 className="my-8 py-4 self-center font-extrabold text-blue-600">Other technologies & tools</h6>
-                <section className="flex flex-col w-[50%] justify-center self-center rounded-lg shadow-md divide-y-2">
-                    <div className="flex justify-between items-center p-8">
-                        <h6 className="text-lg">Coding setup</h6>
-                        <ul className="flex gap-8">
+                <section className="grid md:w-[50%] mx-4 p-4 self-center divide-y-2 rounded-lg shadow-md">
+                    <div className="p-4">
+                        <div className="grid grid-cols-4 gap-2 justify-center items-center">
+                            <h6 className="flex flex-wrap text-sm md:text-base">Coding workspace</h6>
+                            <span className="m-auto">
                             <Image src={vsc} alt="Visual Studio Code logo" width="48px" height="48px" />
+                            </span>
+                            <span className="m-auto">
                             <Image src={npm} alt="npm logo" width="56px" height="48px" />
-                            <Image src={github} alt="Github logo" width="48px" height="48px" />
-                        </ul>
+                            </span>
+                            <span className="m-auto">
+                                <Image src={github} alt="Swift logo" width="48px" height="48px" />
+                            </span>
+                        </div>
                     </div>
-                    <div className="flex justify-between items-center p-8">
-                        <h6 className="text-lg">Design phase</h6>
-                        <ul className="flex gap-8">
-                            <Image src={figma} alt="Figma logo" width="48px" height="48px" />
-                            <Image src={adobexd} alt="Adobe Xd logo" width="48px" height="48px" />
-                        </ul>
+                    <div className="p-4">
+                        <div className="grid grid-cols-4 gap-2 justify-center items-center">
+                            <h6 className="flex flex-wrap text-sm md:text-base">Design phase</h6>
+                            <span className="m-auto">
+                                <Image src={figma} alt="Swift logo" width="48px" height="48px" />
+                            </span>
+                            <span className="m-auto">
+                                <Image src={adobexd} alt="Swift logo" width="48px" height="48px" />
+                            </span>
+                        </div>
                     </div>
-                    <div className="flex justify-between items-center p-8">
-                        <h6 className="text-lg">Organization & follow-up</h6>
-                        <ul className="flex gap-8">
-                            <Image src={notion} alt="Notion logo" width="48px" height="48px" />
-                            <Image src={jira} alt="Jira logo" width="48px" height="48px" />
-                            <Image src={trello} alt="Trello logo" width="48px" height="48px" />
-                        </ul>
+                    <div className="p-4">
+                        <div className="grid grid-cols-4 gap-2 justify-center items-center">
+                            <h6 className="flex flex-wrap text-sm md:text-base">Organization & Follow-up</h6>
+                            <span className="m-auto">
+                                <Image src={notion} alt="Swift logo" width="48px" height="48px" />
+                            </span>
+                            <span className="m-auto">
+                                <Image src={jira} alt="Swift logo" width="48px" height="48px" />
+                            </span>
+                            <span className="m-auto">
+                                <Image src={trello} alt="Swift logo" width="48px" height="48px" />
+                            </span>
+                        </div>
                     </div>
                 </section>
             </div>

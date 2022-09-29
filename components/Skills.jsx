@@ -27,12 +27,12 @@ import trello from "../public/assets/skills/trello.png";
 
 export default function Skills() {
     return (
-        <main id="skills" className="w-full md:h-full py-24 bg-white">
+        <main id="skills" className="w-full md:h-full py-24">
             <div className="flex flex-col max-w-[1280px] h-full mx-auto justify-center items-center md:items-start">
                 <h4 className="py-2 font-light text-base text-slate-800 uppercase tracking-widest">📚 Skills</h4>
                 <h2 className="my-4 py-4 font-extrabold text-blue-600">This is my tech stack</h2>
                 <section className="grid w-full p-4 gap-4 md:grid-cols-2 lg:grid-cols-4">
-                    <div className="p-4 shadow-md shadow-yellow-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-yellow-200 bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
                                 <Image src={javascript} alt="JavaScript logo" width="64px" height="64px" />
@@ -40,7 +40,7 @@ export default function Skills() {
                             <h6>JavaScript</h6>
                         </div>
                     </div>
-                    <div className="p-4 shadow-md shadow-sky-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
                                 <Image src={react} alt="React logo" width="64px" height="64px" />
@@ -48,7 +48,7 @@ export default function Skills() {
                             <h6>React</h6>
                         </div>
                     </div>
-                    <div className="p-4 shadow-md shadow-violet-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-violet-200 bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
                                 <Image src={redux} alt="Redux logo" width="64px" height="64px" />
@@ -56,7 +56,7 @@ export default function Skills() {
                             <h6>Redux</h6>
                         </div>
                     </div>
-                    <div className="p-4 shadow-md shadow-green-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-green-200 bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
                                 <Image src={node} alt="node.js logo" width="64px" height="64px" />
@@ -64,7 +64,7 @@ export default function Skills() {
                             <h6>node.js</h6>
                         </div>
                     </div>
-                    <div className="p-4 shadow-md rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md rounded-lg bg-white hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
                                 <Image src={express} alt="Express logo" width="64px" height="64px" />
@@ -72,7 +72,7 @@ export default function Skills() {
                             <h6>Express</h6>
                         </div>
                     </div>
-                    <div className="p-4 shadow-md shadow-blue-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-blue-200 bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
                                 <Image src={postgresql} alt="PostgreSQL logo" width="64px" height="64px" />
@@ -80,7 +80,7 @@ export default function Skills() {
                             <h6>PostgreSQL</h6>
                         </div>
                     </div>
-                    <div className="p-4 shadow-md shadow-blue-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-blue-200 bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
                                 <Image src={sequelize} alt="Sequelize logo" width="64px" height="70px" />
@@ -88,7 +88,7 @@ export default function Skills() {
                             <h6>Sequelize</h6>
                         </div>
                     </div>
-                    <div className="p-4 items-center shadow-md rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
+                    <div className="p-4 items-center shadow-md bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
                                 <Image src={next} alt="Next.js logo" width="80px" height="56px" />
@@ -96,7 +96,7 @@ export default function Skills() {
                             <h6>Next.js</h6>
                         </div>
                     </div>
-                    <div className="p-4 shadow-md shadow-orange-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-orange-200 bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
                                 <Image src={html} alt="HTML logo" width="64px" height="64px" />
@@ -104,7 +104,7 @@ export default function Skills() {
                             <h6>HTML</h6>
                         </div>
                     </div>
-                    <div className="p-4 shadow-md shadow-blue-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-blue-200 bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
                                 <Image src={css} alt="CSS logo" width="64px" height="64px" />
@@ -112,7 +112,7 @@ export default function Skills() {
                             <h6>CSS</h6>
                         </div>
                     </div>
-                    <div className="p-4 shadow-md shadow-teal-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-teal-200 bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
                                 <Image src={tailwind} alt="tailwindcss logo" width="64px" height="64px" />
@@ -120,7 +120,7 @@ export default function Skills() {
                             <h6>tailwindcss</h6>
                         </div>
                     </div>
-                    <div className="p-4 shadow-md shadow-purple-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
+                    <div className="p-4 shadow-md shadow-purple-200 bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
                             <span className="m-auto">
                                 <Image src={bootstrap} alt="Bootstrap logo" width="80px" height="64px" />
@@ -131,7 +131,7 @@ export default function Skills() {
                 </section>
                 <h6 className="my-8 py-4 font-extrabold text-blue-600">And currently learning</h6>
                 <section className="grid w-full p-4 gap-4 md:grid-cols-3">
-                    <div className="p-2 shadow-md shadow-blue-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
+                    <div className="p-2 shadow-md shadow-blue-200 bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <span className="m-auto">
                                 <Image src={typescript} alt="TypeScript logo" width="48px" height="48px" />
@@ -139,7 +139,7 @@ export default function Skills() {
                             <h6>TypeScript</h6>
                         </div>
                     </div>
-                    <div className="p-2 shadow-md shadow-blue-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
+                    <div className="p-2 shadow-md shadow-blue-200 bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <span className="m-auto">
                                 <Image src={dart} alt="Dart logo" width="48px" height="48px" />
@@ -147,7 +147,7 @@ export default function Skills() {
                             <h6>Dart</h6>
                         </div>
                     </div>
-                    <div className="p-2 shadow-md shadow-blue-200 rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
+                    <div className="p-2 shadow-md shadow-blue-200 bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <span className="m-auto">
                                 <Image src={swift} alt="Swift logo" width="48px" height="48px" />
@@ -157,7 +157,7 @@ export default function Skills() {
                     </div>
                 </section>
                 <h6 className="my-8 py-4 self-center font-extrabold text-blue-600">Other technologies & tools</h6>
-                <section className="grid md:w-[50%] mx-4 p-4 self-center divide-y-2 rounded-lg shadow-md">
+                <section className="grid md:w-[50%] mx-4 p-4 self-center divide-y-2 rounded-lg bg-white shadow-md">
                     <div className="p-4">
                         <div className="grid grid-cols-4 gap-2 justify-center items-center">
                             <h6 className="flex flex-wrap text-sm md:text-base">Coding workspace</h6>

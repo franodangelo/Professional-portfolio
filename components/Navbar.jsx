@@ -24,11 +24,11 @@ export default function Navbar() {
                         <Link href="/#myself">
                             <li className="font-semibold text-sm text-blue-600 uppercase hover:text-pink-600 hover:scale-105 duration-200 cursor-pointer">Myself</li>
                         </Link>
-                        <Link href="/#skills">
-                            <li className="font-semibold text-sm text-blue-600 uppercase hover:text-pink-600 hover:scale-105 duration-200 cursor-pointer">Skills</li>
-                        </Link>
                         <Link href="/#projects">
                             <li className="font-semibold text-sm text-blue-600 uppercase hover:text-pink-600 hover:scale-105 duration-200 cursor-pointer">Projects</li>
+                        </Link>
+                        <Link href="/#skills">
+                            <li className="font-semibold text-sm text-blue-600 uppercase hover:text-pink-600 hover:scale-105 duration-200 cursor-pointer">Skills</li>
                         </Link>
                         <div className="flex gap-4">
                             <Link href="https://drive.google.com/file/d/14mwcYLoMeCfHkqBqd-u8TLnfAcE8QEaM/view?usp=sharing" download>
@@ -41,7 +41,7 @@ export default function Navbar() {
                                     Contact me
                                 </button>
                             </Link>
-                            
+
                         </div>
                     </ul>
                     {/* Here is the sm burger menu for the navbar */}
@@ -80,16 +80,16 @@ export default function Navbar() {
                                         Myself
                                     </li>
                                 </Link>
-                                <Link href="/#skills">
-                                    <li onClick={handleNav}
-                                        className="py-4 font-semibold text-sm text-blue-600 uppercase">
-                                        Skills
-                                    </li>
-                                </Link>
                                 <Link href="/#projects">
                                     <li onClick={handleNav}
                                         className="py-4 font-semibold text-sm text-blue-600 uppercase">
                                         Projects
+                                    </li>
+                                </Link>
+                                <Link href="/#skills">
+                                    <li onClick={handleNav}
+                                        className="py-4 font-semibold text-sm text-blue-600 uppercase">
+                                        Skills
                                     </li>
                                 </Link>
                                 <Link href="/#contact">

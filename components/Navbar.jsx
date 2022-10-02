@@ -78,8 +78,8 @@ export default function Navbar() {
                     </section>
                     <section>
                         <div className="flex w-full mt-8 mb-4 gap-10">
-                            <button value="es" onClick={handleLanguage}>🇪🇸</button>
-                            <button value="en" onClick={handleLanguage}>🇺🇲</button>
+                            <button value="es" onClick={(e) => {handleLanguage(e); handleNav()}}>🇪🇸</button>
+                            <button value="en" onClick={(e) => {handleLanguage(e); handleNav()}}>🇺🇲</button>
                         </div>
                         <div className="flex flex-col py-2">
                             <ul>

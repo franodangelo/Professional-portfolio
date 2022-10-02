@@ -44,7 +44,7 @@ export default function Projects() {
                         </div>
                     </div>
                     <div className='flex flex-col h-auto w-full p-8 items-center justify-center shadow-md shadow-blue-200 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200'>
-                        <span className="flex mb-4 py-1 px-2 self-end text-xs text-white bg-blue-600/50 rounded-full uppercase">Aug 22</span>
+                        <span className="flex mb-4 py-1 px-2 self-end text-xs text-white bg-blue-600/50 rounded-full uppercase">{texts.projectsAug} 22</span>
                         <Image className="rounded-xl" src={propertyImg4} alt="project thumbnail" />
                         <div>
                             <div className="pb-4">
@@ -67,7 +67,7 @@ export default function Projects() {
                         </div>
                     </div>
                     <div className='flex flex-col h-auto w-full p-8 items-center justify-center shadow-md shadow-blue-200 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200'>
-                        <span className="flex mb-4 py-1 px-2 self-end text-xs text-white bg-blue-600/50 rounded-full uppercase">Aug 22</span>
+                        <span className="flex mb-4 py-1 px-2 self-end text-xs text-white bg-blue-600/50 rounded-full uppercase">{texts.projectsAug} 22</span>
                         <Image className="rounded-xl" src={propertyImg3} alt="project thumbnail" />
                         <div>
                             <div className="pb-4">

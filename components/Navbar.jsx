@@ -49,9 +49,9 @@ export default function Navbar() {
                                     {texts.navbarButtonContact}
                                 </button>
                             </Link>
-                            <div className="flex ml-4 space-x-4">
-                                <button value="es" className="text-xs" onClick={handleLanguage}>🇪🇸</button>
-                                <button value="en" className="text-xs" onClick={handleLanguage}>🇺🇲</button>
+                            <div className="flex ml-4 space-x-2">
+                                <button value="es" onClick={handleLanguage}>🇪🇸</button>
+                                <button value="en" onClick={handleLanguage}>🇺🇲</button>
                             </div>
                         </div>
                     </ul>
@@ -150,8 +150,10 @@ export default function Navbar() {
                                 </a>
                             </button>
                         </div>
-                        <button value="es" className="text-xs uppercase" onClick={handleLanguage}>🇪🇸 ES</button>
-                        <button value="en" className="text-xs uppercase" onClick={handleLanguage}>🇺🇲 EN</button>
+                        <div className="flex w-full mt-8 justify-evenly">
+                            <button value="es" onClick={handleLanguage}>🇪🇸</button>
+                            <button value="en" onClick={handleLanguage}>🇺🇲</button>
+                        </div>
                     </section>
                 </div>
             </main>

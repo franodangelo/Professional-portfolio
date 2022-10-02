@@ -1,11 +1,15 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { HiMenuAlt3, HiOutlineX } from "react-icons/hi";
-import { FaBehance, FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import logo from ".//../public/fdlogo.png";
+import { LanguageContext } from "../context/LanguageContext";
 
 export default function Navbar() {
+
+    const { texts, handleLanguage } = useContext(LanguageContext);
+
     const [nav, setNav] = useState(false);
 
     const handleNav = () => {
@@ -15,33 +19,40 @@ export default function Navbar() {
     return (
         <nav className="fixed w-full h-20 shadow-lg z-[100] bg-white">
             <main className="flex justify-between items-center w-full h-full px-6 2xl:px-16"> {/* Here is the lg navbar */}
-                <Image src={logo} alt="logo" width="32px" height="32px" />
-                <section className="flex">
-                    <ul className="hidden md:flex items-center gap-8">
+                <section className="flex gap-8">
+                    <Image src={logo} alt="logo" width="32px" height="32px" />
+                    <div className="hidden md:flex items-center gap-4">
                         <Link offset={-200} href="/#header">
-                            <li className="font-semibold text-sm text-blue-600 uppercase hover:text-pink-600 hover:scale-105 duration-200 cursor-pointer">Home</li>
+                            <p className="font-semibold text-sm text-blue-600 uppercase hover:text-pink-600 hover:scale-105 duration-200 cursor-pointer">{texts.navbarHome}</p>
                         </Link>
                         <Link href="/#myself">
-                            <li className="font-semibold text-sm text-blue-600 uppercase hover:text-pink-600 hover:scale-105 duration-200 cursor-pointer">Myself</li>
+                            <p className="font-semibold text-sm text-blue-600 uppercase hover:text-pink-600 hover:scale-105 duration-200 cursor-pointer">{texts.navbarMyself}</p>
                         </Link>
                         <Link href="/#projects">
-                            <li className="font-semibold text-sm text-blue-600 uppercase hover:text-pink-600 hover:scale-105 duration-200 cursor-pointer">Projects</li>
+                            <p className="font-semibold text-sm text-blue-600 uppercase hover:text-pink-600 hover:scale-105 duration-200 cursor-pointer">{texts.navbarProjects}</p>
                         </Link>
                         <Link href="/#skills">
-                            <li className="font-semibold text-sm text-blue-600 uppercase hover:text-pink-600 hover:scale-105 duration-200 cursor-pointer">Skills</li>
+                            <p className="font-semibold text-sm text-blue-600 uppercase hover:text-pink-600 hover:scale-105 duration-200 cursor-pointer">{texts.navbarSkills}</p>
                         </Link>
-                        <div className="flex gap-4">
+                    </div>
+                </section>
+                <section className="flex">
+                    <ul className="hidden md:flex items-center gap-8">
+                        <div className="flex gap-2">
                             <Link href="https://drive.google.com/file/d/14mwcYLoMeCfHkqBqd-u8TLnfAcE8QEaM/view?usp=sharing" download>
                                 <a className="py-2 px-4 font-semibold text-blue-600 uppercase border border-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 hover:shadow-blue-300 ease-in-out duration-200"
-                                    target='_blank'>Download CV
+                                    target='_blank'>{texts.navbarButtonCV}
                                 </a>
                             </Link>
                             <Link href="/#contact">
                                 <button className="py-2 px-4 font-semibold text-[#EFF0F3] uppercase bg-pink-600 rounded-lg shadow-md shadow-pink-200 cursor-pointer hover:scale-105 hover:shadow-pink-300 ease-in-out duration-200">
-                                    Contact me
+                                    {texts.navbarButtonContact}
                                 </button>
                             </Link>
-
+                            <div className="flex ml-4 space-x-4">
+                                <button value="es" className="text-xs" onClick={handleLanguage}>🇪🇸</button>
+                                <button value="en" className="text-xs" onClick={handleLanguage}>🇺🇲</button>
+                            </div>
                         </div>
                     </ul>
                     {/* Here is the sm burger menu for the navbar */}
@@ -71,37 +82,37 @@ export default function Navbar() {
                                 <Link href="/#header">
                                     <li onClick={handleNav}
                                         className="py-4 font-semibold text-sm text-blue-600 uppercase">
-                                        Home
+                                        {texts.navbarHome}
                                     </li>
                                 </Link>
                                 <Link href="/#myself">
                                     <li onClick={handleNav}
                                         className="py-4 font-semibold text-sm text-blue-600 uppercase">
-                                        Myself
+                                        {texts.navbarMyself}
                                     </li>
                                 </Link>
                                 <Link href="/#projects">
                                     <li onClick={handleNav}
                                         className="py-4 font-semibold text-sm text-blue-600 uppercase">
-                                        Projects
+                                        {texts.navbarProjects}
                                     </li>
                                 </Link>
                                 <Link href="/#skills">
                                     <li onClick={handleNav}
                                         className="py-4 font-semibold text-sm text-blue-600 uppercase">
-                                        Skills
+                                        {texts.navbarSkills}
                                     </li>
                                 </Link>
                                 <Link href="/#contact">
                                     <li onClick={handleNav}
                                         className="py-4 font-semibold text-sm text-blue-600 uppercase">
-                                        Contact me
+                                        {texts.navbarButtonContact}
                                     </li>
                                 </Link>
                             </ul>
                             <section className="pt-8">
                                 <h6 className="tracking-widest text-blue-600 uppercase">
-                                    Want to connect?
+                                    {texts.navbarWTC}
                                 </h6>
                                 <div className="flex w-full my-4 items-center justify-between">
                                     <div className="p-3 rounded-full shadow-sm shadow-pink-200 cursor-pointer">
@@ -135,10 +146,12 @@ export default function Navbar() {
                             </section>
                             <button className="w-full mt-8 py-2 px-4 font-semibold text-blue-600 uppercase border border-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 ease-in-out duration-300">
                                 <a href="https://drive.google.com/file/d/1bnItJ1HsNa4XnA-M67K5LFuSu4FZFuEa/view?usp=sharing" download target='_blank' rel="noreferrer">
-                                    Download CV
+                                    {texts.navbarButtonCV}
                                 </a>
                             </button>
                         </div>
+                        <button value="es" className="text-xs uppercase" onClick={handleLanguage}>🇪🇸 ES</button>
+                        <button value="en" className="text-xs uppercase" onClick={handleLanguage}>🇺🇲 EN</button>
                     </section>
                 </div>
             </main>

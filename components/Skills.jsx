@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Image from "next/image";
 import javascript from "../public/assets/skills/javascript.png";
 import react from "../public/assets/skills/react.png";
@@ -21,16 +21,19 @@ import github from "../public/assets/skills/github.png";
 import figma from "../public/assets/skills/figma.png";
 import adobexd from "../public/assets/skills/adobexd.png";
 import notion from "../public/assets/skills/notion.png";
-import firebase from "../public/assets/skills/firebase.png";
 import jira from "../public/assets/skills/jira.png";
 import trello from "../public/assets/skills/trello.png";
+import { LanguageContext } from "../context/LanguageContext";
 
 export default function Skills() {
+
+    const { texts } = useContext(LanguageContext);
+
     return (
         <main id="skills" className="w-full md:h-full py-24">
             <div className="flex flex-col max-w-[1280px] h-full mx-auto justify-center items-center md:items-start">
-                <h4 className="py-2 font-light text-base text-slate-800 uppercase tracking-widest">📚 Skills</h4>
-                <h2 className="my-4 py-4 font-extrabold text-blue-600">This is my tech stack</h2>
+                <h4 className="py-2 font-light text-base text-slate-800 uppercase tracking-widest">📚 {texts.skillsSection}</h4>
+                <h2 className="my-4 py-4 font-extrabold text-blue-600">{texts.skillsH1}</h2>
                 <section className="grid w-full p-4 gap-4 md:grid-cols-2 lg:grid-cols-4">
                     <div className="p-4 shadow-md shadow-yellow-200 bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-between items-center">
@@ -129,7 +132,7 @@ export default function Skills() {
                         </div>
                     </div>
                 </section>
-                <h6 className="my-8 py-4 font-extrabold text-blue-600">And currently learning</h6>
+                <h6 className="my-8 py-4 font-extrabold text-blue-600">{texts.skillsH2}</h6>
                 <section className="grid w-full p-4 gap-4 md:grid-cols-3">
                     <div className="p-2 shadow-md shadow-blue-200 bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
@@ -156,11 +159,11 @@ export default function Skills() {
                         </div>
                     </div>
                 </section>
-                <h6 className="my-8 py-4 self-center font-extrabold text-blue-600">Other technologies & tools</h6>
+                <h6 className="my-8 py-4 self-center font-extrabold text-blue-600">{texts.skillsH3}</h6>
                 <section className="grid md:w-[50%] mx-4 p-4 self-center divide-y-2 rounded-lg bg-white shadow-md">
                     <div className="p-4">
                         <div className="grid grid-cols-4 gap-2 justify-center items-center">
-                            <h6 className="flex flex-wrap text-sm md:text-base">Coding workspace</h6>
+                            <h6 className="flex flex-wrap text-sm md:text-base">{texts.skillsSh1}</h6>
                             <span className="m-auto">
                             <Image src={vsc} alt="Visual Studio Code logo" width="48px" height="48px" />
                             </span>
@@ -174,7 +177,7 @@ export default function Skills() {
                     </div>
                     <div className="p-4">
                         <div className="grid grid-cols-4 gap-2 justify-center items-center">
-                            <h6 className="flex flex-wrap text-sm md:text-base">Design phase</h6>
+                            <h6 className="flex flex-wrap text-sm md:text-base">{texts.skillsSh2}</h6>
                             <span className="m-auto">
                                 <Image src={figma} alt="Swift logo" width="48px" height="48px" />
                             </span>
@@ -185,7 +188,7 @@ export default function Skills() {
                     </div>
                     <div className="p-4">
                         <div className="grid grid-cols-4 gap-2 justify-center items-center">
-                            <h6 className="flex flex-wrap text-sm md:text-base">Organization & Follow-up</h6>
+                            <h6 className="flex flex-wrap text-sm md:text-base">{texts.skillsSh3}</h6>
                             <span className="m-auto">
                                 <Image src={notion} alt="Swift logo" width="48px" height="48px" />
                             </span>

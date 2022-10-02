@@ -9,12 +9,11 @@ import { LanguageContext } from "../context/LanguageContext";
 export default function Navbar() {
 
     const { texts, handleLanguage } = useContext(LanguageContext);
-
     const [nav, setNav] = useState(false);
 
     const handleNav = () => {
         setNav(!nav);
-    };
+    }
 
     return (
         <nav className="fixed w-full h-20 shadow-lg z-[100] bg-white">
@@ -158,5 +157,5 @@ export default function Navbar() {
                 </div>
             </main>
         </nav>
-    );
+    )
 }

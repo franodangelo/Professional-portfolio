@@ -140,26 +140,7 @@ export default function Projects() {
                         </div>
                     </div>
                 </section>
-                {/* <h6 className="mt-8 py-4 font-extrabold text-blue-600 text-center">And currently working on:</h6>
-                <section className='flex flex-wrap m-auto p-4 gap-8 justify-center md:flex-nowrap'>
-                    <div className='flex flex-col h-auto w-full md:w-[50%] p-8 items-center justify-center shadow-lg shadow-blue-200 rounded-xl relative cursor-pointer hover:shadow-xl hover:shadow-blue-300 grayscale hover:grayscale-0 ease-in-out duration-200'>
-                        <div>
-                            <h6 className="my-4 py-2 text-center">E-Commerce Project</h6>
-                            <div className="flex flex-wrap w-full place-content-center py-2 gap-2">
-                                <span className="px-2 py-1 font-light text-xs text-center bg-yellow-500/80 rounded-full">JavaScript</span>
-                                <span className="px-2 py-1 font-light text-xs text-center bg-cyan-400/80 rounded-full">React</span>
-                                <span className="px-2 py-1 font-light text-xs text-center text-white bg-emerald-500/80 rounded-full">Tailwind</span>
-                                <span className="px-2 py-1 font-light text-xs text-center bg-yellow-500/80 rounded-full">Firebase</span>
-                            </div>
-                        </div>
-                        <div className="flex mt-4 justify-center items-center gap-4">
-                            <span className="p-2 rounded-full shadow-sm shadow-pink-200 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200">
-                                <a href="https://github.com/franodangelo/React-Ecommerce" target='_blank' rel="noreferrer"><FaGithub /></a>
-                            </span>
-                        </div>
-                    </div>
-                </section> */}
             </div>
         </main>
     )
-};
+}

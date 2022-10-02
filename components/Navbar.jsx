@@ -77,6 +77,10 @@ export default function Navbar() {
                         </div>
                     </section>
                     <section>
+                        <div className="flex w-full mt-8 mb-4 gap-10">
+                            <button value="es" onClick={handleLanguage}>🇪🇸</button>
+                            <button value="en" onClick={handleLanguage}>🇺🇲</button>
+                        </div>
                         <div className="flex flex-col py-2">
                             <ul>
                                 <Link href="/#header">
@@ -149,10 +153,6 @@ export default function Navbar() {
                                     {texts.navbarButtonCV}
                                 </a>
                             </button>
-                        </div>
-                        <div className="flex w-full mt-8 justify-evenly">
-                            <button value="es" onClick={handleLanguage}>🇪🇸</button>
-                            <button value="en" onClick={handleLanguage}>🇺🇲</button>
                         </div>
                     </section>
                 </div>

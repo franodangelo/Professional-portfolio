@@ -162,42 +162,48 @@ export default function Skills() {
                 <h6 className="my-8 py-4 self-center font-extrabold text-blue-600">{texts.skillsH3}</h6>
                 <section className="grid md:w-[50%] mx-4 p-4 self-center divide-y-2 rounded-lg bg-white shadow-md">
                     <div className="p-4">
-                        <div className="grid grid-cols-4 gap-2 justify-center items-center">
-                            <h6 className="flex flex-wrap text-sm md:text-base">{texts.skillsSh1}</h6>
-                            <span className="m-auto">
-                            <Image src={vsc} alt="Visual Studio Code logo" width="48px" height="48px" />
-                            </span>
-                            <span className="m-auto">
-                            <Image src={npm} alt="npm logo" width="56px" height="48px" />
-                            </span>
-                            <span className="m-auto">
-                                <Image src={github} alt="Swift logo" width="48px" height="48px" />
-                            </span>
+                        <div className="flex gap-2 justify-between items-center">
+                            <h6 className="basis-2/5 text-xs md:text-base">{texts.skillsSh1}</h6>
+                            <div className="flex gap-4">
+                                <span className="m-auto">
+                                    <Image src={vsc} alt="Visual Studio Code logo" width="48px" height="48px" />
+                                </span>
+                                <span className="m-auto">
+                                    <Image src={npm} alt="npm logo" width="56px" height="48px" />
+                                </span>
+                                <span className="m-auto">
+                                    <Image src={github} alt="Github logo" width="48px" height="48px" />
+                                </span>
+                            </div>
                         </div>
                     </div>
                     <div className="p-4">
-                        <div className="grid grid-cols-4 gap-2 justify-center items-center">
-                            <h6 className="flex flex-wrap text-sm md:text-base">{texts.skillsSh2}</h6>
-                            <span className="m-auto">
-                                <Image src={figma} alt="Swift logo" width="48px" height="48px" />
-                            </span>
-                            <span className="m-auto">
-                                <Image src={adobexd} alt="Swift logo" width="48px" height="48px" />
-                            </span>
+                        <div className="flex gap-2 justify-between items-center">
+                            <h6 className="basis-2/5 text-xs md:text-base">{texts.skillsSh2}</h6>
+                            <div className="flex gap-4">
+                                <span className="m-auto">
+                                    <Image src={figma} alt="Figma logo" width="48px" height="48px" />
+                                </span>
+                                <span className="m-auto">
+                                    <Image src={adobexd} alt="AdobeXd logo" width="48px" height="48px" />
+                                </span>
+                            </div>
                         </div>
                     </div>
                     <div className="p-4">
-                        <div className="grid grid-cols-4 gap-2 justify-center items-center">
-                            <h6 className="flex flex-wrap text-sm md:text-base">{texts.skillsSh3}</h6>
-                            <span className="m-auto">
-                                <Image src={notion} alt="Swift logo" width="48px" height="48px" />
-                            </span>
-                            <span className="m-auto">
-                                <Image src={jira} alt="Swift logo" width="48px" height="48px" />
-                            </span>
-                            <span className="m-auto">
-                                <Image src={trello} alt="Swift logo" width="48px" height="48px" />
-                            </span>
+                        <div className="flex gap-2 justify-between items-center">
+                            <h6 className="basis-2/5 text-xs md:text-base">{texts.skillsSh3}</h6>
+                            <div className="flex gap-4">
+                                <span className="m-auto">
+                                    <Image src={notion} alt="Notion logo" width="48px" height="48px" />
+                                </span>
+                                <span className="m-auto">
+                                    <Image src={jira} alt="Jira logo" width="48px" height="48px" />
+                                </span>
+                                <span className="m-auto">
+                                    <Image src={trello} alt="Trello logo" width="48px" height="48px" />
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </section>

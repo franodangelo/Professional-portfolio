@@ -13,7 +13,7 @@ export default function Home() {
     <div>
       <LanguageProvider>
         <Head>
-          <title>My portfolio - Franco D{"'"}Angelo</title>
+          <title>Franco D{"'"}Angelo</title>
           <meta name="description" content="I'm a Full Stack Developer looking for my very first experience in IT" />
           <link rel="icon" href="/logo.ico" />
         </Head>

@@ -17,17 +17,17 @@ export default function Header() {
                     <div className="flex m-auto my-8 items-end justify-between gap-8 md:gap-16">
                         <div className="p-4 rounded-full shadow-md shadow-blue-200 cursor-pointer hover:scale-105 hover:shadow-pink-300 ease-in-out duration-200">
                             <Link href="/">
-                                <a href="https://www.linkedin.com/in/franco-dangelo/" target='_blank' rel="noreferrer"><FaLinkedinIn /></a>
+                                <a href="https://www.linkedin.com/in/franco-dangelo/" target="_blank" rel="noreferrer"><FaLinkedinIn /></a>
                             </Link>
                         </div>
                         <div className="p-4 rounded-full shadow-md shadow-blue-200 cursor-pointer hover:scale-105 hover:shadow-pink-300 ease-in-out duration-200">
                             <Link href="">
-                                <a href="https://github.com/franodangelo" target='_blank' rel="noreferrer"><FaGithub /></a>
+                                <a href="https://github.com/franodangelo" target="_blank" rel="noreferrer"><FaGithub /></a>
                             </Link>
                         </div>
                         <div className="p-4 rounded-full shadow-md shadow-blue-200 cursor-pointer hover:scale-105 hover:shadow-pink-300 ease-in-out duration-200">
                             <Link href="">
-                                <a href="https://twitter.com/techfrano" target='_blank' rel="noreferrer"><FaTwitter /></a>
+                                <a href="https://twitter.com/techfrano" target="_blank" rel="noreferrer"><FaTwitter /></a>
                             </Link>
                         </div>
                     </div>

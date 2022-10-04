@@ -40,7 +40,7 @@ export default function Navbar() {
                         <div className="flex gap-2">
                             <Link href="https://drive.google.com/file/d/14mwcYLoMeCfHkqBqd-u8TLnfAcE8QEaM/view?usp=sharing" download>
                                 <a className="py-2 px-4 font-semibold text-blue-600 uppercase border border-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 hover:shadow-blue-300 ease-in-out duration-200"
-                                    target='_blank'>{texts.navbarButtonCV}
+                                    target="_blank">{texts.navbarButtonCV}
                                 </a>
                             </Link>
                             <Link href="/#contact">
@@ -121,7 +121,7 @@ export default function Navbar() {
                                     <div className="p-3 rounded-full shadow-sm shadow-pink-200 cursor-pointer">
                                         <Link href="/">
                                             <a href="https://www.linkedin.com/in/franco-dangelo/"
-                                                target='_blank'
+                                                target="_blank"
                                                 rel="noreferrer">
                                                 <FaLinkedinIn />
                                             </a>
@@ -130,7 +130,7 @@ export default function Navbar() {
                                     <div className="p-3 rounded-full shadow-sm shadow-pink-200 cursor-pointer">
                                         <Link href="">
                                             <a href="https://github.com/franodangelo"
-                                                target='_blank'
+                                                target="_blank"
                                                 rel="noreferrer">
                                                 <FaGithub />
                                             </a>
@@ -139,7 +139,7 @@ export default function Navbar() {
                                     <div className="p-3 rounded-full shadow-sm shadow-pink-200 cursor-pointer">
                                         <Link href="/">
                                             <a href="https://twitter.com/techfrano"
-                                                target='_blank'
+                                                target="_blank"
                                                 rel="noreferrer">
                                                 <FaTwitter />
                                             </a>
@@ -148,7 +148,7 @@ export default function Navbar() {
                                 </div>
                             </section>
                             <button className="w-full mt-8 py-2 px-4 font-semibold text-blue-600 uppercase border border-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 ease-in-out duration-300">
-                                <a href="https://drive.google.com/file/d/1bnItJ1HsNa4XnA-M67K5LFuSu4FZFuEa/view?usp=sharing" download target='_blank' rel="noreferrer">
+                                <a href="https://drive.google.com/file/d/1bnItJ1HsNa4XnA-M67K5LFuSu4FZFuEa/view?usp=sharing" download target="_blank" rel="noreferrer">
                                     {texts.navbarButtonCV}
                                 </a>
                             </button>

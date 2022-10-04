@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import Image from "next/image";
-import me from "../public/assets/profilepic.jpg"
+import me from "../public/assets/profilepic.jpg";
 import { LanguageContext } from "../context/LanguageContext";
 
 export default function Myself() {

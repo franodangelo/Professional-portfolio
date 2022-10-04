@@ -14,12 +14,12 @@ export default function Projects() {
     const { texts } = useContext(LanguageContext);
 
     return (
-        <main id="projects" className='w-full md:h-full py-24 items-center justify-center bg-white shadow-lg'>
-            <div className='max-w-[1280px] h-full mx-auto'>
+        <main id="projects" className="w-full md:h-full py-24 items-center justify-center bg-white shadow-lg">
+            <div className="max-w-[1280px] h-full mx-auto">
                 <h4 className="py-2 font-light text-center text-base text-slate-800 uppercase tracking-widest">✔️ {texts.projectsSection}</h4>
                 <h2 className="py-4 font-extrabold text-center text-blue-600">{texts.projectsH1}</h2>
-                <section className='grid p-4 grid-cols-1 gap-8 md:grid-cols-3'>
-                    <div className='flex flex-col h-auto w-full p-8 items-center justify-center shadow-md shadow-blue-200 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200'>
+                <section className="grid p-4 grid-cols-1 gap-8 md:grid-cols-3">
+                    <div className="flex flex-col h-auto w-full p-8 items-center justify-center shadow-md shadow-blue-200 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200">
                         <span className="flex mb-4 py-1 px-2 self-end text-xs text-white bg-blue-600/50 rounded-full uppercase">Sep 22</span>
                         <Image className="rounded-xl" src={propertyImg5} alt="project thumbnail" />
                         <div>
@@ -36,14 +36,14 @@ export default function Projects() {
                         </div>
                         <div className="flex mt-4 justify-center items-center gap-4">
                             <span className="p-2 rounded-full shadow-sm shadow-pink-200 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200">
-                                <a href="https://github.com/franodangelo/React-Ecommerce" target='_blank' rel="noreferrer"><FaGithub /></a>
+                                <a href="https://github.com/franodangelo/React-Ecommerce" target="_blank" rel="noreferrer"><FaGithub /></a>
                             </span>
                             <span className="p-2 rounded-full shadow-sm shadow-pink-200 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200">
-                                <a href="https://advantage-tennis-ecommerce.vercel.app/" target='_blank' rel="noreferrer"><IoMdOpen /></a>
+                                <a href="https://advantage-tennis-ecommerce.vercel.app/" target="_blank" rel="noreferrer"><IoMdOpen /></a>
                             </span>
                         </div>
                     </div>
-                    <div className='flex flex-col h-auto w-full p-8 items-center justify-center shadow-md shadow-blue-200 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200'>
+                    <div className="flex flex-col h-auto w-full p-8 items-center justify-center shadow-md shadow-blue-200 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200">
                         <span className="flex mb-4 py-1 px-2 self-end text-xs text-white bg-blue-600/50 rounded-full uppercase">{texts.projectsAug} 22</span>
                         <Image className="rounded-xl" src={propertyImg4} alt="project thumbnail" />
                         <div>
@@ -59,14 +59,14 @@ export default function Projects() {
                         </div>
                         <div className="flex mt-4 justify-center items-center gap-4">
                             <span className="p-2 rounded-full shadow-sm shadow-pink-200 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200">
-                                <a href="https://github.com/franodangelo/Weather-app" target='_blank' rel="noreferrer"><FaGithub /></a>
+                                <a href="https://github.com/franodangelo/Weather-app" target="_blank" rel="noreferrer"><FaGithub /></a>
                             </span>
                             <span className="p-2 rounded-full shadow-sm shadow-pink-200 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200">
-                                <a href="https://howistheweathernow.vercel.app/" target='_blank' rel="noreferrer"><IoMdOpen /></a>
+                                <a href="https://howistheweathernow.vercel.app/" target="_blank" rel="noreferrer"><IoMdOpen /></a>
                             </span>
                         </div>
                     </div>
-                    <div className='flex flex-col h-auto w-full p-8 items-center justify-center shadow-md shadow-blue-200 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200'>
+                    <div className="flex flex-col h-auto w-full p-8 items-center justify-center shadow-md shadow-blue-200 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200">
                         <span className="flex mb-4 py-1 px-2 self-end text-xs text-white bg-blue-600/50 rounded-full uppercase">{texts.projectsAug} 22</span>
                         <Image className="rounded-xl" src={propertyImg3} alt="project thumbnail" />
                         <div>
@@ -82,14 +82,14 @@ export default function Projects() {
                         </div>
                         <div className="flex mt-4 justify-center items-center gap-4">
                             <span className="p-2 rounded-full shadow-sm shadow-pink-200 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200">
-                                <a href="https://github.com/franodangelo/Services-SPA" target='_blank' rel="noreferrer"><FaGithub /></a>
+                                <a href="https://github.com/franodangelo/Services-SPA" target="_blank" rel="noreferrer"><FaGithub /></a>
                             </span>
                             <span className="p-2 rounded-full shadow-sm shadow-pink-200 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200">
-                                <a href="https://mybrandservices.vercel.app/" target='_blank' rel="noreferrer"><IoMdOpen /></a>
+                                <a href="https://mybrandservices.vercel.app/" target="_blank" rel="noreferrer"><IoMdOpen /></a>
                             </span>
                         </div>
                     </div>
-                    <div className='flex flex-col h-auto w-full p-8 items-center justify-center shadow-md shadow-blue-200 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200'>
+                    <div className="flex flex-col h-auto w-full p-8 items-center justify-center shadow-md shadow-blue-200 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200">
                         <span className="flex mb-4 py-1 px-2 self-end text-xs text-white bg-blue-600/50 rounded-full uppercase">Jun 22</span>
                         <Image className="rounded-xl" src={propertyImg2} alt="project thumbnail" />
                         <div>
@@ -107,14 +107,14 @@ export default function Projects() {
                         </div>
                         <div className="flex mt-4 justify-center items-center gap-4">
                             <span className="p-2 rounded-full shadow-sm shadow-pink-200 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200">
-                                <a href="https://github.com/franodangelo/yumPaw-Project" target='_blank' rel="noreferrer"><FaGithub /></a>
+                                <a href="https://github.com/franodangelo/yumPaw-Project" target="_blank" rel="noreferrer"><FaGithub /></a>
                             </span>
                             <span className="p-2 rounded-full shadow-sm shadow-pink-200 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200">
-                                <a href="https://client-pg.vercel.app/" target='_blank' rel="noreferrer"><IoMdOpen /></a>
+                                <a href="https://client-pg.vercel.app/" target="_blank" rel="noreferrer"><IoMdOpen /></a>
                             </span>
                         </div>
                     </div>
-                    <div className='flex flex-col h-auto w-full p-8 items-center justify-center shadow-md shadow-blue-200 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200'>
+                    <div className="flex flex-col h-auto w-full p-8 items-center justify-center shadow-md shadow-blue-200 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200">
                         <span className="flex mb-4 py-1 px-2 self-end text-xs text-white bg-blue-600/50 rounded-full uppercase">May 22</span>
                         <Image className="rounded-xl" src={propertyImg1} alt="project thumbnail" />
                         <div>
@@ -132,10 +132,10 @@ export default function Projects() {
                         </div>
                         <div className="flex mt-4 justify-center items-center gap-4">
                             <span className="p-2 rounded-full shadow-sm shadow-pink-200 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200">
-                                <a href="https://github.com/franodangelo/Videogames-Proyect" target='_blank' rel="noreferrer"><FaGithub /></a>
+                                <a href="https://github.com/franodangelo/Videogames-Proyect" target="_blank" rel="noreferrer"><FaGithub /></a>
                             </span>
                             <span className="p-2 rounded-full shadow-sm shadow-pink-200 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200">
-                                <a href="https://videogamesspa.vercel.app/" target='_blank' rel="noreferrer"><IoMdOpen /></a>
+                                <a href="https://videogamesspa.vercel.app/" target="_blank" rel="noreferrer"><IoMdOpen /></a>
                             </span>
                         </div>
                     </div>

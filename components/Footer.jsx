@@ -10,7 +10,7 @@ export default function Footer() {
     const { texts } = useContext(LanguageContext);
 
     return (
-        <footer className="flex flex-col lg:flex-row w-full h-40 py-12 lg:py-0 lg:px-12 gap-8 items-center justify-between bg-white">
+        <footer className="flex flex-col lg:flex-row w-full h-40 py-12 lg:py-0 lg:px-20 gap-8 items-center justify-between bg-white">
             <div className="flex flex-wrap lg:flex-col lg:flex-nowrap justify-center items-center gap-2">
                 <h1 className="font-medium text-center text-base text-blue-600">{texts.footerCreated}</h1>
                 <ul className="flex justify-between lg:justify-evenly gap-2 lg:gap-4">

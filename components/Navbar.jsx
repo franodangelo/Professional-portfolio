@@ -1,10 +1,10 @@
 import React, { useContext, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { LanguageContext } from "../context/LanguageContext";
 import { HiMenuAlt3, HiOutlineX } from "react-icons/hi";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import logo from ".//../public/fdlogo.png";
-import { LanguageContext } from "../context/LanguageContext";
 
 export default function Navbar() {
 
@@ -17,7 +17,7 @@ export default function Navbar() {
 
     return (
         <nav className="fixed w-full h-20 shadow-lg z-[100] bg-white">
-            <main className="flex justify-between items-center w-full h-full px-6 2xl:px-16"> {/* Here is the lg navbar */}
+            <main className="flex justify-between items-center w-full h-full px-6 2xl:px-20"> {/* Here is the lg navbar */}
                 <section className="flex gap-8">
                     <Image src={logo} alt="logo" width="32px" height="32px" />
                     <div className="hidden md:flex items-center gap-4">
@@ -48,7 +48,7 @@ export default function Navbar() {
                                     {texts.navbarButtonContact}
                                 </button>
                             </Link>
-                            <div className="flex ml-4 space-x-2">
+                            <div className="flex ml-4 space-x-4">
                                 <button value="es" onClick={handleLanguage}>🇪🇸</button>
                                 <button value="en" onClick={handleLanguage}>🇺🇲</button>
                             </div>
@@ -77,8 +77,8 @@ export default function Navbar() {
                     </section>
                     <section>
                         <div className="flex w-full mt-8 mb-4 gap-10">
-                            <button value="es" onClick={(e) => {handleLanguage(e); handleNav()}}>🇪🇸</button>
-                            <button value="en" onClick={(e) => {handleLanguage(e); handleNav()}}>🇺🇲</button>
+                            <button value="es" onClick={(e) => { handleLanguage(e); handleNav() }}>🇪🇸</button>
+                            <button value="en" onClick={(e) => { handleLanguage(e); handleNav() }}>🇺🇲</button>
                         </div>
                         <div className="flex flex-col py-2">
                             <ul>

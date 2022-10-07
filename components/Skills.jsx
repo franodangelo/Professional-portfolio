@@ -35,128 +35,68 @@ export default function Skills() {
                 <h4 className="py-2 font-light text-base text-slate-800 uppercase tracking-widest">📚 {texts.skillsSection}</h4>
                 <h2 className="my-4 py-4 font-extrabold text-blue-600">{texts.skillsH1}</h2>
                 <section className="grid w-full p-4 gap-4 md:grid-cols-2 lg:grid-cols-4">
-                    <div className="p-4 shadow-md shadow-yellow-200 bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
-                        <div className="grid grid-cols-2 gap-4 justify-between items-center">
-                            <span className="m-auto">
-                                <Image src={javascript} alt="JavaScript logo" width="64px" height="64px" />
-                            </span>
-                            <h6>JavaScript</h6>
-                        </div>
+                    <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <Image src={javascript} alt="JavaScript logo" width="64px" height="64px" />
+                        <h6>JavaScript</h6>
                     </div>
-                    <div className="p-4 shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
-                        <div className="grid grid-cols-2 gap-4 justify-between items-center">
-                            <span className="m-auto">
-                                <Image src={react} alt="React logo" width="64px" height="64px" />
-                            </span>
-                            <h6>React</h6>
-                        </div>
+                    <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <Image src={react} alt="React logo" width="64px" height="64px" />
+                        <h6>React</h6>
                     </div>
-                    <div className="p-4 shadow-md shadow-violet-200 bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
-                        <div className="grid grid-cols-2 gap-4 justify-between items-center">
-                            <span className="m-auto">
-                                <Image src={redux} alt="Redux logo" width="64px" height="64px" />
-                            </span>
-                            <h6>Redux</h6>
-                        </div>
+                    <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <Image src={redux} alt="Redux logo" width="64px" height="64px" />
+                        <h6>Redux</h6>
                     </div>
-                    <div className="p-4 shadow-md shadow-green-200 bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
-                        <div className="grid grid-cols-2 gap-4 justify-between items-center">
-                            <span className="m-auto">
-                                <Image src={node} alt="node.js logo" width="64px" height="64px" />
-                            </span>
-                            <h6>node.js</h6>
-                        </div>
+                    <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <Image src={node} alt="node.js logo" width="64px" height="64px" />
+                        <h6>Node.js</h6>
                     </div>
-                    <div className="p-4 shadow-md rounded-lg bg-white hover:scale-105 hover:-0 ease-in-out duration-300">
-                        <div className="grid grid-cols-2 gap-4 justify-between items-center">
-                            <span className="m-auto">
-                                <Image src={express} alt="Express logo" width="64px" height="64px" />
-                            </span>
-                            <h6>Express</h6>
-                        </div>
+                    <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <Image src={express} alt="Express logo" width="64px" height="64px" />
+                        <h6>Express</h6>
                     </div>
-                    <div className="p-4 shadow-md shadow-blue-200 bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
-                        <div className="grid grid-cols-2 gap-4 justify-between items-center">
-                            <span className="m-auto">
-                                <Image src={postgresql} alt="PostgreSQL logo" width="64px" height="64px" />
-                            </span>
-                            <h6>PostgreSQL</h6>
-                        </div>
+                    <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <Image src={postgresql} alt="PostgreSQL logo" width="64px" height="64px" />
+                        <h6>PostgreSQL</h6>
                     </div>
-                    <div className="p-4 shadow-md shadow-blue-200 bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
-                        <div className="grid grid-cols-2 gap-4 justify-between items-center">
-                            <span className="m-auto">
-                                <Image src={sequelize} alt="Sequelize logo" width="64px" height="70px" />
-                            </span>
-                            <h6>Sequelize</h6>
-                        </div>
+                    <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <Image src={sequelize} alt="Sequelize logo" width="64px" height="70px" />
+                        <h6>Sequelize</h6>
                     </div>
-                    <div className="p-4 items-center shadow-md bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
-                        <div className="grid grid-cols-2 gap-4 justify-between items-center">
-                            <span className="m-auto">
-                                <Image src={next} alt="Next.js logo" width="80px" height="56px" />
-                            </span>
-                            <h6>Next.js</h6>
-                        </div>
+                    <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <Image src={next} alt="Next.js logo" width="80px" height="56px" />
+                        <h6>Next.js</h6>
                     </div>
-                    <div className="p-4 shadow-md shadow-orange-200 bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
-                        <div className="grid grid-cols-2 gap-4 justify-between items-center">
-                            <span className="m-auto">
-                                <Image src={html} alt="HTML logo" width="64px" height="64px" />
-                            </span>
-                            <h6>HTML</h6>
-                        </div>
+                    <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <Image src={html} alt="HTML logo" width="64px" height="64px" />
+                        <h6>HTML</h6>
                     </div>
-                    <div className="p-4 shadow-md shadow-blue-200 bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
-                        <div className="grid grid-cols-2 gap-4 justify-between items-center">
-                            <span className="m-auto">
-                                <Image src={css} alt="CSS logo" width="64px" height="64px" />
-                            </span>
-                            <h6>CSS</h6>
-                        </div>
+                    <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <Image src={css} alt="CSS logo" width="64px" height="64px" />
+                        <h6>CSS</h6>
                     </div>
-                    <div className="p-4 shadow-md shadow-teal-200 bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
-                        <div className="grid grid-cols-2 gap-4 justify-between items-center">
-                            <span className="m-auto">
-                                <Image src={tailwind} alt="tailwindcss logo" width="64px" height="64px" />
-                            </span>
-                            <h6>tailwindcss</h6>
-                        </div>
+                    <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <Image src={tailwind} alt="tailwindcss logo" width="64px" height="64px" />
+                        <h6>Tailwindcss</h6>
                     </div>
-                    <div className="p-4 shadow-md shadow-purple-200 bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
-                        <div className="grid grid-cols-2 gap-4 justify-between items-center">
-                            <span className="m-auto">
-                                <Image src={bootstrap} alt="Bootstrap logo" width="80px" height="64px" />
-                            </span>
-                            <h6>Bootstrap</h6>
-                        </div>
+                    <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <Image src={bootstrap} alt="Bootstrap logo" width="80px" height="64px" />
+                        <h6>Bootstrap</h6>
                     </div>
                 </section>
                 <h6 className="my-8 py-4 font-extrabold text-blue-600">{texts.skillsH2}</h6>
                 <section className="grid w-full p-4 gap-4 md:grid-cols-3">
-                    <div className="p-2 shadow-md shadow-blue-200 bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
-                        <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                            <span className="m-auto">
-                                <Image src={typescript} alt="TypeScript logo" width="48px" height="48px" />
-                            </span>
-                            <h6>TypeScript</h6>
-                        </div>
+                    <div className="flex p-2 gap-8 justify-center items-center shadow-md shadow-blue-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <Image src={typescript} alt="TypeScript logo" width="48px" height="48px" />
+                        <h6>TypeScript</h6>
                     </div>
-                    <div className="p-2 shadow-md shadow-blue-200 bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
-                        <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                            <span className="m-auto">
-                                <Image src={dart} alt="Dart logo" width="48px" height="48px" />
-                            </span>
-                            <h6>Dart</h6>
-                        </div>
+                    <div className="flex p-2 gap-8 justify-center items-center shadow-md shadow-blue-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <Image src={dart} alt="Dart logo" width="48px" height="48px" />
+                        <h6>Dart</h6>
                     </div>
-                    <div className="p-2 shadow-md shadow-blue-200 bg-white rounded-lg hover:scale-105 hover:-0 ease-in-out duration-300">
-                        <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                            <span className="m-auto">
-                                <Image src={swift} alt="Swift logo" width="48px" height="48px" />
-                            </span>
-                            <h6>Swift</h6>
-                        </div>
+                    <div className="flex p-2 gap-8 justify-center items-center shadow-md shadow-blue-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <Image src={swift} alt="Swift logo" width="48px" height="48px" />
+                        <h6>Swift</h6>
                     </div>
                 </section>
                 <h6 className="my-8 py-4 self-center font-extrabold text-blue-600">{texts.skillsH3}</h6>

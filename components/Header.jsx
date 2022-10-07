@@ -11,9 +11,9 @@ export default function Header() {
         <header id="header" className="w-full h-screen text-center">
             <main className="flex w-full h-full mx-auto justify-center items-center">
                 <section className="flex flex-col w-[80%]">
-                    <p className="py-2 font-light text-base text-slate-800 uppercase tracking-widest">🚀 {texts.headerSection}</p>
+                    <h6 className="py-2 font-light text-slate-800 uppercase tracking-widest">🚀 {texts.headerSection}</h6>
                     <h1 className="py-4 font-extrabold text-blue-600">{texts.headerH1}</h1>
-                    <h4 className="py-2 font-light">{texts.headerH2} 🇦🇷</h4>
+                    <h4 className="py-2 font-normal">{texts.headerH2} 🇦🇷</h4>
                     <div className="flex m-auto my-8 items-end justify-between gap-8 md:gap-16">
                         <div className="p-4 rounded-full shadow-md shadow-blue-200 cursor-pointer hover:scale-105 hover:shadow-pink-300 ease-in-out duration-200">
                             <Link href="/">

@@ -8,8 +8,8 @@ export default function Contact() {
     const { texts } = useContext(LanguageContext);
 
     return (
-        <main id="contact" className="flex w-full px-8 text-center h-screen py-16 items-center md:text-left">
-            <div className="max-w-[1280px] m-auto md:grid grid-cols-3 gap-8 items-center">
+        <main id="contact" className="flex w-full p-6 md:p-20 text-center h-screen items-center md:text-left">
+            <div className="w-full m-auto md:grid grid-cols-3 gap-8 items-center">
                 <section className="col-span-2">
                     <h4 className="py-2 font-light text-base text-slate-800 uppercase tracking-widest">🤙 {texts.contactSection}</h4>
                     <h1 className="py-4 font-extrabold text-blue-600">{texts.contactH1}</h1>

@@ -33,7 +33,7 @@ const translations = {
         skillsSh3: "Organization & Follow-up",
         contactSection: "Contact me",
         contactH1: "Get in touch!",
-        contactP: "Call me, write me an e-mail or a WhatsApp message, or just connect and chat with me in Linkedin.",
+        contactP: "Call me, write me an e-mail or a WhatsApp message, or just connect and chat with me on Linkedin.",
         contactPhone: "Phone number",
         footerCreated: "This portfolio was created with",
         footerThanks: "Thanks for watching!",

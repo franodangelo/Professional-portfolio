@@ -24,8 +24,8 @@ export default function Projects() {
                         <Image className="rounded-xl" src={propertyImg5} alt="project thumbnail" />
                         <div>
                             <div className="pb-4">
-                                <h6 className="mt-4 py-2 text-center border-t-2 border-gray-200">Advantage. Tennis E-commerce</h6>
-                                <p className="text-sm text-center text-blue-500">{texts.projectsResponsive}</p>
+                                <h6 className="mt-4 py-2 text-center border-t-2 border-gray-200">Tennis E-commerce</h6>
+                                <p className="font-light text-sm text-center text-blue-500">{texts.projectsResponsive}</p>
                             </div>
                             <div className="flex flex-wrap place-content-center py-4 gap-2">
                                 <span className="px-2 py-1 font-light text-xs text-center bg-yellow-500/80 rounded-full">JavaScript</span>
@@ -49,7 +49,7 @@ export default function Projects() {
                         <div>
                             <div className="pb-4">
                                 <h6 className="mt-4 py-2 text-center border-t-2 border-gray-200">Small Weather App</h6>
-                                <p className="text-sm text-center text-blue-500">{texts.projectsResponsive}</p>
+                                <p className="font-light text-sm text-center text-blue-500">{texts.projectsResponsive}</p>
                             </div>
                             <div className="flex flex-wrap place-content-center py-4 gap-2">
                                 <span className="px-2 py-1 font-light text-xs text-center bg-yellow-500/80 rounded-full">JavaScript</span>
@@ -72,7 +72,7 @@ export default function Projects() {
                         <div>
                             <div className="pb-4">
                                 <h6 className="mt-4 py-2 text-center border-t-2 border-gray-200">Services SPA</h6>
-                                <p className="text-sm text-center text-blue-500">{texts.projectsResponsive}</p>
+                                <p className="font-light text-sm text-center text-blue-500">{texts.projectsResponsive}</p>
                             </div>
                             <div className="flex flex-wrap place-content-center py-4 gap-2">
                                 <span className="px-2 py-1 font-light text-xs text-center bg-yellow-500/80 rounded-full">JavaScript</span>
@@ -95,7 +95,7 @@ export default function Projects() {
                         <div>
                             <div className="pb-4">
                                 <h6 className="mt-4 py-2 text-center border-t-2 border-gray-200">yumPaw: Pet Care & Shop</h6>
-                                <p className="font-thin text-sm text-center text-gray-500">{texts.projectsNotResponsive}</p>
+                                <p className="font-light text-sm text-center text-gray-500">{texts.projectsNotResponsive}</p>
                             </div>
                             <div className="flex flex-wrap place-content-center py-4 gap-2">
                                 <span className="px-2 py-1 font-light text-xs text-center bg-yellow-500/80 rounded-full">JavaScript</span>
@@ -120,7 +120,7 @@ export default function Projects() {
                         <div>
                             <div className="pb-4">
                                 <h6 className="mt-4 py-2 text-center border-t-2 border-gray-200">Video games Project</h6>
-                                <p className="font-thin text-sm text-center text-gray-500">{texts.projectsNotResponsive}</p>
+                                <p className="font-light text-sm text-center text-gray-500">{texts.projectsNotResponsive}</p>
                             </div>
                             <div className="flex flex-wrap place-content-center py-4 gap-2">
                                 <span className="px-2 py-1 font-light text-xs text-center bg-yellow-500/80 rounded-full">JavaScript</span>

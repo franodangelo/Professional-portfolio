@@ -18,6 +18,7 @@ import swift from "../public/assets/skills/swift.png";
 import vsc from "../public/assets/skills/vsc.png";
 import npm from "../public/assets/skills/npm.png";
 import github from "../public/assets/skills/github.png";
+import postman from "../public/assets/skills/postman.svg";
 import figma from "../public/assets/skills/figma.png";
 import adobexd from "../public/assets/skills/adobexd.png";
 import notion from "../public/assets/skills/notion.png";
@@ -113,6 +114,9 @@ export default function Skills() {
                                 </span>
                                 <span className="m-auto">
                                     <Image src={github} alt="Github logo" width="48px" height="48px" />
+                                </span>
+                                <span className="m-auto">
+                                    <Image src={postman} alt="Postman logo" width="56px" height="48px" />
                                 </span>
                             </div>
                         </div>

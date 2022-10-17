@@ -85,7 +85,7 @@ export default function Skills() {
                         <h6>Bootstrap</h6>
                     </div>
                 </section>
-                <h6 className="my-8 py-4 font-extrabold text-blue-600">{texts.skillsH2}</h6>
+                <h4 className="my-8 py-4 font-extrabold text-blue-600">{texts.skillsH2}</h4>
                 <section className="grid w-full p-4 gap-4 md:grid-cols-3">
                     <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-blue-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
                         <Image src={typescript} alt="TypeScript logo" width="48px" height="48px" />

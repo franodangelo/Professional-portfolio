@@ -44,7 +44,10 @@ export default function Projects() {
                         </div>
                     </div>
                     <div className="flex flex-col h-auto w-full p-8 items-center justify-center shadow-md shadow-blue-200 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200">
-                        <span className="flex mb-4 py-1 px-2 self-end text-xs text-white bg-blue-600/50 rounded-full uppercase">{texts.projectsAug} 22</span>
+                        <div className="w-full flex justify-end gap-2">
+                            <span className="flex mb-4 py-1 px-2 self-end text-xs text-blue-800 bg-blue-200/50 rounded-full uppercase">API REST</span>
+                            <span className="flex mb-4 py-1 px-2 self-end text-xs text-white bg-blue-600/50 rounded-full uppercase">{texts.projectsAug} 22</span>
+                        </div>
                         <Image className="rounded-xl" src={propertyImg4} alt="project thumbnail" />
                         <div>
                             <div className="pb-4">
@@ -90,7 +93,10 @@ export default function Projects() {
                         </div>
                     </div>
                     <div className="flex flex-col h-auto w-full p-8 items-center justify-center shadow-md shadow-blue-200 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200">
-                        <span className="flex mb-4 py-1 px-2 self-end text-xs text-white bg-blue-600/50 rounded-full uppercase">Jun 22</span>
+                        <div className="w-full flex justify-end gap-2">
+                            <span className="flex mb-4 py-1 px-2 self-end text-xs text-blue-800 bg-blue-200/50 rounded-full uppercase">API REST</span>
+                            <span className="flex mb-4 py-1 px-2 self-end text-xs text-white bg-blue-600/50 rounded-full uppercase">Jun 22</span>
+                        </div>
                         <Image className="rounded-xl" src={propertyImg2} alt="project thumbnail" />
                         <div>
                             <div className="pb-4">
@@ -115,7 +121,10 @@ export default function Projects() {
                         </div>
                     </div>
                     <div className="flex flex-col h-auto w-full p-8 items-center justify-center shadow-md shadow-blue-200 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200">
-                        <span className="flex mb-4 py-1 px-2 self-end text-xs text-white bg-blue-600/50 rounded-full uppercase">May 22</span>
+                        <div className="w-full flex justify-end gap-2">
+                            <span className="flex mb-4 py-1 px-2 self-end text-xs text-blue-800 bg-blue-200/50 rounded-full uppercase">API REST</span>
+                            <span className="flex mb-4 py-1 px-2 self-end text-xs text-white bg-blue-600/50 rounded-full uppercase">May 22</span>
+                        </div>
                         <Image className="rounded-xl" src={propertyImg1} alt="project thumbnail" />
                         <div>
                             <div className="pb-4">
@@ -137,6 +146,38 @@ export default function Projects() {
                             <span className="p-2 rounded-full shadow-sm shadow-pink-200 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200">
                                 <a href="https://videogamesspa.vercel.app/" target="_blank" rel="noreferrer"><IoMdOpen /></a>
                             </span>
+                        </div>
+                    </div>
+                </section>
+                <h4 className="py-4 font-extrabold text-center text-blue-600">{texts.projectsWorkingOn}</h4>
+                <section className="grid p-4 grid-cols-1 gap-8 md:grid-cols-2">
+                    <div className="flex flex-col h-auto w-full p-4 items-center justify-center shadow-md shadow-blue-200 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200">
+                        <span className="flex mb-4 py-1 px-2 self-end text-xs text-white bg-blue-600/50 rounded-full uppercase">Oct 22</span>
+                        <div>
+                            <div className="pb-2">
+                                <h6 className="py-1 text-center">{`Client's Company Website`}</h6>
+                            </div>
+                            <div className="flex flex-wrap place-content-center py-2 gap-2">
+                                <span className="px-2 py-1 font-light text-xs text-center bg-yellow-500/80 rounded-full">JavaScript</span>
+                                <span className="px-2 py-1 font-light text-xs text-center bg-cyan-400/80 rounded-full">React</span>
+                                <span className="px-2 py-1 font-light text-xs text-center text-white bg-emerald-500/80 rounded-full">Tailwind</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-col h-auto w-full p-4 items-center justify-center shadow-md shadow-blue-200 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200">
+                        <div className="w-full flex justify-end gap-2">
+                            <span className="flex mb-4 py-1 px-2 self-end text-xs text-blue-800 bg-blue-200/50 rounded-full uppercase">API REST</span>
+                            <span className="flex mb-4 py-1 px-2 self-end text-xs text-white bg-blue-600/50 rounded-full uppercase">Oct 22</span>
+                        </div>
+                        <div>
+                            <div className="pb-2">
+                                <h6 className="py-1 text-center">Cryptocurrency SPA</h6>
+                            </div>
+                            <div className="flex flex-wrap place-content-center py-2 gap-2">
+                                <span className="px-2 py-1 font-light text-xs text-center bg-yellow-500/80 rounded-full">JavaScript</span>
+                                <span className="px-2 py-1 font-light text-xs text-center bg-cyan-400/80 rounded-full">React</span>
+                                <span className="px-2 py-1 font-light text-xs text-center text-white bg-emerald-500/80 rounded-full">Tailwind</span>
+                            </div>
                         </div>
                     </div>
                 </section>

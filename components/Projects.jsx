@@ -29,9 +29,9 @@ export default function Projects() {
                             </div>
                             <div className="flex flex-wrap place-content-center py-4 gap-2">
                                 <span className="px-2 py-1 font-light text-xs text-center bg-yellow-500/80 rounded-full">JavaScript</span>
-                                <span className="px-2 py-1 font-light text-xs text-center bg-cyan-400/80 rounded-full">React</span>
+                                <span className="px-2 py-1 font-light text-xs text-center text-white bg-cyan-500/80 rounded-full">React</span>
                                 <span className="px-2 py-1 font-light text-xs text-center text-white bg-emerald-500/80 rounded-full">Tailwind</span>
-                                <span className="px-2 py-1 font-light text-xs text-center bg-yellow-500/80 rounded-full">Firebase</span>
+                                <span className="px-2 py-1 font-light text-xs text-center text-white bg-yellow-500 rounded-full">Firebase</span>
                             </div>
                         </div>
                         <div className="flex mt-4 justify-center items-center gap-4">
@@ -79,7 +79,7 @@ export default function Projects() {
                             </div>
                             <div className="flex flex-wrap place-content-center py-4 gap-2">
                                 <span className="px-2 py-1 font-light text-xs text-center bg-yellow-500/80 rounded-full">JavaScript</span>
-                                <span className="px-2 py-1 font-light text-xs text-center bg-cyan-400/80 rounded-full">React</span>
+                                <span className="px-2 py-1 font-light text-xs text-center text-white bg-cyan-500/80 rounded-full">React</span>
                                 <span className="px-2 py-1 font-light text-xs text-center text-white bg-emerald-500/80 rounded-full">Tailwind</span>
                             </div>
                         </div>
@@ -105,10 +105,13 @@ export default function Projects() {
                             </div>
                             <div className="flex flex-wrap place-content-center py-4 gap-2">
                                 <span className="px-2 py-1 font-light text-xs text-center bg-yellow-500/80 rounded-full">JavaScript</span>
-                                <span className="px-2 py-1 font-light text-xs text-center bg-cyan-400/80 rounded-full">React</span>
+                                <span className="px-2 py-1 font-light text-xs text-center text-white bg-cyan-500/80 rounded-full">React</span>
+                                <span className="px-2 py-1 font-light text-xs text-center bg-violet-400/80 rounded-full">Redux</span>
+                                <span className="px-2 py-1 font-light text-xs text-center text-white bg-blue-500/80 rounded-full">CSS</span>
                                 <span className="px-2 py-1 font-light text-xs text-center text-white bg-green-600/80 rounded-full">Node.js</span>
                                 <span className="px-2 py-1 font-light text-xs text-center bg-gray-200/80 rounded-full">Express</span>
-                                <span className="px-2 py-1 font-light text-xs text-center text-white bg-blue-600/80 rounded-full">PostgreSQL</span>
+                                <span className="px-2 py-1 font-light text-xs text-center text-white bg-blue-700/80 rounded-full">PostgreSQL</span>
+                                <span className="px-2 py-1 font-light text-xs text-center bg-blue-300/80 rounded-full">Sequelize</span>
                             </div>
                         </div>
                         <div className="flex mt-4 justify-center items-center gap-4">
@@ -133,10 +136,13 @@ export default function Projects() {
                             </div>
                             <div className="flex flex-wrap place-content-center py-4 gap-2">
                                 <span className="px-2 py-1 font-light text-xs text-center bg-yellow-500/80 rounded-full">JavaScript</span>
-                                <span className="px-2 py-1 font-light text-xs text-center bg-cyan-400/80 rounded-full">React</span>
+                                <span className="px-2 py-1 font-light text-xs text-center text-white bg-cyan-500/80 rounded-full">React</span>
+                                <span className="px-2 py-1 font-light text-xs text-center bg-violet-400/80 rounded-full">Redux</span>
+                                <span className="px-2 py-1 font-light text-xs text-center text-white bg-blue-500/80 rounded-full">CSS</span>
                                 <span className="px-2 py-1 font-light text-xs text-center text-white bg-green-600/80 rounded-full">Node.js</span>
                                 <span className="px-2 py-1 font-light text-xs text-center bg-gray-200/80 rounded-full">Express</span>
-                                <span className="px-2 py-1 font-light text-xs text-center text-white bg-blue-600/80 rounded-full">PostgreSQL</span>
+                                <span className="px-2 py-1 font-light text-xs text-center text-white bg-blue-700/80 rounded-full">PostgreSQL</span>
+                                <span className="px-2 py-1 font-light text-xs text-center bg-blue-300/80 rounded-full">Sequelize</span>
                             </div>
                         </div>
                         <div className="flex mt-4 justify-center items-center gap-4">
@@ -159,7 +165,7 @@ export default function Projects() {
                             </div>
                             <div className="flex flex-wrap place-content-center py-2 gap-2">
                                 <span className="px-2 py-1 font-light text-xs text-center bg-yellow-500/80 rounded-full">JavaScript</span>
-                                <span className="px-2 py-1 font-light text-xs text-center bg-cyan-400/80 rounded-full">React</span>
+                                <span className="px-2 py-1 font-light text-xs text-center text-white bg-cyan-500/80 rounded-full">React</span>
                                 <span className="px-2 py-1 font-light text-xs text-center text-white bg-emerald-500/80 rounded-full">Tailwind</span>
                             </div>
                         </div>
@@ -175,7 +181,7 @@ export default function Projects() {
                             </div>
                             <div className="flex flex-wrap place-content-center py-2 gap-2">
                                 <span className="px-2 py-1 font-light text-xs text-center bg-yellow-500/80 rounded-full">JavaScript</span>
-                                <span className="px-2 py-1 font-light text-xs text-center bg-cyan-400/80 rounded-full">React</span>
+                                <span className="px-2 py-1 font-light text-xs text-center text-white bg-cyan-500/80 rounded-full">React</span>
                                 <span className="px-2 py-1 font-light text-xs text-center text-white bg-emerald-500/80 rounded-full">Tailwind</span>
                             </div>
                         </div>

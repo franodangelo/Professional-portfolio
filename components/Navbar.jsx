@@ -148,7 +148,7 @@ export default function Navbar() {
                                 </div>
                             </section>
                             <button className="w-full mt-8 py-2 px-4 font-semibold text-blue-600 uppercase border border-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 ease-in-out duration-300">
-                                <a href="https://drive.google.com/file/d/1bnItJ1HsNa4XnA-M67K5LFuSu4FZFuEa/view?usp=sharing" download target="_blank" rel="noreferrer">
+                                <a href="https://drive.google.com/file/d/1gDNcM1H47i5_e4duAOeLd_MWe-9hRoYp/view?usp=sharing" download target="_blank" rel="noreferrer">
                                     {texts.navbarButtonCV}
                                 </a>
                             </button>

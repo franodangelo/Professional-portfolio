@@ -33,7 +33,7 @@ export default function Skills() {
     return (
         <main id="skills" className="w-full md:h-full p-6 md:p-20">
             <div className="flex flex-col h-full mx-auto justify-center items-center md:items-start">
-                <h4 className="py-2 font-light text-base text-slate-800 uppercase tracking-widest">📚 {texts.skillsSection}</h4>
+                <h6 className="py-2 font-light text-slate-800 uppercase tracking-widest">📚 {texts.skillsSection}</h6>
                 <h2 className="my-4 py-4 font-extrabold text-blue-600">{texts.skillsH1}</h2>
                 <section className="grid w-full p-4 gap-4 md:grid-cols-2 lg:grid-cols-4">
                     <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">

@@ -12,7 +12,7 @@ export default function Contact() {
             <div className="flex flex-col w-full m-auto gap-8 items-center">
                 <section className="col-span-2">
                     <h6 className="py-2 font-light text-slate-800 uppercase tracking-widest">🤙 {texts.contactSection}</h6>
-                    <h1 className="py-4 font-extrabold text-blue-600">{texts.contactH1}</h1>
+                    <h2 className="py-4 font-extrabold text-blue-600">{texts.contactH1}</h2>
                     <p className="py-2 font-normal text-sm md:text-base text-slate-600">{texts.contactP}</p>
                 </section>
                 <section className="flex flex-col w-fit justify-between gap-4 md:gap-8">

@@ -101,10 +101,10 @@ export default function Skills() {
                     </div>
                 </section>
                 <h6 className="my-8 py-4 self-center font-extrabold text-blue-600">{texts.skillsH3}</h6>
-                <section className="grid md:w-[50%] mx-4 p-4 self-center divide-y-2 rounded-lg bg-white shadow-md">
+                <section className="grid md:w-[50%] mx-4 px-4 py-2 self-center divide-y-2 rounded-lg bg-white shadow-md">
                     <div className="p-4">
                         <div className="flex gap-2 justify-between items-center">
-                            <h6 className="basis-2/5 text-xs md:text-base">{texts.skillsSh1}</h6>
+                            <h6 className="basis-2/5">{texts.skillsSh1}</h6>
                             <div className="flex gap-4">
                                 <span className="m-auto">
                                     <Image src={vsc} alt="Visual Studio Code logo" width="48px" height="48px" />
@@ -123,7 +123,7 @@ export default function Skills() {
                     </div>
                     <div className="p-4">
                         <div className="flex gap-2 justify-between items-center">
-                            <h6 className="basis-2/5 text-xs md:text-base">{texts.skillsSh2}</h6>
+                            <h6 className="basis-2/5">{texts.skillsSh2}</h6>
                             <div className="flex gap-4">
                                 <span className="m-auto">
                                     <Image src={figma} alt="Figma logo" width="48px" height="48px" />
@@ -136,7 +136,7 @@ export default function Skills() {
                     </div>
                     <div className="p-4">
                         <div className="flex gap-2 justify-between items-center">
-                            <h6 className="basis-2/5 text-xs md:text-base">{texts.skillsSh3}</h6>
+                            <h6 className="basis-2/5">{texts.skillsSh3}</h6>
                             <div className="flex gap-4">
                                 <span className="m-auto">
                                     <Image src={notion} alt="Notion logo" width="48px" height="48px" />

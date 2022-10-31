@@ -38,7 +38,7 @@ export default function Navbar() {
                 <section className="flex">
                     <ul className="hidden md:flex items-center gap-8">
                         <div className="flex gap-2">
-                            <Link href="https://drive.google.com/file/d/14mwcYLoMeCfHkqBqd-u8TLnfAcE8QEaM/view?usp=sharing" download>
+                            <Link href="https://drive.google.com/file/d/1LIe6wAyQAxBMxjW2F5o9ADduKISzl0Ks/view?usp=share_link" download>
                                 <a className="py-2 px-4 font-semibold text-blue-600 uppercase border border-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 hover:shadow-blue-300 ease-in-out duration-200"
                                     target="_blank">{texts.navbarButtonCV}
                                 </a>

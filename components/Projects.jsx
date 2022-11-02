@@ -156,7 +156,7 @@ export default function Projects() {
                                 <a href="https://github.com/franodangelo/Videogames-Proyect" target="_blank" rel="noreferrer"><FaGithub /></a>
                             </span>
                             <span className="p-2 rounded-full shadow-sm shadow-pink-200 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200">
-                                <a href="https://videogamesspa.vercel.app/" target="_blank" rel="noreferrer"><IoMdOpen /></a>
+                                <a href="https://gameon-platform.vercel.app/" target="_blank" rel="noreferrer"><IoMdOpen /></a>
                             </span>
                         </div>
                     </div>

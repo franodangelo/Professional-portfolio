@@ -95,7 +95,7 @@ export default function Projects() {
                 </section>
                 {/* Last row */}
                 <section className="grid grid-cols-1 p-4 gap-8 md:grid-cols-6">
-                    <div className="col-start-2 col-span-2 flex flex-col h-auto w-full p-8 items-center justify-center shadow-md shadow-blue-200 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200">
+                    <div className="md:col-start-2 md:col-span-2 flex flex-col h-auto w-full p-8 items-center justify-center shadow-md shadow-blue-200 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200">
                         <div className="w-full flex justify-end gap-2">
                             <span className="flex mb-4 py-1 px-2 self-end text-xs text-blue-800 bg-blue-200/50 rounded-md uppercase">API REST</span>
                             <span className="flex mb-4 py-1 px-2 self-end text-xs text-white bg-blue-600/50 rounded-md uppercase">Jun 22</span>
@@ -126,7 +126,7 @@ export default function Projects() {
                             </span>
                         </div>
                     </div>
-                    <div className="col-start-4 col-span-2 flex flex-col h-full w-full p-8 items-center justify-center shadow-md shadow-blue-200 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200">
+                    <div className="md:col-start-4 md:col-span-2 flex flex-col h-full w-full p-8 items-center justify-center shadow-md shadow-blue-200 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200">
                         <div className="w-full flex justify-between">
                             {/* <span className="w-fit flex mb-4 py-1 px-2 self-end text-xs text-white bg-pink-500 rounded-md uppercase">Updated</span> */}
                             <div className="w-full flex justify-end gap-2">

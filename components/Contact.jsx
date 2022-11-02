@@ -8,7 +8,7 @@ export default function Contact() {
     const { texts } = useContext(LanguageContext);
 
     return (
-        <main id="contact" className="flex w-full p-6 md:p-20 text-center h-screen items-center">
+        <main id="contact" className="flex w-full p-6 md:p-16 text-center h-screen items-center">
             <div className="flex flex-col w-full m-auto gap-8 items-center">
                 <section className="col-span-2">
                     <h6 className="py-2 font-light text-slate-800 uppercase tracking-widest">🤙 {texts.contactSection}</h6>

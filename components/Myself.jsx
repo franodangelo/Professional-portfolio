@@ -8,7 +8,7 @@ export default function Myself() {
     const { texts } = useContext(LanguageContext);
 
     return (
-        <main id="myself" className="flex w-full p-6 md:p-20 items-center text-center md:h-screen md:text-left">
+        <main id="myself" className="flex w-full p-6 md:p-16 items-center text-center md:h-screen md:text-left">
             <div className="m-auto gap-8 items-center md:grid grid-cols-3">
                 <section className="col-span-2">
                     <h6 className="py-2 font-light text-slate-800 uppercase tracking-widest">👦 {texts.myselfSection}</h6>

@@ -31,7 +31,7 @@ export default function Skills() {
     const { texts } = useContext(LanguageContext);
 
     return (
-        <main id="skills" className="w-full md:h-full p-6 md:p-20">
+        <main id="skills" className="w-full md:h-full p-6 md:p-16">
             <div className="flex flex-col h-full mx-auto justify-center items-center md:items-start">
                 <h6 className="py-2 font-light text-slate-800 uppercase tracking-widest">📚 {texts.skillsSection}</h6>
                 <h2 className="my-4 py-4 font-extrabold text-blue-600">{texts.skillsH1}</h2>

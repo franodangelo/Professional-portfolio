@@ -35,7 +35,7 @@ export default function Skills() {
             <div className="flex flex-col h-full mx-auto justify-center items-center md:items-start">
                 <h6 className="py-2 font-light text-slate-800 uppercase tracking-widest">📚 {texts.skillsSection}</h6>
                 <h2 className="my-4 py-4 font-extrabold text-blue-600">{texts.skillsH1}</h2>
-                <section className="grid w-full p-4 gap-4 md:grid-cols-2 lg:grid-cols-4">
+                <section className="grid w-full py-4 gap-4 md:grid-cols-2 lg:grid-cols-4">
                     <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
                         <Image src={javascript} alt="JavaScript logo" width="64px" height="64px" />
                         <h6>JavaScript</h6>
@@ -86,7 +86,7 @@ export default function Skills() {
                     </div>
                 </section>
                 <h4 className="mt-8 py-4 font-extrabold text-blue-600">{texts.skillsH2}</h4>
-                <section className="grid w-full p-4 gap-4 md:grid-cols-3">
+                <section className="grid w-full py-4 gap-4 md:grid-cols-3">
                     <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-blue-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
                         <Image src={typescript} alt="TypeScript logo" width="48px" height="48px" />
                         <h6>TypeScript</h6>

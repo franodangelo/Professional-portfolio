@@ -18,7 +18,7 @@ export default function Projects() {
             <div className="h-full mx-auto">
                 <h6 className="py-2 font-light text-center text-slate-800 uppercase tracking-widest">✔️ {texts.projectsSection}</h6>
                 <h2 className="py-4 font-extrabold text-center text-blue-600">{texts.projectsH1}</h2>
-                <section className="grid grid-cols-1 p-4 gap-8 md:grid-cols-3">
+                <section className="grid grid-cols-1 py-4 gap-8 md:grid-cols-3">
                     <div className="flex flex-col h-auto w-full p-8 items-center justify-center shadow-md shadow-blue-200 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200">
                         <span className="flex mb-4 py-1 px-2 self-end text-xs text-white bg-blue-600/50 rounded-md uppercase">Sep 22</span>
                         <Image className="rounded object-cover" height={200} width={400} src={propertyImg5} alt="project thumbnail" />
@@ -94,7 +94,7 @@ export default function Projects() {
                     </div>
                 </section>
                 {/* Last row */}
-                <section className="grid grid-cols-1 p-4 gap-8 md:grid-cols-6">
+                <section className="grid grid-cols-1 py-4 gap-8 md:grid-cols-6">
                     <div className="md:col-start-2 md:col-span-2 flex flex-col h-auto w-full p-8 items-center justify-center shadow-md shadow-blue-200 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200">
                         <div className="w-full flex justify-end gap-2">
                             <span className="flex mb-4 py-1 px-2 self-end text-xs text-blue-800 bg-blue-200/50 rounded-md uppercase">API REST</span>
@@ -162,7 +162,7 @@ export default function Projects() {
                     </div>
                 </section>
                 <h4 className="mt-8 py-4 font-extrabold text-center text-blue-600">{texts.projectsWorkingOn}</h4>
-                <section className="grid p-4 grid-cols-1 gap-8 md:grid-cols-2">
+                <section className="grid py-4 grid-cols-1 gap-8 md:grid-cols-2">
                     <div className="flex flex-col h-auto w-full p-4 items-center justify-center shadow-md shadow-blue-200 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200">
                         <span className="flex mb-4 py-1 px-2 self-end text-xs text-white bg-blue-600/50 rounded-md uppercase">Oct 22</span>
                         <div>

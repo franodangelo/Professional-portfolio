@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import Image from "next/image";
 import propertyImg1 from "../public/assets/projects/project1.jpg";
-import propertyImg2 from "../public/assets/projects/project2.png";
+import propertyImg2 from "../public/assets/projects/project2.jpg";
 import propertyImg3 from "../public/assets/projects/project3.png";
 import propertyImg4 from "../public/assets/projects/project4.png";
 import propertyImg5 from "../public/assets/projects/project5.png";

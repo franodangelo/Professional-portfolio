@@ -17,12 +17,11 @@ export default function Navbar() {
 
     return (
         <nav className="fixed w-full h-20 shadow-lg z-[100] bg-white">
-            <main className="flex justify-between items-center w-full h-full px-6 2xl:px-20"> {/* Here is the lg navbar */}
+            <main className="flex justify-between items-center w-full h-full px-6 md:px-10"> {/* Here is the lg navbar */}
                 <section className="flex gap-8">
-                    <Image src={logo} alt="logo" width="32px" height="32px" />
                     <div className="hidden md:flex items-center gap-4">
                         <Link offset={-200} href="/#header">
-                            <p className="font-semibold text-sm text-blue-600 uppercase hover:text-pink-600 hover:scale-105 duration-200 cursor-pointer">{texts.navbarHome}</p>
+                            <Image className="hover:scale-105 duration-200 cursor-pointer" src={logo} alt="logo" width="32px" height="32px" />
                         </Link>
                         <Link href="/#myself">
                             <p className="font-semibold text-sm text-blue-600 uppercase hover:text-pink-600 hover:scale-105 duration-200 cursor-pointer">{texts.navbarMyself}</p>
@@ -38,7 +37,7 @@ export default function Navbar() {
                 <section className="flex">
                     <ul className="hidden md:flex items-center gap-8">
                         <div className="flex gap-2">
-                            <Link href="https://drive.google.com/file/d/1LIe6wAyQAxBMxjW2F5o9ADduKISzl0Ks/view?usp=share_link" download>
+                            <Link href={texts.cvDocument} download>
                                 <a className="py-2 px-4 font-semibold text-blue-600 uppercase border border-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 hover:shadow-blue-300 ease-in-out duration-200"
                                     target="_blank">{texts.navbarButtonCV}
                                 </a>

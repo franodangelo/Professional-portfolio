@@ -10,7 +10,7 @@ export default function Footer() {
     const { texts } = useContext(LanguageContext);
 
     return (
-        <footer className="flex flex-col lg:flex-row w-full h-40 py-12 lg:py-0 lg:px-20 gap-8 items-center justify-between bg-white">
+        <footer className="flex flex-col lg:flex-row w-full h-40 py-12 lg:py-0 lg:px-10 gap-8 items-center justify-between bg-white">
             <div className="flex flex-wrap lg:flex-col lg:flex-nowrap justify-center items-center gap-2">
                 <h1 className="font-medium text-center text-base text-blue-600">{texts.footerCreated}</h1>
                 <ul className="flex justify-between lg:justify-evenly gap-2 lg:gap-4">
@@ -27,7 +27,7 @@ export default function Footer() {
             </div>
             <div className="flex lg:flex-col gap-2 items-center">
                 <h2 className="font-medium text-sm md:text-base text-blue-600">{texts.footerThanks} 😀</h2>
-                <p className="font-thin text-xs md:text-sm text-blue-600">{texts.footerUpdate} 31-10-2022</p>
+                <p className="font-thin text-xs md:text-sm text-blue-600">{texts.footerUpdate} 02-11-2022</p>
             </div>
         </footer>
     )

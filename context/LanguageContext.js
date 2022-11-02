@@ -5,11 +5,11 @@ export const LanguageContext = createContext();
 const initialLanguage = "en";
 const translations = {
     en: {
-        navbarHome: "Home",
         navbarMyself: "Myself",
         navbarProjects: "Projects",
         navbarSkills: "Skills",
         navbarButtonCV: "Resume",
+        cvDocument: "https://drive.google.com/file/d/1LIe6wAyQAxBMxjW2F5o9ADduKISzl0Ks/view?usp=share_link",
         navbarButtonContact: "Contact me",
         navbarWTC: "Want to connect?",
         headerH1: "Hi everyone, I'm Franco!",
@@ -41,11 +41,11 @@ const translations = {
         footerUpdate: "Last update:"
     },
     es: {
-        navbarHome: "Inicio",
         navbarMyself: "Sobre mi",
         navbarProjects: "Proyectos",
         navbarSkills: "Skills",
         navbarButtonCV: "Currículum",
+        cvDocument: "https://drive.google.com/file/d/1RArCzeaeWl_ZJffAvRFIFml5Etzqa1-A/view?usp=share_link",
         navbarButtonContact: "Contactame",
         navbarWTC: "Quieres conectar?",
         headerH1: "Hola a todos, soy Franco!",
@@ -57,8 +57,8 @@ const translations = {
         myselfSection: "Sobre mi",
         projectsSection: "Proyectos",
         projectsH1: "Mis trabajos hasta ahora",
-        projectsResponsive: "Diseño responsive",
-        projectsNotResponsive: "Trabajando en Diseño responsive",
+        projectsResponsive: "Diseño responsivo",
+        projectsNotResponsive: "Trabajando en Diseño responsivo",
         projectsAug: "Ago",
         projectsWorkingOn: "Estoy trabajando en estos proyectos",
         skillsSection: "Skills",

@@ -31,12 +31,16 @@ export default function Skills() {
     const [frontendTools, setFrontendTools] = useState(false);
     const [backendTools, setBackendTools] = useState(false);
 
-    function handleFront(e) {
+    function handleFront() {
         setFrontendTools(!frontendTools);
+        setBackendTools(false);
+        console.log("Frontend button", frontendTools);
     }
 
-    function handleBack(e) {
+    function handleBack() {
         setBackendTools(!backendTools);
+        setFrontendTools(false);
+        console.log("Backend button", backendTools);
     }
 
     const { texts } = useContext(LanguageContext);
@@ -47,62 +51,106 @@ export default function Skills() {
                 <h6 className="py-2 font-light text-slate-800 uppercase tracking-widest">📚 {texts.skillsSection}</h6>
                 <h2 className="my-4 py-4 font-extrabold text-blue-600">{texts.skillsH1}</h2>
                 <div className="flex w-fit self-end gap-4">
-                    <p onClick={handleFront} className="px-2 py-1 font-semibold text-blue-600 border border-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:shadow-blue-300 ease-in-out duration-200">
+                    {backendTools ? <p onClick={handleFront}
+                        className="px-2 py-1 font-semibold text-blue-200 hover:text-blue-400 border border-blue-200 hover:border-blue-400 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:shadow-blue-300 ease-in-out duration-200">
                         Frontend
-                    </p>
-                    <p className="px-2 py-1 font-semibold text-blue-600 border border-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:shadow-blue-300 ease-in-out duration-200">
+                    </p> : <p onClick={handleFront}
+                        className="px-2 py-1 font-semibold text-blue-600 border border-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:shadow-blue-300 ease-in-out duration-200">
+                        Frontend
+                    </p>}
+                    {frontendTools ? <p onClick={handleBack}
+                        className="px-2 py-1 font-semibold text-blue-200 hover:text-blue-400 border border-blue-200 hover:border-blue-400 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:shadow-blue-300 ease-in-out duration-200">
                         Backend
-                    </p>
+                    </p> : <p onClick={handleBack}
+                        className="px-2 py-1 font-semibold text-blue-600 border border-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:shadow-blue-300 ease-in-out duration-200">
+                        Backend
+                    </p>}
                 </div>
                 <section className="grid w-full py-4 gap-4 md:grid-cols-2 lg:grid-cols-4">
-                    <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                    {!backendTools && !frontendTools ? <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
                         <Image src={javascript} alt="JavaScript logo" width="64px" height="64px" />
                         <h6>JavaScript</h6>
-                    </div>
-                    <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                    </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <Image src={javascript} alt="JavaScript logo" width="64px" height="64px" />
+                        <h6>JavaScript</h6>
+                    </div>}
+                    {!backendTools ? <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
                         <Image src={react} alt="React logo" width="64px" height="64px" />
                         <h6>React</h6>
-                    </div>
-                    <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                    </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <Image src={react} alt="React logo" width="64px" height="64px" />
+                        <h6>React</h6>
+                    </div>}
+                    {!backendTools ? <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
                         <Image src={redux} alt="Redux logo" width="64px" height="64px" />
                         <h6>Redux</h6>
-                    </div>
-                    <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                    </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <Image src={redux} alt="Redux logo" width="64px" height="64px" />
+                        <h6>Redux</h6>
+                    </div>}
+                    {!frontendTools ? <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
                         <Image src={node} alt="node.js logo" width="64px" height="64px" />
                         <h6>Node.js</h6>
-                    </div>
-                    <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                    </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <Image src={node} alt="node.js logo" width="64px" height="64px" />
+                        <h6>Node.js</h6>
+                    </div>}
+                    {!frontendTools ? <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
                         <Image src={express} alt="Express logo" width="64px" height="64px" />
                         <h6>Express</h6>
-                    </div>
-                    <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                    </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <Image src={express} alt="Express logo" width="64px" height="64px" />
+                        <h6>Express</h6>
+                    </div>}
+                    {!frontendTools ? <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
                         <Image src={postgresql} alt="PostgreSQL logo" width="64px" height="64px" />
                         <h6>PostgreSQL</h6>
-                    </div>
-                    <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                    </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <Image src={postgresql} alt="PostgreSQL logo" width="64px" height="64px" />
+                        <h6>PostgreSQL</h6>
+                    </div>}
+                    {!frontendTools ? <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
                         <Image src={sequelize} alt="Sequelize logo" width="64px" height="70px" />
                         <h6>Sequelize</h6>
-                    </div>
-                    <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                    </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <Image src={sequelize} alt="Sequelize logo" width="64px" height="70px" />
+                        <h6>Sequelize</h6>
+                    </div>}
+                    {!backendTools ? <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
                         <Image src={next} alt="Next.js logo" width="80px" height="56px" />
                         <h6>Next.js</h6>
-                    </div>
-                    <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                    </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <Image src={next} alt="Next.js logo" width="80px" height="56px" />
+                        <h6>Next.js</h6>
+                    </div>}
+                    {!backendTools ? <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
                         <Image src={html} alt="HTML logo" width="64px" height="64px" />
                         <h6>HTML</h6>
-                    </div>
-                    <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                    </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <Image src={html} alt="HTML logo" width="64px" height="64px" />
+                        <h6>HTML</h6>
+                    </div>}
+                    {!backendTools ? <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
                         <Image src={css} alt="CSS logo" width="64px" height="64px" />
                         <h6>CSS</h6>
-                    </div>
-                    <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                    </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <Image src={css} alt="CSS logo" width="64px" height="64px" />
+                        <h6>CSS</h6>
+                    </div>}
+                    {!backendTools ? <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
                         <Image src={tailwind} alt="tailwindcss logo" width="64px" height="64px" />
                         <h6>Tailwindcss</h6>
-                    </div>
-                    <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                    </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <Image src={tailwind} alt="tailwindcss logo" width="64px" height="64px" />
+                        <h6>Tailwindcss</h6>
+                    </div>}
+                    {!backendTools ? <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
                         <Image src={bootstrap} alt="Bootstrap logo" width="80px" height="64px" />
                         <h6>Bootstrap</h6>
-                    </div>
+                    </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <Image src={bootstrap} alt="Bootstrap logo" width="80px" height="64px" />
+                        <h6>Bootstrap</h6>
+                    </div>}
                 </section>
                 <h4 className="mt-8 py-4 font-extrabold text-blue-600">{texts.skillsH2}</h4>
                 <section className="grid w-full py-4 gap-4 md:grid-cols-3">

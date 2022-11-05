@@ -29,10 +29,14 @@ import { LanguageContext } from "../context/LanguageContext";
 export default function Skills() {
 
     const [frontendTools, setFrontendTools] = useState(false);
+    const [backendTools, setBackendTools] = useState(false);
 
     function handleFront(e) {
         setFrontendTools(!frontendTools);
-        console.log(frontendTools);
+    }
+
+    function handleBack(e) {
+        setBackendTools(!backendTools);
     }
 
     const { texts } = useContext(LanguageContext);

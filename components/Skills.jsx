@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Image from "next/image";
 import javascript from "../public/assets/skills/javascript.png";
 import react from "../public/assets/skills/react.png";
@@ -28,6 +28,13 @@ import { LanguageContext } from "../context/LanguageContext";
 
 export default function Skills() {
 
+    const [frontendTools, setFrontendTools] = useState(false);
+
+    function handleFront(e) {
+        setFrontendTools(!frontendTools);
+        console.log(frontendTools);
+    }
+
     const { texts } = useContext(LanguageContext);
 
     return (
@@ -35,6 +42,14 @@ export default function Skills() {
             <div className="flex flex-col h-full mx-auto justify-center items-center md:items-start">
                 <h6 className="py-2 font-light text-slate-800 uppercase tracking-widest">📚 {texts.skillsSection}</h6>
                 <h2 className="my-4 py-4 font-extrabold text-blue-600">{texts.skillsH1}</h2>
+                <div className="flex w-fit self-end gap-4">
+                    <p onClick={handleFront} className="px-2 py-1 font-semibold text-blue-600 border border-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:shadow-blue-300 ease-in-out duration-200">
+                        Frontend
+                    </p>
+                    <p className="px-2 py-1 font-semibold text-blue-600 border border-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:shadow-blue-300 ease-in-out duration-200">
+                        Backend
+                    </p>
+                </div>
                 <section className="grid w-full py-4 gap-4 md:grid-cols-2 lg:grid-cols-4">
                     <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
                         <Image src={javascript} alt="JavaScript logo" width="64px" height="64px" />
@@ -103,7 +118,7 @@ export default function Skills() {
                 <h6 className="my-8 py-4 self-center font-extrabold text-blue-600">{texts.skillsH3}</h6>
                 <section className="grid md:w-[50%] mx-4 px-4 py-2 self-center divide-y-2 rounded-lg bg-white shadow-md">
                     <div className="p-4">
-                        <div className="flex gap-2 justify-between items-center">
+                        <div className="flex flex-col lg:flex-row gap-2 justify-between items-center">
                             <h6 className="basis-2/5">{texts.skillsSh1}</h6>
                             <div className="flex gap-4">
                                 <span className="m-auto">
@@ -122,7 +137,7 @@ export default function Skills() {
                         </div>
                     </div>
                     <div className="p-4">
-                        <div className="flex gap-2 justify-between items-center">
+                        <div className="flex flex-col lg:flex-row gap-2 justify-between items-center">
                             <h6 className="basis-2/5">{texts.skillsSh2}</h6>
                             <div className="flex gap-4">
                                 <span className="m-auto">
@@ -135,7 +150,7 @@ export default function Skills() {
                         </div>
                     </div>
                     <div className="p-4">
-                        <div className="flex gap-2 justify-between items-center">
+                        <div className="flex flex-col lg:flex-row gap-2 justify-between items-center">
                             <h6 className="basis-2/5">{texts.skillsSh3}</h6>
                             <div className="flex gap-4">
                                 <span className="m-auto">

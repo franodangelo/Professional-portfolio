@@ -50,7 +50,7 @@ export default function Skills() {
             <div className="flex flex-col h-full mx-auto justify-center items-center md:items-start">
                 <h6 className="py-2 font-light text-slate-800 uppercase tracking-widest">📚 {texts.skillsSection}</h6>
                 <h2 className="my-4 py-4 font-extrabold text-blue-600">{texts.skillsH1}</h2>
-                <div className="flex w-fit self-end gap-4">
+                <div className="flex w-fit self-center md:self-end mb-4 gap-4">
                     {backendTools ? <p onClick={handleFront}
                         className="px-2 py-1 font-semibold text-blue-200 hover:text-blue-400 border border-blue-200 hover:border-blue-400 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:shadow-blue-300 ease-in-out duration-200">
                         Frontend

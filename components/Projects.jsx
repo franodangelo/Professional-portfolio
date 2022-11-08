@@ -38,10 +38,12 @@ export default function Projects() {
                             <span className="p-2 rounded-full shadow-sm shadow-pink-200 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200">
                                 <a href="https://github.com/franodangelo/React-Ecommerce" target="_blank" rel="noreferrer"><FaGithub /></a>
                             </span>
-                            <span className="p-2 rounded-full shadow-sm shadow-pink-200 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200">
-                                <a href="https://advantage-tennis-ecommerce.vercel.app/" target="_blank" rel="noreferrer"><IoMdOpen /></a>
+                            <span className="grayscale p-2 rounded-full text-slate-300 bg-slate-400 shadow-sm shadow-pink-200 cursor-not-allowed hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200">
+                                {/* <a className="cursor" href="https://advantage-tennis-ecommerce.vercel.app/" target="_blank" rel="noreferrer"><IoMdOpen /></a> */}
+                                <IoMdOpen />
                             </span>
                         </div>
+                        <span className="flex mt-4 py-1 px-2 text-xs text-slate-800 bg-slate-200/50 rounded-md uppercase">Updating demo...</span>
                     </div>
                     <div className="flex flex-col h-auto w-full p-8 items-center justify-center shadow-md shadow-blue-200 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200">
                         <div className="w-full flex justify-end gap-2">
@@ -179,11 +181,11 @@ export default function Projects() {
                     <div className="flex flex-col h-auto w-full p-4 items-center justify-center shadow-md shadow-blue-200 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200">
                         <div className="w-full flex justify-end gap-2">
                             <span className="flex mb-4 py-1 px-2 self-end text-xs text-blue-800 bg-blue-200/50 rounded-md uppercase">API REST</span>
-                            <span className="flex mb-4 py-1 px-2 self-end text-xs text-white bg-blue-600/50 rounded-md uppercase">Oct 22</span>
+                            <span className="flex mb-4 py-1 px-2 self-end text-xs text-white bg-blue-600/50 rounded-md uppercase">Nov 22</span>
                         </div>
                         <div>
                             <div className="pb-2">
-                                <h6 className="py-1 text-center">Cryptocurrency SPA</h6>
+                                <h6 className="py-1 text-center">Streaming SPA</h6>
                             </div>
                             <div className="flex flex-wrap place-content-center py-2 gap-2">
                                 <span className="px-2 py-1 font-light text-[10px] text-center bg-yellow-500/80 rounded-full">JavaScript</span>

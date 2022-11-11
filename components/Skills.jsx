@@ -46,7 +46,7 @@ export default function Skills() {
     const { texts } = useContext(LanguageContext);
 
     return (
-        <main id="skills" className="w-full md:h-full p-6 md:p-16">
+        <main id="skills" className="w-full md:h-full p-6 md:px-16 md:py-24">
             <div className="flex flex-col h-full mx-auto justify-center items-center md:items-start">
                 <h6 className="py-2 font-light text-slate-800 uppercase tracking-widest">📚 {texts.skillsSection}</h6>
                 <h2 className="my-4 py-4 font-extrabold text-blue-600">{texts.skillsH1}</h2>
@@ -168,7 +168,7 @@ export default function Skills() {
                     </div>
                 </section>
                 <h6 className="my-8 py-4 self-center font-extrabold text-blue-600">{texts.skillsH3}</h6>
-                <section className="grid md:w-[50%] mx-4 px-4 py-2 self-center divide-y-2 rounded-lg bg-white shadow-md">
+                <section className="grid w-full md:w-[60%] mx-4 px-4 py-2 self-center divide-y-2 rounded-lg bg-white shadow-md">
                     <div className="p-4">
                         <div className="flex flex-col lg:flex-row gap-2 justify-between items-center">
                             <h6 className="basis-2/5">{texts.skillsSh1}</h6>

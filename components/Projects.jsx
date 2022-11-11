@@ -14,7 +14,7 @@ export default function Projects() {
     const { texts } = useContext(LanguageContext);
 
     return (
-        <main id="projects" className="w-full md:h-full p-6 md:p-16 items-center justify-center bg-white shadow-lg">
+        <main id="projects" className="w-full md:h-full p-6 md:px-16 md:py-24 items-center justify-center bg-white shadow-lg">
             <div className="h-full mx-auto">
                 <h6 className="py-2 font-light text-center text-slate-800 uppercase tracking-widest">✔️ {texts.projectsSection}</h6>
                 <h2 className="py-4 font-extrabold text-center text-blue-600">{texts.projectsH1}</h2>

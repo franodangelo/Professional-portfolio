@@ -38,12 +38,10 @@ export default function Projects() {
                             <span className="p-2 rounded-full shadow-sm shadow-pink-200 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200">
                                 <a href="https://github.com/franodangelo/React-Ecommerce" target="_blank" rel="noreferrer"><FaGithub /></a>
                             </span>
-                            <span className="grayscale p-2 rounded-full text-slate-300 bg-slate-400 shadow-sm shadow-pink-200 cursor-not-allowed hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200">
-                                {/* <a className="cursor" href="https://advantage-tennis-ecommerce.vercel.app/" target="_blank" rel="noreferrer"><IoMdOpen /></a> */}
-                                <IoMdOpen />
+                            <span className="p-2 rounded-full shadow-sm shadow-pink-200 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200">
+                                <a className="cursor" href="https://advantage-tennis-ecommerce.vercel.app/" target="_blank" rel="noreferrer"><IoMdOpen /></a>
                             </span>
                         </div>
-                        <span className="flex mt-4 py-1 px-2 text-xs text-slate-800 bg-slate-200/50 rounded-md uppercase">Updating demo...</span>
                     </div>
                     <div className="flex flex-col h-auto w-full p-8 items-center justify-center shadow-md shadow-blue-200 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200">
                         <div className="w-full flex justify-end gap-2">

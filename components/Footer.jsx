@@ -27,7 +27,7 @@ export default function Footer() {
             </div>
             <div className="flex lg:flex-col gap-2 items-center">
                 <h2 className="font-medium text-sm md:text-base text-blue-600">{texts.footerThanks} 😀</h2>
-                <p className="font-thin text-xs md:text-sm text-blue-600">{texts.footerUpdate} 08-11-2022</p>
+                <p className="font-thin text-xs md:text-sm text-blue-600">{texts.footerUpdate} 11-11-2022</p>
             </div>
         </footer>
     )

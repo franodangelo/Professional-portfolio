@@ -43,7 +43,7 @@ const translations = {
     es: {
         navbarMyself: "Sobre mi",
         navbarProjects: "Proyectos",
-        navbarSkills: "Skills",
+        navbarSkills: "Habilidades",
         navbarButtonCV: "Currículum",
         cvDocument: "https://drive.google.com/file/d/1RArCzeaeWl_ZJffAvRFIFml5Etzqa1-A/view?usp=share_link",
         navbarButtonContact: "Contactame",

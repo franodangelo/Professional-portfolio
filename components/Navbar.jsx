@@ -17,9 +17,9 @@ export default function Navbar() {
 
     return (
         <nav className="fixed w-full h-20 shadow-lg z-[100] bg-white">
-            <main className="flex justify-between items-center w-full h-full px-6 md:px-10"> {/* Here is the lg navbar */}
+            <main className="flex justify-between items-center w-full h-full px-6 lg:px-10"> {/* Here is the lg navbar */}
                 <section className="flex gap-8">
-                    <div className="hidden md:flex items-center gap-4">
+                    <div className="hidden lg:flex items-center gap-4">
                         <Link offset={-200} href="/#header">
                             <Image className="hover:scale-105 duration-200 cursor-pointer" src={logo} alt="logo" width="32px" height="32px" />
                         </Link>
@@ -35,7 +35,7 @@ export default function Navbar() {
                     </div>
                 </section>
                 <section className="flex">
-                    <ul className="hidden md:flex items-center gap-8">
+                    <ul className="hidden lg:flex items-center gap-8">
                         <div className="flex gap-2">
                             <Link href={texts.cvDocument} download>
                                 <a className="py-2 px-4 font-semibold text-blue-600 uppercase border border-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 hover:shadow-blue-300 ease-in-out duration-200"
@@ -54,16 +54,16 @@ export default function Navbar() {
                         </div>
                     </ul>
                     {/* Here is the sm burger menu for the navbar */}
-                    <div onClick={handleNav} className="md:hidden cursor-pointer text-blue-600">
+                    <div onClick={handleNav} className="lg:hidden cursor-pointer text-blue-600">
                         <HiMenuAlt3 size={24} />
                     </div>
                 </section>
             </main>
             {/* Drawer menu for sm devices */}
-            <main className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-slate-900/80" : null}>
+            <main className={nav ? "lg:hidden fixed left-0 top-0 w-full h-screen bg-slate-900/80" : null}>
                 {/* This is the blur of the bg */}
                 <div className={nav
-                    ? "md:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] md:[40%] h-screen bg-[#EFF0F3] p-10 ease-in duration-300"
+                    ? "lg:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] lg:[40%] h-screen bg-[#EFF0F3] p-10 ease-in duration-300"
                     : "fixed left-[-100%] top-0 p-10 ease-out duration-500"}>
                     <section>
                         <div className="flex w-full items-center justify-between">

@@ -97,7 +97,7 @@ export default function Skills() {
                     </div>}
                     {!frontendTools ? <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
                         <Image src={express} alt="Express logo" width="64px" height="64px" />
-                        <h6>Express</h6>
+                        <h6>Express.js</h6>
                     </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
                         <Image src={express} alt="Express logo" width="64px" height="64px" />
                         <h6>Express</h6>
@@ -139,7 +139,7 @@ export default function Skills() {
                     </div>}
                     {!backendTools ? <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
                         <Image src={tailwind} alt="tailwindcss logo" width="64px" height="64px" />
-                        <h6>Tailwindcss</h6>
+                        <h6>Tailwind CSS</h6>
                     </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center shadow-md shadow-sky-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
                         <Image src={tailwind} alt="tailwindcss logo" width="64px" height="64px" />
                         <h6>Tailwindcss</h6>
@@ -154,17 +154,32 @@ export default function Skills() {
                 </section>
                 <h4 className="mt-8 py-4 font-extrabold text-blue-600">{texts.skillsH2}</h4>
                 <section className="grid w-full py-4 gap-4 md:grid-cols-3">
-                    <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-blue-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
-                        <Image src={typescript} alt="TypeScript logo" width="48px" height="48px" />
-                        <h6>TypeScript</h6>
+                    <div className="flex flex-col p-4 justify-center items-center shadow-md shadow-blue-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <div className="flex justify-center items-center gap-8">
+                            <Image src={dart} alt="Dart logo" width="48px" height="48px" />
+                            <h6>Dart</h6>
+                        </div>
+                        <div className="w-full h-1 mt-4 bg-slate-100">
+                            <div className="w-[80%] bg-green-300 h-1 border-r-2 border-green-400"></div>
+                        </div>
                     </div>
-                    <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-blue-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
-                        <Image src={dart} alt="Dart logo" width="48px" height="48px" />
-                        <h6>Dart</h6>
+                    <div className="flex flex-col p-4 justify-center items-center shadow-md shadow-blue-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <div className="flex justify-center items-center gap-8">
+                            <Image src={swift} alt="Swift logo" width="48px" height="48px" />
+                            <h6>Swift</h6>
+                        </div>
+                        <div className="w-full h-1 mt-4 bg-slate-100">
+                            <div className="w-[4%] bg-green-300 h-1 border-r-2 border-green-400"></div>
+                        </div>
                     </div>
-                    <div className="flex p-4 gap-8 justify-center items-center shadow-md shadow-blue-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
-                        <Image src={swift} alt="Swift logo" width="48px" height="48px" />
-                        <h6>Swift</h6>
+                    <div className="flex flex-col p-4 justify-center items-center shadow-md shadow-blue-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
+                        <div className="flex justify-center items-center gap-8">
+                            <Image src={typescript} alt="TypeScript logo" width="48px" height="48px" />
+                            <h6>TypeScript</h6>
+                        </div>
+                        <div className="w-full h-1 mt-4 bg-slate-100">
+                            <div className="w-[40%] bg-green-300 h-1 border-r-2 border-green-400"></div>
+                        </div>
                     </div>
                 </section>
                 <h6 className="my-8 py-4 self-center font-extrabold text-blue-600">{texts.skillsH3}</h6>

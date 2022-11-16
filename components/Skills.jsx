@@ -171,7 +171,7 @@ export default function Skills() {
                         </div>
                         {/* This is the progress bar */}
                         <div className="w-full h-1 mt-4 bg-slate-100">
-                            <div className="w-[10%] bg-green-300 h-1 border-r-2 border-green-400"></div>
+                            <div className="w-[15%] bg-green-300 h-1 border-r-2 border-green-400"></div>
                         </div>
                     </div>
                     <div className="flex flex-col p-4 justify-center items-center shadow-md shadow-blue-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">

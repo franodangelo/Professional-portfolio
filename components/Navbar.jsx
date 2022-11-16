@@ -1,18 +1,32 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { LanguageContext } from "../context/LanguageContext";
 import { HiMenuAlt3, HiOutlineX } from "react-icons/hi";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 import logo from ".//../public/fdlogo.png";
 
 export default function Navbar() {
 
     const { texts, handleLanguage } = useContext(LanguageContext);
     const [nav, setNav] = useState(false);
+    const [mode, setMode] = useState("light");
+
+    useEffect(() => {
+        if (mode === "dark") {
+            document.documentElement.classList.add("dark");
+        } else {
+            document.documentElement.classList.remove("dark");
+        }
+    }, [mode])
 
     const handleNav = () => {
         setNav(!nav);
+    }
+
+    const handleMode = () => {
+        setMode(mode === "dark" ? "light" : "dark");
     }
 
     return (
@@ -33,6 +47,12 @@ export default function Navbar() {
                             <p className="font-semibold text-sm text-blue-600 uppercase hover:text-pink-600 hover:scale-105 duration-200 cursor-pointer">{texts.navbarSkills}</p>
                         </Link>
                     </div>
+                </section>
+                <section className="flex gap-4">
+                    <button onClick={handleMode}
+                        className="py-1 px-2 font-semibold text-[#EFF0F3] bg-pink-600 dark:bg-pink-900 rounded-lg cursor-pointer hover:scale-105 hover:shadow-pink-300 ease-in-out duration-200">
+                        {mode === "dark" ? <MdOutlineLightMode /> : <MdOutlineDarkMode />}
+                    </button>
                 </section>
                 <section className="flex">
                     <ul className="hidden lg:flex items-center gap-8">

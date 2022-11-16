@@ -159,8 +159,9 @@ export default function Skills() {
                             <Image src={dart} alt="Dart logo" width="48px" height="48px" />
                             <h6>Dart</h6>
                         </div>
+                        {/* This is the progress bar */}
                         <div className="w-full h-1 mt-4 bg-slate-100">
-                            <div className="w-[80%] bg-green-300 h-1 border-r-2 border-green-400"></div>
+                            <div className="w-[65%] bg-green-300 h-1 border-r-2 border-green-400"></div>
                         </div>
                     </div>
                     <div className="flex flex-col p-4 justify-center items-center shadow-md shadow-blue-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
@@ -168,8 +169,9 @@ export default function Skills() {
                             <Image src={swift} alt="Swift logo" width="48px" height="48px" />
                             <h6>Swift</h6>
                         </div>
+                        {/* This is the progress bar */}
                         <div className="w-full h-1 mt-4 bg-slate-100">
-                            <div className="w-[4%] bg-green-300 h-1 border-r-2 border-green-400"></div>
+                            <div className="w-[10%] bg-green-300 h-1 border-r-2 border-green-400"></div>
                         </div>
                     </div>
                     <div className="flex flex-col p-4 justify-center items-center shadow-md shadow-blue-200 bg-white rounded-lg hover:scale-105 ease-in-out duration-300">
@@ -177,6 +179,7 @@ export default function Skills() {
                             <Image src={typescript} alt="TypeScript logo" width="48px" height="48px" />
                             <h6>TypeScript</h6>
                         </div>
+                        {/* This is the progress bar */}
                         <div className="w-full h-1 mt-4 bg-slate-100">
                             <div className="w-[40%] bg-green-300 h-1 border-r-2 border-green-400"></div>
                         </div>

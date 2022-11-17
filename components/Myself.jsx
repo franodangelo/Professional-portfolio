@@ -13,7 +13,7 @@ export default function Myself() {
                 <section className="col-span-2">
                     <h6 className="py-2 font-light text-slate-800 dark:text-slate-500 uppercase tracking-widest">👦 {texts.myselfSection}</h6>
                     <h2 className="py-4 font-extrabold text-blue-600 dark:text-white">{texts.myselfH1}</h2>
-                    <p className="py-2 font-normal text-sm md:text-base text-slate-800 dark:text-slate-500">{texts.myselfP}</p>
+                    <p className="py-2 font-normal text-sm md:text-base text-slate-800 dark:text-slate-300">{texts.myselfP}</p>
                     <a href="https://www.linkedin.com/in/franco-dangelo/" target='_blank' rel="noreferrer"><p className="font-semibold text-pink-600 dark:text-pink-500 underline cursor-pointer">{texts.myselfP2}</p></a>
                 </section>
                 <div className="w-full h-auto my-4 p-4 justify-center items-center rounded-lg shadow-lg shadow-blue-200 dark:shadow-slate-800">

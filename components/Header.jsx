@@ -13,7 +13,7 @@ export default function Header() {
                 <section className="flex flex-col w-[90%]">
                     <h6 className="py-2 font-light text-slate-800 dark:text-slate-500 uppercase tracking-widest">🚀 {texts.headerSection}</h6>
                     <h2 className="py-4 font-extrabold text-blue-600 dark:text-white">{texts.headerH1}</h2>
-                    <h4 className="py-2 font-normal text-slate-800 dark:text-slate-500">{texts.headerH2} 🇦🇷</h4>
+                    <h4 className="py-2 font-normal text-slate-800 dark:text-slate-300">{texts.headerH2} 🇦🇷</h4>
                     <div className="flex m-auto my-8 items-end justify-between gap-8 md:gap-16">
                         <div className="p-4 rounded-full shadow-md shadow-blue-200 dark:shadow-slate-800 cursor-pointer hover:scale-105 hover:shadow-pink-300 dark:hover:shadow-slate-700 ease-in-out duration-200">
                             <Link href="/">

@@ -72,7 +72,7 @@ export default function Navbar() {
                         </div>
                     </ul>
                     {/* Here is the sm burger menu for the navbar */}
-                    <div onClick={handleNav} className="lg:hidden cursor-pointer text-blue-600">
+                    <div onClick={handleNav} className="lg:hidden cursor-pointer text-blue-600 dark:text-white">
                         <HiMenuAlt3 size={24} />
                     </div>
                 </section>
@@ -81,51 +81,47 @@ export default function Navbar() {
             <main className={nav ? "lg:hidden fixed left-0 top-0 w-full h-screen bg-slate-900/80" : null}>
                 {/* This is the blur of the bg */}
                 <div className={nav
-                    ? "lg:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] lg:[40%] h-screen bg-[#EFF0F3] p-10 ease-in duration-300"
+                    ? "lg:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] lg:[40%] h-screen bg-white dark:bg-slate-900 p-10 ease-in duration-300"
                     : "fixed left-[-100%] top-0 p-10 ease-out duration-500"}>
                     <section>
                         <div className="flex w-full items-center justify-between">
-                            <Image src={logo} alt="logo" width="40px" height="40px" />
+                            <Link href="/#header">
+                                <Image onClick={handleNav} src={logo} alt="logo" width="40px" height="40px" />
+                            </Link>
                             <span onClick={handleNav}
-                                className="rounded-full shadow-md shadow-pink-200 p-2 cursor-pointer">
+                                className="rounded-full shadow-md shadow-pink-200 dark:shadow-slate-800 p-2 cursor-pointer">
                                 <HiOutlineX />
                             </span>
                         </div>
                     </section>
                     <section>
                         <div className="flex w-full mt-8 mb-4 gap-10">
-                            <button value="es" onClick={(e) => { handleLanguage(e); handleNav() }}>🇪🇸</button>
-                            <button value="en" onClick={(e) => { handleLanguage(e); handleNav() }}>🇺🇲</button>
+                            <button value="es" onClick={handleLanguage}>🇪🇸</button>
+                            <button value="en" onClick={handleLanguage}>🇺🇲</button>
                         </div>
                         <div className="flex flex-col py-2">
                             <ul>
-                                <Link href="/#header">
-                                    <li onClick={handleNav}
-                                        className="py-4 font-semibold text-sm text-blue-600 uppercase">
-                                        {texts.navbarHome}
-                                    </li>
-                                </Link>
                                 <Link href="/#myself">
                                     <li onClick={handleNav}
-                                        className="py-4 font-semibold text-sm text-blue-600 uppercase">
+                                        className="py-4 font-semibold text-sm text-blue-600 dark:text-white uppercase">
                                         {texts.navbarMyself}
                                     </li>
                                 </Link>
                                 <Link href="/#projects">
                                     <li onClick={handleNav}
-                                        className="py-4 font-semibold text-sm text-blue-600 uppercase">
+                                        className="py-4 font-semibold text-sm text-blue-600 dark:text-white uppercase">
                                         {texts.navbarProjects}
                                     </li>
                                 </Link>
                                 <Link href="/#skills">
                                     <li onClick={handleNav}
-                                        className="py-4 font-semibold text-sm text-blue-600 uppercase">
+                                        className="py-4 font-semibold text-sm text-blue-600 dark:text-white uppercase">
                                         {texts.navbarSkills}
                                     </li>
                                 </Link>
                                 <Link href="/#contact">
                                     <li onClick={handleNav}
-                                        className="py-4 font-semibold text-sm text-blue-600 uppercase">
+                                        className="py-4 font-semibold text-sm text-blue-600 dark:text-white uppercase">
                                         {texts.navbarButtonContact}
                                     </li>
                                 </Link>
@@ -135,7 +131,7 @@ export default function Navbar() {
                                     {texts.navbarWTC}
                                 </h6>
                                 <div className="flex w-full my-4 items-center justify-between">
-                                    <div className="p-3 rounded-full shadow-sm shadow-pink-200 cursor-pointer">
+                                    <div className="p-3 rounded-full shadow-sm shadow-pink-200 dark:shadow-slate-800 cursor-pointer">
                                         <Link href="/">
                                             <a href="https://www.linkedin.com/in/franco-dangelo/"
                                                 target="_blank"
@@ -144,7 +140,7 @@ export default function Navbar() {
                                             </a>
                                         </Link>
                                     </div>
-                                    <div className="p-3 rounded-full shadow-sm shadow-pink-200 cursor-pointer">
+                                    <div className="p-3 rounded-full shadow-sm shadow-pink-200 dark:shadow-slate-800 cursor-pointer">
                                         <Link href="">
                                             <a href="https://github.com/franodangelo"
                                                 target="_blank"
@@ -153,7 +149,7 @@ export default function Navbar() {
                                             </a>
                                         </Link>
                                     </div>
-                                    <div className="p-3 rounded-full shadow-sm shadow-pink-200 cursor-pointer">
+                                    <div className="p-3 rounded-full shadow-sm shadow-pink-200 dark:shadow-slate-800 cursor-pointer">
                                         <Link href="/">
                                             <a href="https://twitter.com/techfrano"
                                                 target="_blank"
@@ -164,7 +160,7 @@ export default function Navbar() {
                                     </div>
                                 </div>
                             </section>
-                            <button className="w-full mt-8 py-2 px-4 font-semibold text-blue-600 uppercase border border-blue-600 rounded-lg shadow-md shadow-blue-200 cursor-pointer hover:scale-105 ease-in-out duration-300">
+                            <button className="w-full mt-8 py-2 px-4 font-semibold text-blue-600 dark:text-blue-400 uppercase border border-blue-600 dark:border-blue-400 rounded-lg shadow-md shadow-blue-200 dark:shadow-blue-900 cursor-pointer hover:scale-105 ease-in-out duration-300">
                                 <a href="https://drive.google.com/file/d/1gDNcM1H47i5_e4duAOeLd_MWe-9hRoYp/view?usp=sharing" download target="_blank" rel="noreferrer">
                                     {texts.navbarButtonCV}
                                 </a>

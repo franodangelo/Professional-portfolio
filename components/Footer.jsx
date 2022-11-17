@@ -10,24 +10,24 @@ export default function Footer() {
     const { texts } = useContext(LanguageContext);
 
     return (
-        <footer className="flex flex-col lg:flex-row w-full h-40 py-12 lg:py-0 lg:px-10 gap-8 items-center justify-between bg-white">
+        <footer className="flex flex-col lg:flex-row w-full h-40 py-12 lg:py-0 lg:px-10 gap-8 items-center justify-between bg-white dark:bg-slate-900">
             <div className="flex flex-wrap lg:flex-col lg:flex-nowrap justify-center items-center gap-2">
-                <h1 className="font-medium text-center text-base text-blue-600">{texts.footerCreated}</h1>
+                <h1 className="font-medium text-center text-base text-blue-600 dark:text-white">{texts.footerCreated}</h1>
                 <ul className="flex justify-between lg:justify-evenly gap-2 lg:gap-4">
-                    <span className="flex p-2 items-center rounded-full shadow-lg shadow-blue-200">
+                    <span className="flex p-2 items-center rounded-full shadow-lg shadow-blue-200 dark:shadow-slate-800/50">
                         <Image src={react} alt="Next.js logo" width="24px" height="24px" />
                     </span>
-                    <span className="flex p-2 items-center rounded-full shadow-lg shadow-blue-200">
+                    <span className="flex p-2 items-center rounded-full shadow-lg shadow-blue-200 dark:shadow-slate-800/50">
                         <Image src={next} alt="Next.js logo" width="24px" height="16px" />
                     </span>
-                    <span className="flex p-2 items-center rounded-full shadow-lg shadow-blue-200">
+                    <span className="flex p-2 items-center rounded-full shadow-lg shadow-blue-200 dark:shadow-slate-800/50">
                         <Image src={tailwind} alt="Next.js logo" width="24px" height="24px" />
                     </span>
                 </ul>
             </div>
             <div className="flex lg:flex-col gap-2 items-center">
-                <h2 className="font-medium text-sm md:text-base text-blue-600">{texts.footerThanks} 😀</h2>
-                <p className="font-light text-xs md:text-sm text-blue-600">{texts.footerUpdate} 16-11-2022</p>
+                <h2 className="font-medium text-sm md:text-base text-blue-600 dark:text-white">{texts.footerThanks} 😀</h2>
+                <p className="font-light text-xs md:text-sm text-blue-600 dark:text-white">{texts.footerUpdate} 17-11-2022</p>
             </div>
         </footer>
     )

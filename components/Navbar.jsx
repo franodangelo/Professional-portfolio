@@ -51,7 +51,7 @@ export default function Navbar() {
                 <section className="flex">
                     <ul className="hidden lg:flex items-center gap-6">
                         <button onClick={handleMode}
-                            className="p-2 font-semibold text-blue-600 dark:text-pink-500 rounded-full shadow dark:shadow-slate-800 cursor-pointer hover:scale-105 ease-in-out duration-200">
+                            className="p-2 font-semibold text-blue-800 dark:text-pink-400 rounded-full shadow dark:shadow-slate-800 cursor-pointer hover:scale-105 ease-in-out duration-200">
                             {mode === "dark" ? <MdOutlineLightMode /> : <MdOutlineDarkMode />}
                         </button>
                         <div className="flex gap-2">
@@ -85,11 +85,17 @@ export default function Navbar() {
                     : "fixed left-[-100%] top-0 p-10 ease-out duration-500"}>
                     <section>
                         <div className="flex w-full items-center justify-between">
-                            <Link href="/#header">
-                                <Image onClick={handleNav} src={logo} alt="logo" width="40px" height="40px" />
-                            </Link>
+                            <div className="flex items-center gap-4">
+                                <Link href="/#header">
+                                    <Image onClick={handleNav} src={logo} alt="logo" width="40px" height="40px" />
+                                </Link>
+                                <button onClick={handleMode}
+                                    className="p-2 font-semibold text-blue-800 dark:text-pink-400 rounded-full shadow dark:shadow-slate-800 cursor-pointer hover:scale-105 ease-in-out duration-200">
+                                    {mode === "dark" ? <MdOutlineLightMode /> : <MdOutlineDarkMode />}
+                                </button>
+                            </div>
                             <span onClick={handleNav}
-                                className="rounded-full shadow-md shadow-pink-200 dark:shadow-slate-800 p-2 cursor-pointer">
+                                className="p-2 rounded-full shadow-md shadow-pink-200 dark:shadow-slate-800 cursor-pointer">
                                 <HiOutlineX />
                             </span>
                         </div>

@@ -18,7 +18,7 @@ import swift from "../public/assets/skills/swift.png";
 import vsc from "../public/assets/skills/vsc.png";
 import npm from "../public/assets/skills/npm.png";
 import github from "../public/assets/skills/github.png";
-import postman from "../public/assets/skills/postman.svg";
+import postman from "../public/assets/skills/postman.png";
 import figma from "../public/assets/skills/figma.png";
 import adobexd from "../public/assets/skills/adobexd.png";
 import notion from "../public/assets/skills/notion.png";
@@ -96,10 +96,10 @@ export default function Skills() {
                         <h6>Node.js</h6>
                     </div>}
                     {!frontendTools ? <div className="flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={express} alt="Express logo" width="56px" height="32px" />
+                        <Image src={express} alt="Express logo" width="64px" height="64px" />
                         <h6>Express.js</h6>
                     </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={express} alt="Express logo" width="56px" height="32px" />
+                        <Image src={express} alt="Express logo" width="64px" height="64px" />
                         <h6>Express.js</h6>
                     </div>}
                     {!frontendTools ? <div className="flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
@@ -110,10 +110,10 @@ export default function Skills() {
                         <h6>PostgreSQL</h6>
                     </div>}
                     {!frontendTools ? <div className="flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={sequelize} alt="Sequelize logo" width="64px" height="70px" />
+                        <Image src={sequelize} alt="Sequelize logo" width="64px" height="64px" />
                         <h6>Sequelize</h6>
                     </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={sequelize} alt="Sequelize logo" width="64px" height="70px" />
+                        <Image src={sequelize} alt="Sequelize logo" width="64px" height="64px" />
                         <h6>Sequelize</h6>
                     </div>}
                     {!backendTools ? <div className="flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
@@ -145,10 +145,10 @@ export default function Skills() {
                         <h6>Tailwind CSS</h6>
                     </div>}
                     {!backendTools ? <div className="flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={bootstrap} alt="Bootstrap logo" width="80px" height="64px" />
+                        <Image src={bootstrap} alt="Bootstrap logo" width="64px" height="64px" />
                         <h6>Bootstrap</h6>
                     </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={bootstrap} alt="Bootstrap logo" width="80px" height="64px" />
+                        <Image src={bootstrap} alt="Bootstrap logo" width="64px" height="64px" />
                         <h6>Bootstrap</h6>
                     </div>}
                 </section>
@@ -195,13 +195,13 @@ export default function Skills() {
                                     <Image src={vsc} alt="Visual Studio Code logo" width="48px" height="48px" />
                                 </span>
                                 <span className="m-auto">
-                                    <Image src={npm} alt="npm logo" width="56px" height="48px" />
+                                    <Image src={npm} alt="npm logo" width="48px" height="48px" />
                                 </span>
                                 <span className="m-auto">
                                     <Image src={github} alt="Github logo" width="48px" height="48px" />
                                 </span>
                                 <span className="m-auto">
-                                    <Image src={postman} alt="Postman logo" width="56px" height="48px" />
+                                    <Image src={postman} alt="Postman logo" width="48px" height="48px" />
                                 </span>
                             </div>
                         </div>

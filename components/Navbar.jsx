@@ -109,25 +109,25 @@ export default function Navbar() {
                             <ul>
                                 <Link href="/#myself">
                                     <li onClick={handleNav}
-                                        className="py-4 font-semibold text-sm text-blue-600 dark:text-white uppercase">
+                                        className="py-4 font-semibold text-xs text-blue-600 dark:text-white uppercase">
                                         {texts.navbarMyself}
                                     </li>
                                 </Link>
                                 <Link href="/#projects">
                                     <li onClick={handleNav}
-                                        className="py-4 font-semibold text-sm text-blue-600 dark:text-white uppercase">
+                                        className="py-4 font-semibold text-xs text-blue-600 dark:text-white uppercase">
                                         {texts.navbarProjects}
                                     </li>
                                 </Link>
                                 <Link href="/#skills">
                                     <li onClick={handleNav}
-                                        className="py-4 font-semibold text-sm text-blue-600 dark:text-white uppercase">
+                                        className="py-4 font-semibold text-xs text-blue-600 dark:text-white uppercase">
                                         {texts.navbarSkills}
                                     </li>
                                 </Link>
                                 <Link href="/#contact">
                                     <li onClick={handleNav}
-                                        className="py-4 font-semibold text-sm text-blue-600 dark:text-white uppercase">
+                                        className="py-4 font-semibold text-xs text-blue-600 dark:text-white uppercase">
                                         {texts.navbarButtonContact}
                                     </li>
                                 </Link>
@@ -166,7 +166,7 @@ export default function Navbar() {
                                     </div>
                                 </div>
                             </section>
-                            <button className="w-full mt-8 py-2 px-4 font-semibold text-blue-600 dark:text-blue-400 uppercase border border-blue-600 dark:border-blue-400 rounded-lg shadow-md shadow-blue-200 dark:shadow-blue-900 cursor-pointer hover:scale-105 ease-in-out duration-300">
+                            <button className="flex justify-center w-full mt-8 py-2 px-4 font-semibold text-sm text-blue-600 dark:text-blue-400 uppercase border border-blue-600 dark:border-blue-400 rounded-lg shadow-md shadow-blue-200 dark:shadow-blue-900 cursor-pointer hover:scale-105 ease-in-out duration-300">
                                 <a href="https://drive.google.com/file/d/1gDNcM1H47i5_e4duAOeLd_MWe-9hRoYp/view?usp=sharing" download target="_blank" rel="noreferrer">
                                     {texts.navbarButtonCV}
                                 </a>

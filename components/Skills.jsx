@@ -27,6 +27,7 @@ import trello from "../public/assets/skills/trello.png";
 import { LanguageContext } from "../context/LanguageContext";
 
 export default function Skills() {
+    const { texts } = useContext(LanguageContext);
 
     const [frontendTools, setFrontendTools] = useState(false);
     const [backendTools, setBackendTools] = useState(false);
@@ -34,16 +35,12 @@ export default function Skills() {
     function handleFront() {
         setFrontendTools(!frontendTools);
         setBackendTools(false);
-        console.log("Frontend button", frontendTools);
     }
 
     function handleBack() {
         setBackendTools(!backendTools);
         setFrontendTools(false);
-        console.log("Backend button", backendTools);
     }
-
-    const { texts } = useContext(LanguageContext);
 
     return (
         <main id="skills" className="w-full md:h-full p-6 md:px-16 md:py-24">
@@ -99,22 +96,22 @@ export default function Skills() {
                     {
                         !frontendTools ?
                             <div className="activeSkillCard">
-                                <Image src={node} alt="node.js logo" width="64px" height="64px" />
+                                <Image src={node} alt="Node.js logo" width="64px" height="64px" />
                                 <h6>Node.js</h6>
                             </div> :
                             <div className="inactiveSkillCard">
-                                <Image src={node} alt="node.js logo" width="64px" height="64px" />
+                                <Image src={node} alt="Node.js logo" width="64px" height="64px" />
                                 <h6>Node.js</h6>
                             </div>
                     }
                     {
                         !frontendTools ?
                             <div className="activeSkillCard">
-                                <Image src={express} alt="Express logo" width="64px" height="64px" />
+                                <Image src={express} alt="Express.js logo" width="64px" height="64px" />
                                 <h6>Express.js</h6>
                             </div> :
                             <div className="inactiveSkillCard">
-                                <Image src={express} alt="Express logo" width="64px" height="64px" />
+                                <Image src={express} alt="Express.js logo" width="64px" height="64px" />
                                 <h6>Express.js</h6>
                             </div>
                     }
@@ -176,11 +173,11 @@ export default function Skills() {
                     {
                         !backendTools ?
                             <div className="activeSkillCard">
-                                <Image src={tailwind} alt="tailwindcss logo" width="64px" height="64px" />
+                                <Image src={tailwind} alt="Tailwind CSS logo" width="64px" height="64px" />
                                 <h6>Tailwind CSS</h6>
                             </div> :
                             <div className="inactiveSkillCard">
-                                <Image src={tailwind} alt="tailwindcss logo" width="64px" height="64px" />
+                                <Image src={tailwind} alt="Tailwind CSS logo" width="64px" height="64px" />
                                 <h6>Tailwind CSS</h6>
                             </div>
                     }
@@ -198,32 +195,29 @@ export default function Skills() {
                 </section>
                 <h4 className="mt-8 py-4 font-extrabold text-blue-600 dark:text-white">{texts.skillsH2}</h4>
                 <section className="grid w-full py-4 gap-4 md:grid-cols-3">
-                    <div className="flex flex-col p-4 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-blue-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
+                    <div className="learningCard">
                         <div className="flex justify-center items-center gap-8">
                             <Image src={dart} alt="Dart logo" width="48px" height="48px" />
                             <h6>Dart</h6>
                         </div>
-                        {/* This is the progress bar */}
                         <div className="w-full h-1 mt-4 bg-slate-100 dark:bg-slate-800">
                             <div className="w-[65%] bg-green-300 h-1 border-r-2 border-green-400 dark:border-green-600" />
                         </div>
                     </div>
-                    <div className="flex flex-col p-4 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-blue-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
+                    <div className="learningCard">
                         <div className="flex justify-center items-center gap-8">
                             <Image src={swift} alt="Swift logo" width="48px" height="48px" />
                             <h6>Swift</h6>
                         </div>
-                        {/* This is the progress bar */}
                         <div className="w-full h-1 mt-4 bg-slate-100 dark:bg-slate-800">
                             <div className="w-[15%] bg-green-300 h-1 border-r-2 border-green-400 dark:border-green-600" />
                         </div>
                     </div>
-                    <div className="flex flex-col p-4 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-blue-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
+                    <div className="learningCard">
                         <div className="flex justify-center items-center gap-8">
                             <Image src={typescript} alt="TypeScript logo" width="48px" height="48px" />
                             <h6>TypeScript</h6>
                         </div>
-                        {/* This is the progress bar */}
                         <div className="w-full h-1 mt-4 bg-slate-100 dark:bg-slate-800">
                             <div className="w-[40%] bg-green-300 h-1 border-r-2 border-green-400 dark:border-green-600" />
                         </div>

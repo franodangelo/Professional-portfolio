@@ -50,19 +50,19 @@ export default function Skills() {
             <div className="flex flex-col h-full mx-auto justify-center items-center md:items-start">
                 <h6 className="py-2 font-light text-slate-800 dark:text-slate-500 uppercase tracking-widest">📚 {texts.skillsSection}</h6>
                 <h2 className="my-4 py-4 font-extrabold text-blue-600 dark:text-white">{texts.skillsH1}</h2>
-                <div className="flex w-fit self-center md:self-end mb-4 gap-4">
+                <div className="flex w-fit self-center md:self-end mb-4 gap-2">
                     {backendTools ? <p onClick={handleFront}
-                        className="px-2 py-1 font-semibold text-blue-200 dark:text-slate-700 hover:text-blue-400 dark:hover:text-blue-400 border border-blue-200 dark:border-slate-800 hover:border-blue-400 dark:hover:border-blue-400 rounded-lg shadow-md shadow-blue-200 dark:shadow-slate-800 cursor-pointer hover:shadow-blue-300 ease-in-out duration-200">
+                        className="px-2 py-1 font-semibold text-sm text-blue-200 dark:text-slate-700 hover:text-blue-400 dark:hover:text-blue-400 border border-blue-200 dark:border-slate-800 hover:border-blue-400 dark:hover:border-blue-400 rounded-lg shadow-md shadow-blue-200 dark:shadow-slate-800 cursor-pointer hover:shadow-blue-300 ease-in-out duration-200">
                         Frontend
                     </p> : <p onClick={handleFront}
-                        className="px-2 py-1 font-semibold text-blue-600 dark:text-blue-400 hover:dark:text-blue-500 border border-blue-600 dark:border-blue-400 dark:hover:border-blue-500 rounded-lg shadow-md shadow-blue-200 dark:shadow-blue-900 cursor-pointer hover:shadow-blue-300 ease-in-out duration-200">
+                        className="px-2 py-1 font-semibold text-sm text-blue-600 dark:text-blue-400 hover:dark:text-blue-500 border border-blue-600 dark:border-blue-400 dark:hover:border-blue-500 rounded-lg shadow-md shadow-blue-200 dark:shadow-blue-900 cursor-pointer hover:shadow-blue-300 ease-in-out duration-200">
                         Frontend
                     </p>}
                     {frontendTools ? <p onClick={handleBack}
-                        className="px-2 py-1 font-semibold text-blue-200 dark:text-slate-700 hover:text-blue-400 dark:hover:text-blue-400 border border-blue-200 dark:border-slate-800 hover:border-blue-400 dark:hover:border-blue-400 rounded-lg shadow-md shadow-blue-200 dark:shadow-slate-800 cursor-pointer hover:shadow-blue-300 ease-in-out duration-200">
+                        className="px-2 py-1 font-semibold text-sm text-blue-200 dark:text-slate-700 hover:text-blue-400 dark:hover:text-blue-400 border border-blue-200 dark:border-slate-800 hover:border-blue-400 dark:hover:border-blue-400 rounded-lg shadow-md shadow-blue-200 dark:shadow-slate-800 cursor-pointer hover:shadow-blue-300 ease-in-out duration-200">
                         Backend
                     </p> : <p onClick={handleBack}
-                        className="px-2 py-1 font-semibold text-blue-600 dark:text-blue-400 hover:dark:text-blue-500 border border-blue-600 dark:border-blue-400 dark:hover:border-blue-500 rounded-lg shadow-md shadow-blue-200 dark:shadow-blue-900 cursor-pointer hover:shadow-blue-300 ease-in-out duration-200">
+                        className="px-2 py-1 font-semibold text-sm text-blue-600 dark:text-blue-400 hover:dark:text-blue-500 border border-blue-600 dark:border-blue-400 dark:hover:border-blue-500 rounded-lg shadow-md shadow-blue-200 dark:shadow-blue-900 cursor-pointer hover:shadow-blue-300 ease-in-out duration-200">
                         Backend
                     </p>}
                 </div>

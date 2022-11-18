@@ -38,13 +38,13 @@ export default function Navbar() {
                             <Image className="hover:scale-105 duration-200 cursor-pointer" src={logo} alt="logo" width="32px" height="32px" />
                         </Link>
                         <Link href="/#myself">
-                            <p className="font-semibold text-sm text-blue-600 dark:text-blue-200 uppercase hover:text-pink-600 dark:hover:text-pink-300 hover:scale-105 duration-200 cursor-pointer">{texts.navbarMyself}</p>
+                            <p className="font-semibold text-xs text-blue-600 dark:text-blue-200 uppercase hover:text-pink-600 dark:hover:text-pink-300 hover:scale-105 duration-200 cursor-pointer">{texts.navbarMyself}</p>
                         </Link>
                         <Link href="/#projects">
-                            <p className="font-semibold text-sm text-blue-600 dark:text-blue-200 uppercase hover:text-pink-600 dark:hover:text-pink-300 hover:scale-105 duration-200 cursor-pointer">{texts.navbarProjects}</p>
+                            <p className="font-semibold text-xs text-blue-600 dark:text-blue-200 uppercase hover:text-pink-600 dark:hover:text-pink-300 hover:scale-105 duration-200 cursor-pointer">{texts.navbarProjects}</p>
                         </Link>
                         <Link href="/#skills">
-                            <p className="font-semibold text-sm text-blue-600 dark:text-blue-200 uppercase hover:text-pink-600 dark:hover:text-pink-300 hover:scale-105 duration-200 cursor-pointer">{texts.navbarSkills}</p>
+                            <p className="font-semibold text-xs text-blue-600 dark:text-blue-200 uppercase hover:text-pink-600 dark:hover:text-pink-300 hover:scale-105 duration-200 cursor-pointer">{texts.navbarSkills}</p>
                         </Link>
                     </div>
                 </section>
@@ -56,12 +56,12 @@ export default function Navbar() {
                         </button>
                         <div className="flex gap-2">
                             <Link href={texts.cvDocument} download>
-                                <a className="py-2 px-4 font-semibold text-blue-600 dark:text-blue-400 uppercase border border-blue-600 dark:border-blue-400 rounded-lg shadow-md shadow-blue-200 dark:shadow-blue-900 cursor-pointer hover:scale-105 ease-in-out duration-200"
+                                <a className="flex items-center py-2 px-4 font-semibold text-sm text-blue-600 dark:text-blue-400 uppercase border border-blue-600 dark:border-blue-400 rounded-lg shadow-md shadow-blue-200 dark:shadow-blue-900 cursor-pointer hover:scale-105 ease-in-out duration-200"
                                     target="_blank">{texts.navbarButtonCV}
                                 </a>
                             </Link>
                             <Link href="/#contact">
-                                <button className="py-2 px-4 font-semibold text-white uppercase bg-pink-600 dark:bg-pink-500 rounded-lg shadow-md shadow-pink-200 dark:shadow-pink-900 cursor-pointer hover:scale-105 ease-in-out duration-200">
+                                <button className="flex items-center py-2 px-4 font-semibold text-sm text-white uppercase bg-pink-600 dark:bg-pink-500 rounded-lg shadow-md shadow-pink-200 dark:shadow-pink-900 cursor-pointer hover:scale-105 ease-in-out duration-200">
                                     {texts.navbarButtonContact}
                                 </button>
                             </Link>

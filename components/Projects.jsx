@@ -16,7 +16,7 @@ export default function Projects() {
     return (
         <main id="projects" className="w-full md:h-full p-6 md:px-16 md:py-24 items-center justify-center bg-white dark:bg-slate-900 shadow-lg">
             <div className="h-full mx-auto">
-                <h6 className="py-2 font-light text-center text-slate-800 dark:text-slate-500 uppercase tracking-widest">✔️ {texts.projectsSection}</h6>
+                <h6 className="sectionTypeHeading">✔️ {texts.projectsSection}</h6>
                 <h2 className="py-4 font-extrabold text-center text-blue-600 dark:text-white">{texts.projectsH1}</h2>
                 <section className="grid grid-cols-1 py-4 gap-8 md:grid-cols-3">
                     <div className="flex flex-col h-auto w-full p-8 items-center justify-center dark:bg-slate-900 shadow-md shadow-blue-200 dark:shadow-blue-900/50 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200">

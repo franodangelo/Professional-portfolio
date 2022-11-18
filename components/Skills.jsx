@@ -48,109 +48,153 @@ export default function Skills() {
     return (
         <main id="skills" className="w-full md:h-full p-6 md:px-16 md:py-24">
             <div className="flex flex-col h-full mx-auto justify-center items-center md:items-start">
-                <h6 className="py-2 font-light text-slate-800 dark:text-slate-500 uppercase tracking-widest">📚 {texts.skillsSection}</h6>
-                <h2 className="my-4 py-4 font-extrabold text-blue-600 dark:text-white">{texts.skillsH1}</h2>
+                <h6 className="sectionTypeHeading">📚 {texts.skillsSection}</h6>
+                <h2 className="my-4">{texts.skillsH1}</h2>
                 <div className="flex w-fit self-center md:self-end mb-4 gap-2">
-                    {backendTools ? <p onClick={handleFront}
-                        className="px-2 py-1 font-semibold text-sm text-blue-200 dark:text-slate-700 hover:text-blue-400 dark:hover:text-blue-400 border border-blue-200 dark:border-slate-800 hover:border-blue-400 dark:hover:border-blue-400 rounded-lg shadow-md shadow-blue-200 dark:shadow-slate-800 cursor-pointer hover:shadow-blue-300 ease-in-out duration-200">
-                        Frontend
-                    </p> : <p onClick={handleFront}
-                        className="px-2 py-1 font-semibold text-sm text-blue-600 dark:text-blue-400 hover:dark:text-blue-500 border border-blue-600 dark:border-blue-400 dark:hover:border-blue-500 rounded-lg shadow-md shadow-blue-200 dark:shadow-blue-900 cursor-pointer hover:shadow-blue-300 ease-in-out duration-200">
-                        Frontend
-                    </p>}
-                    {frontendTools ? <p onClick={handleBack}
-                        className="px-2 py-1 font-semibold text-sm text-blue-200 dark:text-slate-700 hover:text-blue-400 dark:hover:text-blue-400 border border-blue-200 dark:border-slate-800 hover:border-blue-400 dark:hover:border-blue-400 rounded-lg shadow-md shadow-blue-200 dark:shadow-slate-800 cursor-pointer hover:shadow-blue-300 ease-in-out duration-200">
-                        Backend
-                    </p> : <p onClick={handleBack}
-                        className="px-2 py-1 font-semibold text-sm text-blue-600 dark:text-blue-400 hover:dark:text-blue-500 border border-blue-600 dark:border-blue-400 dark:hover:border-blue-500 rounded-lg shadow-md shadow-blue-200 dark:shadow-blue-900 cursor-pointer hover:shadow-blue-300 ease-in-out duration-200">
-                        Backend
-                    </p>}
+                    {
+                        backendTools ?
+                            <p onClick={handleFront} className="inactiveStackButton">Frontend</p> :
+                            <p onClick={handleFront} className="activeStackButton">Frontend</p>
+                    }
+                    {
+                        frontendTools ?
+                            <p onClick={handleBack} className="inactiveStackButton">Backend</p> :
+                            <p onClick={handleBack} className="activeStackButton">Backend</p>
+                    }
                 </div>
                 <section className="grid w-full py-4 gap-4 md:grid-cols-2 lg:grid-cols-4">
-                    {!backendTools && !frontendTools ? <div className="flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={javascript} alt="JavaScript logo" width="64px" height="64px" />
-                        <h6>JavaScript</h6>
-                    </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={javascript} alt="JavaScript logo" width="64px" height="64px" />
-                        <h6>JavaScript</h6>
-                    </div>}
-                    {!backendTools ? <div className="flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={react} alt="React logo" width="64px" height="64px" />
-                        <h6>React</h6>
-                    </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={react} alt="React logo" width="64px" height="64px" />
-                        <h6>React</h6>
-                    </div>}
-                    {!backendTools ? <div className="flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={redux} alt="Redux logo" width="64px" height="64px" />
-                        <h6>Redux</h6>
-                    </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={redux} alt="Redux logo" width="64px" height="64px" />
-                        <h6>Redux</h6>
-                    </div>}
-                    {!frontendTools ? <div className="flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={node} alt="node.js logo" width="64px" height="64px" />
-                        <h6>Node.js</h6>
-                    </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={node} alt="node.js logo" width="64px" height="64px" />
-                        <h6>Node.js</h6>
-                    </div>}
-                    {!frontendTools ? <div className="flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={express} alt="Express logo" width="64px" height="64px" />
-                        <h6>Express.js</h6>
-                    </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={express} alt="Express logo" width="64px" height="64px" />
-                        <h6>Express.js</h6>
-                    </div>}
-                    {!frontendTools ? <div className="flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={postgresql} alt="PostgreSQL logo" width="64px" height="64px" />
-                        <h6>PostgreSQL</h6>
-                    </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={postgresql} alt="PostgreSQL logo" width="64px" height="64px" />
-                        <h6>PostgreSQL</h6>
-                    </div>}
-                    {!frontendTools ? <div className="flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={sequelize} alt="Sequelize logo" width="64px" height="64px" />
-                        <h6>Sequelize</h6>
-                    </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={sequelize} alt="Sequelize logo" width="64px" height="64px" />
-                        <h6>Sequelize</h6>
-                    </div>}
-                    {!backendTools ? <div className="flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={next} alt="Next.js logo" width="80px" height="56px" />
-                        <h6>Next.js</h6>
-                    </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={next} alt="Next.js logo" width="80px" height="56px" />
-                        <h6>Next.js</h6>
-                    </div>}
-                    {!backendTools ? <div className="flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={html} alt="HTML logo" width="64px" height="64px" />
-                        <h6>HTML</h6>
-                    </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={html} alt="HTML logo" width="64px" height="64px" />
-                        <h6>HTML</h6>
-                    </div>}
-                    {!backendTools ? <div className="flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={css} alt="CSS logo" width="64px" height="64px" />
-                        <h6>CSS</h6>
-                    </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={css} alt="CSS logo" width="64px" height="64px" />
-                        <h6>CSS</h6>
-                    </div>}
-                    {!backendTools ? <div className="flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={tailwind} alt="tailwindcss logo" width="64px" height="64px" />
-                        <h6>Tailwind CSS</h6>
-                    </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={tailwind} alt="tailwindcss logo" width="64px" height="64px" />
-                        <h6>Tailwind CSS</h6>
-                    </div>}
-                    {!backendTools ? <div className="flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={bootstrap} alt="Bootstrap logo" width="64px" height="64px" />
-                        <h6>Bootstrap</h6>
-                    </div> : <div className="grayscale flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
-                        <Image src={bootstrap} alt="Bootstrap logo" width="64px" height="64px" />
-                        <h6>Bootstrap</h6>
-                    </div>}
+                    {
+                        !backendTools && !frontendTools ?
+                            <div className="activeSkillCard">
+                                <Image src={javascript} alt="JavaScript logo" width="64px" height="64px" />
+                                <h6>JavaScript</h6>
+                            </div> :
+                            <div className="inactiveSkillCard">
+                                <Image src={javascript} alt="JavaScript logo" width="64px" height="64px" />
+                                <h6>JavaScript</h6>
+                            </div>
+                    }
+                    {
+                        !backendTools ?
+                            <div className="activeSkillCard">
+                                <Image src={react} alt="React logo" width="64px" height="64px" />
+                                <h6>React</h6>
+                            </div> :
+                            <div className="inactiveSkillCard">
+                                <Image src={react} alt="React logo" width="64px" height="64px" />
+                                <h6>React</h6>
+                            </div>
+                    }
+                    {
+                        !backendTools ?
+                            <div className="activeSkillCard">
+                                <Image src={redux} alt="Redux logo" width="64px" height="64px" />
+                                <h6>Redux</h6>
+                            </div> :
+                            <div className="inactiveSkillCard">
+                                <Image src={redux} alt="Redux logo" width="64px" height="64px" />
+                                <h6>Redux</h6>
+                            </div>
+                    }
+                    {
+                        !frontendTools ?
+                            <div className="activeSkillCard">
+                                <Image src={node} alt="node.js logo" width="64px" height="64px" />
+                                <h6>Node.js</h6>
+                            </div> :
+                            <div className="inactiveSkillCard">
+                                <Image src={node} alt="node.js logo" width="64px" height="64px" />
+                                <h6>Node.js</h6>
+                            </div>
+                    }
+                    {
+                        !frontendTools ?
+                            <div className="activeSkillCard">
+                                <Image src={express} alt="Express logo" width="64px" height="64px" />
+                                <h6>Express.js</h6>
+                            </div> :
+                            <div className="inactiveSkillCard">
+                                <Image src={express} alt="Express logo" width="64px" height="64px" />
+                                <h6>Express.js</h6>
+                            </div>
+                    }
+                    {
+                        !frontendTools ?
+                            <div className="activeSkillCard">
+                                <Image src={postgresql} alt="PostgreSQL logo" width="64px" height="64px" />
+                                <h6>PostgreSQL</h6>
+                            </div> :
+                            <div className="inactiveSkillCard">
+                                <Image src={postgresql} alt="PostgreSQL logo" width="64px" height="64px" />
+                                <h6>PostgreSQL</h6>
+                            </div>
+                    }
+                    {
+                        !frontendTools ?
+                            <div className="activeSkillCard">
+                                <Image src={sequelize} alt="Sequelize logo" width="64px" height="64px" />
+                                <h6>Sequelize</h6>
+                            </div> :
+                            <div className="inactiveSkillCard">
+                                <Image src={sequelize} alt="Sequelize logo" width="64px" height="64px" />
+                                <h6>Sequelize</h6>
+                            </div>
+                    }
+                    {
+                        !backendTools ?
+                            <div className="activeSkillCard">
+                                <Image src={next} alt="Next.js logo" width="80px" height="56px" />
+                                <h6>Next.js</h6>
+                            </div> :
+                            <div className="inactiveSkillCard">
+                                <Image src={next} alt="Next.js logo" width="80px" height="56px" />
+                                <h6>Next.js</h6>
+                            </div>
+                    }
+                    {
+                        !backendTools ?
+                            <div className="activeSkillCard">
+                                <Image src={html} alt="HTML logo" width="64px" height="64px" />
+                                <h6>HTML</h6>
+                            </div> :
+                            <div className="inactiveSkillCard">
+                                <Image src={html} alt="HTML logo" width="64px" height="64px" />
+                                <h6>HTML</h6>
+                            </div>
+                    }
+                    {
+                        !backendTools ?
+                            <div className="activeSkillCard">
+                                <Image src={css} alt="CSS logo" width="64px" height="64px" />
+                                <h6>CSS</h6>
+                            </div> :
+                            <div className="inactiveSkillCard">
+                                <Image src={css} alt="CSS logo" width="64px" height="64px" />
+                                <h6>CSS</h6>
+                            </div>
+                    }
+                    {
+                        !backendTools ?
+                            <div className="activeSkillCard">
+                                <Image src={tailwind} alt="tailwindcss logo" width="64px" height="64px" />
+                                <h6>Tailwind CSS</h6>
+                            </div> :
+                            <div className="inactiveSkillCard">
+                                <Image src={tailwind} alt="tailwindcss logo" width="64px" height="64px" />
+                                <h6>Tailwind CSS</h6>
+                            </div>
+                    }
+                    {
+                        !backendTools ?
+                            <div className="activeSkillCard">
+                                <Image src={bootstrap} alt="Bootstrap logo" width="64px" height="64px" />
+                                <h6>Bootstrap</h6>
+                            </div> :
+                            <div className="inactiveSkillCard">
+                                <Image src={bootstrap} alt="Bootstrap logo" width="64px" height="64px" />
+                                <h6>Bootstrap</h6>
+                            </div>
+                    }
                 </section>
                 <h4 className="mt-8 py-4 font-extrabold text-blue-600 dark:text-white">{texts.skillsH2}</h4>
                 <section className="grid w-full py-4 gap-4 md:grid-cols-3">
@@ -161,7 +205,7 @@ export default function Skills() {
                         </div>
                         {/* This is the progress bar */}
                         <div className="w-full h-1 mt-4 bg-slate-100 dark:bg-slate-800">
-                            <div className="w-[65%] bg-green-300 h-1 border-r-2 border-green-400 dark:border-green-600"/>
+                            <div className="w-[65%] bg-green-300 h-1 border-r-2 border-green-400 dark:border-green-600" />
                         </div>
                     </div>
                     <div className="flex flex-col p-4 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-blue-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
@@ -171,7 +215,7 @@ export default function Skills() {
                         </div>
                         {/* This is the progress bar */}
                         <div className="w-full h-1 mt-4 bg-slate-100 dark:bg-slate-800">
-                            <div className="w-[15%] bg-green-300 h-1 border-r-2 border-green-400 dark:border-green-600"/>
+                            <div className="w-[15%] bg-green-300 h-1 border-r-2 border-green-400 dark:border-green-600" />
                         </div>
                     </div>
                     <div className="flex flex-col p-4 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-blue-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300">
@@ -181,7 +225,7 @@ export default function Skills() {
                         </div>
                         {/* This is the progress bar */}
                         <div className="w-full h-1 mt-4 bg-slate-100 dark:bg-slate-800">
-                            <div className="w-[40%] bg-green-300 h-1 border-r-2 border-green-400 dark:border-green-600"/>
+                            <div className="w-[40%] bg-green-300 h-1 border-r-2 border-green-400 dark:border-green-600" />
                         </div>
                     </div>
                 </section>

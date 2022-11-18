@@ -5,29 +5,20 @@ import { LanguageContext } from "../context/LanguageContext";
 import { HiMenuAlt3, HiOutlineX } from "react-icons/hi";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
-import logo from ".//../public/fdlogo.png";
+import logo from "./../public/fdlogo.png";
 
 export default function Navbar() {
-
     const { texts, handleLanguage } = useContext(LanguageContext);
     const [nav, setNav] = useState(false);
     const [mode, setMode] = useState("light");
 
     useEffect(() => {
-        if (mode === "dark") {
-            document.documentElement.classList.add("dark");
-        } else {
-            document.documentElement.classList.remove("dark");
-        }
+        if (mode === "dark") document.documentElement.classList.add("dark");
+        else document.documentElement.classList.remove("dark");
     }, [mode])
 
-    const handleNav = () => {
-        setNav(!nav);
-    }
-
-    const handleMode = () => {
-        setMode(mode === "dark" ? "light" : "dark");
-    }
+    const handleNav = () => { setNav(!nav) };
+    const handleMode = () => { setMode(mode === "dark" ? "light" : "dark") };
 
     return (
         <nav className="fixed w-full h-20 shadow-lg z-[100] bg-white dark:bg-slate-900 dark:shadow-slate-800/20 transition-all">
@@ -56,14 +47,10 @@ export default function Navbar() {
                         </button>
                         <div className="flex gap-2">
                             <Link href={texts.cvDocument} download>
-                                <a className="flex items-center py-2 px-4 font-semibold text-sm text-blue-600 dark:text-blue-400 uppercase border border-blue-600 dark:border-blue-400 rounded-lg shadow-md shadow-blue-200 dark:shadow-blue-900 cursor-pointer hover:scale-105 ease-in-out duration-200"
-                                    target="_blank">{texts.navbarButtonCV}
-                                </a>
+                                <a className="secondaryButtonNavbar" target="_blank">{texts.navbarButtonCV}</a>
                             </Link>
                             <Link href="/#contact">
-                                <button className="flex items-center py-2 px-4 font-semibold text-sm text-white uppercase bg-pink-600 dark:bg-pink-500 rounded-lg shadow-md shadow-pink-200 dark:shadow-pink-900 cursor-pointer hover:scale-105 ease-in-out duration-200">
-                                    {texts.navbarButtonContact}
-                                </button>
+                                <button className="primaryButtonNavbar">{texts.navbarButtonContact}</button>
                             </Link>
                             <div className="flex ml-4 space-x-4">
                                 <button value="es" onClick={handleLanguage}>🇪🇸</button>

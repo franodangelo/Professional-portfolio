@@ -11,7 +11,7 @@ export default function Contact() {
         <main id="contact" className="flex w-full p-6 md:p-16 text-center h-screen items-center">
             <div className="flex flex-col w-full m-auto gap-8 items-center">
                 <section className="col-span-2">
-                    <h6 className="py-2 font-light text-slate-800 dark:text-slate-500 uppercase tracking-widest">🤙 {texts.contactSection}</h6>
+                    <h6 className="sectionTypeHeading">🤙 {texts.contactSection}</h6>
                     <h2 className="py-4 font-extrabold text-blue-600 dark:text-white">{texts.contactH1}</h2>
                     <p className="py-2 font-normal text-sm md:text-base text-slate-600 dark:text-slate-300">{texts.contactP}</p>
                 </section>

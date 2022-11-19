@@ -9,7 +9,7 @@ export default function Header() {
     return (
         <header id="header" className="w-full h-screen text-center transition-all">
             <main className="flex w-full h-full mx-auto justify-center items-center">
-                <section className="flex flex-col">
+                <section className="flex flex-col w-[90%]">
                     <h6 className="sectionTypeHeading">🚀 {texts.headerSection}</h6>
                     <h2>{texts.headerH1}</h2>
                     <h4 className="py-2 font-normal text-slate-800 dark:text-slate-300">{texts.headerH2} 🇦🇷</h4>

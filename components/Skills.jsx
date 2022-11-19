@@ -193,15 +193,15 @@ export default function Skills() {
                             </div>
                     }
                 </section>
-                <h4 className="mt-8 py-4 font-extrabold text-blue-600 dark:text-white">{texts.skillsH2}</h4>
+                <h4 className="secondaryHeading">{texts.skillsH2}</h4>
                 <section className="grid w-full py-4 gap-4 md:grid-cols-3">
                     <div className="learningCard">
                         <div className="flex justify-center items-center gap-8">
                             <Image src={dart} alt="Dart logo" width="48px" height="48px" />
                             <h6>Dart</h6>
                         </div>
-                        <div className="w-full h-1 mt-4 bg-slate-100 dark:bg-slate-800">
-                            <div className="w-[65%] bg-green-300 h-1 border-r-2 border-green-400 dark:border-green-600" />
+                        <div className="progressBar">
+                            <div className="w-[65%] activeProgressBar" />
                         </div>
                     </div>
                     <div className="learningCard">
@@ -209,8 +209,8 @@ export default function Skills() {
                             <Image src={swift} alt="Swift logo" width="48px" height="48px" />
                             <h6>Swift</h6>
                         </div>
-                        <div className="w-full h-1 mt-4 bg-slate-100 dark:bg-slate-800">
-                            <div className="w-[15%] bg-green-300 h-1 border-r-2 border-green-400 dark:border-green-600" />
+                        <div className="progressBar">
+                            <div className="w-[15%] activeProgressBar" />
                         </div>
                     </div>
                     <div className="learningCard">
@@ -218,29 +218,21 @@ export default function Skills() {
                             <Image src={typescript} alt="TypeScript logo" width="48px" height="48px" />
                             <h6>TypeScript</h6>
                         </div>
-                        <div className="w-full h-1 mt-4 bg-slate-100 dark:bg-slate-800">
-                            <div className="w-[40%] bg-green-300 h-1 border-r-2 border-green-400 dark:border-green-600" />
+                        <div className="progressBar">
+                            <div className="w-[40%] activeProgressBar" />
                         </div>
                     </div>
                 </section>
-                <h6 className="my-8 py-4 self-center font-extrabold text-blue-600 dark:text-white">{texts.skillsH3}</h6>
-                <section className="grid w-full md:w-[60%] mx-4 px-4 py-2 self-center divide-y-2 dark:divide-slate-800 rounded-lg bg-white dark:bg-slate-900 shadow-md dark:shadow-slate-900">
+                <h6 className="tertiaryHeading">{texts.skillsH3}</h6>
+                <section className="otherSkillsGrid">
                     <div className="p-4">
                         <div className="flex flex-col lg:flex-row gap-2 justify-between items-center">
                             <h6 className="basis-2/5">{texts.skillsSh1}</h6>
                             <div className="flex gap-4">
-                                <span className="m-auto">
-                                    <Image src={vsc} alt="Visual Studio Code logo" width="48px" height="48px" />
-                                </span>
-                                <span className="m-auto">
-                                    <Image src={npm} alt="npm logo" width="48px" height="48px" />
-                                </span>
-                                <span className="m-auto">
-                                    <Image src={github} alt="Github logo" width="48px" height="48px" />
-                                </span>
-                                <span className="m-auto">
-                                    <Image src={postman} alt="Postman logo" width="48px" height="48px" />
-                                </span>
+                                <Image src={vsc} alt="Visual Studio Code logo" width="48px" height="48px" />
+                                <Image src={npm} alt="npm logo" width="48px" height="48px" />
+                                <Image src={github} alt="Github logo" width="48px" height="48px" />
+                                <Image src={postman} alt="Postman logo" width="48px" height="48px" />
                             </div>
                         </div>
                     </div>
@@ -248,12 +240,8 @@ export default function Skills() {
                         <div className="flex flex-col lg:flex-row gap-2 justify-between items-center">
                             <h6 className="basis-2/5">{texts.skillsSh2}</h6>
                             <div className="flex gap-4">
-                                <span className="m-auto">
-                                    <Image src={figma} alt="Figma logo" width="48px" height="48px" />
-                                </span>
-                                <span className="m-auto">
-                                    <Image src={adobexd} alt="AdobeXd logo" width="48px" height="48px" />
-                                </span>
+                                <Image src={figma} alt="Figma logo" width="48px" height="48px" />
+                                <Image src={adobexd} alt="AdobeXd logo" width="48px" height="48px" />
                             </div>
                         </div>
                     </div>
@@ -261,15 +249,9 @@ export default function Skills() {
                         <div className="flex flex-col lg:flex-row gap-2 justify-between items-center">
                             <h6 className="basis-2/5">{texts.skillsSh3}</h6>
                             <div className="flex gap-4">
-                                <span className="m-auto">
-                                    <Image src={notion} alt="Notion logo" width="48px" height="48px" />
-                                </span>
-                                <span className="m-auto">
-                                    <Image src={jira} alt="Jira logo" width="48px" height="48px" />
-                                </span>
-                                <span className="m-auto">
-                                    <Image src={trello} alt="Trello logo" width="48px" height="48px" />
-                                </span>
+                                <Image src={notion} alt="Notion logo" width="48px" height="48px" />
+                                <Image src={jira} alt="Jira logo" width="48px" height="48px" />
+                                <Image src={trello} alt="Trello logo" width="48px" height="48px" />
                             </div>
                         </div>
                     </div>

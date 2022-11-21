@@ -194,7 +194,7 @@ export default function Projects() {
                         </div>
                     </div>
                 </section>
-                <h4 className="secondaryHeading text-center">{texts.projectsWorkingOn}</h4>
+                {/* <h4 className="secondaryHeading text-center">{texts.projectsWorkingOn}</h4>
                 <section className="grid py-4 grid-cols-1 gap-8 md:grid-cols-2">
                     <div className="workingProjectCard">
                         <span className="dateChip">Oct 22</span>
@@ -217,7 +217,7 @@ export default function Projects() {
                             <span className="techChip text-white bg-emerald-500/80 dark:bg-emerald-500">Tailwind</span>
                         </div>
                     </div>
-                </section>
+                </section> */}
             </div>
         </main>
     )

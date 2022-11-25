@@ -110,31 +110,19 @@ export default function Navbar() {
                         </ul>
                         <div className="flex w-full items-center justify-between">
                             <div className="socialButton p-3">
-                                <Link href="/">
-                                    <a href="https://www.linkedin.com/in/franco-dangelo/"
-                                        target="_blank"
-                                        rel="noreferrer">
-                                        <FaLinkedinIn />
-                                    </a>
-                                </Link>
+                                <a href="https://www.linkedin.com/in/franco-dangelo/" target="_blank" rel="noreferrer">
+                                    <FaLinkedinIn />
+                                </a>
                             </div>
                             <div className="socialButton p-3">
-                                <Link href="">
-                                    <a href="https://github.com/franodangelo"
-                                        target="_blank"
-                                        rel="noreferrer">
-                                        <FaGithub />
-                                    </a>
-                                </Link>
+                                <a href="https://github.com/franodangelo" target="_blank" rel="noreferrer">
+                                    <FaGithub />
+                                </a>
                             </div>
                             <div className="socialButton p-3">
-                                <Link href="/">
-                                    <a href="https://twitter.com/techfrano"
-                                        target="_blank"
-                                        rel="noreferrer">
-                                        <FaTwitter />
-                                    </a>
-                                </Link>
+                                <a href="https://twitter.com/techfrano" target="_blank" rel="noreferrer">
+                                    <FaTwitter />
+                                </a>
                             </div>
                         </div>
                         <a className="secondaryButtonNavbar w-full justify-center" href={texts.cvDocument}

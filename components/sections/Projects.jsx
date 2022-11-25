@@ -5,7 +5,7 @@ import propertyImg3 from "../../public/assets/projects/project3.png";
 import propertyImg4 from "../../public/assets/projects/project4.png";
 import propertyImg5 from "../../public/assets/projects/project5.png";
 import { LanguageContext } from "../../context/LanguageContext";
-import ProjectCard from "../ProjectCard";
+import ProjectCard from "../cards/ProjectCard";
 
 export default function Projects() {
     const { texts } = useContext(LanguageContext);

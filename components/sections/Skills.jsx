@@ -25,9 +25,9 @@ import notion from "../../public/assets/skills/notion.png";
 import jira from "../../public/assets/skills/jira.png";
 import trello from "../../public/assets/skills/trello.png";
 import { LanguageContext } from "../../context/LanguageContext";
-import SkillCard from "../SkillCard";
-import InactiveSkillCard from "../InactiveSkillCard";
-import LearningCard from "../LearningCard";
+import SkillCard from "../cards/SkillCard";
+import InactiveSkillCard from "../cards/InactiveSkillCard";
+import LearningCard from "../cards/LearningCard";
 
 export default function Skills() {
     const { texts } = useContext(LanguageContext);

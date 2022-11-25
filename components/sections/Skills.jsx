@@ -27,6 +27,7 @@ import trello from "../../public/assets/skills/trello.png";
 import { LanguageContext } from "../../context/LanguageContext";
 import SkillCard from "../SkillCard";
 import InactiveSkillCard from "../InactiveSkillCard";
+import LearningCard from "../LearningCard";
 
 export default function Skills() {
     const { texts } = useContext(LanguageContext);
@@ -125,33 +126,9 @@ export default function Skills() {
                 </section>
                 <h4 className="secondaryHeading">{texts.skillsH2}</h4>
                 <section className="grid w-full py-4 gap-4 md:grid-cols-3">
-                    <div className="learningCard">
-                        <div className="flex justify-center items-center gap-8">
-                            <Image src={dart} alt="Dart logo" width="48px" height="48px" />
-                            <h6>Dart</h6>
-                        </div>
-                        <div className="progressBar">
-                            <div className="w-[65%] activeProgressBar" />
-                        </div>
-                    </div>
-                    <div className="learningCard">
-                        <div className="flex justify-center items-center gap-8">
-                            <Image src={swift} alt="Swift logo" width="48px" height="48px" />
-                            <h6>Swift</h6>
-                        </div>
-                        <div className="progressBar">
-                            <div className="w-[20%] activeProgressBar" />
-                        </div>
-                    </div>
-                    <div className="learningCard">
-                        <div className="flex justify-center items-center gap-8">
-                            <Image src={typescript} alt="TypeScript logo" width="48px" height="48px" />
-                            <h6>TypeScript</h6>
-                        </div>
-                        <div className="progressBar">
-                            <div className="w-[40%] activeProgressBar" />
-                        </div>
-                    </div>
+                    <LearningCard thumbnail={dart} title="Dart" progress="65" />
+                    <LearningCard thumbnail={swift} title="Swift" progress="20" />
+                    <LearningCard thumbnail={typescript} title="TypeScript" progress="40" />
                 </section>
                 <h6 className="tertiaryHeading">{texts.skillsH3}</h6>
                 <section className="otherSkillsGrid">

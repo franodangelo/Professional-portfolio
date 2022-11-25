@@ -17,7 +17,7 @@ export default function Footer() {
                         <Image src={react} alt="React logo" width="24px" height="24px" />
                     </span>
                     <span className="footerSocial">
-                        <Image src={next} alt="Next.js logo" width="24px" height="16px" />
+                        <Image src={next} alt="Next.js logo" width="24px" height="24px" />
                     </span>
                     <span className="footerSocial">
                         <Image src={tailwind} alt="Tailwind CSS logo" width="24px" height="24px" />

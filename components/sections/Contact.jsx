@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
-import { LanguageContext } from "../context/LanguageContext";
+import { LanguageContext } from "../../context/LanguageContext";
 
 export default function Contact() {
     const { texts } = useContext(LanguageContext);

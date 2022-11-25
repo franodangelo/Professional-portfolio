@@ -1,30 +1,30 @@
 import React, { useContext, useState } from "react";
 import Image from "next/image";
-import javascript from "../public/assets/skills/javascript.png";
-import react from "../public/assets/skills/react.png";
-import redux from "../public/assets/skills/redux.png";
-import node from "../public/assets/skills/node.png";
-import express from "../public/assets/skills/express.png";
-import postgresql from "../public/assets/skills/postgresql.png";
-import html from "../public/assets/skills/html.png";
-import css from "../public/assets/skills/css.png";
-import sequelize from "../public/assets/skills/sequelize.png";
-import tailwind from "../public/assets/skills/tailwind.png";
-import bootstrap from "../public/assets/skills/bootstrap.png";
-import typescript from "../public/assets/skills/typescript.png";
-import next from "../public/assets/skills/next.png";
-import dart from "../public/assets/skills/dart.png";
-import swift from "../public/assets/skills/swift.png";
-import vsc from "../public/assets/skills/vsc.png";
-import npm from "../public/assets/skills/npm.png";
-import github from "../public/assets/skills/github.png";
-import postman from "../public/assets/skills/postman.png";
-import figma from "../public/assets/skills/figma.png";
-import adobexd from "../public/assets/skills/adobexd.png";
-import notion from "../public/assets/skills/notion.png";
-import jira from "../public/assets/skills/jira.png";
-import trello from "../public/assets/skills/trello.png";
-import { LanguageContext } from "../context/LanguageContext";
+import javascript from "../../public/assets/skills/javascript.png";
+import react from "../../public/assets/skills/react.png";
+import redux from "../../public/assets/skills/redux.png";
+import node from "../../public/assets/skills/node.png";
+import express from "../../public/assets/skills/express.png";
+import postgresql from "../../public/assets/skills/postgresql.png";
+import html from "../../public/assets/skills/html.png";
+import css from "../../public/assets/skills/css.png";
+import sequelize from "../../public/assets/skills/sequelize.png";
+import tailwind from "../../public/assets/skills/tailwind.png";
+import bootstrap from "../../public/assets/skills/bootstrap.png";
+import typescript from "../../public/assets/skills/typescript.png";
+import next from "../../public/assets/skills/next.png";
+import dart from "../../public/assets/skills/dart.png";
+import swift from "../../public/assets/skills/swift.png";
+import vsc from "../../public/assets/skills/vsc.png";
+import npm from "../../public/assets/skills/npm.png";
+import github from "../../public/assets/skills/github.png";
+import postman from "../../public/assets/skills/postman.png";
+import figma from "../../public/assets/skills/figma.png";
+import adobexd from "../../public/assets/skills/adobexd.png";
+import notion from "../../public/assets/skills/notion.png";
+import jira from "../../public/assets/skills/jira.png";
+import trello from "../../public/assets/skills/trello.png";
+import { LanguageContext } from "../../context/LanguageContext";
 
 export default function Skills() {
     const { texts } = useContext(LanguageContext);
@@ -210,7 +210,7 @@ export default function Skills() {
                             <h6>Swift</h6>
                         </div>
                         <div className="progressBar">
-                            <div className="w-[15%] activeProgressBar" />
+                            <div className="w-[20%] activeProgressBar" />
                         </div>
                     </div>
                     <div className="learningCard">

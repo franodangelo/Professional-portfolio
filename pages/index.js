@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
-import Header from "../components/Header";
-import Myself from "../components/Myself";
-import Skills from "../components/Skills";
-import Projects from "../components/Projects";
-import Contact from "../components/Contact";
+import Header from "../components/sections/Header";
+import Myself from "../components/sections/Myself";
+import Skills from "../components/sections/Skills";
+import Projects from "../components/sections/Projects";
+import Contact from "../components/sections/Contact";
 import Footer from "../components/Footer";
 import LanguageProvider from "../context/LanguageContext";
 

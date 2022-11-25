@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import Link from "next/link";
-import { LanguageContext } from "../context/LanguageContext";
+import { LanguageContext } from "../../context/LanguageContext";
 import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
 
 export default function Header() {

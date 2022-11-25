@@ -3,7 +3,7 @@ import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { IoMdOpen } from "react-icons/io";
 
-export default function ProjectCard({api, date, img, title, isResponsive, technologies, repo, demo}) {
+export default function ProjectCard({ api, date, img, title, isResponsive, technologies, repo, demo }) {
     return (
         <main className="projectCard">
             <div className="w-full flex justify-end gap-2">
@@ -16,7 +16,11 @@ export default function ProjectCard({api, date, img, title, isResponsive, techno
             <section>
                 <div className="pb-4">
                     <h6 className="projectCardTitle">{title}</h6>
-                    <p className="projectCardResponsive">{isResponsive}</p>
+                    {
+                        isResponsive.length > 17 ?
+                            <p className="projectCardNotResponsive">{isResponsive}</p> :
+                            <p className="projectCardResponsive">{isResponsive}</p>
+                    }
                 </div>
                 <div className="flex flex-wrap place-content-center py-4 gap-2">
                     {technologies?.includes("JavaScript") ? <span className="techChip dark:text-slate-900 bg-yellow-500/80 dark:bg-yellow-400">JavaScript</span> : null}

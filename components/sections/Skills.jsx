@@ -125,10 +125,25 @@ export default function Skills() {
                     }
                 </section>
                 <h4 className="secondaryHeading">{texts.skillsH2}</h4>
-                <section className="grid w-full py-4 gap-4 md:grid-cols-3">
-                    <LearningCard thumbnail={dart} title="Dart" progress="65" />
-                    <LearningCard thumbnail={swift} title="Swift" progress="20" />
-                    <LearningCard thumbnail={typescript} title="TypeScript" progress="40" />
+                <section className="flex flex-col w-full items-center md:items-start">
+                    <h5 className="pt-2">{texts.pathFS}</h5>
+                    <div className="grid w-full mb-4 py-4 gap-4 md:grid-cols-3">
+                        <LearningCard thumbnail={dart} title="Dart" progress="65" />
+                        <LearningCard thumbnail={swift} title="Swift" progress="20" />
+                        <LearningCard thumbnail={typescript} title="TypeScript" progress="40" />
+                    </div>
+                    <h5 className="pt-2">{texts.pathFE}</h5>
+                    <div className="grid w-full mb-4 py-4 gap-4 md:grid-cols-3">
+                        <LearningCard thumbnail={dart} title="Dart" progress="65" />
+                        <LearningCard thumbnail={swift} title="Swift" progress="20" />
+                        <LearningCard thumbnail={typescript} title="TypeScript" progress="40" />
+                    </div>
+                    <h5 className="pt-2">{texts.pathMD}</h5>
+                    <div className="grid w-full mb-4 py-4 gap-4 md:grid-cols-3">
+                        <LearningCard thumbnail={dart} title="Dart" progress="65" />
+                        <LearningCard thumbnail={swift} title="Swift" progress="20" />
+                        <LearningCard thumbnail={typescript} title="TypeScript" progress="40" />
+                    </div>
                 </section>
                 <h6 className="tertiaryHeading">{texts.skillsH3}</h6>
                 <section className="otherSkillsGrid">

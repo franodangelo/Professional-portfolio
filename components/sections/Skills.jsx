@@ -64,129 +64,63 @@ export default function Skills() {
                 <section className="grid w-full py-4 gap-4 md:grid-cols-2 lg:grid-cols-4">
                     {
                         !backendTools && !frontendTools ?
-                        <SkillCard className="activeSkillCard" thumbnail={javascript} title={`JavaScript`}/> :
-                        <InactiveSkillCard className="inactiveSkillCard" thumbnail={javascript} title={`JavaScript`}/>
+                            <SkillCard thumbnail={javascript} title="JavaScript" /> :
+                            <InactiveSkillCard thumbnail={javascript} title="JavaScript" />
                     }
                     {
                         !backendTools ?
-                            <div className="activeSkillCard">
-                                <Image src={react} alt="React logo" width="64px" height="64px" />
-                                <h6>React</h6>
-                            </div> :
-                            <div className="inactiveSkillCard">
-                                <Image src={react} alt="React logo" width="64px" height="64px" />
-                                <h6>React</h6>
-                            </div>
+                            <SkillCard thumbnail={react} title="React" /> :
+                            <InactiveSkillCard thumbnail={react} title="React" />
                     }
                     {
                         !backendTools ?
-                            <div className="activeSkillCard">
-                                <Image src={redux} alt="Redux logo" width="64px" height="64px" />
-                                <h6>Redux</h6>
-                            </div> :
-                            <div className="inactiveSkillCard">
-                                <Image src={redux} alt="Redux logo" width="64px" height="64px" />
-                                <h6>Redux</h6>
-                            </div>
+                            <SkillCard thumbnail={redux} title="Redux" /> :
+                            <InactiveSkillCard thumbnail={redux} title="Redux" />
                     }
                     {
                         !frontendTools ?
-                            <div className="activeSkillCard">
-                                <Image src={node} alt="Node.js logo" width="64px" height="64px" />
-                                <h6>Node.js</h6>
-                            </div> :
-                            <div className="inactiveSkillCard">
-                                <Image src={node} alt="Node.js logo" width="64px" height="64px" />
-                                <h6>Node.js</h6>
-                            </div>
+                            <SkillCard thumbnail={node} title="Node.js" /> :
+                            <InactiveSkillCard thumbnail={node} title="Node.js" />
                     }
                     {
                         !frontendTools ?
-                            <div className="activeSkillCard">
-                                <Image src={express} alt="Express.js logo" width="64px" height="64px" />
-                                <h6>Express.js</h6>
-                            </div> :
-                            <div className="inactiveSkillCard">
-                                <Image src={express} alt="Express.js logo" width="64px" height="64px" />
-                                <h6>Express.js</h6>
-                            </div>
+                            <SkillCard thumbnail={express} title="Express.js" /> :
+                            <InactiveSkillCard thumbnail={express} title="Express.js" />
                     }
                     {
                         !frontendTools ?
-                            <div className="activeSkillCard">
-                                <Image src={postgresql} alt="PostgreSQL logo" width="64px" height="64px" />
-                                <h6>PostgreSQL</h6>
-                            </div> :
-                            <div className="inactiveSkillCard">
-                                <Image src={postgresql} alt="PostgreSQL logo" width="64px" height="64px" />
-                                <h6>PostgreSQL</h6>
-                            </div>
+                            <SkillCard thumbnail={postgresql} title="PostgreSQL" /> :
+                            <InactiveSkillCard thumbnail={postgresql} title="PostgreSQL" />
                     }
                     {
                         !frontendTools ?
-                            <div className="activeSkillCard">
-                                <Image src={sequelize} alt="Sequelize logo" width="64px" height="64px" />
-                                <h6>Sequelize</h6>
-                            </div> :
-                            <div className="inactiveSkillCard">
-                                <Image src={sequelize} alt="Sequelize logo" width="64px" height="64px" />
-                                <h6>Sequelize</h6>
-                            </div>
+                            <SkillCard thumbnail={sequelize} title="Sequelize" /> :
+                            <InactiveSkillCard thumbnail={sequelize} title="Sequelize" />
                     }
                     {
                         !backendTools ?
-                            <div className="activeSkillCard">
-                                <Image src={next} alt="Next.js logo" width="80px" height="56px" />
-                                <h6>Next.js</h6>
-                            </div> :
-                            <div className="inactiveSkillCard">
-                                <Image src={next} alt="Next.js logo" width="80px" height="56px" />
-                                <h6>Next.js</h6>
-                            </div>
+                            <SkillCard thumbnail={next} title="Next.js" /> :
+                            <InactiveSkillCard thumbnail={next} title="Next.js" />
                     }
                     {
                         !backendTools ?
-                            <div className="activeSkillCard">
-                                <Image src={html} alt="HTML logo" width="64px" height="64px" />
-                                <h6>HTML</h6>
-                            </div> :
-                            <div className="inactiveSkillCard">
-                                <Image src={html} alt="HTML logo" width="64px" height="64px" />
-                                <h6>HTML</h6>
-                            </div>
+                            <SkillCard thumbnail={html} title="HTML" /> :
+                            <InactiveSkillCard thumbnail={html} title="HTML" />
                     }
                     {
                         !backendTools ?
-                            <div className="activeSkillCard">
-                                <Image src={css} alt="CSS logo" width="64px" height="64px" />
-                                <h6>CSS</h6>
-                            </div> :
-                            <div className="inactiveSkillCard">
-                                <Image src={css} alt="CSS logo" width="64px" height="64px" />
-                                <h6>CSS</h6>
-                            </div>
+                            <SkillCard thumbnail={css} title="CSS" /> :
+                            <InactiveSkillCard thumbnail={css} title="CSS" />
                     }
                     {
                         !backendTools ?
-                            <div className="activeSkillCard">
-                                <Image src={tailwind} alt="Tailwind CSS logo" width="64px" height="64px" />
-                                <h6>Tailwind CSS</h6>
-                            </div> :
-                            <div className="inactiveSkillCard">
-                                <Image src={tailwind} alt="Tailwind CSS logo" width="64px" height="64px" />
-                                <h6>Tailwind CSS</h6>
-                            </div>
+                            <SkillCard thumbnail={tailwind} title="Tailwind CSS" /> :
+                            <InactiveSkillCard thumbnail={tailwind} title="Tailwind CSS" />
                     }
                     {
                         !backendTools ?
-                            <div className="activeSkillCard">
-                                <Image src={bootstrap} alt="Bootstrap logo" width="64px" height="64px" />
-                                <h6>Bootstrap</h6>
-                            </div> :
-                            <div className="inactiveSkillCard">
-                                <Image src={bootstrap} alt="Bootstrap logo" width="64px" height="64px" />
-                                <h6>Bootstrap</h6>
-                            </div>
+                            <SkillCard thumbnail={bootstrap} title="Bootstrap" /> :
+                            <InactiveSkillCard thumbnail={bootstrap} title="Bootstrap" />
                     }
                 </section>
                 <h4 className="secondaryHeading">{texts.skillsH2}</h4>

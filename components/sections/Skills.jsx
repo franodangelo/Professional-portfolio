@@ -25,6 +25,8 @@ import notion from "../../public/assets/skills/notion.png";
 import jira from "../../public/assets/skills/jira.png";
 import trello from "../../public/assets/skills/trello.png";
 import { LanguageContext } from "../../context/LanguageContext";
+import SkillCard from "../SkillCard";
+import InactiveSkillCard from "../InactiveSkillCard";
 
 export default function Skills() {
     const { texts } = useContext(LanguageContext);
@@ -62,14 +64,8 @@ export default function Skills() {
                 <section className="grid w-full py-4 gap-4 md:grid-cols-2 lg:grid-cols-4">
                     {
                         !backendTools && !frontendTools ?
-                            <div className="activeSkillCard">
-                                <Image src={javascript} alt="JavaScript logo" width="64px" height="64px" />
-                                <h6>JavaScript</h6>
-                            </div> :
-                            <div className="inactiveSkillCard">
-                                <Image src={javascript} alt="JavaScript logo" width="64px" height="64px" />
-                                <h6>JavaScript</h6>
-                            </div>
+                        <SkillCard className="activeSkillCard" thumbnail={javascript} title={`JavaScript`}/> :
+                        <InactiveSkillCard className="inactiveSkillCard" thumbnail={javascript} title={`JavaScript`}/>
                     }
                     {
                         !backendTools ?

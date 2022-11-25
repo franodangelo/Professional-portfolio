@@ -11,10 +11,13 @@ import css from "../../public/assets/skills/css.png";
 import sequelize from "../../public/assets/skills/sequelize.png";
 import tailwind from "../../public/assets/skills/tailwind.png";
 import bootstrap from "../../public/assets/skills/bootstrap.png";
+import vite from "../../public/assets/skills/vite.png";
 import typescript from "../../public/assets/skills/typescript.png";
 import next from "../../public/assets/skills/next.png";
+import sass from "../../public/assets/skills/sass.png";
 import dart from "../../public/assets/skills/dart.png";
 import swift from "../../public/assets/skills/swift.png";
+import flutter from "../../public/assets/skills/flutter.png";
 import vsc from "../../public/assets/skills/vsc.png";
 import npm from "../../public/assets/skills/npm.png";
 import github from "../../public/assets/skills/github.png";
@@ -128,21 +131,19 @@ export default function Skills() {
                 <section className="flex flex-col w-full items-center md:items-start">
                     <h5 className="pt-2">{texts.pathFS}</h5>
                     <div className="grid w-full mb-4 py-4 gap-4 md:grid-cols-3">
-                        <LearningCard thumbnail={dart} title="Dart" progress="65" />
-                        <LearningCard thumbnail={swift} title="Swift" progress="20" />
-                        <LearningCard thumbnail={typescript} title="TypeScript" progress="40" />
+                        <LearningCard thumbnail={vite} title="Vite" progress="hidden" />
+                        <LearningCard thumbnail={typescript} title="TypeScript" progress="w-[20%]" />
                     </div>
                     <h5 className="pt-2">{texts.pathFE}</h5>
                     <div className="grid w-full mb-4 py-4 gap-4 md:grid-cols-3">
-                        <LearningCard thumbnail={dart} title="Dart" progress="65" />
-                        <LearningCard thumbnail={swift} title="Swift" progress="20" />
-                        <LearningCard thumbnail={typescript} title="TypeScript" progress="40" />
+                        <LearningCard thumbnail={sass} title="Sass" progress="w-[75%]" />
+                        <LearningCard thumbnail={react} title="React Hooks" progress="w-[15%]" />
                     </div>
                     <h5 className="pt-2">{texts.pathMD}</h5>
                     <div className="grid w-full mb-4 py-4 gap-4 md:grid-cols-3">
-                        <LearningCard thumbnail={dart} title="Dart" progress="65" />
-                        <LearningCard thumbnail={swift} title="Swift" progress="20" />
-                        <LearningCard thumbnail={typescript} title="TypeScript" progress="40" />
+                        <LearningCard thumbnail={dart} title="Dart" progress="w-[65%]" />
+                        <LearningCard thumbnail={swift} title="Swift" progress="w-[20%]" />
+                        <LearningCard thumbnail={flutter} title="Flutter" progress="hidden" />
                     </div>
                 </section>
                 <h6 className="tertiaryHeading">{texts.skillsH3}</h6>

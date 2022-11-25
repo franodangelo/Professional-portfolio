@@ -9,7 +9,7 @@ export default function LearningCard({ thumbnail, title, progress }) {
                 <h6>{title}</h6>
             </div>
             <div className="progressBar">
-                <div className={`w-[${progress}%] activeProgressBar`} />
+                <div className={`${progress} activeProgressBar`} />
             </div>
         </div>
     )

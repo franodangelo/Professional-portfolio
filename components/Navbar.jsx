@@ -59,8 +59,8 @@ export default function Navbar() {
                                 <span className="animate-ping relative inline-flex h-full w-full rounded-full bg-pink-400 dark:bg-pink-100 opacity-75"></span>
                             </span>
                             <div className="flex items-center ml-4 space-x-4 cursor-pointer">
-                                <span value="es" onClick={handleLanguage}>🇪🇸</span>
-                                <span value="en" onClick={handleLanguage}>🇺🇲</span>
+                                <button value="es" onClick={handleLanguage}>🇪🇸</button>
+                                <button value="en" onClick={handleLanguage}>🇺🇲</button>
                             </div>
                         </div>
                     </ul>

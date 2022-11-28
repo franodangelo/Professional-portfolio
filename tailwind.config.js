@@ -5,7 +5,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   darkMode: "class",
-  theme: {},
+  theme: {
+    fontFamily: {
+      montserrat: "'Montserrat', sans-serif",
+      hind: "'Hind', sans-serif"
+    }
+  },
   plugins: [
     require('tailwindcss-bg-patterns'),
   ],

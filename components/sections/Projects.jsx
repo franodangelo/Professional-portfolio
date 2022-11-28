@@ -14,7 +14,7 @@ export default function Projects() {
         <main id="projects" className="w-full md:h-full p-6 md:px-16 md:py-24 items-center justify-center bg-white dark:bg-slate-900 shadow-lg">
             <div className="h-full mx-auto">
                 <h6 className="sectionTypeHeading">✔️ {texts.projectsSection}</h6>
-                <h2 className="text-center">{texts.projectsH1}</h2>
+                <h3 className="text-center">{texts.projectsH1}</h3>
                 <section className="grid grid-cols-1 py-4 gap-8 md:grid-cols-3">
                     <ProjectCard
                         date={`Sep 22`}
@@ -40,7 +40,7 @@ export default function Projects() {
                         date={`${texts.projectsAug} 22`}
                         api={false}
                         img={propertyImg3}
-                        title={`Services SPA`}
+                        title={`Services Landing Page`}
                         isResponsive={texts.projectsResponsive}
                         technologies={["JavaScript", "React", "Tailwind"]}
                         repo={`https://github.com/franodangelo/Services-SPA`}

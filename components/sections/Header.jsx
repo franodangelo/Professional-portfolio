@@ -10,12 +10,12 @@ export default function Header() {
         <header id="header" className="w-full h-screen text-center transition-all">
             <main className="flex w-full h-full mx-auto justify-center items-center">
                 <section className="flex flex-col w-[90%] mt-16 md:mt-20 items-center">
-                    <p className="sectionTypeHeading">🚀 {texts.headerSection}</p>
+                    <h6 className="sectionTypeHeading">🚀 {texts.headerSection}</h6>
                     <div className="flex flex-col">
                         <h1>{texts.headerH1}</h1>
                         <p className="flex self-end -mt-4 text-[10px] md:text-xs">{texts.headerNickname}</p>
                     </div>
-                    <h4 className="w-[80%] py-4 font-normal text-slate-800 dark:text-slate-300">{texts.headerH2}</h4>
+                    <h5 className="md:w-[80%] py-4 text-slate-800 dark:text-slate-300">{texts.headerH2}</h5>
                     <div className="flex m-auto my-8 items-end justify-between gap-8 md:gap-16">
                         <div className="socialButton">
                             <Link href="/">
@@ -39,7 +39,7 @@ export default function Header() {
                             </Link>
                         </div>
                     </div>
-                    <h6>{texts.headerCTA}</h6>
+                    <p>{texts.headerCTA}</p>
                     <FaChevronDown className="animate-bounce my-4" />
                 </section>
             </main>

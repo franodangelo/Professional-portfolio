@@ -15,7 +15,7 @@ export default function ProjectCard({ api, date, img, title, isResponsive, techn
             />
             <section>
                 <div className="pb-4">
-                    <h6 className="projectCardTitle">{title}</h6>
+                    <h6 className="projectCardTitle text-base md:text-lg">{title}</h6>
                     {
                         isResponsive.length > 17 ?
                             <p className="projectCardNotResponsive">{isResponsive}</p> :

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import Link from "next/link";
-import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaTwitter, FaChevronDown } from "react-icons/fa";
 import { LanguageContext } from "../../context/LanguageContext";
 
 export default function Header() {
@@ -9,10 +9,10 @@ export default function Header() {
     return (
         <header id="header" className="w-full h-screen text-center transition-all">
             <main className="flex w-full h-full mx-auto justify-center items-center">
-                <section className="flex flex-col w-[90%]">
+                <section className="flex flex-col w-[90%] mt-16 md:mt-20 items-center">
                     <h6 className="sectionTypeHeading">🚀 {texts.headerSection}</h6>
-                    <h2>{texts.headerH1}</h2>
-                    <h4 className="py-2 font-normal text-slate-800 dark:text-slate-300">{texts.headerH2} 🇦🇷</h4>
+                    <h1>{texts.headerH1}</h1>
+                    <h4 className="w-[80%] md:py-2 font-normal text-slate-800 dark:text-slate-300">{texts.headerH2} 🇦🇷</h4>
                     <div className="flex m-auto my-8 items-end justify-between gap-8 md:gap-16">
                         <div className="socialButton">
                             <Link href="/">
@@ -36,6 +36,8 @@ export default function Header() {
                             </Link>
                         </div>
                     </div>
+                    <h6>{texts.headerCTA}</h6>
+                    <FaChevronDown className="animate-bounce my-4" />
                 </section>
             </main>
         </header>

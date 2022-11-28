@@ -55,12 +55,12 @@ export default function Navbar() {
                                 <button className="primaryButtonNavbar">{texts.navbarButtonContact}</button>
                             </Link>
                             <span className="flex -ml-4 -mt-1 h-3 w-3">
-                                <span className="absolute inline-flex rounded-full h-3 w-3 bg-rose-300 dark:bg-rose-200"></span>
-                                <span className="animate-ping relative inline-flex h-full w-full rounded-full bg-rose-400 dark:bg-rose-100 opacity-75"></span>
+                                <span className="absolute inline-flex rounded-full h-3 w-3 bg-pink-300 dark:bg-pink-200"></span>
+                                <span className="animate-ping relative inline-flex h-full w-full rounded-full bg-pink-400 dark:bg-pink-100 opacity-75"></span>
                             </span>
-                            <div className="flex ml-4 space-x-4">
-                                <button value="es" onClick={handleLanguage}>🇪🇸</button>
-                                <button value="en" onClick={handleLanguage}>🇺🇲</button>
+                            <div className="flex items-center ml-4 space-x-4 cursor-pointer">
+                                <span value="es" onClick={handleLanguage}>🇪🇸</span>
+                                <span value="en" onClick={handleLanguage}>🇺🇲</span>
                             </div>
                         </div>
                     </ul>

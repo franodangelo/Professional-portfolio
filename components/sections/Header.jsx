@@ -10,9 +10,12 @@ export default function Header() {
         <header id="header" className="w-full h-screen text-center transition-all">
             <main className="flex w-full h-full mx-auto justify-center items-center">
                 <section className="flex flex-col w-[90%] mt-16 md:mt-20 items-center">
-                    <h6 className="sectionTypeHeading">🚀 {texts.headerSection}</h6>
-                    <h1>{texts.headerH1}</h1>
-                    <h4 className="w-[80%] md:py-2 font-normal text-slate-800 dark:text-slate-300">{texts.headerH2} 🇦🇷</h4>
+                    <p className="sectionTypeHeading">🚀 {texts.headerSection}</p>
+                    <div className="flex flex-col">
+                        <h1>{texts.headerH1}</h1>
+                        <p className="flex self-end -mt-4 text-[10px] md:text-xs">{texts.headerNickname}</p>
+                    </div>
+                    <h4 className="w-[80%] py-4 font-normal text-slate-800 dark:text-slate-300">{texts.headerH2}</h4>
                     <div className="flex m-auto my-8 items-end justify-between gap-8 md:gap-16">
                         <div className="socialButton">
                             <Link href="/">

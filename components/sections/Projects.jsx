@@ -67,15 +67,15 @@ export default function Projects() {
                         demo={`https://gameon-platform.vercel.app/`}
                     />
                 </section>
-                {/* <h4 className="secondaryHeading text-center">{texts.projectsWorkingOn}</h4>
-                <section className="grid py-4 grid-cols-1 gap-8 md:grid-cols-2">
+                <h5 className="secondaryHeading text-center">{texts.projectsWorkingOn}</h5>
+                <section className="grid py-4 grid-cols-1 gap-8 md:grid-cols-3">
                     <div className="workingProjectCard">
-                        <span className="dateChip">Oct 22</span>
-                        <h6 className="py-1 pb-2 text-center dark:text-white">{`Client's Company Website`}</h6>
+                        <span className="dateChip">Nov 22</span>
+                        <h6 className="py-1 pb-2 text-center dark:text-white">{`Crypto Wallet`}</h6>
                         <div className="flex flex-wrap place-content-center py-2 gap-2">
                             <span className="techChip dark:text-slate-900 bg-yellow-500/80 dark:bg-yellow-400">JavaScript</span>
                             <span className="techChip text-white bg-cyan-500/80 dark:bg-cyan-500">React</span>
-                            <span className="techChip text-white bg-emerald-500/80 dark:bg-emerald-500">Tailwind</span>
+                            <span className="techChip text-white bg-green-600/80 dark:bg-green-600">Node.js</span>
                         </div>
                     </div>
                     <div className="workingProjectCard">
@@ -90,7 +90,16 @@ export default function Projects() {
                             <span className="techChip text-white bg-emerald-500/80 dark:bg-emerald-500">Tailwind</span>
                         </div>
                     </div>
-                </section> */}
+                    <div className="workingProjectCard">
+                        <span className="dateChip">Oct 22</span>
+                        <h6 className="py-1 pb-2 text-center dark:text-white">{`Client's Company Website`}</h6>
+                        <div className="flex flex-wrap place-content-center py-2 gap-2">
+                            <span className="techChip dark:text-slate-900 bg-yellow-500/80 dark:bg-yellow-400">JavaScript</span>
+                            <span className="techChip text-white bg-cyan-500/80 dark:bg-cyan-500">React</span>
+                            <span className="techChip text-white bg-emerald-500/80 dark:bg-emerald-500">Tailwind</span>
+                        </div>
+                    </div>
+                </section>
             </div>
         </main>
     )

@@ -73,9 +73,10 @@ export default function Projects() {
                         <span className="dateChip">Nov 22</span>
                         <h6 className="py-1 pb-2 text-center dark:text-white">{`Crypto Wallet`}</h6>
                         <div className="flex flex-wrap place-content-center py-2 gap-2">
-                            <span className="techChip dark:text-slate-900 bg-yellow-500/80 dark:bg-yellow-400">JavaScript</span>
                             <span className="techChip text-white bg-cyan-500/80 dark:bg-cyan-500">React</span>
                             <span className="techChip text-white bg-green-600/80 dark:bg-green-600">Node.js</span>
+                            <span className="techChip text-white bg-blue-700/80 dark:bg-blue-600">MySQL</span>
+                            <span className="techChip dark:text-slate-900 bg-blue-300/80 dark:bg-blue-300">Sequelize</span>
                         </div>
                     </div>
                     <div className="workingProjectCard">

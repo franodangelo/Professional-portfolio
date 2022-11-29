@@ -146,11 +146,11 @@ export default function Skills() {
                         <LearningCard thumbnail={flutter} title="Flutter" progress="hidden" />
                     </div>
                 </section>
-                <h6 className="tertiaryHeading">{texts.skillsH3}</h6>
+                <h5 className="tertiaryHeading">{texts.skillsH3}</h5>
                 <section className="otherSkillsGrid">
                     <div className="p-4">
                         <div className="flex flex-col lg:flex-row gap-2 justify-between items-center">
-                            <h6 className="basis-2/5">{texts.skillsSh1}</h6>
+                            <h6 className="basis-2/5 mb-2 md:mb-0">{texts.skillsSh1}</h6>
                             <div className="flex gap-4">
                                 <Image src={vsc} alt="Visual Studio Code logo" width="48px" height="48px" />
                                 <Image src={npm} alt="npm logo" width="48px" height="48px" />
@@ -161,7 +161,7 @@ export default function Skills() {
                     </div>
                     <div className="p-4">
                         <div className="flex flex-col lg:flex-row gap-2 justify-between items-center">
-                            <h6 className="basis-2/5">{texts.skillsSh2}</h6>
+                            <h6 className="basis-2/5 mb-2 md:mb-0">{texts.skillsSh2}</h6>
                             <div className="flex gap-4">
                                 <Image src={figma} alt="Figma logo" width="48px" height="48px" />
                                 <Image src={adobexd} alt="AdobeXd logo" width="48px" height="48px" />
@@ -170,7 +170,7 @@ export default function Skills() {
                     </div>
                     <div className="p-4">
                         <div className="flex flex-col lg:flex-row gap-2 justify-between items-center">
-                            <h6 className="basis-2/5">{texts.skillsSh3}</h6>
+                            <h6 className="basis-3/5 mb-2 md:mb-0">{texts.skillsSh3}</h6>
                             <div className="flex gap-4">
                                 <Image src={notion} alt="Notion logo" width="48px" height="48px" />
                                 <Image src={jira} alt="Jira logo" width="48px" height="48px" />

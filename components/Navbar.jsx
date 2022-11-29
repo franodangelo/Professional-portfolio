@@ -74,8 +74,8 @@ export default function Navbar() {
             <main className={nav ? "lg:hidden fixed left-0 top-0 w-full h-screen bg-slate-900/80" : null}>
                 {/* Here is the mobile Drawer */}
                 <div className={nav ?
-                    "lg:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] lg:[40%] h-screen bg-white dark:bg-slate-900 p-10 ease-in duration-300" :
-                    "fixed left-[-100%] top-0 p-10 ease-out duration-500"}>
+                    "lg:hidden fixed right-0 top-0 w-[75%] sm:w-[60%] lg:[40%] h-screen bg-white dark:bg-slate-900 p-10 ease-in duration-300" :
+                    "fixed right-[-100%] top-0 p-10 ease-out duration-500"}>
                     <section className="mb-8">
                         <div className="flex w-full items-center justify-between">
                             <div className="flex items-center gap-4">

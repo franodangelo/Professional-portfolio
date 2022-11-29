@@ -16,7 +16,7 @@ export default function Contact() {
                 </section>
                 <section className="flex flex-col w-fit justify-between gap-4 md:gap-8">
                     <div className="flex items-center justify-between gap-8">
-                        <h6 className="font-medium dark:text-slate-400">
+                        <h6 className="dark:text-slate-400">
                             <strong className="text-blue-600 dark:text-white">{texts.contactPhone}</strong>: +541122857609
                         </h6>
                         <div className="socialButton">
@@ -26,7 +26,7 @@ export default function Contact() {
                         </div>
                     </div>
                     <div className="flex items-center justify-between gap-8">
-                        <h6 className="font-medium dark:text-slate-400">
+                        <h6 className="dark:text-slate-400">
                             <strong className="text-blue-600 dark:text-white">Mail</strong>: ffrancodangelo@gmail.com
                         </h6>
                         <div className="socialButton">
@@ -36,7 +36,7 @@ export default function Contact() {
                         </div>
                     </div>
                     <div className="flex items-center justify-between gap-8">
-                        <h6 className="font-medium dark:text-slate-400">
+                        <h6 className="dark:text-slate-400">
                             <strong className="text-blue-600 dark:text-white">Linkedin</strong>: in/franco-dangelo
                         </h6>
                         <div className="socialButton">

@@ -34,7 +34,7 @@ html {
     }
 
     h6 {
-        @apply font-hind text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl
+        @apply font-montserrat text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl
     }
 
     p {
@@ -138,15 +138,15 @@ html {
     }
 
     .activeSkillCard {
-        @apply flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300
+        @apply flex p-4 gap-8 justify-center items-center font-semibold bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300
     }
 
     .inactiveSkillCard {
-        @apply grayscale flex p-4 gap-8 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300
+        @apply grayscale flex p-4 gap-8 justify-center items-center font-semibold bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300
     }
 
     .learningCard {
-        @apply flex flex-col p-4 justify-center items-center bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-blue-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300
+        @apply flex flex-col p-4 justify-center items-center font-medium bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-blue-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300
     }
 
     .progressBar {
@@ -162,7 +162,7 @@ html {
     }
 
     .footer {
-        @apply flex flex-col lg:flex-row w-full h-40 py-12 lg:py-0 lg:px-10 gap-8 items-center justify-between bg-white dark:bg-slate-900
+        @apply flex flex-col lg:flex-row w-full h-40 py-16 lg:py-0 lg:px-10 gap-8 items-center justify-center bg-white dark:bg-slate-900
     }
 
     .footerHeading {

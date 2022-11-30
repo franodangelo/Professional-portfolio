@@ -52,7 +52,7 @@ export default function Skills() {
         <main id="skills" className="w-full md:h-full p-6 md:px-16 md:py-24">
             <div className="flex flex-col h-full mx-auto justify-center items-center md:items-start">
                 <h6 className="sectionTypeHeading">📚 {texts.skillsSection}</h6>
-                <h2 className="my-4">{texts.skillsH1}</h2>
+                <h2 className="mb-8 md:mb-4">{texts.skillsH1}</h2>
                 <div className="flex w-fit self-center md:self-end mb-4 gap-2">
                     {
                         backendTools ?
@@ -129,17 +129,17 @@ export default function Skills() {
                 </section>
                 <h4 className="secondaryHeading">{texts.skillsH2}</h4>
                 <section className="flex flex-col w-full items-center md:items-start">
-                    <h5 className="pt-2">{texts.pathFS}</h5>
+                    <h6 className="pt-2 font-semibold">{texts.pathFS}</h6>
                     <div className="grid w-full mb-4 py-4 gap-4 md:grid-cols-3">
                         <LearningCard thumbnail={vite} title="Vite" progress="hidden" />
                         <LearningCard thumbnail={typescript} title="TypeScript" progress="w-[20%]" />
                     </div>
-                    <h5 className="pt-2">{texts.pathFE}</h5>
+                    <h6 className="pt-2 font-semibold">{texts.pathFE}</h6>
                     <div className="grid w-full mb-4 py-4 gap-4 md:grid-cols-3">
                         <LearningCard thumbnail={sass} title="Sass" progress="w-[75%]" />
                         <LearningCard thumbnail={react} title="React Hooks" progress="w-[15%]" />
                     </div>
-                    <h5 className="pt-2">{texts.pathMD}</h5>
+                    <h6 className="pt-2 font-semibold">{texts.pathMD}</h6>
                     <div className="grid w-full mb-4 py-4 gap-4 md:grid-cols-3">
                         <LearningCard thumbnail={dart} title="Dart" progress="w-[65%]" />
                         <LearningCard thumbnail={swift} title="Swift" progress="w-[20%]" />

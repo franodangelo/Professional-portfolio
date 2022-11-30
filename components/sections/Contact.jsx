@@ -11,7 +11,7 @@ export default function Contact() {
             <div className="flex flex-col w-full m-auto gap-8 items-center">
                 <section className="col-span-2">
                     <h6 className="sectionTypeHeading">🤙 {texts.contactSection}</h6>
-                    <h2>{texts.contactH1}</h2>
+                    <h3 className="mb-4">{texts.contactH1}</h3>
                     <p className="paragraph">{texts.contactP}</p>
                 </section>
                 <section className="flex flex-col w-fit justify-between gap-4 md:gap-8">

@@ -8,10 +8,10 @@ export default function Myself() {
 
     return (
         <main id="myself"
-            className="flex w-full p-6 md:p-16 items-center text-center md:h-screen md:text-left transition-all">
+            className="flex w-full p-6 md:p-16 items-center md:h-screen transition-all">
             <div className="m-auto gap-8 items-center md:grid grid-cols-3">
                 <section className="col-span-2">
-                    <h6 className="sectionTypeHeading md:text-start">👦 {texts.myselfSection}</h6>
+                    <h6 className="sectionTypeHeading text-start">👦 {texts.myselfSection}</h6>
                     <h3>{texts.myselfH1}</h3>
                     <p className="paragraph">{texts.myselfP}</p>
                     <a href="https://www.linkedin.com/in/franco-dangelo/" target='_blank' rel="noreferrer">

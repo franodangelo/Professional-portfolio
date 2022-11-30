@@ -14,7 +14,7 @@ export default function Projects() {
         <main id="projects" className="w-full md:h-full p-6 md:px-16 md:py-24 items-center justify-center bg-white dark:bg-slate-900 shadow-lg">
             <div className="h-full mx-auto">
                 <h6 className="sectionTypeHeading">✔️ {texts.projectsSection}</h6>
-                <h3 className="text-center">{texts.projectsH1}</h3>
+                <h2 className="text-center">{texts.projectsH1}</h2>
                 <section className="grid grid-cols-1 py-4 gap-8 md:grid-cols-2">
                     <ProjectCard
                         date={`Sep 22`}
@@ -67,7 +67,7 @@ export default function Projects() {
                         demo={`https://gameon-platform.vercel.app/`}
                     />
                 </section>
-                <h5 className="secondaryHeading text-center">{texts.projectsWorkingOn}</h5>
+                <h4 className="secondaryHeading text-center">{texts.projectsWorkingOn}</h4>
                 <section className="grid py-4 grid-cols-1 gap-8 md:grid-cols-3">
                     <div className="workingProjectCard">
                         <div className="w-full flex justify-end gap-2">

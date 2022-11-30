@@ -162,11 +162,11 @@ html {
     }
 
     .footer {
-        @apply flex flex-col lg:flex-row w-full h-40 py-16 lg:py-0 lg:px-10 gap-8 items-center justify-between bg-white dark:bg-slate-900
+        @apply flex flex-col lg:flex-row w-full min-h-[160px] py-10 lg:px-10 gap-8 items-center justify-between bg-white dark:bg-slate-900
     }
 
     .footerHeading {
-        @apply font-medium text-center text-base text-blue-600 dark:text-white
+        @apply font-medium text-center text-sm md:text-base text-blue-600 dark:text-white
     }
 
     .footerSubheading {

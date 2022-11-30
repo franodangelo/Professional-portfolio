@@ -3,11 +3,12 @@ import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { IoMdOpen } from "react-icons/io";
 
-export default function ProjectCard({ api, date, img, title, isResponsive, technologies, repo, demo }) {
+export default function ProjectCard({ migration, api, date, img, title, isResponsive, technologies, repo, demo }) {
     return (
         <main className="projectCard">
             <div className="w-full flex justify-end gap-2">
-                {api ? <span className="apiChip">API REST</span> : null}
+                {migration ? <span className="apiChip">Updating backend...</span> : null}
+                {api ? <span className="apiChip">+ API</span> : null}
                 <span className="dateChip">{date}</span>
             </div>
             <Image src={img} alt={`${title}'s thumbnail`}
@@ -42,11 +43,15 @@ export default function ProjectCard({ api, date, img, title, isResponsive, techn
                         <FaGithub className="dark:text-slate-200" />
                     </a>
                 </span>
-                <span className="projectCardButton">
+                {demo ? <span className="projectCardButton">
                     <a className="cursor" href={demo} target="_blank" rel="noreferrer">
                         <IoMdOpen className="dark:text-slate-200" />
                     </a>
-                </span>
+                </span> : <span className="projectCardButton-disabled">
+                    <a className="cursor" href={demo} target="_blank" rel="noreferrer">
+                        <IoMdOpen className="dark:text-slate-200" />
+                    </a>
+                </span>}
             </div>
         </main>
     )

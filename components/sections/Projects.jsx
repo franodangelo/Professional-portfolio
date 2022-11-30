@@ -58,13 +58,14 @@ export default function Projects() {
                     />
                     <ProjectCard
                         date={`May 22`}
+                        migration={true}
                         api={true}
                         img={propertyImg1}
                         title={`Gameon: Video games Project`}
                         isResponsive={texts.projectsResponsive}
                         technologies={["JavaScript", "React", "Redux", "Tailwind", "Node.js", "Express", "PostgreSQL", "Sequelize"]}
                         repo={`https://github.com/franodangelo/Videogames-Proyect`}
-                        demo={`https://gameon-platform.vercel.app/`}
+                        // demo={`https://gameon-platform.vercel.app/`}
                     />
                 </section>
                 <h4 className="secondaryHeading text-center">{texts.projectsWorkingOn}</h4>

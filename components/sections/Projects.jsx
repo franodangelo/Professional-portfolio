@@ -6,6 +6,7 @@ import propertyImg4 from "../../public/assets/projects/project4.png";
 import propertyImg5 from "../../public/assets/projects/project5.png";
 import ProjectCard from "../cards/ProjectCard";
 import { LanguageContext } from "../../context/LanguageContext";
+import WorkingProjectCard from "../cards/WorkingProjectCard";
 
 export default function Projects() {
     const { texts } = useContext(LanguageContext);
@@ -65,45 +66,26 @@ export default function Projects() {
                         isResponsive={texts.projectsResponsive}
                         technologies={["JavaScript", "React", "Redux", "Tailwind", "Node.js", "Express", "PostgreSQL", "Sequelize"]}
                         repo={`https://github.com/franodangelo/Videogames-Proyect`}
-                        // demo={`https://gameon-platform.vercel.app/`}
+                    // demo={`https://gameon-platform.vercel.app/`}
                     />
                 </section>
                 <h4 className="secondaryHeading text-center">{texts.projectsWorkingOn}</h4>
                 <section className="grid py-4 grid-cols-1 gap-8 md:grid-cols-3">
-                    <div className="workingProjectCard">
-                        <div className="w-full flex justify-end gap-2">
-                            <span className="apiChip">API REST</span>
-                            <span className="dateChip">Nov 22</span>
-                        </div>
-                        <h6 className="py-1 pb-2 text-center dark:text-white">{`Banking Wallet`}</h6>
-                        <div className="flex flex-wrap place-content-center py-2 gap-2">
-                            <span className="techChip text-white bg-cyan-500/80 dark:bg-cyan-500">React</span>
-                            <span className="techChip text-white bg-green-600/80 dark:bg-green-600">Node.js</span>
-                            <span className="techChip text-white bg-blue-700/80 dark:bg-blue-600">MySQL</span>
-                            <span className="techChip dark:text-slate-900 bg-blue-300/80 dark:bg-blue-300">Sequelize</span>
-                        </div>
-                    </div>
-                    <div className="workingProjectCard">
-                        <div className="w-full flex justify-end gap-2">
-                            <span className="apiChip">API REST</span>
-                            <span className="dateChip">Nov 22</span>
-                        </div>
-                        <h6 className="py-1 pb-2 text-center dark:text-white">{`Streaming SPA`}</h6>
-                        <div className="flex flex-wrap place-content-center py-2 gap-2">
-                            <span className="techChip dark:text-slate-900 bg-yellow-500/80 dark:bg-yellow-400">JavaScript</span>
-                            <span className="techChip text-white bg-cyan-500/80 dark:bg-cyan-500">React</span>
-                            <span className="techChip text-white bg-emerald-500/80 dark:bg-emerald-500">Tailwind</span>
-                        </div>
-                    </div>
-                    <div className="workingProjectCard">
-                        <span className="dateChip">Oct 22</span>
-                        <h6 className="py-1 pb-2 text-center dark:text-white">{`Client's Landing Page`}</h6>
-                        <div className="flex flex-wrap place-content-center py-2 gap-2">
-                            <span className="techChip dark:text-slate-900 bg-yellow-500/80 dark:bg-yellow-400">JavaScript</span>
-                            <span className="techChip text-white bg-cyan-500/80 dark:bg-cyan-500">React</span>
-                            <span className="techChip text-white bg-emerald-500/80 dark:bg-emerald-500">Tailwind</span>
-                        </div>
-                    </div>
+                    <WorkingProjectCard
+                        date={`${texts.projectsDec} 22`}
+                        api={true}
+                        title={`Music Platform Project`}
+                        technologies={["JavaScript", "Next.js", "React", "Tailwind"]} />
+                    <WorkingProjectCard
+                        date={`Nov 22`}
+                        api={true}
+                        title={`Digital Banking Wallet`}
+                        technologies={["JavaScript", "React", "Node.js", "MySQL", "Sequelize"]} />
+                    <WorkingProjectCard
+                        date={`Oct 22`}
+                        api={false}
+                        title={`Client's Landing Page`}
+                        technologies={["JavaScript", "React", "Tailwind"]} />
                 </section>
             </div>
         </main>

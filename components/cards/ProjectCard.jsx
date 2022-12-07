@@ -33,6 +33,7 @@ export default function ProjectCard({ migration, api, date, img, title, isRespon
                     {technologies?.includes("Node.js") ? <span className="techChip text-white bg-green-600/80 dark:bg-green-600">Node.js</span> : null}
                     {technologies?.includes("Express") ? <span className="techChip dark:text-slate-900 bg-slate-200/80 dark:bg-slate-200">Express</span> : null}
                     {technologies?.includes("Firebase") ? <span className="techChip dark:text-slate-900 bg-yellow-500/80 dark:bg-yellow-400">Firebase</span> : null}
+                    {technologies?.includes("MySQL") ? <span className="techChip text-white bg-blue-700/80 dark:bg-blue-600">MySQL</span> : null}
                     {technologies?.includes("PostgreSQL") ? <span className="techChip text-white bg-blue-700/80 dark:bg-blue-600">PostgreSQL</span> : null}
                     {technologies?.includes("Sequelize") ? <span className="techChip dark:text-slate-900 bg-blue-300/80 dark:bg-blue-300">Sequelize</span> : null}
                 </div>

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -38,7 +38,7 @@ html {
     }
 
     p {
-        @apply font-hind text-sm md:text-base lg:text-lg
+        @apply font-lato text-sm md:text-base lg:text-lg
     }
 
     .navbar {
@@ -102,11 +102,11 @@ html {
     }
 
     .projectCardResponsive {
-        @apply font-hind font-light text-xs text-center text-blue-500 uppercase
+        @apply font-lato font-light text-xs text-center text-blue-500 uppercase
     }
 
     .projectCardNotResponsive {
-        @apply font-hind font-light text-xs text-center text-slate-400 uppercase
+        @apply font-lato font-light text-xs text-center text-slate-400 uppercase
     }
 
     .apiChip {

@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     fontFamily: {
       montserrat: "'Montserrat', sans-serif",
-      hind: "'Hind', sans-serif"
+      lato: "'Lato', sans-serif"
     }
   },
   plugins: [],

@@ -103,8 +103,8 @@ export default function Skills() {
                     }
                     {
                         !backendTools ?
-                            <SkillCard thumbnail={next} title="Next.js" /> :
-                            <InactiveSkillCard thumbnail={next} title="Next.js" />
+                            <SkillCard thumbnail={tailwind} title="Tailwind CSS" /> :
+                            <InactiveSkillCard thumbnail={tailwind} title="Tailwind CSS" />
                     }
                     {
                         !backendTools ?
@@ -118,8 +118,8 @@ export default function Skills() {
                     }
                     {
                         !backendTools ?
-                            <SkillCard thumbnail={tailwind} title="Tailwind CSS" /> :
-                            <InactiveSkillCard thumbnail={tailwind} title="Tailwind CSS" />
+                            <SkillCard thumbnail={sass} title="Sass" /> :
+                            <InactiveSkillCard thumbnail={sass} title="Sass" />
                     }
                     {
                         !backendTools ?
@@ -136,7 +136,7 @@ export default function Skills() {
                     </div>
                     <h6 className="pt-2 font-semibold">{texts.pathFE}</h6>
                     <div className="grid w-full mb-4 py-4 gap-4 md:grid-cols-3">
-                        <LearningCard thumbnail={sass} title="Sass" progress="w-[75%]" />
+                        <LearningCard thumbnail={next} title="Next.js" progress="w-[60%]" />
                         <LearningCard thumbnail={react} title="React Hooks" progress="w-[15%]" />
                     </div>
                     <h6 className="pt-2 font-semibold">{texts.pathMD}</h6>

@@ -112,7 +112,11 @@ export default function Navbar() {
                                 <li onClick={handleNav} className="navSectionMobile">{texts.navbarButtonContact}</li>
                             </Link>
                         </ul>
-                        <div className="flex w-full items-center justify-between">
+                        <a className="secondaryButton uppercase w-full justify-center" href={texts.cvDocument}
+                            download target="_blank" rel="noreferrer">
+                            {texts.navbarButtonCV}
+                        </a>
+                        <div className="flex w-full items-center justify-around">
                             <div className="socialButton p-3">
                                 <a href="https://www.linkedin.com/in/franco-dangelo/" target="_blank" rel="noreferrer">
                                     <FaLinkedinIn />
@@ -123,16 +127,12 @@ export default function Navbar() {
                                     <FaGithub />
                                 </a>
                             </div>
-                            <div className="socialButton p-3">
+                            {/* <div className="socialButton p-3">
                                 <a href="https://twitter.com/techfrano" target="_blank" rel="noreferrer">
                                     <FaTwitter />
                                 </a>
-                            </div>
+                            </div> */}
                         </div>
-                        <a className="secondaryButton uppercase w-full justify-center" href={texts.cvDocument}
-                            download target="_blank" rel="noreferrer">
-                            {texts.navbarButtonCV}
-                        </a>
                     </section>
                 </div>
             </main>

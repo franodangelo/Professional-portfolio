@@ -49,10 +49,10 @@ export default function Navbar() {
                         </button>
                         <div className="flex gap-2">
                             <Link href={texts.cvDocument} download>
-                                <a className="secondaryButtonNavbar" target="_blank">{texts.navbarButtonCV}</a>
+                                <a className="secondaryButton uppercase" target="_blank">{texts.navbarButtonCV}</a>
                             </Link>
                             <Link href="/#contact">
-                                <button className="primaryButtonNavbar">{texts.navbarButtonContact}</button>
+                                <button className="primaryButton uppercase">{texts.navbarButtonContact}</button>
                             </Link>
                             <span className="flex -ml-4 -mt-1 h-3 w-3">
                                 <span className="absolute inline-flex rounded-full h-3 w-3 bg-pink-300 dark:bg-pink-200"></span>
@@ -129,7 +129,7 @@ export default function Navbar() {
                                 </a>
                             </div>
                         </div>
-                        <a className="secondaryButtonNavbar w-full justify-center" href={texts.cvDocument}
+                        <a className="secondaryButton uppercase w-full justify-center" href={texts.cvDocument}
                             download target="_blank" rel="noreferrer">
                             {texts.navbarButtonCV}
                         </a>

@@ -53,7 +53,7 @@ export default function Projects() {
                         img={propertyImg2}
                         title={`yumPaw: Pet Care & Shop`}
                         isResponsive={texts.projectsNotResponsive}
-                        technologies={["JavaScript", "React", "Redux", "CSS", "Node.js", "Express", "PostgreSQL", "Sequelize"]}
+                        technologies={["JavaScript", "React", "Redux", "CSS", "Node.js", "Express", "PostgreSQL"]}
                         repo={`https://github.com/franodangelo/yumPaw-Project`}
                         demo={`https://client-pg.vercel.app/`}
                     />
@@ -64,7 +64,7 @@ export default function Projects() {
                         img={propertyImg1}
                         title={`Gameon: Video games Project`}
                         isResponsive={texts.projectsResponsive}
-                        technologies={["JavaScript", "React", "Redux", "Tailwind", "Node.js", "Express", "PostgreSQL", "Sequelize"]}
+                        technologies={["JavaScript", "React", "Redux", "Tailwind", "Node.js", "Express", "PostgreSQL"]}
                         repo={`https://github.com/franodangelo/Videogames-Proyect`}
                     // demo={`https://gameon-platform.vercel.app/`}
                     />

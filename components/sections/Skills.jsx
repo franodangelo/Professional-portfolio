@@ -82,26 +82,6 @@ export default function Skills() {
                             <InactiveSkillCard thumbnail={redux} title="Redux" />
                     }
                     {
-                        !frontendTools ?
-                            <SkillCard thumbnail={node} title="Node.js" /> :
-                            <InactiveSkillCard thumbnail={node} title="Node.js" />
-                    }
-                    {
-                        !frontendTools ?
-                            <SkillCard thumbnail={express} title="Express.js" /> :
-                            <InactiveSkillCard thumbnail={express} title="Express.js" />
-                    }
-                    {
-                        !frontendTools ?
-                            <SkillCard thumbnail={postgresql} title="PostgreSQL" /> :
-                            <InactiveSkillCard thumbnail={postgresql} title="PostgreSQL" />
-                    }
-                    {
-                        !frontendTools ?
-                            <SkillCard thumbnail={sequelize} title="Sequelize" /> :
-                            <InactiveSkillCard thumbnail={sequelize} title="Sequelize" />
-                    }
-                    {
                         !backendTools ?
                             <SkillCard thumbnail={tailwind} title="Tailwind CSS" /> :
                             <InactiveSkillCard thumbnail={tailwind} title="Tailwind CSS" />
@@ -125,6 +105,26 @@ export default function Skills() {
                         !backendTools ?
                             <SkillCard thumbnail={bootstrap} title="Bootstrap" /> :
                             <InactiveSkillCard thumbnail={bootstrap} title="Bootstrap" />
+                    }
+                    {
+                        !frontendTools ?
+                            <SkillCard thumbnail={node} title="Node.js" /> :
+                            <InactiveSkillCard thumbnail={node} title="Node.js" />
+                    }
+                    {
+                        !frontendTools ?
+                            <SkillCard thumbnail={express} title="Express.js" /> :
+                            <InactiveSkillCard thumbnail={express} title="Express.js" />
+                    }
+                    {
+                        !frontendTools ?
+                            <SkillCard thumbnail={postgresql} title="PostgreSQL" /> :
+                            <InactiveSkillCard thumbnail={postgresql} title="PostgreSQL" />
+                    }
+                    {
+                        !frontendTools ?
+                            <SkillCard thumbnail={sequelize} title="Sequelize" /> :
+                            <InactiveSkillCard thumbnail={sequelize} title="Sequelize" />
                     }
                 </section>
                 <h4 className="secondaryHeading">{texts.skillsH2}</h4>

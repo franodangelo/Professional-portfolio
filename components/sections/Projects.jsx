@@ -14,7 +14,7 @@ export default function Projects() {
     return (
         <main id="projects" className="w-full md:h-full p-6 md:px-16 md:py-24 items-center justify-center bg-white dark:bg-slate-900 shadow-lg">
             <div className="h-full mx-auto">
-                <h6 className="sectionTypeHeading">✔️ {texts.projectsSection}</h6>
+                <h6 className="sectionTypeHeading">{texts.projectsSection}</h6>
                 <h2 className="text-center">{texts.projectsH1}</h2>
                 <section className="grid grid-cols-1 py-4 gap-8 md:grid-cols-2">
                     <ProjectCard
@@ -27,16 +27,6 @@ export default function Projects() {
                         repo={`https://github.com/franodangelo/React-Ecommerce`}
                         demo={`https://advantage-tennis-ecommerce.vercel.app/`}
                     />
-                    {/* <ProjectCard
-                        date={`${texts.projectsAug} 22`}
-                        api={true}
-                        img={propertyImg4}
-                        title={`Small Weather App`}
-                        isResponsive={texts.projectsResponsive}
-                        technologies={["JavaScript", "Next.js", "Tailwind"]}
-                        repo={`https://github.com/franodangelo/Weather-app`}
-                        demo={`https://howistheweathernow.vercel.app/`}
-                    /> */}
                     <ProjectCard
                         date={`${texts.projectsAug} 22`}
                         api={false}
@@ -70,17 +60,12 @@ export default function Projects() {
                     />
                 </section>
                 <h4 className="secondaryHeading text-center">{texts.projectsWorkingOn}</h4>
-                <section className="grid py-4 grid-cols-1 gap-8 md:grid-cols-2">
+                <section className="flex w-[50%] mx-auto py-4 justify-center">
                     <WorkingProjectCard
                         date={`${texts.projectsDec} 22`}
                         api={true}
                         title={`Music Platform Project`}
                         technologies={["JavaScript", "Next.js", "React", "Tailwind"]} />
-                    <WorkingProjectCard
-                        date={`Oct 22`}
-                        api={false}
-                        title={`Client's Landing Page`}
-                        technologies={["JavaScript", "React", "Tailwind"]} />
                 </section>
             </div>
         </main>

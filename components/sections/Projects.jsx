@@ -70,17 +70,12 @@ export default function Projects() {
                     />
                 </section>
                 <h4 className="secondaryHeading text-center">{texts.projectsWorkingOn}</h4>
-                <section className="grid py-4 grid-cols-1 gap-8 md:grid-cols-3">
+                <section className="grid py-4 grid-cols-1 gap-8 md:grid-cols-2">
                     <WorkingProjectCard
                         date={`${texts.projectsDec} 22`}
                         api={true}
                         title={`Music Platform Project`}
                         technologies={["JavaScript", "Next.js", "React", "Tailwind"]} />
-                    <WorkingProjectCard
-                        date={`Nov 22`}
-                        api={true}
-                        title={`Digital Banking Wallet`}
-                        technologies={["JavaScript", "React", "Node.js", "MySQL", "Sequelize"]} />
                     <WorkingProjectCard
                         date={`Oct 22`}
                         api={false}

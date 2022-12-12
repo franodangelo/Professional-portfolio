@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "./../public/fdlogo.png";
 import { HiMenuAlt3, HiOutlineX } from "react-icons/hi";
-import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 import { LanguageContext } from "../context/LanguageContext";
 
@@ -127,11 +127,6 @@ export default function Navbar() {
                                     <FaGithub />
                                 </a>
                             </div>
-                            {/* <div className="socialButton p-3">
-                                <a href="https://twitter.com/techfrano" target="_blank" rel="noreferrer">
-                                    <FaTwitter />
-                                </a>
-                            </div> */}
                         </div>
                     </section>
                 </div>

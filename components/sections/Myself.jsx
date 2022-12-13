@@ -18,11 +18,15 @@ export default function Myself() {
                         height={120} />
                 </div>
                 <section className="col-span-2">
-                    <h6 className="sectionTypeHeading text-start">{texts.myselfSection}</h6>
+                    <div className="flex gap-2">
+                    <span className="dateChip">Full-Stack</span>
+                    <span className="apiChip">Frontend</span>
+                    <span className="apiChip">{texts.myselfProfile}</span>
+                    </div>
                     <h3>{texts.myselfH1}</h3>
                     <p className="paragraph">{texts.myselfP}</p>
                     <a href="https://www.linkedin.com/in/franco-dangelo/" target='_blank' rel="noreferrer">
-                        <p className="highlightParagraph font-montserrat">{texts.myselfP2}</p>
+                        <p className="highlightParagraph font-montserrat">{texts.myselfCTA}</p>
                     </a>
                 </section>
             </div>

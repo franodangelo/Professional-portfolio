@@ -14,12 +14,13 @@ const translations = {
         navbarWTC: `Want to connect?`,
         headerSection: `Welcome to my portfolio`,
         headerH1: `Hi everyone, I'm Frano!`,
-        headerH2: `A Frontend Developer based in Buenos Aires, Argentina`,
+        headerH2: `A Full-Stack Developer based in Buenos Aires, Argentina`,
         headerNickname: `Yeah, this is my nickname 😅`,
         headerCTA: `Scroll down to know a little bit more about me`,
-        myselfH1: `I'm searching for new challenges & experiences to keep learning and improving`,
-        myselfP: `I'm interested in working in technology to collaborate on projects with a high social impact where I can really solve people's needs, contributing with all my knowledge in development and design, and fulfilling my dream of ideating and creating digital products in the real world.`,
-        myselfP2: `See my experience and background in detail`,
+        myselfProfile: "UX/UI design",
+        myselfH1: `I look for a good mix between design and development to creat great solutions`,
+        myselfP: `A few years ago I was delighted with the tech world, starting to learn about user experience design and then boosting myself into programming to became a full-stack developer. I am passionate about the frontend, an area where I can perfectly combine both backgrounds and take my skills to the top.`,
+        myselfCTA: `See my experience and background in detail`,
         myselfSection: `This is me`,
         projectsSection: `Projects`,
         projectsH1: `My works so far`,
@@ -57,11 +58,12 @@ const translations = {
         headerSection: `Bienvenidos a mi portfolio`,
         headerH1: `Hola a todos, soy Frano!`,
         headerNickname: `Sí, este es mi apodo 😅`,
-        headerH2: `Un desarrollador Frontend de Buenos Aires, Argentina`,
+        headerH2: `Un desarrollador Full-Stack de Buenos Aires, Argentina`,
         headerCTA: `Scrolleá hacia abajo para conocer un poco más sobre mi`,
-        myselfH1: `Busco nuevos desafíos y experiencias para seguir aprendiendo y mejorando`,
-        myselfP: `Me interesa trabajar en tecnología para colaborar en proyectos de alto impacto social donde realmente pueda resolver las necesidades de las personas, aportando todo mi conocimiento en desarrollo y diseño, cumpliendo así mi sueño de idear y crear productos digitales en el mundo real.`,
-        myselfP2: `Mira mi experiencia y formación en detalle`,
+        myselfProfile: "Diseño UX/UI",
+        myselfH1: `Busco un buen balance entre diseño y desarrollo para crear las mejores soluciones`,
+        myselfP: `Años atrás quedé encantado con el mundo IT, comenzando a aprender sobre diseño de experiencia de usuario para luego conocer sobre programación y convertirme en desarrollador full-stack. Me apasiona el frontend, área donde puedo combinar perfectamente ambas formaciones y aprovechar mis habilidades al 100%.`,
+        myselfCTA: `Mira mi experiencia y formación en detalle`,
         myselfSection: `Sobre mi`,
         projectsSection: `Proyectos`,
         projectsH1: `Mis trabajos hasta ahora`,
@@ -95,7 +97,7 @@ export default function LanguageProvider({ children }) {
     const [texts, setTexts] = useState(translations[language]);
 
     function handleLanguage(e) {
-        if(e.target.value === "en") {
+        if (e.target.value === "en") {
             setLanguage("en");
             setTexts(translations.en);
         } else {
@@ -104,7 +106,7 @@ export default function LanguageProvider({ children }) {
         }
     }
 
-    const data = {texts, handleLanguage};
+    const data = { texts, handleLanguage };
 
     return (
         <LanguageContext.Provider value={data}>

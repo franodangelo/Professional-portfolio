@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 import { LanguageContext } from "../../context/LanguageContext";

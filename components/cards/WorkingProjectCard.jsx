@@ -6,7 +6,7 @@ export default function WorkingProjectCard({ title, date, api, technologies }) {
                 <span className="dateChip">{date}</span>
             </div>
             <h6 className="py-1 pb-2 text-center dark:text-white">{title}</h6>
-            <div className="flex flex-wrap place-content-center py-2 gap-2">
+            <section className="flex flex-wrap place-content-center py-2 gap-2">
                 {technologies?.includes("JavaScript") ? <span className="techChip dark:text-slate-900 bg-yellow-500/80 dark:bg-yellow-400">JavaScript</span> : null}
                 {technologies?.includes("React") ? <span className="techChip text-white bg-cyan-500/80 dark:bg-cyan-500">React</span> : null}
                 {technologies?.includes("Next.js") ? <span className="techChip dark:text-slate-900 bg-slate-200/80 dark:bg-slate-200">Next.js</span> : null}
@@ -19,7 +19,7 @@ export default function WorkingProjectCard({ title, date, api, technologies }) {
                 {technologies?.includes("MySQL") ? <span className="techChip text-white bg-blue-700/80 dark:bg-blue-600">MySQL</span> : null}
                 {technologies?.includes("PostgreSQL") ? <span className="techChip text-white bg-blue-700/80 dark:bg-blue-600">PostgreSQL</span> : null}
                 {technologies?.includes("Sequelize") ? <span className="techChip dark:text-slate-900 bg-blue-300/80 dark:bg-blue-300">Sequelize</span> : null}
-            </div>
+            </section>
         </div>
     )
 }

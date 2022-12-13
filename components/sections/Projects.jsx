@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import propertyImg1 from "../../public/assets/projects/project1.jpg";
 import propertyImg2 from "../../public/assets/projects/project2.jpg";
 import propertyImg3 from "../../public/assets/projects/project3.png";
@@ -12,7 +12,7 @@ export default function Projects() {
     const { texts } = useContext(LanguageContext);
 
     return (
-        <main id="projects" className="w-full md:h-full p-6 md:px-16 md:py-24 items-center justify-center bg-white dark:bg-slate-900 shadow-lg">
+        <main id="projects" className="w-full md:h-full p-6 md:p-10 items-center justify-center bg-white dark:bg-slate-900 shadow-lg">
             <div className="h-full mx-auto">
                 <h2 className="text-center">{texts.projectsH1}</h2>
                 <section className="grid grid-cols-1 py-4 gap-8 md:grid-cols-2">

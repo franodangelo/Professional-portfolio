@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { motion } from "framer-motion";
 import { FaLinkedinIn, FaGithub, FaChevronDown } from "react-icons/fa";
 import { LanguageContext } from "../../context/LanguageContext";
@@ -8,7 +8,7 @@ export default function Header() {
 
     return (
         <header id="header" className="w-full h-screen text-center transition-all">
-            <main className="flex w-full h-full mx-auto p-6 md:p-16 justify-center items-center">
+            <main className="flex w-full h-full mx-auto p-6 md:p-10 justify-center items-center">
                 <section className="flex flex-col w-full items-center">
                     <div className="flex flex-col">
                         <motion.h1 animate={{scale: 1}} initial={{scale: 0}}>{texts.headerH1}</motion.h1>

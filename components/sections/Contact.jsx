@@ -10,7 +10,6 @@ export default function Contact() {
         <main id="contact" className="flex w-full p-6 md:p-16 text-center h-screen items-center">
             <div className="flex flex-col w-full m-auto gap-8 items-center">
                 <section className="col-span-2">
-                    <h6 className="sectionTypeHeading">{texts.contactSection}</h6>
                     <h3 className="mb-4">{texts.contactH1}</h3>
                     <p className="paragraph">{texts.contactP}</p>
                 </section>

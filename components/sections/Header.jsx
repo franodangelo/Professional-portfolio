@@ -8,8 +8,8 @@ export default function Header() {
 
     return (
         <header id="header" className="w-full h-screen text-center transition-all">
-            <main className="flex w-full h-full mx-auto justify-center items-center">
-                <section className="flex flex-col w-[90%] mt-16 md:mt-20 items-center">
+            <main className="flex w-full h-full mx-auto p-6 md:p-16 justify-center items-center">
+                <section className="flex flex-col w-full items-center">
                     <div className="flex flex-col">
                         <motion.h1 animate={{scale: 1}} initial={{scale: 0}}>{texts.headerH1}</motion.h1>
                         <motion.p animate={{x: 0}} transition={{type: "tween", duration: 3}} initial={{x: 4000}} className="flex self-end -mt-4 text-[10px] md:text-xs">{texts.headerNickname}</motion.p>

@@ -1,7 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "./../public/fdlogo.png";
+import lightLogo from "./../public/fdlogo.png";
+import darkLogo from "./../public/fdlogo-dark.png";
 import { HiMenuAlt3, HiOutlineX } from "react-icons/hi";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
@@ -27,8 +28,18 @@ export default function Navbar() {
                 <section className="flex gap-8">
                     <div className="hidden lg:flex items-center gap-4">
                         <Link offset={-200} href="/#header">
-                            <Image src={logo} alt="logo"
-                                className="hover:scale-105 duration-200 cursor-pointer" width="32px" height="32px" />
+                            {mode === "light" ?
+                                <Image src={lightLogo}
+                                    alt="logo"
+                                    className="hover:scale-105 duration-200 cursor-pointer"
+                                    width="32px"
+                                    height="32px" /> :
+                                <Image src={darkLogo}
+                                    alt="logo"
+                                    className="hover:scale-105 duration-200 cursor-pointer"
+                                    width="32px"
+                                    height="32px" />
+                            }
                         </Link>
                         <Link href="/#myself">
                             <p className="navSectionDesktop">{texts.navbarMyself}</p>
@@ -80,7 +91,10 @@ export default function Navbar() {
                         <div className="flex w-full items-center justify-between">
                             <div className="flex items-center gap-4">
                                 <Link href="/#header">
-                                    <Image onClick={handleNav} src={logo} alt="logo" width="40px" height="40px" />
+                                    {mode === "light" ?
+                                        <Image onClick={handleNav} src={lightLogo} alt="logo" width="40px" height="40px" /> :
+                                        <Image onClick={handleNav} src={darkLogo} alt="logo" width="40px" height="40px" />
+                                    }
                                 </Link>
                                 <button onClick={handleMode}
                                     className="themeButton">

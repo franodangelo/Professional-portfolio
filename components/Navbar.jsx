@@ -72,21 +72,9 @@ export default function Navbar() {
                             <span className="animate-ping relative inline-flex h-full w-full rounded-full bg-pink-400 dark:bg-pink-100 opacity-75" />
                         </span>
                     </div>
-                    <div className="flex items-center gap-2 cursor-pointer">
-                        <Image
-                            src={argFlag}
-                            alt="Argentinian flag. Used to change language to spanish."
-                            value="es"
-                            width="24px"
-                            height="24px"
-                            onClick={handleLanguage} />
-                        <Image
-                            src={usaFlag}
-                            alt="USA flag. Used to change language to english."
-                            value="en"
-                            width="24px"
-                            height="24px"
-                            onClick={handleLanguage} />
+                    <div className="flex items-center space-x-4 cursor-pointer">
+                        <button value="es" onClick={handleLanguage}>🇪🇸</button>
+                        <button value="en" onClick={handleLanguage}>🇺🇲</button>
                     </div>
                 </section>
                 {/* Here is the sm burger menu for the navbar */}
@@ -132,21 +120,9 @@ export default function Navbar() {
                         </div>
                     </section>
                     <section className="flex flex-col gap-8">
-                        <div className="flex gap-6">
-                            <Image
-                                src={argFlag}
-                                alt="Argentinian flag. Used to change language to spanish."
-                                value="es"
-                                width="24px"
-                                height="24px"
-                                onClick={handleLanguage} />
-                            <Image
-                                src={usaFlag}
-                                alt="USA flag. Used to change language to english."
-                                value="en"
-                                width="24px"
-                                height="24px"
-                                onClick={handleLanguage} />
+                        <div className="flex items-center space-x-4 cursor-pointer">
+                            <button value="es" onClick={handleLanguage}>🇪🇸</button>
+                            <button value="en" onClick={handleLanguage}>🇺🇲</button>
                         </div>
                         <ul className="flex flex-col gap-8">
                             <Link href="/#myself">

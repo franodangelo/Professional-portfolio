@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import Image from "next/image";
 import react from "../public/assets/skills/react.png";
 import next from "../public/assets/skills/next.png";
@@ -26,7 +26,7 @@ export default function Footer() {
             </div>
             <div className="flex flex-col items-center gap-2">
                 <h4 className="footerHeading">{texts.footerThanks} 😀</h4>
-                <p className="footerSubheading">{texts.footerUpdate} 13-12-2022</p>
+                <p className="footerSubheading">{texts.footerUpdate} 21-12-2022</p>
             </div>
         </footer>
     )

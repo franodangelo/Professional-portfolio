@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import Image from "next/image";
 import javascript from "../../public/assets/skills/javascript.png";
 import react from "../../public/assets/skills/react.png";
@@ -51,7 +51,6 @@ export default function Skills() {
     return (
         <main id="skills" className="w-full md:h-full p-6 md:px-16 md:py-24">
             <div className="flex flex-col h-full mx-auto justify-center items-center md:items-start">
-                <h6 className="sectionTypeHeading">📚 {texts.skillsSection}</h6>
                 <h2 className="mb-8 md:mb-4">{texts.skillsH1}</h2>
                 <div className="flex w-fit self-center md:self-end mb-4 gap-2">
                     {

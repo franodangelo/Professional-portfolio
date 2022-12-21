@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { IoMdOpen } from "react-icons/io";

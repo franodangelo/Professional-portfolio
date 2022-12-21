@@ -22,7 +22,7 @@ export default function Projects() {
                         img={propertyImg5}
                         title={`Tennis E-commerce`}
                         isResponsive={texts.projectsResponsive}
-                        technologies={["JavaScript", "React", "Tailwind", "Firebase"]}
+                        technologies={["JavaScript", "React", "Tailwind"]}
                         repo={`https://github.com/franodangelo/React-Ecommerce`}
                         demo={`https://advantage-tennis-ecommerce.vercel.app/`}
                     />

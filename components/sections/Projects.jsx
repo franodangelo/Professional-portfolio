@@ -12,10 +12,10 @@ export default function Projects() {
     const { texts } = useContext(LanguageContext);
 
     return (
-        <main id="projects" className="w-full md:h-full p-6 md:p-10 items-center justify-center bg-white dark:bg-slate-900 shadow-lg">
+        <main id="projects" className="w-full md:h-full p-6 md:px-16 md:py-24 items-center justify-center bg-white dark:bg-slate-900 shadow-lg">
             <div className="h-full mx-auto">
-                <h2 className="text-center">{texts.projectsH1}</h2>
-                <section className="grid grid-cols-1 py-4 gap-8 md:grid-cols-2">
+                <h2 className="mb-4 text-center">{texts.projectsH1}</h2>
+                <section className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     <ProjectCard
                         date={`Sep 22`}
                         api={false}
@@ -58,8 +58,8 @@ export default function Projects() {
                     // demo={`https://gameon-platform.vercel.app/`}
                     />
                 </section>
-                <h4 className="secondaryHeading text-center">{texts.projectsWorkingOn}</h4>
-                <section className="flex w-[50%] mx-auto py-4 justify-center">
+                <h4 className="secondaryHeading mb-4 text-center">{texts.projectsWorkingOn}</h4>
+                <section className="flex w-[50%] mx-auto justify-center">
                     <WorkingProjectCard
                         date={`${texts.projectsDec} 22`}
                         api={true}

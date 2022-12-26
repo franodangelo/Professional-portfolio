@@ -15,12 +15,16 @@ export default function Header() {
                 </div>
                 <h5 className="md:w-[80%] py-4 text-slate-800 dark:text-slate-300">{texts.headerH2}</h5>
                 <div className="flex m-auto my-4 md:my-6 items-end justify-between gap-2 md:gap-6">
-                    <button className="secondaryButton gap-2">
-                        <FaLinkedinIn className="dark:text-slate-200" /> View Linkedin
-                    </button>
-                    <button className="secondaryButton gap-2">
-                        <FaGithub className="dark:text-slate-200" /> View Github
-                    </button>
+                    <a href="https://www.linkedin.com/in/franco-dangelo/" target="_blank" rel="noreferrer">
+                        <button className="secondaryButton gap-2">
+                            <FaLinkedinIn className="dark:text-slate-200" /> View Linkedin
+                        </button>
+                    </a>
+                    <a href="https://github.com/franodangelo" target="_blank" rel="noreferrer">
+                        <button className="secondaryButton gap-2">
+                            <FaGithub className="dark:text-slate-200" /> View Github
+                        </button>
+                    </a>
                 </div>
                 <p>{texts.headerCTA}</p>
                 <FaChevronDown className="animate-bounce my-4" />

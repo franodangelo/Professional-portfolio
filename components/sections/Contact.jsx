@@ -7,7 +7,10 @@ export default function Contact() {
     const { texts } = useContext(LanguageContext);
 
     return (
-        <main id="contact" className="flex w-full p-6 md:p-16 text-center h-screen items-center">
+        <main
+            id="contact"
+            className="flex w-full p-6 md:p-16 text-center h-screen items-center"
+        >
             <div className="flex flex-col w-full m-auto gap-8 items-center">
                 <section className="col-span-2">
                     <h3 className="mb-4">{texts.contactH1}</h3>
@@ -16,30 +19,51 @@ export default function Contact() {
                 <section className="flex flex-col w-fit justify-between gap-4 md:gap-8">
                     <div className="flex items-center justify-between gap-8">
                         <h6 className="dark:text-slate-400">
-                            <strong className="text-blue-600 dark:text-white">{texts.contactPhone}</strong>: +541122857609
+                            <strong className="text-blue-600 dark:text-white">
+                                {texts.contactPhone}
+                            </strong>
+                            : +541122857609
                         </h6>
                         <div className="socialButton">
-                            <a href="https://wa.me/541122857609" target="_blank" rel="noreferrer">
+                            <a
+                                href="https://wa.me/541122857609"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 <FaWhatsapp />
                             </a>
                         </div>
                     </div>
                     <div className="flex items-center justify-between gap-8">
                         <h6 className="dark:text-slate-400">
-                            <strong className="text-blue-600 dark:text-white">Mail</strong>: ffrancodangelo@gmail.com
+                            <strong className="text-blue-600 dark:text-white">
+                                Mail
+                            </strong>
+                            : ffrancodangelo@gmail.com
                         </h6>
                         <div className="socialButton">
-                            <a href="mailto:ffrancodangelo@gmail.com" target="_blank" rel="noreferrer">
+                            <a
+                                href="mailto:ffrancodangelo@gmail.com"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 <HiMail />
                             </a>
                         </div>
                     </div>
                     <div className="flex items-center justify-between gap-8">
                         <h6 className="dark:text-slate-400">
-                            <strong className="text-blue-600 dark:text-white">Linkedin</strong>: in/franco-dangelo
+                            <strong className="text-blue-600 dark:text-white">
+                                Linkedin
+                            </strong>
+                            : in/franco-dangelo
                         </h6>
                         <div className="socialButton">
-                            <a href="https://www.linkedin.com/in/franco-dangelo/" target="_blank" rel="noreferrer">
+                            <a
+                                href="https://www.linkedin.com/in/franco-dangelo/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 <FaLinkedinIn />
                             </a>
                         </div>
@@ -47,5 +71,5 @@ export default function Contact() {
                 </section>
             </div>
         </main>
-    )
+    );
 }

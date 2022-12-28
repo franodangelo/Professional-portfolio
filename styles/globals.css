@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Montserrat:wght@400;500;600;700;800;900&display=swap");
 
 html {
     scroll-behavior: smooth;
@@ -10,174 +10,174 @@ html {
 
 @layer base {
     body {
-        @apply bg-gradient-to-br from-blue-100 via-gray-50 to-blue-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 text-slate-900 dark:text-white tracking-wide
+        @apply bg-gradient-to-br from-blue-100 via-gray-50 to-blue-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 text-slate-900 dark:text-white tracking-wide;
     }
 
     h1 {
-        @apply font-montserrat font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl py-4 text-blue-600 dark:text-white
+        @apply font-montserrat font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl py-4 text-blue-600 dark:text-white;
     }
 
     h2 {
-        @apply font-montserrat font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl py-4 text-blue-600 dark:text-white
+        @apply font-montserrat font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl py-4 text-blue-600 dark:text-white;
     }
 
     h3 {
-        @apply font-montserrat font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-blue-600 dark:text-white
+        @apply font-montserrat font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-blue-600 dark:text-white;
     }
 
     h4 {
-        @apply font-montserrat font-medium text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl
+        @apply font-montserrat font-medium text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl;
     }
 
     h5 {
-        @apply font-montserrat text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl
+        @apply font-montserrat text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl;
     }
 
     h6 {
-        @apply font-montserrat text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl
+        @apply font-montserrat text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl;
     }
 
     p {
-        @apply font-lato text-sm md:text-base lg:text-lg
+        @apply font-lato text-sm md:text-base lg:text-lg;
     }
 
     .navbar {
-        @apply fixed w-full h-20 shadow-lg z-[100] bg-white dark:bg-slate-900 dark:shadow-slate-800/20 transition-all
+        @apply fixed w-full h-20 shadow-lg z-[100] bg-white dark:bg-slate-900 dark:shadow-slate-800/20 transition-all;
     }
 
     .navSectionDesktop {
-        @apply font-montserrat font-semibold text-xs text-blue-600 dark:text-blue-200 uppercase hover:text-pink-600 dark:hover:text-pink-300 duration-200 cursor-pointer
+        @apply font-montserrat font-semibold text-xs text-blue-600 dark:text-blue-200 uppercase hover:text-pink-600 dark:hover:text-pink-300 duration-200 cursor-pointer;
     }
 
     .navSectionMobile {
-        @apply font-montserrat font-semibold text-xs text-blue-600 dark:text-white uppercase
+        @apply font-montserrat font-semibold text-xs text-blue-600 dark:text-white uppercase;
     }
 
     .themeButton {
-        @apply p-2 font-semibold text-blue-800 dark:text-pink-400 rounded-full shadow dark:shadow-slate-800 cursor-pointer hover:scale-105 ease-in-out duration-200
+        @apply p-2 font-semibold text-blue-800 dark:text-pink-400 rounded-full shadow dark:shadow-slate-800 cursor-pointer hover:scale-105 ease-in-out duration-200;
     }
 
     .closeButton {
-        @apply p-2 rounded-full shadow-md shadow-pink-200 dark:shadow-slate-800 cursor-pointer
+        @apply p-2 rounded-full shadow-md shadow-pink-200 dark:shadow-slate-800 cursor-pointer;
     }
 
     .sectionTypeHeading {
-        @apply py-2 font-montserrat text-xs md:text-sm lg:text-base text-center text-slate-800 dark:text-blue-400 uppercase tracking-widest
+        @apply py-2 font-montserrat text-xs md:text-sm lg:text-base text-center text-slate-800 dark:text-blue-400 uppercase tracking-widest;
     }
 
-    .secondaryHeading{
-        @apply mt-8 py-4 font-extrabold text-blue-600 dark:text-white
+    .secondaryHeading {
+        @apply mt-8 py-4 font-extrabold text-blue-600 dark:text-white;
     }
 
     .tertiaryHeading {
-        @apply my-8 py-4 self-center font-extrabold text-blue-600 dark:text-white
+        @apply my-8 py-4 self-center font-extrabold text-blue-600 dark:text-white;
     }
 
     .paragraph {
-        @apply py-2 text-sm md:text-base dark:text-slate-300
+        @apply py-2 text-sm md:text-base dark:text-slate-300;
     }
 
     .highlightParagraph {
-        @apply font-semibold text-pink-600 dark:text-pink-500 underline cursor-pointer
+        @apply font-semibold text-pink-600 dark:text-pink-500 underline cursor-pointer;
     }
 
     .primaryButton {
-        @apply flex items-center py-2 px-4 font-montserrat font-semibold text-sm text-white bg-pink-600 dark:bg-pink-500 rounded-lg shadow-md shadow-pink-200 dark:shadow-pink-900 cursor-pointer hover:shadow-pink-300 ease-in-out duration-200
+        @apply flex items-center py-2 px-4 font-montserrat font-semibold text-sm text-white bg-pink-600 dark:bg-pink-500 rounded-lg shadow-md shadow-pink-200 dark:shadow-pink-900 cursor-pointer hover:shadow-pink-300 ease-in-out duration-200;
     }
 
     .secondaryButton {
-        @apply flex items-center py-2 px-4 font-montserrat font-semibold text-sm text-blue-600 dark:text-blue-400 border border-blue-600 dark:border-blue-400 rounded-lg shadow-md shadow-blue-200 dark:shadow-blue-900 cursor-pointer hover:shadow-blue-300 ease-in-out duration-200
+        @apply flex items-center py-2 px-4 font-montserrat font-semibold text-sm text-blue-600 dark:text-blue-400 border border-blue-600 dark:border-blue-400 rounded-lg shadow-md shadow-blue-200 dark:shadow-blue-900 cursor-pointer hover:shadow-blue-300 ease-in-out duration-200;
     }
 
     .projectCard {
-        @apply flex flex-col h-auto w-full p-8 items-center justify-center dark:bg-slate-900 shadow-md shadow-blue-200 dark:shadow-blue-900/50 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200
+        @apply flex flex-col h-auto w-full p-8 items-center justify-center dark:bg-slate-900 shadow-md shadow-blue-200 dark:shadow-blue-900/50 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200;
     }
 
     .workingProjectCard {
-        @apply flex flex-col h-auto w-full p-4 items-center justify-center dark:bg-slate-900 shadow-md shadow-blue-200 dark:shadow-blue-900/50 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200
+        @apply flex flex-col h-auto w-full p-4 items-center justify-center dark:bg-slate-900 shadow-md shadow-blue-200 dark:shadow-blue-900/50 rounded-xl relative cursor-pointer hover:shadow-lg hover:shadow-blue-300 ease-in-out duration-200;
     }
 
     .projectCardTitle {
-        @apply mt-4 py-2 font-montserrat font-medium text-center dark:text-white border-t-2 border-slate-200 dark:border-slate-500
+        @apply mt-4 py-2 font-montserrat font-medium text-center dark:text-white border-t-2 border-slate-200 dark:border-slate-500;
     }
 
     .projectCardResponsive {
-        @apply font-lato font-light text-xs text-center text-blue-500 uppercase
+        @apply font-lato font-light text-xs text-center text-blue-500 uppercase;
     }
 
     .projectCardNotResponsive {
-        @apply font-lato font-light text-xs text-center text-slate-400 uppercase
+        @apply font-lato font-light text-xs text-center text-slate-400 uppercase;
     }
 
     .apiChip {
-        @apply flex mb-4 py-1 px-2 self-end font-montserrat font-medium text-xs text-blue-800 dark:text-blue-500 bg-blue-200/50 dark:bg-blue-200 rounded-md uppercase
+        @apply flex mb-4 py-1 px-2 self-end font-montserrat font-medium text-xs text-blue-800 dark:text-blue-500 bg-blue-200/50 dark:bg-blue-200 rounded-md uppercase;
     }
 
     .dateChip {
-        @apply flex mb-4 py-1 px-2 self-end font-montserrat font-medium text-xs text-white bg-blue-600/50 dark:bg-blue-500 rounded-md uppercase
+        @apply flex mb-4 py-1 px-2 self-end font-montserrat font-medium text-xs text-white bg-blue-600/50 dark:bg-blue-500 rounded-md uppercase;
     }
 
     .techChip {
-        @apply px-2 py-1 font-montserrat font-light text-[10px] text-center rounded-full
+        @apply px-2 py-1 font-montserrat font-light text-[10px] text-center rounded-full;
     }
 
     .projectCardButton {
-        @apply p-2 rounded-full shadow-sm shadow-pink-200 dark:shadow-slate-800 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200
+        @apply p-2 rounded-full shadow-sm shadow-pink-200 dark:shadow-slate-800 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200;
     }
 
     .projectCardButton-disabled {
-        @apply grayscale p-2 rounded-full shadow-sm bg-slate-300 dark:bg-slate-500 shadow-pink-200 dark:shadow-slate-800 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200
+        @apply grayscale p-2 rounded-full shadow-sm bg-slate-300 dark:bg-slate-500 shadow-pink-200 dark:shadow-slate-800 cursor-pointer hover:shadow-md hover:shadow-pink-300 ease-in-out duration-200;
     }
 
     .socialButton {
-        @apply p-4 rounded-full shadow-md shadow-blue-200 dark:shadow-slate-800 cursor-pointer hover:scale-105 hover:shadow-pink-300 dark:hover:shadow-slate-700 ease-in-out duration-200
+        @apply p-4 rounded-full shadow-md shadow-blue-200 dark:shadow-slate-800 cursor-pointer hover:scale-105 hover:shadow-pink-300 dark:hover:shadow-slate-700 ease-in-out duration-200;
     }
 
     .activeStackButton {
-        @apply px-2 py-1 font-montserrat font-medium text-sm text-blue-600 dark:text-blue-400 hover:dark:text-blue-500 border border-blue-600 dark:border-blue-400 dark:hover:border-blue-500 rounded-lg shadow-md shadow-blue-200 dark:shadow-blue-900 cursor-pointer hover:shadow-blue-300 ease-in-out duration-200
+        @apply px-2 py-1 font-montserrat font-medium text-sm text-blue-600 dark:text-blue-400 hover:dark:text-blue-500 border border-blue-600 dark:border-blue-400 dark:hover:border-blue-500 rounded-lg shadow-md shadow-blue-200 dark:shadow-blue-900 cursor-pointer hover:shadow-blue-300 ease-in-out duration-200;
     }
 
     .inactiveStackButton {
-        @apply px-2 py-1 font-montserrat font-medium text-sm text-blue-200 dark:text-slate-700 hover:text-blue-400 dark:hover:text-blue-400 border border-blue-200 dark:border-slate-800 hover:border-blue-400 dark:hover:border-blue-400 rounded-lg shadow-md shadow-blue-200 dark:shadow-slate-800 cursor-pointer hover:shadow-blue-300 ease-in-out duration-200
+        @apply px-2 py-1 font-montserrat font-medium text-sm text-blue-200 dark:text-slate-700 hover:text-blue-400 dark:hover:text-blue-400 border border-blue-200 dark:border-slate-800 hover:border-blue-400 dark:hover:border-blue-400 rounded-lg shadow-md shadow-blue-200 dark:shadow-slate-800 cursor-pointer hover:shadow-blue-300 ease-in-out duration-200;
     }
 
     .activeSkillCard {
-        @apply flex p-4 gap-8 justify-center items-center font-semibold bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300
+        @apply flex p-4 gap-8 justify-center items-center font-semibold bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300;
     }
 
     .inactiveSkillCard {
-        @apply grayscale flex p-4 gap-8 justify-center items-center font-semibold bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300
+        @apply grayscale flex p-4 gap-8 justify-center items-center font-semibold bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-sky-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300;
     }
 
     .learningCard {
-        @apply flex flex-col p-4 justify-center items-center font-medium bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-blue-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300
+        @apply flex flex-col p-4 justify-center items-center font-medium bg-white dark:bg-slate-900 rounded-lg shadow-md shadow-blue-200 dark:shadow-blue-900/50 hover:scale-105 ease-in-out duration-300;
     }
 
     .progressBar {
-        @apply w-full h-1 mt-4 bg-slate-100 dark:bg-slate-800
+        @apply w-full h-1 mt-4 bg-slate-100 dark:bg-slate-800;
     }
 
     .activeProgressBar {
-        @apply bg-green-300 h-1 border-r-2 border-green-400 dark:border-green-600
+        @apply bg-green-300 h-1 border-r-2 border-green-400 dark:border-green-600;
     }
 
     .otherSkillsGrid {
-        @apply grid w-full md:w-[60%] mx-4 px-4 py-2 self-center divide-y-2 dark:divide-slate-800 rounded-lg bg-white dark:bg-slate-900 shadow-md dark:shadow-slate-900
+        @apply grid w-full md:w-[60%] mx-4 px-4 py-2 self-center divide-y-2 dark:divide-slate-800 rounded-lg bg-white dark:bg-slate-900 shadow-md dark:shadow-slate-900;
     }
 
     .footer {
-        @apply flex flex-col lg:flex-row w-full min-h-[160px] py-10 lg:px-10 gap-8 items-center justify-between bg-white dark:bg-slate-900
+        @apply flex flex-col lg:flex-row w-full min-h-[160px] py-10 lg:px-10 gap-8 items-center justify-between bg-white dark:bg-slate-900;
     }
 
     .footerHeading {
-        @apply font-medium text-center text-sm md:text-base text-blue-600 dark:text-white
+        @apply font-medium text-center text-sm md:text-base text-blue-600 dark:text-white;
     }
 
     .footerSubheading {
-        @apply font-light text-xs md:text-sm text-blue-600 dark:text-white
+        @apply font-light text-xs md:text-sm text-blue-600 dark:text-white;
     }
 
-    .footerSocial{
-        @apply flex p-2 items-center rounded-full shadow-lg shadow-blue-200 dark:shadow-slate-800/50
+    .footerSocial {
+        @apply flex p-2 items-center rounded-full shadow-lg shadow-blue-200 dark:shadow-slate-800/50;
     }
 }

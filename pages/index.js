@@ -14,7 +14,10 @@ export default function Home() {
             <LanguageProvider>
                 <Head>
                     <title>{`Franco D'Angelo - Full Stack Developer - Portfolio`}</title>
-                    <meta name="description" content={`I'm a Full Stack Developer looking for new challenges & experiences to keep learning and improving`} />
+                    <meta
+                        name="description"
+                        content={`I'm a Full Stack Developer looking for new challenges & experiences to keep learning and improving`}
+                    />
                     <link rel="shortcut icon" href="/" />
                 </Head>
                 <Navbar />
@@ -26,5 +29,5 @@ export default function Home() {
                 <Footer />
             </LanguageProvider>
         </div>
-    )
+    );
 }

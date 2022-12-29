@@ -44,7 +44,7 @@ const translations = {
         contactPhone: `Phone number`,
         footerCreated: `This portfolio was created with`,
         footerThanks: `Thanks for watching!`,
-        footerUpdate: `Last update:`
+        footerUpdate: `Last update:`,
     },
     es: {
         navbarMyself: `Sobre mi`,
@@ -87,9 +87,9 @@ const translations = {
         contactPhone: `Nro. de teléfono`,
         footerCreated: `Este portfolio fue creado con`,
         footerThanks: `Gracias por mirar!`,
-        footerUpdate: `Última actualización:`
-    }
-}
+        footerUpdate: `Última actualización:`,
+    },
+};
 
 export default function LanguageProvider({ children }) {
     const [language, setLanguage] = useState(initialLanguage);
@@ -111,5 +111,5 @@ export default function LanguageProvider({ children }) {
         <LanguageContext.Provider value={data}>
             {children}
         </LanguageContext.Provider>
-    )
+    );
 }

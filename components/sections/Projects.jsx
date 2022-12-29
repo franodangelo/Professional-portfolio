@@ -77,7 +77,7 @@ export default function Projects() {
                         // demo={`https://gameon-platform.vercel.app/`}
                     />
                 </section>
-                <h4 className="secondaryHeading mb-4 text-center">
+                {/* <h4 className="secondaryHeading mb-4 text-center">
                     {texts.projectsWorkingOn}
                 </h4>
                 <section className="flex w-[50%] mx-auto justify-center">
@@ -92,7 +92,7 @@ export default function Projects() {
                             "Tailwind",
                         ]}
                     />
-                </section>
+                </section> */}
             </div>
         </main>
     );

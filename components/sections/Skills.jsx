@@ -21,6 +21,7 @@ import flutter from "../../public/assets/skills/flutter.png";
 import vsc from "../../public/assets/skills/vsc.png";
 import npm from "../../public/assets/skills/npm.png";
 import github from "../../public/assets/skills/github.png";
+import thunderclient from "../../public/assets/skills/thunderclient.png";
 import postman from "../../public/assets/skills/postman.png";
 import figma from "../../public/assets/skills/figma.png";
 import adobexd from "../../public/assets/skills/adobexd.png";
@@ -118,12 +119,9 @@ export default function Skills() {
                         <InactiveSkillCard thumbnail={sass} title="Sass" />
                     )}
                     {!backendTools ? (
-                        <SkillCard thumbnail={bootstrap} title="Bootstrap" />
+                        <SkillCard thumbnail={vite} title="Vite" />
                     ) : (
-                        <InactiveSkillCard
-                            thumbnail={bootstrap}
-                            title="Bootstrap"
-                        />
+                        <InactiveSkillCard thumbnail={vite} title="Vite" />
                     )}
                     {!frontendTools ? (
                         <SkillCard thumbnail={node} title="Node.js" />
@@ -157,7 +155,7 @@ export default function Skills() {
                 </section>
                 <h4 className="secondaryHeading">{texts.skillsH2}</h4>
                 <section className="flex flex-col w-full items-center md:items-start">
-                    <h6 className="pt-2 font-semibold">{texts.pathFS}</h6>
+                    {/* <h6 className="pt-2 font-semibold">{texts.pathFS}</h6>
                     <div className="grid w-full mb-4 py-4 gap-4 md:grid-cols-3">
                         <LearningCard
                             thumbnail={vite}
@@ -169,7 +167,7 @@ export default function Skills() {
                             title="TypeScript"
                             progress="w-[20%]"
                         />
-                    </div>
+                    </div> */}
                     <h6 className="pt-2 font-semibold">{texts.pathFE}</h6>
                     <div className="grid w-full mb-4 py-4 gap-4 md:grid-cols-3">
                         <LearningCard
@@ -223,14 +221,20 @@ export default function Skills() {
                                     height="48px"
                                 />
                                 <Image
-                                    src={github}
-                                    alt="Github logo"
+                                    src={thunderclient}
+                                    alt="Thunder Client logo"
                                     width="48px"
                                     height="48px"
                                 />
                                 <Image
                                     src={postman}
                                     alt="Postman logo"
+                                    width="48px"
+                                    height="48px"
+                                />
+                                <Image
+                                    src={github}
+                                    alt="Github logo"
                                     width="48px"
                                     height="48px"
                                 />
@@ -251,7 +255,7 @@ export default function Skills() {
                                 />
                                 <Image
                                     src={adobexd}
-                                    alt="AdobeXd logo"
+                                    alt="Adobe Xd logo"
                                     width="48px"
                                     height="48px"
                                 />

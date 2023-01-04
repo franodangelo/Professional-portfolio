@@ -15,7 +15,7 @@ export default function Projects() {
         <main id="projects" className="w-full md:h-full p-6 md:px-16 md:py-24 items-center justify-center bg-white dark:bg-slate-900 shadow-lg">
             <div className="h-full mx-auto">
                 <h2 className="mb-4 text-center">{texts.projectsH1}</h2>
-                <section className="grid grid-cols-1 gap-8 md:grid-cols-2">
+                <section className="grid grid-cols-1 gap-8 md:grid-cols-3">
                     <ProjectCard
                         date={`Sep 22`}
                         api={false}
@@ -46,7 +46,7 @@ export default function Projects() {
                         repo={`https://github.com/franodangelo/yumPaw-Project`}
                         demo={`https://client-pg.vercel.app/`}
                     />
-                    <ProjectCard
+                    {/* <ProjectCard
                         date={`May 22`}
                         migration={true}
                         api={true}
@@ -56,15 +56,15 @@ export default function Projects() {
                         technologies={["JavaScript", "React", "Redux", "Tailwind", "Node.js", "Express", "PostgreSQL"]}
                         repo={`https://github.com/franodangelo/Videogames-Proyect`}
                     // demo={`https://gameon-platform.vercel.app/`}
-                    />
+                    /> */}
                 </section>
                 <h4 className="secondaryHeading mb-4 text-center">{texts.projectsWorkingOn}</h4>
                 <section className="flex w-[50%] mx-auto justify-center">
                     <WorkingProjectCard
-                        date={`${texts.projectsDec} 22`}
+                        date={`${texts.projectsJan} 23`}
                         api={true}
-                        title={`Music Platform Project`}
-                        technologies={["JavaScript", "Next.js", "React", "Tailwind"]} />
+                        title={`Streaming Platform`}
+                        technologies={["JavaScript", "Next.js", "React", "Sass"]} />
                 </section>
             </div>
         </main>

@@ -12,7 +12,10 @@ export default function Projects() {
     const { texts } = useContext(LanguageContext);
 
     return (
-        <main id="projects" className="w-full md:h-full p-6 md:px-16 md:py-24 items-center justify-center bg-white dark:bg-slate-900 shadow-lg">
+        <main
+            id="projects"
+            className="w-full md:h-full p-6 md:px-16 md:py-24 items-center justify-center bg-white dark:bg-slate-900 shadow-lg"
+        >
             <div className="h-full mx-auto">
                 <h2 className="mb-4 text-center">{texts.projectsH1}</h2>
                 <section className="grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -42,7 +45,15 @@ export default function Projects() {
                         img={propertyImg2}
                         title={`yumPaw: Pet Care & Shop`}
                         isResponsive={texts.projectsNotResponsive}
-                        technologies={["JavaScript", "React", "Redux", "CSS", "Node.js", "Express", "PostgreSQL"]}
+                        technologies={[
+                            "JavaScript",
+                            "React",
+                            "Redux",
+                            "CSS",
+                            "Node.js",
+                            "Express",
+                            "PostgreSQL",
+                        ]}
                         repo={`https://github.com/franodangelo/yumPaw-Project`}
                         demo={`https://client-pg.vercel.app/`}
                     />
@@ -53,12 +64,22 @@ export default function Projects() {
                         img={propertyImg1}
                         title={`Gameon: Video games Project`}
                         isResponsive={texts.projectsResponsive}
-                        technologies={["JavaScript", "React", "Redux", "Tailwind", "Node.js", "Express", "PostgreSQL"]}
+                        technologies={[
+                            "JavaScript",
+                            "React",
+                            "Redux",
+                            "Tailwind",
+                            "Node.js",
+                            "Express",
+                            "PostgreSQL",
+                        ]}
                         repo={`https://github.com/franodangelo/Videogames-Proyect`}
                     // demo={`https://gameon-platform.vercel.app/`}
                     /> */}
                 </section>
-                <h4 className="secondaryHeading mb-4 text-center">{texts.projectsWorkingOn}</h4>
+                <h4 className="secondaryHeading mb-4 text-center">
+                    {texts.projectsWorkingOn}
+                </h4>
                 <section className="flex w-[50%] mx-auto justify-center">
                     <WorkingProjectCard
                         date={`${texts.projectsJan} 23`}
@@ -68,5 +89,5 @@ export default function Projects() {
                 </section>
             </div>
         </main>
-    )
+    );
 }

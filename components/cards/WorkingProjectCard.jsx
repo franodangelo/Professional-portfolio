@@ -22,5 +22,5 @@ export default function WorkingProjectCard({ title, date, api, technologies }) {
                 {technologies?.includes("Sequelize") ? <span className="techChip dark:text-slate-900 bg-blue-300/80 dark:bg-blue-300">Sequelize</span> : null}
             </section>
         </div>
-    )
+    );
 }

@@ -26,7 +26,7 @@ export default function Footer() {
             </div>
             <div className="flex flex-col items-center gap-2">
                 <h4 className="footerHeading">{texts.footerThanks} 😀</h4>
-                <p className="footerSubheading">{texts.footerUpdate} 26-12-2022</p>
+                <p className="footerSubheading">{texts.footerUpdate} 03-01-2023</p>
             </div>
         </footer>
     )

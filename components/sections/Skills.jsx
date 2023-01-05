@@ -12,6 +12,7 @@ import sequelize from "../../public/assets/skills/sequelize.png";
 import tailwind from "../../public/assets/skills/tailwind.png";
 import bootstrap from "../../public/assets/skills/bootstrap.png";
 import vite from "../../public/assets/skills/vite.png";
+import git from "../../public/assets/skills/git.png";
 import typescript from "../../public/assets/skills/typescript.png";
 import next from "../../public/assets/skills/next.png";
 import sass from "../../public/assets/skills/sass.png";
@@ -76,7 +77,7 @@ export default function Skills() {
                         </p>
                     )}
                 </div>
-                <section className="grid w-full py-4 gap-4 md:grid-cols-2 lg:grid-cols-4">
+                <section className="grid w-full py-4 gap-4 md:grid-cols-2 lg:grid-cols-3">
                     {!backendTools && !frontendTools ? (
                         <SkillCard thumbnail={javascript} title="JavaScript" />
                     ) : (
@@ -119,6 +120,19 @@ export default function Skills() {
                         <InactiveSkillCard thumbnail={sass} title="Sass" />
                     )}
                     {!backendTools ? (
+                        <SkillCard thumbnail={bootstrap} title="Bootstrap" />
+                    ) : (
+                        <InactiveSkillCard
+                            thumbnail={bootstrap}
+                            title="Bootstrap"
+                        />
+                    )}
+                    {!backendTools ? (
+                        <SkillCard thumbnail={next} title="Next.js" />
+                    ) : (
+                        <InactiveSkillCard thumbnail={next} title="Next.js" />
+                    )}
+                    {!backendTools ? (
                         <SkillCard thumbnail={vite} title="Vite" />
                     ) : (
                         <InactiveSkillCard thumbnail={vite} title="Vite" />
@@ -152,23 +166,23 @@ export default function Skills() {
                             title="Sequelize"
                         />
                     )}
+                    {!backendTools && !frontendTools ? (
+                        <SkillCard thumbnail={git} title="Git" />
+                    ) : (
+                        <InactiveSkillCard thumbnail={git} title="Git" />
+                    )}
                 </section>
                 <h4 className="secondaryHeading">{texts.skillsH2}</h4>
                 <section className="flex flex-col w-full items-center md:items-start">
-                    {/* <h6 className="pt-2 font-semibold">{texts.pathFS}</h6>
-                    <div className="grid w-full mb-4 py-4 gap-4 md:grid-cols-3">
-                        <LearningCard
-                            thumbnail={vite}
-                            title="Vite"
-                            progress="hidden"
-                        />
+                    <h6 className="pt-2 font-semibold">{texts.pathFS}</h6>
+                    <div className="grid w-full mb-4 py-4 gap-4 md:grid-cols-2 lg:grid-cols-3">
                         <LearningCard
                             thumbnail={typescript}
                             title="TypeScript"
                             progress="w-[20%]"
                         />
-                    </div> */}
-                    <h6 className="pt-2 font-semibold">{texts.pathFE}</h6>
+                    </div>
+                    {/* <h6 className="pt-2 font-semibold">{texts.pathFE}</h6>
                     <div className="grid w-full mb-4 py-4 gap-4 md:grid-cols-3">
                         <LearningCard
                             thumbnail={next}
@@ -180,9 +194,9 @@ export default function Skills() {
                             title="React Hooks"
                             progress="w-[15%]"
                         />
-                    </div>
+                    </div> */}
                     <h6 className="pt-2 font-semibold">{texts.pathMD}</h6>
-                    <div className="grid w-full mb-4 py-4 gap-4 md:grid-cols-3">
+                    <div className="grid w-full mb-4 py-4 gap-4 md:grid-cols-2 lg:grid-cols-3">
                         <LearningCard
                             thumbnail={dart}
                             title="Dart"

@@ -85,7 +85,13 @@ export default function Projects() {
                         date={`${texts.projectsJan} 23`}
                         api={true}
                         title={`Streaming Platform`}
-                        technologies={["JavaScript", "Next.js", "React", "Sass"]} />
+                        technologies={[
+                            "JavaScript",
+                            "Next.js",
+                            "React",
+                            "Sass",
+                        ]}
+                    />
                 </section>
             </div>
         </main>

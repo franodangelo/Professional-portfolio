@@ -179,22 +179,9 @@ export default function Skills() {
                         <LearningCard
                             thumbnail={typescript}
                             title="TypeScript"
-                            progress="w-[20%]"
+                            progress="w-[40%]"
                         />
                     </div>
-                    {/* <h6 className="pt-2 font-semibold">{texts.pathFE}</h6>
-                    <div className="grid w-full mb-4 py-4 gap-4 md:grid-cols-3">
-                        <LearningCard
-                            thumbnail={next}
-                            title="Next.js"
-                            progress="w-[60%]"
-                        />
-                        <LearningCard
-                            thumbnail={react}
-                            title="React Hooks"
-                            progress="w-[15%]"
-                        />
-                    </div> */}
                     <h6 className="pt-2 font-semibold">{texts.pathMD}</h6>
                     <div className="grid w-full mb-4 py-4 gap-4 md:grid-cols-2 lg:grid-cols-3">
                         <LearningCard

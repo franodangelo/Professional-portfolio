@@ -2,7 +2,6 @@ import { useContext } from "react";
 import propertyImg1 from "../../public/assets/projects/project1.jpg";
 import propertyImg2 from "../../public/assets/projects/project2.jpg";
 import propertyImg3 from "../../public/assets/projects/project3.png";
-import propertyImg4 from "../../public/assets/projects/project4.png";
 import propertyImg5 from "../../public/assets/projects/project5.png";
 import ProjectCard from "../cards/ProjectCard";
 import { LanguageContext } from "../../context/LanguageContext";
@@ -80,7 +79,7 @@ export default function Projects() {
                 <h4 className="secondaryHeading mb-4 text-center">
                     {texts.projectsWorkingOn}
                 </h4>
-                <section className="flex w-[50%] mx-auto justify-center">
+                <section className="flex w-full mx-auto justify-evenly gap-8">
                     <WorkingProjectCard
                         date={`${texts.projectsJan} 23`}
                         api={true}
@@ -90,6 +89,17 @@ export default function Projects() {
                             "Next.js",
                             "React",
                             "Sass",
+                        ]}
+                    />
+                    <WorkingProjectCard
+                        date={`${texts.projectsJan} 23`}
+                        api={true}
+                        title={`Music Application`}
+                        technologies={[
+                            "JavaScript",
+                            "Vite",
+                            "React",
+                            "Tailwind",
                         ]}
                     />
                 </section>

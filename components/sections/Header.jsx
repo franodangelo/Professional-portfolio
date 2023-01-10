@@ -30,19 +30,31 @@ export default function Header() {
                 </h5>
                 <div className="flex m-auto my-4 md:my-6 items-end justify-between gap-2 md:gap-6">
                     <button className="secondaryButton">
-                        <a href="https://www.linkedin.com/in/franco-dangelo/" className="flex items-center gap-2" target="_blank" rel="noreferrer">
-                            <FaLinkedinIn className="dark:text-slate-200" /> View Linkedin
+                        <a
+                            className="flex items-center gap-2"
+                            href="https://www.linkedin.com/in/franco-dangelo/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <FaLinkedinIn className="dark:text-slate-200" />
+                            View Linkedin
                         </a>
                     </button>
                     <button className="secondaryButton">
-                        <a href="https://github.com/franodangelo" className="flex items-center gap-2" target="_blank" rel="noreferrer">
-                            <FaGithub className="dark:text-slate-200" /> View Github
+                        <a
+                            className="flex items-center gap-2"
+                            href="https://github.com/franodangelo"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <FaGithub className="dark:text-slate-200" />
+                            View Github
                         </a>
                     </button>
                 </div>
                 <p>{texts.headerCTA}</p>
                 <FaChevronDown className="animate-bounce my-4" />
             </main>
-        </header >
+        </header>
     );
 }

@@ -179,7 +179,7 @@ export default function Skills() {
                         <LearningCard
                             thumbnail={typescript}
                             title="TypeScript"
-                            progress="w-[40%]"
+                            progress="w-[55%]"
                         />
                     </div>
                     <h6 className="pt-2 font-semibold">{texts.pathMD}</h6>

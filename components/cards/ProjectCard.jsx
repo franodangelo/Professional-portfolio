@@ -48,11 +48,6 @@ export default function ProjectCard({
                             JavaScript
                         </span>
                     ) : null}
-                    {technologies?.includes("React") ? (
-                        <span className="techChip text-white bg-cyan-500/80 dark:bg-cyan-500">
-                            React
-                        </span>
-                    ) : null}
                     {technologies?.includes("Vite") ? (
                         <span className="techChip text-white bg-purple-500/80 dark:bg-purple-500">
                             Vite
@@ -61,6 +56,11 @@ export default function ProjectCard({
                     {technologies?.includes("Next.js") ? (
                         <span className="techChip dark:text-slate-900 bg-slate-200/80 dark:bg-slate-200">
                             Next.js
+                        </span>
+                    ) : null}
+                    {technologies?.includes("React") ? (
+                        <span className="techChip text-white bg-cyan-500/80 dark:bg-cyan-500">
+                            React
                         </span>
                     ) : null}
                     {technologies?.includes("Redux") ? (

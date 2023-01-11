@@ -3,6 +3,7 @@ import propertyImg1 from "../../public/assets/projects/project1.jpg";
 import propertyImg2 from "../../public/assets/projects/project2.jpg";
 import propertyImg3 from "../../public/assets/projects/project3.png";
 import propertyImg5 from "../../public/assets/projects/project5.png";
+import propertyImg6 from "../../public/assets/projects/project6.png";
 import ProjectCard from "../cards/ProjectCard";
 import { LanguageContext } from "../../context/LanguageContext";
 import WorkingProjectCard from "../cards/WorkingProjectCard";
@@ -17,7 +18,17 @@ export default function Projects() {
         >
             <div className="h-full mx-auto">
                 <h2 className="mb-4 text-center">{texts.projectsH1}</h2>
-                <section className="grid grid-cols-1 gap-8 md:grid-cols-3">
+                <section className="grid grid-cols-1 gap-8 md:grid-cols-2">
+                    <ProjectCard
+                        date={`${texts.projectsDec} 22`}
+                        api={true}
+                        img={propertyImg6}
+                        title={`Songz: Music Project`}
+                        isResponsive={texts.projectsResponsive}
+                        technologies={["JavaScript", "Vite", "React", "Tailwind"]}
+                        repo={`https://github.com/franodangelo/songz-music-proyect`}
+                        demo={`https://songz-music-proyect.vercel.app/`}
+                    />
                     <ProjectCard
                         date={`Sep 22`}
                         api={false}

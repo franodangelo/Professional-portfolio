@@ -12,14 +12,19 @@ export default function WorkingProjectCard({ title, date, api, technologies }) {
                         JavaScript
                     </span>
                 ) : null}
-                {technologies?.includes("React") ? (
-                    <span className="techChip text-white bg-cyan-500/80 dark:bg-cyan-500">
-                        React
-                    </span>
-                ) : null}
                 {technologies?.includes("Next.js") ? (
                     <span className="techChip dark:text-slate-900 bg-slate-200/80 dark:bg-slate-200">
                         Next.js
+                    </span>
+                ) : null}
+                {technologies?.includes("Vite") ? (
+                    <span className="techChip text-white bg-purple-500/80 dark:bg-purple-500">
+                        Vite
+                    </span>
+                ) : null}
+                {technologies?.includes("React") ? (
+                    <span className="techChip text-white bg-cyan-500/80 dark:bg-cyan-500">
+                        React
                     </span>
                 ) : null}
                 {technologies?.includes("Redux") ? (
@@ -35,6 +40,11 @@ export default function WorkingProjectCard({ title, date, api, technologies }) {
                 {technologies?.includes("CSS") ? (
                     <span className="techChip text-white bg-blue-500/80 dark:bg-blue-500">
                         CSS
+                    </span>
+                ) : null}
+                {technologies?.includes("Sass") ? (
+                    <span className="techChip text-white bg-pink-500/80 dark:bg-pink-500">
+                        Sass
                     </span>
                 ) : null}
                 {technologies?.includes("Node.js") ? (

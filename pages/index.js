@@ -7,6 +7,7 @@ import Projects from "../components/sections/Projects";
 import Contact from "../components/sections/Contact";
 import Footer from "../components/Footer";
 import LanguageProvider from "../context/LanguageContext";
+import Experience from "../components/sections/Experience";
 
 export default function Home() {
     return (
@@ -23,6 +24,7 @@ export default function Home() {
                 <Navbar />
                 <Header />
                 <Myself />
+                <Experience/>
                 <Projects />
                 <Skills />
                 <Contact />

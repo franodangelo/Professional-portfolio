@@ -24,7 +24,6 @@ export default function Home() {
                 <Navbar />
                 <Header />
                 <Myself />
-                <Experience/>
                 <Projects />
                 <Skills />
                 <Contact />

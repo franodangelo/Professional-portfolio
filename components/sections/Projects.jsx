@@ -18,7 +18,7 @@ export default function Projects() {
         >
             <div className="h-full mx-auto">
                 <h2 className="mb-4 text-center">{texts.projectsH1}</h2>
-                <section className="grid grid-cols-1 gap-8 md:grid-cols-2">
+                <section className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
                     <ProjectCard
                         date={`${texts.projectsDec} 22`}
                         api={true}
@@ -67,9 +67,8 @@ export default function Projects() {
                         repo={`https://github.com/franodangelo/yumPaw-Project`}
                         demo={`https://client-pg.vercel.app/`}
                     />
-                    {/* <ProjectCard
+                    <ProjectCard
                         date={`May 22`}
-                        migration={true}
                         api={true}
                         img={propertyImg1}
                         title={`Gameon: Video games Project`}
@@ -84,8 +83,8 @@ export default function Projects() {
                             "PostgreSQL",
                         ]}
                         repo={`https://github.com/franodangelo/Videogames-Proyect`}
-                    // demo={`https://gameon-platform.vercel.app/`}
-                    /> */}
+                        demo={`https://gameon-platform.vercel.app/`}
+                    />
                 </section>
                 <h4 className="secondaryHeading mb-4 text-center">
                     {texts.projectsWorkingOn}

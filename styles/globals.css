@@ -162,7 +162,7 @@ html {
     }
 
     .otherSkillsGrid {
-        @apply grid w-full md:w-[60%] mx-4 px-4 py-2 self-center divide-y-2 dark:divide-slate-800 rounded-lg bg-white dark:bg-slate-900 shadow-md dark:shadow-slate-900;
+        @apply grid w-fit lg:w-[75%] mx-4 px-4 py-2 self-center divide-y-2 dark:divide-slate-800 rounded-lg bg-white dark:bg-slate-900 shadow-md dark:shadow-slate-900;
     }
 
     .footer {

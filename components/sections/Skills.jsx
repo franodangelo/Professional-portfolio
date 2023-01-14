@@ -204,7 +204,7 @@ export default function Skills() {
                 <h5 className="tertiaryHeading">{texts.skillsH3}</h5>
                 <section className="otherSkillsGrid">
                     <div className="p-4">
-                        <div className="flex flex-col lg:flex-row gap-2 justify-between items-center">
+                        <div className="flex flex-col md:flex-row gap-2 justify-between items-center">
                             <h6 className="basis-2/5 mb-2 md:mb-0">
                                 {texts.skillsSh1}
                             </h6>
@@ -243,7 +243,7 @@ export default function Skills() {
                         </div>
                     </div>
                     <div className="p-4">
-                        <div className="flex flex-col lg:flex-row gap-2 justify-between items-center">
+                        <div className="flex flex-col md:flex-row gap-2 justify-between items-center">
                             <h6 className="basis-2/5 mb-2 md:mb-0">
                                 {texts.skillsSh2}
                             </h6>
@@ -264,7 +264,7 @@ export default function Skills() {
                         </div>
                     </div>
                     <div className="p-4">
-                        <div className="flex flex-col lg:flex-row gap-2 justify-between items-center">
+                        <div className="flex flex-col md:flex-row gap-2 justify-between items-center">
                             <h6 className="basis-3/5 mb-2 md:mb-0">
                                 {texts.skillsSh3}
                             </h6>

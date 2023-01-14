@@ -16,6 +16,7 @@ import git from "../../public/assets/skills/git.png";
 import typescript from "../../public/assets/skills/typescript.png";
 import next from "../../public/assets/skills/next.png";
 import sass from "../../public/assets/skills/sass.png";
+import framer from "../../public/assets/skills/framer.png";
 import dart from "../../public/assets/skills/dart.png";
 import swift from "../../public/assets/skills/swift.png";
 import flutter from "../../public/assets/skills/flutter.png";
@@ -180,6 +181,14 @@ export default function Skills() {
                             thumbnail={typescript}
                             title="TypeScript"
                             progress="w-[55%]"
+                        />
+                    </div>
+                    <h6 className="pt-2 font-semibold">{texts.pathFE}</h6>
+                    <div className="grid w-full mb-4 py-4 gap-4 md:grid-cols-2 lg:grid-cols-3">
+                        <LearningCard
+                            thumbnail={framer}
+                            title="Framer Motion"
+                            progress="w-[25%]"
                         />
                     </div>
                     <h6 className="pt-2 font-semibold">{texts.pathMD}</h6>

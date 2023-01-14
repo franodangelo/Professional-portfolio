@@ -9,7 +9,7 @@ export default function Myself() {
     return (
         <main
             id="myself"
-            className="w-full md:h-full p-6 md:px-16 md:py-24 gap-8 items-center transition-all"
+            className="w-full md:h-full px-6 md:px-16 pb-24 gap-8 items-center transition-all"
         >
             <div className="m-auto gap-8 items-center md:grid grid-cols-3">
                 <div className="w-full h-auto my-4 p-4 rounded-lg shadow-lg shadow-blue-200 dark:shadow-blue-900/50">

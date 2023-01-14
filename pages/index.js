@@ -19,7 +19,11 @@ export default function Home() {
                         name="description"
                         content={`I'm a Full Stack Developer looking for new challenges & experiences to keep learning and improving`}
                     />
-                    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+                    <link
+                        rel="shortcut icon"
+                        href="favicon.ico"
+                        type="image/x-icon"
+                    />
                 </Head>
                 <Navbar />
                 <Header />

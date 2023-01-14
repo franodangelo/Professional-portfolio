@@ -25,7 +25,13 @@ export default function Projects() {
                         img={propertyImg6}
                         title={`Songz: Music Project`}
                         isResponsive={texts.projectsResponsive}
-                        technologies={["JavaScript", "Vite", "React", "Redux", "Tailwind"]}
+                        technologies={[
+                            "JavaScript",
+                            "Vite",
+                            "React",
+                            "Redux",
+                            "Tailwind",
+                        ]}
                         repo={`https://github.com/franodangelo/songz-music-proyect`}
                         demo={`https://songz-music-proyect.vercel.app/`}
                     />

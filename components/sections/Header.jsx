@@ -16,14 +16,9 @@ export default function Header() {
                     <motion.h1 animate={{ scale: 1 }} initial={{ scale: 0 }}>
                         {texts.headerH1}
                     </motion.h1>
-                    <motion.p
-                        animate={{ x: 0 }}
-                        transition={{ type: "tween", duration: 3 }}
-                        initial={{ x: 4000 }}
-                        className="flex self-end -mt-4 text-[10px] md:text-xs"
-                    >
+                    <p className="flex self-end -mt-4 text-[10px] md:text-xs">
                         {texts.headerNickname}
-                    </motion.p>
+                    </p>
                 </div>
                 <h5 className="md:w-[80%] py-4 text-slate-800 dark:text-slate-300">
                     {texts.headerH2}

@@ -16,6 +16,7 @@ import git from "../../public/assets/skills/git.png";
 import typescript from "../../public/assets/skills/typescript.png";
 import next from "../../public/assets/skills/next.png";
 import sass from "../../public/assets/skills/sass.png";
+import framer from "../../public/assets/skills/framer.png";
 import dart from "../../public/assets/skills/dart.png";
 import swift from "../../public/assets/skills/swift.png";
 import flutter from "../../public/assets/skills/flutter.png";
@@ -182,6 +183,14 @@ export default function Skills() {
                             progress="w-[55%]"
                         />
                     </div>
+                    <h6 className="pt-2 font-semibold">{texts.pathFE}</h6>
+                    <div className="grid w-full mb-4 py-4 gap-4 md:grid-cols-2 lg:grid-cols-3">
+                        <LearningCard
+                            thumbnail={framer}
+                            title="Framer Motion"
+                            progress="w-[25%]"
+                        />
+                    </div>
                     <h6 className="pt-2 font-semibold">{texts.pathMD}</h6>
                     <div className="grid w-full mb-4 py-4 gap-4 md:grid-cols-2 lg:grid-cols-3">
                         <LearningCard
@@ -204,7 +213,7 @@ export default function Skills() {
                 <h5 className="tertiaryHeading">{texts.skillsH3}</h5>
                 <section className="otherSkillsGrid">
                     <div className="p-4">
-                        <div className="flex flex-col lg:flex-row gap-2 justify-between items-center">
+                        <div className="flex flex-col md:flex-row gap-2 justify-between items-center">
                             <h6 className="basis-2/5 mb-2 md:mb-0">
                                 {texts.skillsSh1}
                             </h6>
@@ -243,7 +252,7 @@ export default function Skills() {
                         </div>
                     </div>
                     <div className="p-4">
-                        <div className="flex flex-col lg:flex-row gap-2 justify-between items-center">
+                        <div className="flex flex-col md:flex-row gap-2 justify-between items-center">
                             <h6 className="basis-2/5 mb-2 md:mb-0">
                                 {texts.skillsSh2}
                             </h6>
@@ -264,7 +273,7 @@ export default function Skills() {
                         </div>
                     </div>
                     <div className="p-4">
-                        <div className="flex flex-col lg:flex-row gap-2 justify-between items-center">
+                        <div className="flex flex-col md:flex-row gap-2 justify-between items-center">
                             <h6 className="basis-3/5 mb-2 md:mb-0">
                                 {texts.skillsSh3}
                             </h6>

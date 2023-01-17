@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { motion } from "framer-motion";
 import propertyImg1 from "../../public/assets/projects/project1.jpg";
 import propertyImg2 from "../../public/assets/projects/project2.jpg";
 import propertyImg3 from "../../public/assets/projects/project3.png";
@@ -18,7 +19,10 @@ export default function Projects() {
         >
             <div className="h-full mx-auto">
                 <h2 className="mb-4 text-center">{texts.projectsH1}</h2>
-                <section className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
+                <motion.section
+                    initial={{ opacity: 0 }}
+                    whileInView={{ transition: { duration: 0.75 }, opacity: 1 }}
+                    className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
                     <ProjectCard
                         date={`${texts.projectsDec} 22`}
                         api={true}
@@ -91,7 +95,7 @@ export default function Projects() {
                         repo={`https://github.com/franodangelo/Videogames-Proyect`}
                         demo={`https://gameon-platform.vercel.app/`}
                     />
-                </section>
+                </motion.section>
                 <h4 className="secondaryHeading mb-4 text-center">
                     {texts.projectsWorkingOn}
                 </h4>

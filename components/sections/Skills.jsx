@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import javascript from "../../public/assets/skills/javascript.png";
 import react from "../../public/assets/skills/react.png";
 import redux from "../../public/assets/skills/redux.png";
@@ -78,7 +79,10 @@ export default function Skills() {
                         </p>
                     )}
                 </div>
-                <section className="grid w-full py-4 gap-4 md:grid-cols-2 lg:grid-cols-3">
+                <motion.section
+                    initial={{ opacity: 0 }}
+                    whileInView={{ transition: { duration: .75 }, opacity: 1 }}
+                    className="grid w-full py-4 gap-4 md:grid-cols-2 lg:grid-cols-3">
                     {!backendTools && !frontendTools ? (
                         <SkillCard thumbnail={javascript} title="JavaScript" />
                     ) : (
@@ -172,7 +176,7 @@ export default function Skills() {
                     ) : (
                         <InactiveSkillCard thumbnail={git} title="Git" />
                     )}
-                </section>
+                </motion.section>
                 <h4 className="secondaryHeading">{texts.skillsH2}</h4>
                 <section className="flex flex-col w-full items-center md:items-start">
                     <h6 className="pt-2 font-semibold">{texts.pathFS}</h6>

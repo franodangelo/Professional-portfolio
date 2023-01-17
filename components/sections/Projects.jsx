@@ -22,7 +22,8 @@ export default function Projects() {
                 <motion.section
                     initial={{ opacity: 0 }}
                     whileInView={{ transition: { duration: 0.75 }, opacity: 1 }}
-                    className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
+                    className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3"
+                >
                     <ProjectCard
                         date={`${texts.projectsDec} 22`}
                         api={true}

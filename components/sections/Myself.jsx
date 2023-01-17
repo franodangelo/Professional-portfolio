@@ -15,7 +15,8 @@ export default function Myself() {
             <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ transition: { duration: 0.75 }, opacity: 1 }}
-                className="m-auto gap-8 items-center md:grid grid-cols-3">
+                className="m-auto gap-8 items-center md:grid grid-cols-3"
+            >
                 <div className="w-full h-auto my-4 p-4 rounded-lg shadow-lg shadow-blue-200 dark:shadow-blue-900/50">
                     <Image
                         src={me}

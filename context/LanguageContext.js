@@ -17,7 +17,7 @@ const translations = {
         headerNickname: `Yeah, this is my nickname 😅`,
         headerCTA: `Scroll down to know a little bit more about me`,
         myselfProfile: "UX/UI design",
-        myselfH1: `I look for a good mix between design and development to creat great solutions`,
+        myselfH1: `I look for a good mix between design and development to create great solutions`,
         myselfP: `A few years ago I was delighted with the tech world, starting to learn about user experience design and then boosting myself into programming to became a full-stack developer. I am passionate about the frontend, an area where I can perfectly combine both backgrounds and take my skills to the top.`,
         myselfCTA: `See my experience and background in detail`,
         myselfSection: `This is me`,
@@ -45,7 +45,7 @@ const translations = {
         contactPhone: `Phone number`,
         footerCreated: `This portfolio was created with`,
         footerThanks: `Thanks for watching!`,
-        footerUpdate: `Last update:`,
+        footerRights: `© Franco D'Angelo. All rights reserved.`,
     },
     es: {
         navbarMyself: `Sobre mi`,
@@ -89,7 +89,7 @@ const translations = {
         contactPhone: `Nro. de teléfono`,
         footerCreated: `Este portfolio fue creado con`,
         footerThanks: `Gracias por mirar!`,
-        footerUpdate: `Última actualización:`,
+        footerRights: `© Franco D'Angelo. Todos los derechos reservados.`,
     },
 };
 

@@ -38,7 +38,7 @@ export default function Projects() {
                             "Tailwind",
                         ]}
                         repo={`https://github.com/franodangelo/songz-music-proyect`}
-                        demo={`https://songz-music-proyect.vercel.app/`}
+                        // demo={`https://songz-music-proyect.vercel.app/`}
                     />
                     <ProjectCard
                         date={`Sep 22`}

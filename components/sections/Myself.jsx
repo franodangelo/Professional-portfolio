@@ -29,9 +29,9 @@ export default function Myself() {
                 </div>
                 <section className="col-span-2">
                     <div className="flex gap-2">
-                        <span className="dateChip">Full-Stack</span>
-                        <span className="apiChip">Frontend</span>
-                        <span className="apiChip">{texts.myselfProfile}</span>
+                        <span className="roleChip bg-blue-300 dark:bg-blue-400 text-slate-900">Full-Stack</span>
+                        <span className="roleChip bg-blue-200 dark:bg-blue-300 text-slate-900">Frontend</span>
+                        <span className="roleChip bg-pink-200 text-slate-600">{texts.myselfProfile}</span>
                     </div>
                     <h3>{texts.myselfH1}</h3>
                     <p className="paragraph">{texts.myselfP}</p>

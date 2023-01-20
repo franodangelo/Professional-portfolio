@@ -82,7 +82,7 @@ export default function Skills() {
                 <motion.section
                     initial={{ opacity: 0 }}
                     whileInView={{ transition: { duration: 0.75 }, opacity: 1 }}
-                    className="grid w-full py-4 gap-4 md:grid-cols-2 lg:grid-cols-4"
+                    className="grid w-full py-4 gap-4 place-items-center md:grid-cols-2 lg:grid-cols-4"
                 >
                     {!backendTools && !frontendTools ? (
                         <SkillCard thumbnail={javascript} title="JavaScript" />

@@ -41,9 +41,7 @@ export default function Footer() {
             </div>
             <div className="flex flex-col items-center gap-2">
                 <h4 className="footerHeading">{texts.footerThanks} 😀</h4>
-                <p className="footerSubheading">
-                    {texts.footerRights}
-                </p>
+                <p className="footerSubheading">{texts.footerRights}</p>
             </div>
         </footer>
     );

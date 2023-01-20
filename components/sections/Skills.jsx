@@ -82,7 +82,7 @@ export default function Skills() {
                 <motion.section
                     initial={{ opacity: 0 }}
                     whileInView={{ transition: { duration: 0.75 }, opacity: 1 }}
-                    className="grid w-full py-4 gap-4 md:grid-cols-2 lg:grid-cols-3"
+                    className="grid w-full py-4 gap-4 md:grid-cols-2 lg:grid-cols-4"
                 >
                     {!backendTools && !frontendTools ? (
                         <SkillCard thumbnail={javascript} title="JavaScript" />
@@ -103,11 +103,11 @@ export default function Skills() {
                         <InactiveSkillCard thumbnail={redux} title="Redux" />
                     )}
                     {!backendTools ? (
-                        <SkillCard thumbnail={tailwind} title="Tailwind CSS" />
+                        <SkillCard thumbnail={tailwind} title="Tailwind" />
                     ) : (
                         <InactiveSkillCard
                             thumbnail={tailwind}
-                            title="Tailwind CSS"
+                            title="Tailwind"
                         />
                     )}
                     {!backendTools ? (
@@ -131,6 +131,14 @@ export default function Skills() {
                         <InactiveSkillCard
                             thumbnail={bootstrap}
                             title="Bootstrap"
+                        />
+                    )}
+                    {!backendTools && !frontendTools ? (
+                        <SkillCard thumbnail={typescript} title="TypeScript" />
+                    ) : (
+                        <InactiveSkillCard
+                            thumbnail={typescript}
+                            title="TypeScript"
                         />
                     )}
                     {!backendTools ? (
@@ -180,14 +188,6 @@ export default function Skills() {
                 </motion.section>
                 <h4 className="secondaryHeading">{texts.skillsH2}</h4>
                 <section className="flex flex-col w-full items-center md:items-start">
-                    <h6 className="pt-2 font-semibold">{texts.pathFS}</h6>
-                    <div className="grid w-full mb-4 py-4 gap-4 md:grid-cols-2 lg:grid-cols-3">
-                        <LearningCard
-                            thumbnail={typescript}
-                            title="TypeScript"
-                            progress="w-[55%]"
-                        />
-                    </div>
                     <h6 className="pt-2 font-semibold">{texts.pathFE}</h6>
                     <div className="grid w-full mb-4 py-4 gap-4 md:grid-cols-2 lg:grid-cols-3">
                         <LearningCard

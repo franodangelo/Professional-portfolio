@@ -45,7 +45,7 @@ const translations = {
         contactPhone: `Phone number`,
         footerCreated: `This portfolio was created with`,
         footerThanks: `Thanks for watching!`,
-        footerRights: `© Franco D'Angelo. All rights reserved.`,
+        footerRights: `© 2023 Franco D'Angelo. All rights reserved.`,
     },
     es: {
         navbarMyself: `Sobre mi`,
@@ -89,7 +89,7 @@ const translations = {
         contactPhone: `Nro. de teléfono`,
         footerCreated: `Este portfolio fue creado con`,
         footerThanks: `Gracias por mirar!`,
-        footerRights: `© Franco D'Angelo. Todos los derechos reservados.`,
+        footerRights: `© 2023 Franco D'Angelo. Todos los derechos reservados.`,
     },
 };
 

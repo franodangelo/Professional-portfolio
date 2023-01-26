@@ -21,7 +21,7 @@ export default function Header() {
                     <motion.p
                         initial={{ opacity: 0 }}
                         animate={{ transition: { duration: 2.5 }, opacity: 1 }}
-                        className="flex self-end -mt-4 text-[10px] md:text-xs"
+                        className="flex self-center sm:self-end -mt-4 text-[10px] md:text-xs"
                     >
                         {texts.headerNickname}
                     </motion.p>

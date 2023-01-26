@@ -14,7 +14,7 @@ html {
     }
 
     h1 {
-        @apply font-montserrat font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl py-4 text-blue-600 dark:text-white;
+        @apply bg-gradient-to-l from-pink-500 dark:from-blue-100 via-blue-400 dark:via-pink-200 to-blue-500 dark:to-pink-400 font-montserrat font-bold text-5xl md:text-6xl lg:text-7xl xl:text-8xl py-4 text-transparent bg-clip-text;
     }
 
     h2 {
@@ -79,6 +79,10 @@ html {
 
     .highlightParagraph {
         @apply font-semibold text-pink-600 dark:text-pink-500 underline cursor-pointer;
+    }
+
+    .roleChip {
+        @apply flex mb-4 py-1 px-2 self-end font-montserrat font-medium text-xs rounded-md uppercase;
     }
 
     .primaryButton {
@@ -166,7 +170,7 @@ html {
     }
 
     .footer {
-        @apply flex flex-col lg:flex-row w-full min-h-[160px] py-10 lg:px-10 gap-8 items-center justify-between bg-white dark:bg-slate-900;
+        @apply flex flex-col md:flex-row w-full min-h-fit py-10 md:px-10 gap-8 items-center justify-between bg-white dark:bg-slate-900;
     }
 
     .footerHeading {

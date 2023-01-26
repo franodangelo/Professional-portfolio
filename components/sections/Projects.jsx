@@ -100,7 +100,18 @@ export default function Projects() {
                 <h4 className="secondaryHeading mb-4 text-center">
                     {texts.projectsWorkingOn}
                 </h4>
-                <section className="flex md:w-[75%] lg:w-[50%] mx-auto justify-evenly gap-8">
+                <section className="grid grid-cols-1 md:grid-cols-2 mx-auto gap-8">
+                <WorkingProjectCard
+                        date={`${texts.projectsJan} 23`}
+                        api={false}
+                        title={`Company's Website`}
+                        technologies={[
+                            "Next.js",
+                            "React",
+                            "TypeScript",
+                            "Sass",
+                        ]}
+                    />
                     <WorkingProjectCard
                         date={`${texts.projectsJan} 23`}
                         api={true}

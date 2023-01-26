@@ -12,6 +12,11 @@ export default function WorkingProjectCard({ title, date, api, technologies }) {
                         JavaScript
                     </span>
                 ) : null}
+                {technologies?.includes("TypeScript") ? (
+                    <span className="techChip text-white bg-blue-600/80 dark:bg-blue-600">
+                        TypeScript
+                    </span>
+                ) : null}
                 {technologies?.includes("Next.js") ? (
                     <span className="techChip dark:text-slate-900 bg-slate-200/80 dark:bg-slate-200">
                         Next.js

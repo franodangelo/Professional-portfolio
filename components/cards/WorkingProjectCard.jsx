@@ -7,16 +7,6 @@ export default function WorkingProjectCard({ title, date, api, technologies }) {
             </div>
             <h6 className="py-1 pb-2 text-center dark:text-white">{title}</h6>
             <section className="flex flex-wrap place-content-center py-2 gap-2">
-                {technologies?.includes("JavaScript") ? (
-                    <span className="techChip dark:text-slate-900 bg-yellow-500/80 dark:bg-yellow-400">
-                        JavaScript
-                    </span>
-                ) : null}
-                {technologies?.includes("TypeScript") ? (
-                    <span className="techChip text-white bg-blue-600/80 dark:bg-blue-600">
-                        TypeScript
-                    </span>
-                ) : null}
                 {technologies?.includes("Next.js") ? (
                     <span className="techChip dark:text-slate-900 bg-slate-200/80 dark:bg-slate-200">
                         Next.js
@@ -25,6 +15,16 @@ export default function WorkingProjectCard({ title, date, api, technologies }) {
                 {technologies?.includes("Vite") ? (
                     <span className="techChip text-white bg-purple-500/80 dark:bg-purple-500">
                         Vite
+                    </span>
+                ) : null}
+                {technologies?.includes("JavaScript") ? (
+                    <span className="techChip dark:text-slate-900 bg-yellow-500/80 dark:bg-yellow-400">
+                        JavaScript
+                    </span>
+                ) : null}
+                {technologies?.includes("TypeScript") ? (
+                    <span className="techChip text-white bg-blue-600/80 dark:bg-blue-600">
+                        TypeScript
                     </span>
                 ) : null}
                 {technologies?.includes("React") ? (
@@ -50,6 +50,11 @@ export default function WorkingProjectCard({ title, date, api, technologies }) {
                 {technologies?.includes("Sass") ? (
                     <span className="techChip text-white bg-pink-500/80 dark:bg-pink-500">
                         Sass
+                    </span>
+                ) : null}
+                {technologies?.includes("styled-components") ? (
+                    <span className="techChip text-white bg-purple-500/80 dark:bg-purple-500">
+                        styled-components
                     </span>
                 ) : null}
                 {technologies?.includes("Node.js") ? (

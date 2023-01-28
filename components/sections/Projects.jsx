@@ -46,7 +46,12 @@ export default function Projects() {
                         img={propertyImg5}
                         title={`Tennis E-commerce`}
                         isResponsive={texts.projectsResponsive}
-                        technologies={["JavaScript", "React", "Tailwind"]}
+                        technologies={[
+                            "JavaScript",
+                            "Vite",
+                            "React",
+                            "Tailwind",
+                        ]}
                         repo={`https://github.com/franodangelo/React-Ecommerce`}
                         demo={`https://advantage-tennis-ecommerce.vercel.app/`}
                     />
@@ -101,7 +106,7 @@ export default function Projects() {
                     {texts.projectsWorkingOn}
                 </h4>
                 <section className="grid grid-cols-1 md:grid-cols-2 mx-auto gap-8">
-                <WorkingProjectCard
+                    <WorkingProjectCard
                         date={`${texts.projectsJan} 23`}
                         api={false}
                         title={`Company's Website`}
@@ -109,7 +114,7 @@ export default function Projects() {
                             "Next.js",
                             "React",
                             "TypeScript",
-                            "Sass",
+                            "styled-components",
                         ]}
                     />
                     <WorkingProjectCard

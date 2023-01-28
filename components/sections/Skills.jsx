@@ -11,7 +11,7 @@ import html from "../../public/assets/skills/html.png";
 import css from "../../public/assets/skills/css.png";
 import sequelize from "../../public/assets/skills/sequelize.png";
 import tailwind from "../../public/assets/skills/tailwind.png";
-import bootstrap from "../../public/assets/skills/bootstrap.png";
+import styled from "../../public/assets/skills/styled-components.png";
 import vite from "../../public/assets/skills/vite.png";
 import git from "../../public/assets/skills/git.png";
 import typescript from "../../public/assets/skills/typescript.png";
@@ -126,11 +126,14 @@ export default function Skills() {
                         <InactiveSkillCard thumbnail={sass} title="Sass" />
                     )}
                     {!backendTools ? (
-                        <SkillCard thumbnail={bootstrap} title="Bootstrap" />
+                        <SkillCard
+                            thumbnail={styled}
+                            title="styled-components"
+                        />
                     ) : (
                         <InactiveSkillCard
-                            thumbnail={bootstrap}
-                            title="Bootstrap"
+                            thumbnail={styled}
+                            title="styled-components"
                         />
                     )}
                     {!backendTools && !frontendTools ? (
